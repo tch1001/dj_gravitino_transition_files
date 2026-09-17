@@ -1,0 +1,198 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 484.643802584766
+      duration_seconds: 220.29
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:42ff728d42ff718e22ff5ea11aff9b6429ff7b8447ff708f3eff986744ff7c832bff57a845ff58a748ff46b950ff6a9553ff8b7455ff6c9342ff3fc042ff5ba43fff40bf54ff77884bff7a853fffa05f39ff99661cff798627ff50af29ff728d44ff847b3bff6a954aff77882fff45ba21ff0ef138ff38c757ff5aa552ff51ae52ff77883bff2fd044ff54ab45ff4eb156ff679844ff847b4dff738c45ff66992eff629d4aff7a8544ff45ba59ff4ab54cff3bc452ff42bd159e837c0df14fb011ff0bf453ff827d58ff76895aff659a4cff89764fff2bd442ff51ae5bff52ad5aff689744ff54ab55ff6d924dff5da255ff53ac4fff51ae14ff28d703777b84"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cd957c80abc780b4"
+      meter: "4/4"
+      native_bpm: 132.002941
+      reference_downbeat_seconds: 0.192
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Hot N Cold (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 417.151346597852
+      duration_seconds: 185.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:4aff46b903a24ab513ff0cf327ff04fb19ff1ee141ff23dc34ff0ef141ff08f72eff06f916ff0af524ff12ed3dff0ff030ff11ee33ff1ae531ff0cf34bff7f804dffa65955ffa9564bffaf503bff14eb43ffd22d48ffa15e64ffa85763ff996647ff807f4eff17e83bff1de232ff2dd215ff2ad538ff23dc30ff0bf440ff15ea40ff14eb33ff08f743ff798659a2b24d44ffbe4149ff7f8072b9c7384769ce3155ff7b846affa9563effa45b4aff728d3bff0cf341ff0ef13dff0df21bff3bc464ff1ae51aff19e652ffac5341ff629d49ff956a48ff738c65ffc13e61ffbf4064ffb64951ff9b6464ffad523effbd4247ffa45b50ffba451effbf4009ffab54"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e47c73412dafb4ef"
+      meter: "4/4"
+      native_bpm: 134.992169
+      reference_downbeat_seconds: 0.149333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "MANS NOT HOT AUDIO FULL SONG"
+extensions: {}
+format: "gravitino.transition"
+id: "051fd0ba-2de6-42f4-8f9e-0259f401ac55"
+metadata:
+  created_at: "2026-09-07T07:41:40.526Z"
+  name: "mans not hot -> hot n cold"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 4
+    outgoing:
+      track_beat: 273.334052
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 4
+  end_beat: 101.994083
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 4
+      loop_start_beat: 0
+      playing: false
+      position_beat: 4
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.022962
+    outgoing:
+      captured: true
+      cue_beat: 281.065634
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 303.46724
+      loop_start_beat: 303.46724
+      playing: true
+      position_beat: 273.334052
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 134.992169
+  timeline:
+    -
+      at_beat: 18.664306640625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 19.464281
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 19.95495
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 31.990144
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 51.069037
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 55.244795
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.496
+    -
+      at_beat: 57.944638
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.001
+    -
+      at_beat: 76.171581
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 78.09147
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 81.12644438445675
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 86.766966
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

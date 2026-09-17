@@ -1,0 +1,198 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 496.306081465667
+      duration_seconds: 232.66
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:20c2a15e5025d765"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Club Can't Handle Me (feat. David Guetta) (From the Step Up 3D Soundtrack)"
+  outgoing:
+    assumptions:
+      duration_beats: 628.072722281167
+      duration_seconds: 294.43
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1b5abc348a7a152b"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Tremor (Sensation 2014 Anthem)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-7d5781ad2772fe0a876a9efdd967390f"
+format: "gravitino.transition"
+id: "c147360f-0d58-4501-8ce1-f362db10b669"
+metadata:
+  created_at: "2026-08-22"
+  name: "tremor -> club can't handle me"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 156
+    outgoing:
+      track_beat: 521.765534
+  cues:
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-4"
+      label: "HOT CUE 4"
+      preferred_input:
+        bank: "custom"
+        pad: 4
+      purpose: "legacy-hot-cue"
+      track_beat: 156
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 156
+      loop_start_beat: 156
+      playing: false
+      position_beat: 156
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.497
+    outgoing:
+      captured: true
+      cue_beat: 513.259158
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 521.765534
+      loop_start_beat: 521.765534
+      playing: true
+      position_beat: 521.765534
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 6.2357241856
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.065201
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.431001
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 20.781592
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.015
+    -
+      at_beat: 33.368652
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 40.311512
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.001
+    -
+      at_beat: 40.718306
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.498
+    -
+      at_beat: 61.603361
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 61.619588
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 68.821242
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.994
+    -
+      at_beat: 73.54619
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 78.354061
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

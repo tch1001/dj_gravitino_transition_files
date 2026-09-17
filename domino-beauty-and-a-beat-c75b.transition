@@ -1,0 +1,232 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 487.154731472167
+      duration_seconds: 228.37
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2474190837da41a5"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Beauty And A Beat ft. Nicki Minaj (Official Audio) ft. Nicki Minaj"
+  outgoing:
+    assumptions:
+      duration_beats: 493.613663283
+      duration_seconds: 233.22
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1ecd11b1f2c833f8"
+      meter: "4/4"
+      native_bpm: 126.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Domino (audio)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-3400d4cf30ccaf969d92627d3c878322"
+format: "gravitino.transition"
+id: "7b9a0245-a57c-4e89-8115-9c2ca993d8f5"
+metadata:
+  created_at: "2026-08-19"
+  name: "domino -> beauty and a beat"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 315.447319
+  cues: []
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 64
+      eq_high: 0
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 48
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.471
+    outgoing:
+      captured: true
+      cue_beat: 308.971456
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 1
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 445
+      loop_start_beat: 441
+      playing: true
+      position_beat: 315.447319
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008243
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 48
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "LOOP 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 32
+  master_bpm: 128.03772
+  timeline:
+    -
+      at_beat: 4.544580078125
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.497086
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.009237
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 34.20168161392211
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 38.900705
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.481
+    -
+      at_beat: 40.64929485321044
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 47.6663
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 50.054213
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.006
+    -
+      at_beat: 53.673897
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 54.083133
+      control: "deck.eq_high"
+      curve: "step"
+      target: "incoming"
+      value: 0.006
+    -
+      at_beat: 60.844474
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "incoming"
+      value: 0.428
+    -
+      at_beat: 62.302884
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 62.859952
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 66.78450107574461
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 71.87184
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 80.742224
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 95.48372030258176
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+version: 1

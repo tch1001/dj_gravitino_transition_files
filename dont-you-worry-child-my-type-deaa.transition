@@ -1,0 +1,319 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 222.5928161689809
+      duration_seconds: 127.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:11ff24db0bff34cb0bff13ec4c41e51a56ffd92652ffc23d55ffc13e50ffd62935ff837c26ff0ef125ff0ff050ffd52a50ffbe4149ffbb4450ffcf3037ffae5149ffb64935ff78874fffcc334fffb6494fffb44b44ffae5132ff0ef146ff8a752aff6d924affab540dff1fe04af8cc334dffd02f2aff18e747ffae5126ff56a951ffc03f4fffbd4251ffbe414fffd42b28ff13ec44ffc23d4fffc63945ffc43b51ffb94654ffd12e52ffbf4034ff11ee1bff08f741ffa6594effca354fffc33c4dffae5145ffb54a19ff3ac545ffba453cffac534fffc23d50ffc33c51ffcf303bffa15e26ff16e934ff89764fffca354fffc9362868e51a54bde01f4ce0d22d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:0b20ea5eed60c246"
+      meter: "4/4"
+      native_bpm: 105.016667
+      reference_downbeat_seconds: 6.4889167793469555
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Saweetie - My Type (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 457.7696463146555
+      duration_seconds: 212.9
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff1be40bff2ad518ff27d820ff1ce328ff2ad541ff2fd045ff1fe052ff708f2dff7a852eff6b9435ff649b2fff6e913dff4db23aff55aa46ff36c93cff4cb336ff28d714ff1ae527ff22dd2bff13ec30ff3dc254ff9d6257ff956a50ffa55a52ff7e8162ff738c5dff827d5cff6a954dff23dc47ff0ef143ff0cf32bff1ae51bff4fb027ff3ec12fff2fd03fff7a854aff5ca34bff53ac43ff5da23cff5ea14eff659a55ff708f48ff619e45ff2ad564ff46b931ff13ec3fff09f635ff1de249ff15ea35ff18e744ff15ea47ff11ee3aff0af540ff1ae565ff6b9462ff817e57ff59a657ff58a75bff5ea15dff639c5aff5aa55bff4ab554ff2dd207dcb24d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b3d6d2370286cda8"
+      meter: "4/4"
+      native_bpm: 129.010345
+      reference_downbeat_seconds: 0.13866666666666666
+    identity:
+      artists:
+        - "Swedish House Mafia - Topic"
+      identifiers:
+        providers: {}
+      title: "Don't You Worry Child (Radio Edit)"
+extensions: {}
+format: "gravitino.transition"
+id: "4dc9d425-4543-4175-8ebd-008cbf83c42c"
+metadata:
+  created_at: "2026-09-16T18:12:24.973Z"
+  name: "dont you worry child -> my type"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 364.347492
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 77.555887
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -10.069201999999999
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.16
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 364.347492
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.943496
+  labels: []
+  loops: []
+  master_bpm: 121.720756
+  timeline:
+    -
+      at_beat: 11.609453
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.951070999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.590145
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 23.467743
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 25.458534
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.14300000000000002
+    -
+      at_beat: 26.952392
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.178
+    -
+      at_beat: 27.427733999999997
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.244
+    -
+      at_beat: 28.383036999999998
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.312
+    -
+      at_beat: 28.726079
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.362
+    -
+      at_beat: 29.377919
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 29.602898
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.447
+    -
+      at_beat: 30.353253
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.47600000000000003
+    -
+      at_beat: 30.927004999999998
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.4
+    -
+      at_beat: 33.140525
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.365
+    -
+      at_beat: 37.500799
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.761
+    -
+      at_beat: 39.453298
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.277
+    -
+      at_beat: 42.080678
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.851
+    -
+      at_beat: 42.910588
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.923
+    -
+      at_beat: 44.450302
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.998
+    -
+      at_beat: 45.82107
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 51.793532
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.560384
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.981
+    -
+      at_beat: 58.462345
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.902
+    -
+      at_beat: 58.977751
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.879
+    -
+      at_beat: 59.691832
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.743
+    -
+      at_beat: 60.449231
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.633
+    -
+      at_beat: 61.552806999999994
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.467
+    -
+      at_beat: 63.857388
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.23500000000000001
+    -
+      at_beat: 65.42917
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.036000000000000004
+    -
+      at_beat: 65.610182
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 73.16225899999999
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

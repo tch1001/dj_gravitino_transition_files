@@ -1,0 +1,303 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 493.616265186237
+      duration_seconds: 233.22
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0eff1fe00fff09f636da96694982d02f4abecd3225ffb44b40ff926d3fffc23d4dff916e1dff19e652ffba454dff8a7543ffa45b39ff7a852dff51ae53ffa6593cff7e8151ff956a44ffa55a45ff9d624bff718e53ff926d3cff50af30ff718e39ffbb444cff807f49ffa45b18ff37c855ffad522fffa95635ff976850ff728d4bffb44b31ffb34c3eff768954ff8f703affa9564fff8e714fff6a954cffb54a3aff43bc41ff6b944bff7e813fffb8474cff26d930ff2cd359ff986720ff699644759d6225ff877822ff5aa535ff6c934bff996635ff629d3bff679852ff708f4dff807f52ff9e6140ff5ba45bff6a9557ff6f9042ff8e713cff33cc5bff8976"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1ecd11b1f2c833f8"
+      meter: "4/4"
+      native_bpm: 126.990909
+      reference_downbeat_seconds: 0.512
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Domino (audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 628.070678428029
+      duration_seconds: 294.43
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2fff6a9517ff0af529ed8f7050ffc03f56ffab5446ffb84726ff0ff01fff47b81fff3ac529ff34cb45ff768939ff8e713aff6f904cffc53a24ff1fe022ff41be65ffb24d5fffb54a5fffb24d31ff0ef160ffbd4263ffba4559ffaa5520ff12ed3fffa8572fff4cb35effb14e60ffb14e60ffad5218ff2bd419ce8a7518f756a920ff4ab521ff2bd44cff887748ff9c634ac8966913ff04fb11ff03fc2cff06f92aff04fb36ff837c29ff44bb22ff55aa61ffaf5062ffba4561ffb34c61ffb9465fffaf5061ffab5431ff1ce361ffb14e66ffaf505fffb24d4dffbb444dffbb445679c13e52ff9f6058e6ad524bffc43b50ff827d32ff639c32ff57a81aff09f6"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1b5abc348a7a152b"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.032
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Tremor (Sensation 2014 Anthem)"
+extensions: {}
+format: "gravitino.transition"
+id: "cf1ef06e-1520-4f75-b5fc-adbfe63b94a6"
+metadata:
+  created_at: "2026-09-04T08:20:16.645Z"
+  name: "tremor -> domino"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 489.920476
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 113.875105
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 80
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008087
+    mixer:
+      captured: true
+      crossfader: 0.589
+    outgoing:
+      captured: true
+      cue_beat: 487.680591
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 344
+      loop_start_beat: 328
+      playing: true
+      position_beat: 489.920476
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 6.065839
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.251879
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.618742
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.407756
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 18.310041
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 19.082047
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.452
+    -
+      at_beat: 20.792969
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.35
+    -
+      at_beat: 22.328832
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.502
+    -
+      at_beat: 24.073668
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.361
+    -
+      at_beat: 24.073668
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.634
+    -
+      at_beat: 29.116292
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.859
+    -
+      at_beat: 32.918148
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 35.01052
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.162
+    -
+      at_beat: 44.381559
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.492
+    -
+      at_beat: 45.590879
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.007
+    -
+      at_beat: 45.746795
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.438
+    -
+      at_beat: 47.897042
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.073
+    -
+      at_beat: 52.464964
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.136
+    -
+      at_beat: 55.612515
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.202
+    -
+      at_beat: 55.633382
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.319
+    -
+      at_beat: 70.030494
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 71.44737
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 99.902534
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.987
+    -
+      at_beat: 100.72529
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.732
+    -
+      at_beat: 102.165188
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.469
+    -
+      at_beat: 102.779544
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.272
+    -
+      at_beat: 103.389642
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 108.053947
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

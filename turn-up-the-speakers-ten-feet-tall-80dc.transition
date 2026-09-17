@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 486.7359153693175
+      duration_seconds: 229.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff1fe007ff30cf22ff2bd41bff1ee120ff1ee121ff17e835ff56a954ff1be43eff19e638ff29d630ff18e746ff26d933ff2ed133ff22dd41ff35ca4bff5ba45cff7d824dff48b766ffab5430ff37c832ff2dd224ff43bc44ff1ce337ff39c658ff20df3cff15ea3bff21de33ff17e842ff22dd33ff2ad53cff1de246ff33cc46ff3ec164ff8e7157ff758a63ffae514cff43bc67ff9c6367ff8f7057ff649b39ff3ac526ff1de218ff3ec11bff18e723ff09f624ff34cb37ff3dc22fff15ea27ff619e4bff0ef14aff21de50ff2bd451ff21de5bff10ef64ff9d6264ffa8574eff53ac6bff8a7568ff798652ff3ac556ff5ca369ff926d32ff2bd40a28d52a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:baf629ac6fcbc670"
+      meter: "4/4"
+      native_bpm: 126.99090899999999
+      reference_downbeat_seconds: 0.3626666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "AFROJACK - Ten Feet Tall (Lyric Video) ft. Wrabel"
+  outgoing:
+    assumptions:
+      duration_beats: 732.0391604450745
+      duration_seconds: 343.17
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3dff7b8408ffd12e14ff14eb51f9af504affbf404fffa85740ff4eb13dff52ad41ff0af523ff1ee135ff15ea40ff67982bff19e628ff16e93eff54ab4cff11ee2cff10ef3bff35ca39ff28d748ff32cd5aff9a655eff97683aff08f75cff89765cff728d59ff09f629ff17e83dff1fe05affa7585cffab545dff827d58ff86795cffa15e54ff659a03ff13ec09ff30cf11ff21de41ff2ad53dff55aa3aff30cf3aff47b837ff58a745ff21de46ff2ad549ff20df37ff0bf45dffa35c61ff788759ff7d8258ff847b5bff728d5863c13e51f2c53a58ffb54a55ffbe414bffbe4126ff0ff042ff87783dff7d822dff13ec3eff7a853fff758a0fff12ed04ff1be4"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e324be39a2d2dff0"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 2.1546666666666665
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Afrojack & Martin Garrix - Turn Up The Speakers (Original Mix)"
+extensions: {}
+format: "gravitino.transition"
+id: "2c80c50c-e799-4d2d-b0d5-3c96e4bb7d2e"
+metadata:
+  created_at: "2026-09-17T21:06:35.942Z"
+  name: "turn up the speakers -> ten feet tall"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 350.081297
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 49.180113
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008048
+    outgoing:
+      captured: true
+      cue_beat: 564.250847
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 128
+      loop_start_beat: 128
+      playing: true
+      position_beat: 350.081297
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.99090899999999
+  timeline:
+    -
+      at_beat: 1.7187412755179108
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 1.917724609375
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 2.6883649999999997
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.221651
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.688451700713884
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 18.37572534042901
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 37.5579372350864
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.4376346982758621
+    -
+      at_beat: 42.180055908486956
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 43.883849
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

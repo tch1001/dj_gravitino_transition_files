@@ -1,0 +1,199 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 572.247665634469
+      duration_seconds: 268.26
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:169eb24d0cff08f720f738c72cff23dc19ff38c72eff4eb117ff12ed54a1b64958b6b946468b8b741cff38c75533c9365379c33c1bff2ed16cffa15e7cffa55a20ff28d731ff39c636ff54ab1eff14eb8755c73822ff0df27cff649b34ff18e735ff2ad538ff38c724ff15ea87ccbb445e839c6363ff78870fff10ef806cc83736ff4eb153ff7d8220c5c73821ff06f920ff08f721ff15ea1cff06f92fff45ba2eff23dc3bff29d60cff22dd79ffbe416f73b54a76ff7a8587f3b7488adbbf404cff11ee75ff58a725ff09f67c58c93650ffac5351a3b04f52a7b8474750ab544265996641df8d7255ebc8370bff5aa521ff8b741eff8b7410ff55aa0e36c53a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3e6a2d10788995a3"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.146474799197048
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "AronChupa -  I'm an Albatraoz (Extended)"
+  outgoing:
+    assumptions:
+      duration_beats: 364.112582339015
+      duration_seconds: 170.69
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:25ff946b12ff946b10b3936c2cff788728ff48b71cff679830ff2fd02bff39c623ff649b31ff27d825ff3fc026ff4ab524ff3ac533ff31ce39ff21de3aff21de2dff12ed54ff54ab4aff3bc449ff11ee4bff46b948ff31ce47ff30cf3eff39c63dff40bf31ff2ed11aff67985cffab5469ffba4565ffaa555dffa25d66ffb24d2cff29d668ffa95669ffa75868ffaf5066ffa35c6cffa35c39ff2fd02bff887720ff609f27ff47b836ff2ad525ff41be29ff2fd02eff2ed123ff3ac530ff28d737ff2dd239ff20df67ffb34c6affaf5068ffb84767ffab546dffab5439ff5aa563ff8d726affa8574bff7e8165ff8b7463ff99662bff5ba42aff3ec11510f30c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:76d5091c2f1377d5"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 1.90878329426806
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "6453cc5e-ede2-48f7-9d34-a285102eb63b"
+metadata:
+  created_at: "2026-09-07T06:30:27.662Z"
+  name: "early exit from bad"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 128
+    outgoing:
+      track_beat: 198.169276
+  cues: []
+  end_beat: 105.676997
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 64.487965
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 136
+      loop_start_beat: 128
+      playing: false
+      position_beat: 128
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 198.169276
+      loop_start_beat: 198.169276
+      playing: true
+      position_beat: 198.169276
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 136
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 128
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 1.82412109375
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 2.753227
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.225671
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 18.180398
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.013
+    -
+      at_beat: 18.434083
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.493
+    -
+      at_beat: 38.698422
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 47.90039684443759
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 48.979853
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 59.80873
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.99
+    -
+      at_beat: 78.02343012037102
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 87.92254
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

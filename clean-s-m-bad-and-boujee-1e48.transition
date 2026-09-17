@@ -1,0 +1,168 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 703.2213306565646
+      duration_seconds: 332.25
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0bff2fd008ff48b70eff26d931ff609f35ff857a51ffc03f2cff689725b9936c5badcc335264e9164bfae21d5affb54a3fffbc4347bdd62952f0c03f3affb04f2b82e01f47ffd9262aff887755ffdb244dced12e54e6cb3443ff936c49ffc63946cdb34c32ffd9264b89e91658ffd02f57ffda2525ffaf5051ffc23d56ffc7382aff59a64bffab5455ffd42b4fffd82737ff9e6130ff0ff03affb24d47f9bf4035ff778835bba05f4a91d32c3aff817e57bac93650ffd82754ffbd425bffc53a39e6d02f559ad9262eff986718ff1ce335ff847b31ff619e22ffca354dffdd2252ffc33c5de3d12e4cffb44b49ffab5451ffd42b3aff946b46b3e31c145aec13"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:122736e86e172520"
+      meter: "4/4"
+      native_bpm: 126.99090899999999
+      reference_downbeat_seconds: 0.08533333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Migos ft. Lil Uzi Vert - Bad and Boujee (Clean w_ Lyrics)"
+  outgoing:
+    assumptions:
+      duration_beats: 519.7433504545445
+      duration_seconds: 243.65
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff679815ff2fd01aff67982cff0ef13dffcb343fffc9364affb24d53ff8e7143ffac5347ff897642ffa85742ffaf5044ff9e6142f3a25d43ffa65942ffae5132ff19e631ff0ff039ff2ed12bff34cb4cff877851ff847b4cffa75840ff8b7447ff936c48ffb54a4bffa45b3dff9b6435ff52ad33ff54ab26ffae512aff926d3fff20df32ff2cd333ff3dc231ff37c856ff956a4fff8e7151ff936c53ff926d55ffa15e51ff946b49ff9e614eff8f704dff8a7538ff946b33ff817e39ff45ba2dff2fd032ff2cd32cff36c92dff33cc4dff8f7045ff897646ffa15e3eff857a48ff807f44ff758a5aff9c6350ff8a755affb94653ffb14e55ffb8474bffac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:4f87e1279eb70a57"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 1.716233255202786
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - S&M (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "ed033bfb-17ef-49b5-9fd9-03df11b306d4"
+metadata:
+  created_at: "2026-09-17T20:11:27.462Z"
+  name: "clean s&m -> bad and boujee"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 377.74915599999997
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 42.424929
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 32.084661
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0.40800000000000003
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0091029999999999
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 378.440229
+      loop_start_beat: 378.440229
+      playing: true
+      position_beat: 377.74915599999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.99090899999999
+  timeline:
+    -
+      at_beat: 6.2418212890625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.451915
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.161629999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 18.501215
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.996
+    -
+      at_beat: 33.211296
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.580385
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

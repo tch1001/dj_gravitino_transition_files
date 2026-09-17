@@ -1,0 +1,4 @@
+# This repository backs up portable transition recipes only.
+/*
+!/.gitignore
+!/*.transition

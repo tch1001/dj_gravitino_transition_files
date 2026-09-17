@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 331.2982369419636
+      duration_seconds: 198.79
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2eff1fe013ff1ce330ff1ce34cff9d624226b74846d0ae5139ff708f138bdf2034ff986750ff936c43ffac5351ff996628ff41be2dff5ca32dff87783bff5ba452ff6d924fff807f48ff44bb54ff897652ff916e38ff45ba54ff877851c3bd4251e7b54a56dac03f41ff4bb442ff857a32ff20df3fff6a9545ffa35c41ff837c29ff32cd38ff8d7238ff42bd2b4c8c732fff21de1eff2dd220ff14eb3fff748b55ff7c8342ff9d6238ff4eb14cff89764eff9c6345ff88774cffba453cff6a9545ff708f4fff758a4effac5344ff89765affb44b51ff877851ffba454eff8e7146ff49b654ff5ca356ff9c6354ff877857ff9a6528f43cc319ff21de1dff28d7"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:db8e47267d0f147b"
+      meter: "4/4"
+      native_bpm: 99.99642899999999
+      reference_downbeat_seconds: 0.24533333333333332
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Sorry (Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 369.88460000000003
+      duration_seconds: 231.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0bff0cf32bffbb443cff6f904dffbd4253ffbb441bff12ed33ff15ea30ff13ec51ffc03f45ffaf5026ff887716ff1ee15affad5265ffb84732ff7f8045ff649b56ffca3566ffb8473aff5aa538ff8f7038ff51ae5fffbb4467ffb14e25ff0cf321ff2bd410ff1de250ffbc4337ff718e2bff877823ff37c823ff11ee5bffa55a3eff5ea138ff2bd451ffc6392fff6b9439ff29d662ffb14e34ff699632ff4eb170ffad5244ff46b971ffaf504aff31ce40ff8d725aff867964ffa15e1bff15ea19ff3cc32aff26d933ff0cf335ff0bf432ff16e945ff837c3fff788764ffa95672ffb94643ff629d4eff3bc449ff3bc46bff996641ff4eb152ffa85706ff02fd"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cb010347ceff6fff"
+      meter: "4/4"
+      native_bpm: 96
+      reference_downbeat_seconds: 0.17547565022955677
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taylor Swift - Blank Space (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "3341898a-3cdc-4606-8ed2-072b0d066136"
+metadata:
+  created_at: "2026-09-17T15:42:35.471Z"
+  name: "blank space -> sorry"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 294.126648
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 49.667041999999995
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.960117
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 294.126648
+      loop_start_beat: 294.126648
+      playing: true
+      position_beat: 294.126648
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 96
+  timeline:
+    -
+      at_beat: 9.875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.56132
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.982009
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.179199999999998
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.014
+    -
+      at_beat: 16.5888
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 34.227199999999996
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 35.592532999999996
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 39.94036
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.991
+    -
+      at_beat: 45.629825
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

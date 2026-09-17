@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 462.261830203651
+      duration_seconds: 218.38
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1dff16e925ff1ae51aff1be423ff20df29ff37c839ffa45b5195dc2351e9d32c3cffb34c52ffca353fffa95651c1c83751e4cc3365ddbd422dff718e55d8bd423fffae5143ffa05f42ffc6395680c7382aff79862fff8c7346f7c03f3dffce3153ff996629ff2dd232ff36c92bff07f851ff956a54fdac532dff35ca59ded02f3cff9f6037ff55aa5cffd42b49ffb24d43ffbd4246ffbc4355fdc13e4dfcda255875a9563eff8d7249ffaa555991c83727ffb54a1fff1ae525ff18e731ff0df225ff2cd338ff45ba2aff13ec50e6c8373aff12ed21ff26d959a4c43b44ffb14e4dffb04f4cffbc43616bc13e29ff56a93eff986744ffb84744ffc33c5effac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1e2b3b99b71e8cde"
+      meter: "4/4"
+      native_bpm: 127.004494
+      reference_downbeat_seconds: 1.59261225715268
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Nicki Minaj - Super Bass (Official Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 561.535937499999
+      duration_seconds: 269.54
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0aff02fd10ff06f918ff0df212ff13ec50ff718e4bff609f39ff3ac537ff2ed14bff5da250ff748b57ff8c733aff708f45ff8b7428ff09f651ff877854ff659a51ff807f4eff5aa53eff817e43ff8a755bff946b59ff89763dff39c64cffb24d49ff738c65ff8b7451ff96694dff54ab33ff4bb420ff08f72cff4db249ff76894cffb04f51ff8a7547ff699645ff629d2cff21de5fff8b7453ff78872fff2bd451ffbb4456ffbd425363c83740ff35ca1aff4ab535ff679831ff916e3dff728d1cff28d731ff0cf34aff926d2bff56a953ff9f604dffa25d58ff8c7330ff89763fffb24d5dff8a754fff946b45ff8c732eff14eb36ff28d72dff29d628ff3ac5"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:aa4f7f919888d3b3"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 0.170666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Black Eyed Peas - Rock That Body (Official Music) HQ"
+extensions: {}
+format: "gravitino.transition"
+id: "6450741f-a002-4ee5-acb8-570f23c61ddb"
+metadata:
+  created_at: "2026-09-07T08:12:20.195Z"
+  name: "rock that body -> super bass"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 381.156554
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 50.061772
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -2.964734
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008507
+    outgoing:
+      captured: true
+      cue_beat: 375
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 381.156554
+      loop_start_beat: 381.156554
+      playing: true
+      position_beat: 381.156554
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.024368
+  labels: []
+  loops: []
+  master_bpm: 128.046026
+  timeline:
+    -
+      at_beat: 2.851419
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.680285
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.198654
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.822569
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.009
+    -
+      at_beat: 22.942482
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 27.3258
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 32.300333
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.231727
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.986
+    -
+      at_beat: 42.956156
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

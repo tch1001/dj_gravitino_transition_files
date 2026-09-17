@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 432.120551884469
+      duration_seconds: 202.57
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:29ff1ce31fff31ce1aff43bc19ff34cb0df779862cff21de21ff2ed123ff27d81cff32cd45ff0bf429ff09f623ff0df23fff3dc23cff34cb53ffa05f57ffb44b55ffba4542ff629d47ff718e47ff7b845bff9b644fff708f4fff78875fffb6495affab545de2b54a4dff97684bffb64954ffc43b3fff708f36ffa15e2dff23dc32ff0cf35cff916e53ff748b58ffb34c60ffb24d5dffb14e4aff847b4eff976853ffb34c4cff6f9043ff679820ff1ce32eff21de18ff2ad520ff37c830ff1be42bff26d932ff17e842ff38c74dff28d74fff9b644fff6e914dff728d40ff649b5affab5460ffa55a55ff926d52ffb34c5affb74859ffb24d0cf147b815ff36c9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b1c0bb3b4d030db6"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.192
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Feel So Close (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 484.643802584766
+      duration_seconds: 220.29
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:42ff728d42ff718e22ff5ea11aff9b6429ff7b8447ff708f3eff986744ff7c832bff57a845ff58a748ff46b950ff6a9553ff8b7455ff6c9342ff3fc042ff5ba43fff40bf54ff77884bff7a853fffa05f39ff99661cff798627ff50af29ff728d44ff847b3bff6a954aff77882fff45ba21ff0ef138ff38c757ff5aa552ff51ae52ff77883bff2fd044ff54ab45ff4eb156ff679844ff847b4dff738c45ff66992eff629d4aff7a8544ff45ba59ff4ab54cff3bc452ff42bd159e837c0df14fb011ff0bf453ff827d58ff76895aff659a4cff89764fff2bd442ff51ae5bff52ad5aff689744ff54ab55ff6d924dff5da255ff53ac4fff51ae14ff28d703777b84"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cd957c80abc780b4"
+      meter: "4/4"
+      native_bpm: 132.002941
+      reference_downbeat_seconds: 0.192
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Hot N Cold (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "d549a978-a6be-4224-9ae4-d4fa1ea509c9"
+metadata:
+  created_at: "2026-09-07T07:47:07.020Z"
+  name: "fader hot n cold -> feel so close"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 423.855739
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 64.599989
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 419.767727
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 4
+      loop_start_beat: 0
+      playing: true
+      position_beat: 423.855739
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.969883
+  labels: []
+  loops: []
+  master_bpm: 128.027384
+  timeline:
+    -
+      at_beat: 8.136835
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.16105
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.900771
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 20.245355
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.007
+    -
+      at_beat: 20.632289
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 39.671376
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 41.71985
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 44.55972015950641
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 51.210954
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

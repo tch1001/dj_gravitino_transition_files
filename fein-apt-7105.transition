@@ -1,0 +1,319 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 422.09237361111104
+      duration_seconds: 169.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:09ff11ee0fff0df24aff8a7540ffba453eff857a16ff24db3affa25d43ff996637ff8a7542ffb04f34ff758a47ff9a654effad5238ffa75854ff9c633aff8f7047ffa35c46ffa05f44ff9f604dff9c632dff4eb135ffa15e21ff0af543ff728d33ff43bc49ff689746ff86794dff7c8343ff728d4bffa65942ff77881cff24db42ff9a6537ff877850ff916e3bff7e8146ff916e30ff679830ff54ab46ff69963fff7d8245ff758a4aff906f44ff68974eff857a5cff877850ffab544cff7e8140ff54ab41ff56a942ff897653ff857a4dffaf5048ff956a47ffa55a3fff768938ff897646ff926d40ff758a44ff88774fff96694eff8e714eff906f42ff936c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:d6abf40e9e86b0ce"
+      meter: "4/4"
+      native_bpm: 149
+      reference_downbeat_seconds: 6.772302369538583
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "ROSÉ & Bruno Mars - APT. (Official Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 476.74546995066083
+      duration_seconds: 193.31
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1dff13ec1aff12ed18ff12ed28ff1ae52bff1be438ff15ea2bff1de234ff1ae551ffb9464dffc93644ffcf303cff966914ff36c92aff1fe036ff22dd32ff32cd5bffbc4342ff916e4bffa05f59ffbf404eff98674fffb9462aff659a52ffc13e3bffae514bffc63952ffc53a40ffae5150ffbc434cffbf4015ff33cc37ff21de11ff35ca13ff31ce2fff0cf326ffa7584dffd12e31ff837c42ffba455bffc33c46ff728d4cff8f7053ffaa555effb94656ff996645ff18e74fffa65950ffa9564fffb04f3bff768946ff8f704effb54a55ff9d6248ff837c5effa05f45ff718e4aff96695bffa6593fffc03f4dffc7384fffb94637ff629d51ffba4535ffa956"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:07730b63a7d0a4c2"
+      meter: "4/4"
+      native_bpm: 147.976316
+      reference_downbeat_seconds: 0.7786666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Travis Scott - FE!N (Official Audio) ft. Playboi Carti"
+extensions: {}
+format: "gravitino.transition"
+id: "6efb104e-02f8-4d82-820c-97aa0659aeba"
+metadata:
+  created_at: "2026-09-16T16:30:28.840Z"
+  name: "fein -> apt"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 309.05170499999997
+  cues: []
+  end_beat: 90.58467499999999
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -13.533261999999999
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 310.45552799999996
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 152
+      loop_start_beat: 120
+      playing: true
+      position_beat: 309.05170499999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.007071
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 32
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 149.022682
+  timeline:
+    -
+      at_beat: 10.9457763671875
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.13462
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.693439999999999
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 27.247937
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 27.844056
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 28.904190999999997
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.449
+    -
+      at_beat: 29.951157
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.27
+    -
+      at_beat: 30.137347
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.43
+    -
+      at_beat: 30.50752
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.276
+    -
+      at_beat: 32.029936
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.383
+    -
+      at_beat: 38.933454999999995
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.633
+    -
+      at_beat: 40.216263
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.784
+    -
+      at_beat: 41.594978
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.845
+    -
+      at_beat: 42.338718
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.14
+    -
+      at_beat: 44.494834
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.124
+    -
+      at_beat: 44.935336
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.07200000000000001
+    -
+      at_beat: 46.552108
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.852
+    -
+      at_beat: 47.276582999999995
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 47.595124999999996
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 51.719482
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.011
+    -
+      at_beat: 51.811326
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 55.794059
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.995
+    -
+      at_beat: 56.340039
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.922
+    -
+      at_beat: 57.304187999999996
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.871
+    -
+      at_beat: 58.685226
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.533
+    -
+      at_beat: 59.029782
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.513
+    -
+      at_beat: 60.072680999999996
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.449
+    -
+      at_beat: 63.967617999999995
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.36
+    -
+      at_beat: 66.20578499999999
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.20700000000000002
+    -
+      at_beat: 70.393928
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 75.00210899999999
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

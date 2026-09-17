@@ -1,0 +1,209 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 496.980811766833
+      duration_seconds: 233.89
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:04a158ec554241d8"
+      meter: "4/4"
+      native_bpm: 127.490909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Cee Lo Green - Forget You"
+  outgoing:
+    assumptions:
+      duration_beats: 527.279881443667
+      duration_seconds: 247.18
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:04fdbf59005fb5ab"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Flo Rida - Good Feeling (Audio)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-fc7e11065fd8658b193c1dcbbbf503d4"
+format: "gravitino.transition"
+id: "ca786d28-3579-4ee8-85db-d097d9e1afdf"
+metadata:
+  created_at: "2026-08-19"
+  name: "good feeling -> forget you"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: -17
+    outgoing:
+      track_beat: 482.451569
+  cues:
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-1"
+      label: "HOT CUE 1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "legacy-hot-cue"
+      track_beat: -17
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 47.02689
+      loop_start_beat: 47.02689
+      playing: false
+      position_beat: -17
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.003829
+    mixer:
+      captured: true
+      crossfader: 0.471
+    outgoing:
+      captured: true
+      cue_beat: 477.950497
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 1
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 479.372618
+      loop_start_beat: 479.372618
+      playing: true
+      position_beat: 482.451569
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 5.473093
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.542059
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.000374
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 26.270143
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 28.60266
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.35
+    -
+      at_beat: 31.35026
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.414
+    -
+      at_beat: 31.741745
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 32.553326
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.424
+    -
+      at_beat: 34.465266
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.703
+    -
+      at_beat: 35.981261
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.002
+    -
+      at_beat: 37.332122
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 37.536278
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.26
+    -
+      at_beat: 41.913545
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.351
+    -
+      at_beat: 47.225184
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

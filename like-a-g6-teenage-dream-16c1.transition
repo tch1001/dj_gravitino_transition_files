@@ -1,0 +1,163 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 458.3243488829778
+      duration_seconds: 229.39000000000001
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0cff23dc22ff32cd14ff21de18ff24db19ff1ae50dff21de26ff24db2cff32cd21ff3bc425ff42bd16ff54ab1eff52ad28ff1ee128ff2bd434ff936c58ffb9464bffa65957ff9a654aff7f8052ff7c835bff916e4bff89764dff6d9253ff788725ff768921ff6a9529ffa05f24ff8c7330ff966934ff58a731ff609f3cff52ad3aff3cc359ff708f55ff6c935fff976861ff956a5affa05f6aff9b6466ff8d725effa45b44ff728d59ff6e914eff4ab553ff46b93bff4eb127ff8b7420ff619e2eff05fa62ff946b6cff936c64ffab5459ff48b747ff55aa46ff3bc457ff857a44ff2ad544ff38c76bff986773ff9e616dff8e716eff8c731bff0df209f94fb0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:241e2d953ffbe7be"
+      meter: "4/4"
+      native_bpm: 119.88085099999999
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Teenage Dream (Official Music Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 454.7505208333325
+      duration_seconds: 218.28
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:32ff12ed28ff27d82aff23dc24ff21de27ff06f94effac534be7a95653b4d42b4dffc6394e84b04f3effab544bdec33c3eff986720ff758a49c5aa555397ca354effb64953b9d22d28ff619e3bffa45b48ffb34c34ff906f1fff0ef14affb6494cffca3551ffcf304bffc13e4af5b34c38ff86792dff43bc23ff18e734ff718e4bffc43b50e9c03f4dffcc3352ffce312bff05fa45ff9b6430ff48b730ff609f48ffa7584bffc6394effc13e4effcb344effb7484bff9b642cff20df35ff22dd3fffb64940ffa05f4effc6394effbf4043ffa45b4affab5449ffac5326ff0cf33eff87783eff956a3dffaf504dffcb344fffbe414affa05f47ffb04f1dff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:218329c1da45207d"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 1.0901906027064887
+    identity:
+      artists:
+        - "Far East Movement"
+      identifiers:
+        providers: {}
+      title: "\"LIKE A G6\" (OFFICIAL)  FAR EAST MOVEMENT (FM)  feat The Cataracs & Dev"
+extensions: {}
+format: "gravitino.transition"
+id: "e5b1ed51-5167-4bc6-b8d7-2a8130d64283"
+metadata:
+  created_at: "2026-09-17T20:49:02.295Z"
+  name: "like a g6 -> teenage dream"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 72
+    outgoing:
+      track_beat: 412.48281699999995
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 72
+  end_beat: 43.425837
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 72
+      loop_start_beat: 72
+      playing: false
+      position_beat: 72
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.042271
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 412.48281699999995
+      loop_start_beat: 412.48281699999995
+      playing: true
+      position_beat: 412.48281699999995
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 125
+  timeline:
+    -
+      at_beat: 3.3227558454852586
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 3.502811
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.558072712535431
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.968332712535432
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 22.649856948813245
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

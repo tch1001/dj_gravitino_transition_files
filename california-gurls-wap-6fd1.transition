@@ -1,0 +1,305 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 416.378068896167
+      duration_seconds: 187.87
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:9d22ed15c4ced283"
+      meter: "4/4"
+      native_bpm: 132.978571
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Cardi B - WAP feat. Megan Thee Stallion [Official Audio]"
+  outgoing:
+    assumptions:
+      duration_beats: 491.634075
+      duration_seconds: 235.89
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b93b4a1a405f4869"
+      meter: "4/4"
+      native_bpm: 125.05
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - California Gurls ft. Snoop (Lyric Video)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-ee7b8f7e9f6b7695db0415534c49582a"
+format: "gravitino.transition"
+id: "28bfe778-1356-415f-bac4-85fdbabf0bce"
+metadata:
+  created_at: "2026-08-21"
+  name: "california gurls -> wap"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 407.386739
+  cues:
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-1"
+      label: "HOT CUE 1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "legacy-hot-cue"
+      track_beat: 0
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.962422
+    mixer:
+      captured: true
+      crossfader: 0.504
+    outgoing:
+      captured: true
+      cue_beat: 386.861518
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: true
+      position_beat: 407.386739
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.024144
+  labels: []
+  master_bpm: 128.069154
+  timeline:
+    -
+      at_beat: 8.583467
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.71048
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.109644
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.17831
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.009
+    -
+      at_beat: 20.183678
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.464
+    -
+      at_beat: 20.27473
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.475
+    -
+      at_beat: 21.960188
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.317
+    -
+      at_beat: 22.506004
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.515
+    -
+      at_beat: 25.921172
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.535
+    -
+      at_beat: 27.218956
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.207
+    -
+      at_beat: 28.038598
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.814
+    -
+      at_beat: 28.801316
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.853
+    -
+      at_beat: 30.736595
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.949
+    -
+      at_beat: 32.933654
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 33.776092
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 40.640599
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 41.73344
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 42.268507
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.424
+    -
+      at_beat: 44.306214
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.153
+    -
+      at_beat: 49.246818
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.335
+    -
+      at_beat: 60.960876
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 64.993416
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 74.294786
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.988
+    -
+      at_beat: 74.837909
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.702
+    -
+      at_beat: 74.953697
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.589
+    -
+      at_beat: 75.122903
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.359
+    -
+      at_beat: 75.179409
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.296
+    -
+      at_beat: 75.236332
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.197
+    -
+      at_beat: 75.372932
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.018
+    -
+      at_beat: 75.433294
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

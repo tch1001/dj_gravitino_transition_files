@@ -1,0 +1,192 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 369.88460000000003
+      duration_seconds: 231.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0bff0cf32bffbb443cff6f904dffbd4253ffbb441bff12ed33ff15ea30ff13ec51ffc03f45ffaf5026ff887716ff1ee15affad5265ffb84732ff7f8045ff649b56ffca3566ffb8473aff5aa538ff8f7038ff51ae5fffbb4467ffb14e25ff0cf321ff2bd410ff1de250ffbc4337ff718e2bff877823ff37c823ff11ee5bffa55a3eff5ea138ff2bd451ffc6392fff6b9439ff29d662ffb14e34ff699632ff4eb170ffad5244ff46b971ffaf504aff31ce40ff8d725aff867964ffa15e1bff15ea19ff3cc32aff26d933ff0cf335ff0bf432ff16e945ff837c3fff788764ffa95672ffb94643ff629d4eff3bc449ff3bc46bff996641ff4eb152ffa85706ff02fd"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cb010347ceff6fff"
+      meter: "4/4"
+      native_bpm: 96
+      reference_downbeat_seconds: 0.17547565022955677
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taylor Swift - Blank Space (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 406.4663078125
+      duration_seconds: 220.71
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:06ff5ca314ff1ae517ff18e722ff21de16ff28d724ff10ef53ffd629557fda2534ff6e915fbad02f5dbcc23d31ff946b49ff8a755dffc83745ff6f903affb04f4dffab54558eb54a46ffa35c16ff6b943292b24d5db8d926575ddf2027ff5fa05f78cc335fafc43b38ff837c26ff10ef5effc9363fdbb34c3cff9d624dff867915ff0af54ec8c93652ffbf4045ff8e715dffcb3463ff976841ff78873cff708f5aff9f6019ff11ee48ff758a57ff7e814dc0bc4350ffa95626ff9d621690629d17a0679856ffb24d48ff857a56ffbb445a92cd3247ffa45b45ff986757ffb6494cff7c8344ffa7584082bf4040f1a85754a9d62936ff609f1d60a15e16ff34cb"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8259316c7e4654e4"
+      meter: "4/4"
+      native_bpm: 110.5
+      reference_downbeat_seconds: 4.908866811518525
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Bruno Mars - Grenade (Official Music Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "6e68a165-7be4-4978-9a70-75412323c8d1"
+metadata:
+  created_at: "2026-09-17T16:10:23.336Z"
+  name: "grenade -> blank space"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 8
+    outgoing:
+      track_beat: 299.089882
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 8
+  end_beat: 47.607549
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 8
+      loop_start_beat: 8
+      playing: false
+      position_beat: 8
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.094094
+    outgoing:
+      captured: true
+      cue_beat: 0.048691
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 142.715546
+      loop_start_beat: 142.715546
+      playing: true
+      position_beat: 299.089882
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.950996
+  labels: []
+  loops: []
+  master_bpm: 105.08506799999999
+  timeline:
+    -
+      at_beat: 4.90947265625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.0116629999999995
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.3485249999999995
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 14.329436999999999
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.487
+    -
+      at_beat: 14.562479999999999
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.014
+    -
+      at_beat: 24.800075
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 25.126099999999997
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 33.879453
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.984
+    -
+      at_beat: 40.819736
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 45.614494
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,234 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 327.057790636704
+      duration_seconds: 155.74
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:44ffb14e44cec6393dffb64941ff906f37ff6d9242ff976835ff99663fff9f6037ff8a7532ff05fa46ffbe415affaf504dffc63957ff99664fffa85759ff9d624cffae5141ff56a950ffa45b41ff8e7154ff7f8037ff8b7429ff49b628ff6c9327ff4fb030ff26d931ff3ac52bff45ba32ff05fa4affbb443cff916e4effc23d38ff847b50ffc43b32ff77884eff9e613aff50af4fff76893aff619e47ff778841ff669940ff609f3bffa25d40ff7e8145ff827d44ff78874eff748b34ff7a852eff4db22cff58a731ff609f29ff708f2fff4eb133ff5fa04eff6e9132ff619e4aff52ad40ff679845ff807f55ffab5441ff55aa56ffb64945ff7d8255ffb44b"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:343e2b3196383f95"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.426666666666667
+    identity:
+      artists:
+        - "TEN Music Group"
+      identifiers:
+        providers: {}
+      title: "Icona Pop - I Love It (Feat. Charli XCX)  [Audio]"
+  outgoing:
+    assumptions:
+      duration_beats: 572.38552060345
+      duration_seconds: 264.36
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:4efee11e49ffaf5043ffbe4148ff9e614bff2ed138ff40bf2bff5da234ff2dd232ff50af2dff5aa532ff44bb35ff2cd336ff3ec141ff27d820ff33cc45ffc83745ffa25d53ffcd324affa35c46ffc83746ff837c0aff1be455ff956a34ff1be44cff51ae44ff28d736ff39c633ff46b931ff45ba45ff817e4dff847b4dff748b0dff619e2cf329d64affc33c3bff7c833bffb54a30ff5ba436ff47b845ff9e6132ff5aa52eff12ed2aff11ee40ff59a643ff2fd049ff35ca40ff5aa551ff47b84bff877854ff9a6550ff689752ff89764fff6a9555ff8f704bffb84751f6c63942ffc53a4bffc83743ffb24d4bffcc334affb94651ffd12e49ff986748ffa15e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c456f596daeee196"
+      meter: "4/4"
+      native_bpm: 129.910345
+      reference_downbeat_seconds: 0.629333333333333
+    identity:
+      artists:
+        - "LMFAOVEVO"
+      identifiers:
+        providers: {}
+      title: "LMFAO ft. Lauren Bennett, GoonRock - Party Rock Anthem (Official Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "a9898faa-d370-4552-ab80-14c0d8a71d36"
+metadata:
+  created_at: "2026-09-04T15:19:51.025Z"
+  name: "lmfao -> i love it"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 452.907867
+  cues: []
+  end_beat: 97.976449
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.031644
+    mixer:
+      captured: true
+      crossfader: 0.454
+    outgoing:
+      captured: true
+      cue_beat: 452.402793
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: true
+      position_beat: 452.907867
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 16
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 129.910345
+  timeline:
+    -
+      at_beat: 11.089965701103205
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.299256
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.783265
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 31.6682
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.493
+    -
+      at_beat: 35.509775
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.231
+    -
+      at_beat: 36.143945
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.252
+    -
+      at_beat: 36.628943
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.32
+    -
+      at_beat: 37.183228
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 43.10406744480131
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 43.455137
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.478
+    -
+      at_beat: 48.29593002796171
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 53.295654
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 66.410406
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 71.779796
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.972
+    -
+      at_beat: 78.09899747371671
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 89.221957
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

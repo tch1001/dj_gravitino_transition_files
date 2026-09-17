@@ -1,0 +1,212 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 628.072722281167
+      duration_seconds: 294.43
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1b5abc348a7a152b"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Tremor (Sensation 2014 Anthem)"
+  outgoing:
+    assumptions:
+      duration_beats: 457.771707508333
+      duration_seconds: 212.9
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b3d6d2370286cda8"
+      meter: "4/4"
+      native_bpm: 129.010345
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "Swedish House Mafia - Topic"
+      identifiers:
+        providers: {}
+      title: "Don't You Worry Child (Radio Edit)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-080305bb701fc3762de27c5600502142"
+format: "gravitino.transition"
+id: "7cdefe54-9165-4145-aef8-e2a88eb9f936"
+metadata:
+  created_at: "2026-08-21"
+  name: "dont you worry child -> tremor"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 264
+    outgoing:
+      track_beat: 168.987571
+  cues:
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-4"
+      label: "HOT CUE 4"
+      preferred_input:
+        bank: "custom"
+        pad: 4
+      purpose: "legacy-hot-cue"
+      track_beat: 264
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 273
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 385
+      loop_start_beat: 369
+      playing: false
+      position_beat: 264
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008536
+    mixer:
+      captured: true
+      crossfader: 0.497
+    outgoing:
+      captured: true
+      cue_beat: 165.593166
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 168.987571
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 385
+      endpoint: "incoming"
+      id: "incoming-loop-7"
+      label: "LOOP 7"
+      pairing_group: "pad-7"
+      preferred_input:
+        bank: "custom"
+        pad: 7
+      purpose: "saved-loop"
+      start_track_beat: 369
+  master_bpm: 129.010345
+  timeline:
+    -
+      at_beat: 7.004676643591804
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.825128
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.20595703125
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 33.485705
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 37.613772
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 43.171786
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 62.809453
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 64.146107
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 145.826669
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 167.1103515625
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.46895204741379315
+    -
+      at_beat: 177.87890625
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 218.507733
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+version: 1

@@ -1,0 +1,206 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 457.9585692708358
+      duration_seconds: 196.23000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:32ff0ef123ff1be423ff16e92cff0ef12eff0cf348ffc23d5affc43b49c7c43b3aff966946ffb24d59ffcd3247ff7e8148ffb44b629ed42b1fff23dc1fff1ee120ff10ef24ff15ea2aff19e652ffc93640ff807f4dffc53a5cffcc3343bdd52a57ffc53a4affbb442aff6f904bffb34c58a7cc333cff906f4effb7486195ce3125ff15ea4ae1c53a58ffbc432aff926d4a27e31c23ff1ae526ff16e92aff12ed26ff09f64681cc3350c7bc4357d4ca352fff96694affb64944ffb14e45ff837c539ccd3257a6c93626ff21de21ff1ae523ff14eb21ff18e72fff18e761ffc23d4fff956a4fffbe415be8cd3248ffac5348ffbc4357ffb64939ffab5455ffc13e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:9d7997efbc8de5dc"
+      meter: "4/4"
+      native_bpm: 140.025
+      reference_downbeat_seconds: 0.20266666666666666
+    identity:
+      artists:
+        - "Mad Decent"
+      identifiers:
+        providers: {}
+      title: "Baauer - Harlem Shake [Official Audio]"
+  outgoing:
+    assumptions:
+      duration_beats: 910.963147615137
+      duration_seconds: 369.24
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:27ff22dd17ff10ef29f1d62938bab24d32ff0ef141ff966941ff817e56ff5aa54fff6a9544ff19e643ff847b3cff1de23dff19e638ff28d73eff29d646e0936c41ff55aa40ff8b744aff48b754ff619e48ff689735ff24db51ff5ca34cff2ed139ff966950ff768926ff1ee146ff6f9026ff21de48ffc13e2fff0cf35aff857a42ff699648ff7b842eff629d2eff36c951ff5da249ff52ad4aff58a752ff53ac50ff619e37ff30cf4cff837c25ff76894aff6d924aff6c9333ff24db40ff87784eff5fa04bff669938ff6d9237ff33cc46ff6f902fff27d848ca8a7552ff669944ff2ad542ff807f3bff1ae552ff4bb437ffb24d4fff59a645ff1ee118ff29d6"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7d67ca296bbc5f62"
+      meter: "4/4"
+      native_bpm: 148.02631599999998
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Eminem - Rap God (Explicit)"
+extensions: {}
+format: "gravitino.transition"
+id: "b578012f-a731-4041-a23c-805f1e073b5c"
+metadata:
+  created_at: "2026-09-16T16:50:11.983Z"
+  name: "rap god -> harlem shake"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 4
+    outgoing:
+      track_beat: 677.38163
+  cues: []
+  end_beat: 108.07463
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 36
+      loop_start_beat: 4
+      playing: false
+      position_beat: 4
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.064246
+    outgoing:
+      captured: true
+      cue_beat: 669.1266449999999
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 677.38163
+      loop_start_beat: 677.38163
+      playing: true
+      position_beat: 677.38163
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.007071
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 36
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 4
+  master_bpm: 149.073036
+  timeline:
+    -
+      at_beat: 10.6218017578125
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.192089
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.721451
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 31.179482
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.023
+    -
+      at_beat: 40.733398
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.482
+    -
+      at_beat: 48.312911
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.482
+    -
+      at_beat: 54.885382
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.183
+    -
+      at_beat: 55.773181
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 59.901416301727295
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 72.005602
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 80.552477
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.987
+    -
+      at_beat: 89.854595
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

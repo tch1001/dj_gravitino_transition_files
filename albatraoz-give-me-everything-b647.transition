@@ -1,0 +1,204 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 553.868764736591
+      duration_seconds: 257.39
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1fff52ad2eff2cd334ff32cd28ff31ce27ff26d935ff12ed27ff30cf3eff12ed19ff4fb040ff14eb3eff2bd467ff986755ff4db266ffa15e54ff4fb057ff7e814bff748b65ff9e615cff35ca3cff38c72bff2ad566ff99663eff54ab35ff45ba4eff32cd3bff0af539ff11ee32ff18e737ff3ac53eff27d83bff26d942ff24db61ff817e4dff21de4dff1de256ff6e9166ff7b8433ff14eb52ff48b76aff9d6229ff25da37ff30cf40ff847b62ffae5143ff38c72aff1ae51dff22dd26ff28d734ff18e735ff3ac534ff24db2eff2bd421ff1ce34cff46b961ff98675aff55aa51ff5fa058ff8b7454ff9f6034ff4bb438ff47b81cd65fa01fff33cc11f45aa5"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c0840d591988faac"
+      meter: "4/4"
+      native_bpm: 129.110345
+      reference_downbeat_seconds: 1.01333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull - Give Me Everything (Audio) ft. Ne-Yo, Afrojack, Nayer"
+  outgoing:
+    assumptions:
+      duration_beats: 572.247665634469
+      duration_seconds: 268.26
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:169eb24d0cff08f720f738c72cff23dc19ff38c72eff4eb117ff12ed54a1b64958b6b946468b8b741cff38c75533c9365379c33c1bff2ed16cffa15e7cffa55a20ff28d731ff39c636ff54ab1eff14eb8755c73822ff0df27cff649b34ff18e735ff2ad538ff38c724ff15ea87ccbb445e839c6363ff78870fff10ef806cc83736ff4eb153ff7d8220c5c73821ff06f920ff08f721ff15ea1cff06f92fff45ba2eff23dc3bff29d60cff22dd79ffbe416f73b54a76ff7a8587f3b7488adbbf404cff11ee75ff58a725ff09f67c58c93650ffac5351a3b04f52a7b8474750ab544265996641df8d7255ebc8370bff5aa521ff8b741eff8b7410ff55aa0e36c53a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3e6a2d10788995a3"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.146474799197048
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "AronChupa -  I'm an Albatraoz (Extended)"
+extensions: {}
+format: "gravitino.transition"
+id: "646b88e9-6ff3-48b9-9c81-bf46f1088bb5"
+metadata:
+  created_at: "2026-09-07T06:43:46.281Z"
+  name: "albatraoz -> give me everything"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 349.118205
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 83.323516
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.991394
+    outgoing:
+      captured: true
+      cue_beat: 342.763323
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 136
+      loop_start_beat: 128
+      playing: true
+      position_beat: 349.118205
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 2.8762451171875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.482526
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.851192
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 33.279958
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.015
+    -
+      at_beat: 41.628332
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 44.101538
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.492
+    -
+      at_beat: 56.907602
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 63.722407
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.474
+    -
+      at_beat: 70.617222
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.99
+    -
+      at_beat: 71.99647358462269
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 74.655675
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 79.940295
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

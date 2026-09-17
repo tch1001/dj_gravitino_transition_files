@@ -1,0 +1,222 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 499.28868855718
+      duration_seconds: 249.68
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff0ff005ff6a951bff23dc10ff1ae511ff679828ff86792bffab5428ffa55a35ff45ba22ff49b63bff5fa03bff52ad38ffb14e3affae514bffa7584cffa55a34ff837c53ffae5152ff976826ff1ce318ff57a834ff54ab38ff59a642ffc33c36ffb44b65ffa15e69ff9b6433cdbd4236ffb34c4cffa45b4dffa75834ff76893fff53ac33ff1be43cff3dc23bff1fe035ff2cd36dff966973ff8e713dff9e6140ffb14e56ffa85752ffac534bff7b844aff906f61ff867965ff8b743eff88775bff8e7134ff25da60ffad5220ff0ff02bff936c3aff52ad5fffbc434aff9d6269ffaa556dffa6595eff857a60ffa05f6eff8e712dff09f626ff07f828ff6d92"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:90bbcb7cc0919751"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 24.3275909985637
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taio Cruz - Dynamite (Official Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 453.072752585226
+      duration_seconds: 212.39
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fd051ae0eff3cc32fff0ef12cff47b827ff0ef130ff0af520ff0af536ff7a852effb54a36ffbc433aff8f704cff8e715dffcb3462ffbe4158ffc93650ff966932ff7c8349ffc03f3dffaa555bffac5346ff8d7255ff97684bff916e50ff847b50ff946b2aff17e828ff0ff03fff12ed1aff4cb336ff0ff03eff5ea132ff659a37ff718e3eff6f904bffb34c34ffd12e50ffce3158ffc6394fff8d7256ffab5451ff9e612dff956a4fffb04f3affbf404fffc23d51ff99664fff8b744cff837c0fff2cd30aff47b832ff5da233ff3fc043ff26d92fff748b3fff0bf454ff9f6053ff906f4cff837c5fffa95648ff867958ff926d4cff857a5affbf4053ff7e81"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:54295c9e5017b317"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.224
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Kesha - Die Young (Lyrics)"
+extensions: {}
+format: "gravitino.transition"
+id: "bfd268a4-4c51-43f2-881c-f925c5189748"
+metadata:
+  created_at: "2026-09-07T09:34:40.211Z"
+  name: "die young -> dynamite"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 282.144568
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 111.346402
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 48
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 13.490889
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.06659
+    outgoing:
+      captured: true
+      cue_beat: 279.784559
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: true
+      position_beat: 282.144568
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 5.85828571428571
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.64415
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.158061
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.290647
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.009
+    -
+      at_beat: 19.818681
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.49
+    -
+      at_beat: 38.636189
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 40.024179
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 46.304267
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.498
+    -
+      at_beat: 46.861738
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.006
+    -
+      at_beat: 55.110041
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 59.820107
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 80.448292
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 93.115143
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.006196
+    -
+      at_beat: 98.297018
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.989
+    -
+      at_beat: 100.845459
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

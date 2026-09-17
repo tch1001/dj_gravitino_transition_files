@@ -1,0 +1,181 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 579.586922121211
+      duration_seconds: 271.7
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0dc42bd411a543bc25ff2bd41ada46b923ff2ed118ff33cc2dff3ac523ff33cc2ffe3bc438ff47b837ff36c946ff1ce340ff31ce3bff2cd33fff2fd047ff2cd35dff996660ff8d725fff877856ff7c8352ff807f63ffb44b63ffb34c35bcd52a55ff36c95fffa65969ff7e8146e1df200cff44bb32ff1fe021ff3ec12eff2ad51cff3bc42aff33cc1aff46b931ff15ea4fff46b946ff26d943ff2cd347ff20df53ff11ee4eff21de49ff20df4aff2ed12fff55aa32ff32cd2aff35ca37ff55aa3aff59a63cff46b92fff04fb64ffab5454ff3cc354ff50af60ff8e7160ff99665fff718e5cff887764ff41be5eff50af65ff25da6fff728d08ff31ce16ff35ca"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a92364ffce5caa22"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 1.9823498828041788
+    identity:
+      artists:
+        - "Zedd"
+      identifiers:
+        providers: {}
+      title: "Zedd - Clarity (feat. Foxes)"
+  outgoing:
+    assumptions:
+      duration_beats: 486.7359153693175
+      duration_seconds: 229.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff1fe007ff30cf22ff2bd41bff1ee120ff1ee121ff17e835ff56a954ff1be43eff19e638ff29d630ff18e746ff26d933ff2ed133ff22dd41ff35ca4bff5ba45cff7d824dff48b766ffab5430ff37c832ff2dd224ff43bc44ff1ce337ff39c658ff20df3cff15ea3bff21de33ff17e842ff22dd33ff2ad53cff1de246ff33cc46ff3ec164ff8e7157ff758a63ffae514cff43bc67ff9c6367ff8f7057ff649b39ff3ac526ff1de218ff3ec11bff18e723ff09f624ff34cb37ff3dc22fff15ea27ff619e4bff0ef14aff21de50ff2bd451ff21de5bff10ef64ff9d6264ffa8574eff53ac6bff8a7568ff798652ff3ac556ff5ca369ff926d32ff2bd40a28d52a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:baf629ac6fcbc670"
+      meter: "4/4"
+      native_bpm: 126.99090899999999
+      reference_downbeat_seconds: 0.3626666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "AFROJACK - Ten Feet Tall (Lyric Video) ft. Wrabel"
+extensions: {}
+format: "gravitino.transition"
+id: "00f6fa36-2dcc-45ce-9e70-73e0e6290288"
+metadata:
+  created_at: "2026-09-17T21:27:59.669Z"
+  name: "ten feet tall -> clarity"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 298.01575399999996
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 42.429096
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 298.01575399999996
+      loop_start_beat: 298.01575399999996
+      playing: true
+      position_beat: 298.01575399999996
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.007501
+  labels: []
+  loops: []
+  master_bpm: 127.943457
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 3.5786288654358924
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.139631948902339
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.976144122051439
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.5742579999999995
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.972295
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8.429739923425718
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 40.060006
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

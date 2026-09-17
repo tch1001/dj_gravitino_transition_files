@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 328.46020000000004
+      duration_seconds: 205.29
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff29d610ff1ae518ff26d947ff936c1bff26d916ff41be49ffc8372affa75838ff55aa49ffd82737ff7b843bffa85744ff57a819ff13ec4cff99663cff7e8143ff7b844fffa85752ffa95645ff887750ff976842ffa35c2eff25da1aff35ca23ff3ac547cfd42b36ff7a8530ff96694cffa35c33ff8b744affb44b3eff52ad27ff07f83aff47b843ff827d47ff936c50ff9c6352ffab5454ff867948ff966949ff956a4bffab5441ff3ac53bff5ca349ff86792cff0df248ff847b43ff06f94fff8e7153ffad5252ff8f7043ff778851ff758a52ffa05f53ff7d824dff9c634eff8e7155ff9b6452ff8d7245ff77884dffa75850ffa55a4aff96694eff936c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:9a5e53ce1b61d68d"
+      meter: "4/4"
+      native_bpm: 96
+      reference_downbeat_seconds: 1.952
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Miley Cyrus - Party In The U.S.A  (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 732.0391604450745
+      duration_seconds: 343.17
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3dff7b8408ffd12e14ff14eb51f9af504affbf404fffa85740ff4eb13dff52ad41ff0af523ff1ee135ff15ea40ff67982bff19e628ff16e93eff54ab4cff11ee2cff10ef3bff35ca39ff28d748ff32cd5aff9a655eff97683aff08f75cff89765cff728d59ff09f629ff17e83dff1fe05affa7585cffab545dff827d58ff86795cffa15e54ff659a03ff13ec09ff30cf11ff21de41ff2ad53dff55aa3aff30cf3aff47b837ff58a745ff21de46ff2ad549ff20df37ff0bf45dffa35c61ff788759ff7d8258ff847b5bff728d5863c13e51f2c53a58ffb54a55ffbe414bffbe4126ff0ff042ff87783dff7d822dff13ec3eff7a853fff758a0fff12ed04ff1be4"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e324be39a2d2dff0"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 2.1546666666666665
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Afrojack & Martin Garrix - Turn Up The Speakers (Original Mix)"
+extensions: {}
+format: "gravitino.transition"
+id: "27d13074-11e0-4478-ac8e-53f02ec121e2"
+metadata:
+  created_at: "2026-09-16T18:34:00.385Z"
+  name: "turn up the speakers -> party in the usa"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 576.2159899999999
+  cues:
+    -
+      color: "#66c783"
+      endpoint: "incoming"
+      id: "incoming-cue-4"
+      label: "CUE 4"
+      pairing_group: "pad-4"
+      preferred_input:
+        bank: "custom"
+        pad: 4
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 45.113391
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.16
+    outgoing:
+      captured: true
+      cue_beat: 564.250847
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 128
+      loop_start_beat: 128
+      playing: true
+      position_beat: 576.2159899999999
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.87002
+  labels: []
+  loops: []
+  master_bpm: 111.354591
+  timeline:
+    -
+      at_beat: 15.7792724609375
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.812431
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 17.163448
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 24.006949
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 26.844326
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 31.806619883912475
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 35.420840999999996
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.989
+    -
+      at_beat: 39.080377999999996
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 41.716539
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

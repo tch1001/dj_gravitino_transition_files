@@ -1,0 +1,211 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 417.151346597852
+      duration_seconds: 185.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:4aff46b903a24ab513ff0cf327ff04fb19ff1ee141ff23dc34ff0ef141ff08f72eff06f916ff0af524ff12ed3dff0ff030ff11ee33ff1ae531ff0cf34bff7f804dffa65955ffa9564bffaf503bff14eb43ffd22d48ffa15e64ffa85763ff996647ff807f4eff17e83bff1de232ff2dd215ff2ad538ff23dc30ff0bf440ff15ea40ff14eb33ff08f743ff798659a2b24d44ffbe4149ff7f8072b9c7384769ce3155ff7b846affa9563effa45b4aff728d3bff0cf341ff0ef13dff0df21bff3bc464ff1ae51aff19e652ffac5341ff629d49ff956a48ff738c65ffc13e61ffbf4064ffb64951ff9b6464ffad523effbd4247ffa45b50ffba451effbf4009ffab54"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e47c73412dafb4ef"
+      meter: "4/4"
+      native_bpm: 134.992169
+      reference_downbeat_seconds: 0.149333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "MANS NOT HOT AUDIO FULL SONG"
+  outgoing:
+    assumptions:
+      duration_beats: 403.490852054923
+      duration_seconds: 189.15
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2da3e41b054f9f6016ff3fc027dc4ab52fff6a9531ff629d35ff1ce339ff49b632ff49b636ff35ca38ff47b848ff52ad3eff56a937ff68973bff659a3aff55aa42ff3ec145ff34cb42ff36c948ff47b83fff15ea34ff18e769ead32c53ffac5354ff96695cffbb443eff7b844bff946b5bffb74848ff33cc46ff3dc246ff56a93fff738c2aff4ab521ff14eb20ff19e61dff26d93eff40bf38ff55aa35ff629d3aff48b738ff57a83cff5da23cff3fc03aff37c840ff21de42ff3cc362ffc43b57ffa05f63ffc43b4cff966960ffc83761ffaa555fffbd424eff9a653cff4db24bff4ab52bff5aa501ff3bc44dffab5451ffb14e57ff837c55ffc33c5affbc43"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:6847a8c033031d15"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 5.1077163150792
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "R3HAB & VINAI - How We Party (Official Music Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "b12cef62-5e3f-4b03-ac5c-562902872d92"
+metadata:
+  created_at: "2026-09-07T07:10:41.462Z"
+  name: "how we party -> mans not hot"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 195.392895
+  cues: []
+  end_beat: 117.207289
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 8
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.969102
+    outgoing:
+      captured: true
+      cue_beat: 197.184768
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 195.392895
+      loop_start_beat: 195.392895
+      playing: true
+      position_beat: 195.392895
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.022268
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 8
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 130.841055
+  timeline:
+    -
+      at_beat: 12.60733415552244
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.328342
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.856726
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 25.397834
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 27.430222991431854
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 30.342015327474808
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 31.66395
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 43.66537
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 80.648272
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 89.644751
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 94.0613
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.99
+    -
+      at_beat: 99.627148
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 112.923692
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

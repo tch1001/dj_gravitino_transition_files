@@ -1,0 +1,222 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 406.4663078125
+      duration_seconds: 220.71
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:06ff5ca314ff1ae517ff18e722ff21de16ff28d724ff10ef53ffd629557fda2534ff6e915fbad02f5dbcc23d31ff946b49ff8a755dffc83745ff6f903affb04f4dffab54558eb54a46ffa35c16ff6b943292b24d5db8d926575ddf2027ff5fa05f78cc335fafc43b38ff837c26ff10ef5effc9363fdbb34c3cff9d624dff867915ff0af54ec8c93652ffbf4045ff8e715dffcb3463ff976841ff78873cff708f5aff9f6019ff11ee48ff758a57ff7e814dc0bc4350ffa95626ff9d621690629d17a0679856ffb24d48ff857a56ffbb445a92cd3247ffa45b45ff986757ffb6494cff7c8344ffa7584082bf4040f1a85754a9d62936ff609f1d60a15e16ff34cb"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8259316c7e4654e4"
+      meter: "4/4"
+      native_bpm: 110.5
+      reference_downbeat_seconds: 4.908866811518525
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Bruno Mars - Grenade (Official Music Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 519.7433504545445
+      duration_seconds: 243.65
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff679815ff2fd01aff67982cff0ef13dffcb343fffc9364affb24d53ff8e7143ffac5347ff897642ffa85742ffaf5044ff9e6142f3a25d43ffa65942ffae5132ff19e631ff0ff039ff2ed12bff34cb4cff877851ff847b4cffa75840ff8b7447ff936c48ffb54a4bffa45b3dff9b6435ff52ad33ff54ab26ffae512aff926d3fff20df32ff2cd333ff3dc231ff37c856ff956a4fff8e7151ff936c53ff926d55ffa15e51ff946b49ff9e614eff8f704dff8a7538ff946b33ff817e39ff45ba2dff2fd032ff2cd32cff36c92dff33cc4dff8f7045ff897646ffa15e3eff857a48ff807f44ff758a5aff9c6350ff8a755affb94653ffb14e55ffb8474bffac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:4f87e1279eb70a57"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 1.716233255202786
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - S&M (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "3901b69b-5aad-41ce-a16f-88d5bd40be9c"
+metadata:
+  created_at: "2026-09-17T16:03:27.638Z"
+  name: "s&m -> grenade"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 378.440229
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 75.622362
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0.048691
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 142.715546
+      loop_start_beat: 142.715546
+      playing: false
+      position_beat: 142.715546
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.086514
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 378.440229
+      loop_start_beat: 378.440229
+      playing: true
+      position_beat: 378.440229
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9379099999999999
+  labels: []
+  loops: []
+  master_bpm: 120.04397399999999
+  timeline:
+    -
+      at_beat: 5.5625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.487717
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.978571
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 18.972297
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.491
+    -
+      at_beat: 18.972297
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.491
+    -
+      at_beat: 19.697889999999997
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.016
+    -
+      at_beat: 36.749434
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 36.8125
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.403406
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 47.014572
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 50.343758
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.101
+    -
+      at_beat: 58.613481
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 59.424445999999996
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 63.127115999999994
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.987
+    -
+      at_beat: 69.465422
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

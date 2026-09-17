@@ -1,0 +1,243 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 519.743350454544
+      duration_seconds: 243.65
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff679815ff2fd01aff67982cff0ef13dffcb343fffc9364affb24d53ff8e7143ffac5347ff897642ffa85742ffaf5044ff9e6142f3a25d43ffa65942ffae5132ff19e631ff0ff039ff2ed12bff34cb4cff877851ff847b4cffa75840ff8b7447ff936c48ffb54a4bffa45b3dff9b6435ff52ad33ff54ab26ffae512aff926d3fff20df32ff2cd333ff3dc231ff37c856ff956a4fff8e7151ff936c53ff926d55ffa15e51ff946b49ff9e614eff8f704dff8a7538ff946b33ff817e39ff45ba2dff2fd032ff2cd32cff36c92dff33cc4dff8f7045ff897646ffa15e3eff857a48ff807f44ff758a5aff9c6350ff8a755affb94653ffb14e55ffb8474bffac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:4f87e1279eb70a57"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 1.71623325520279
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - S&M (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 483.009074494488
+      duration_seconds: 219.54
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:294da05f2075748b27ff7d8221ff708f41ffa35c3fff996647ffab5448ffa35c55ff6b944bff8c7344ff76894dff857a3cff69964bff649b37ff69964fff9a654fff5da255ff6a955eff54ab22ff22dd32ff936c44ff6b942fffa45b38ff689747ff788738ff7c835cff609f3dffb74853ff7e813fff8f7047ff7b8439ff718e39ff916e3bff758a37ff9e6147ff9b6450ff847b45ff857a3bff33cc46ff87784bff1de254ff6a9551ff768901ff21de34ffb34c46ffa25d41ffb44b40ff96695eff699642ff867956ff659a47ff50af47ff53ac2737b847335eb24d36ff847b54ff4bb45aff6d925aff53ac47ff9b644bff34cb34ff78871dff16e907ff55aa"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7820d8294bf82ade"
+      meter: "4/4"
+      native_bpm: 132.002941
+      reference_downbeat_seconds: 0.458666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Gangnam Style (강남스타일)"
+extensions: {}
+format: "gravitino.transition"
+id: "2d87197e-3e23-49a4-a5e0-51320e965ec9"
+metadata:
+  created_at: "2026-09-04T07:08:57.585Z"
+  name: "gangnam style -> s&m"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 64
+    outgoing:
+      track_beat: 309.230648
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 64
+  end_beat: 134.788243
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 64
+      loop_start_beat: 64
+      playing: false
+      position_beat: 64
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.031254
+    mixer:
+      captured: true
+      crossfader: 0.51
+    outgoing:
+      captured: true
+      cue_beat: 308.221559
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 309.230648
+      loop_start_beat: 309.230648
+      playing: true
+      position_beat: 309.230648
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 132.002941
+  timeline:
+    -
+      at_beat: 18.7714925714286
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20.686328
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 21.120471
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 33.081192
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.01
+    -
+      at_beat: 38.323051
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 43.5466
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 43.625847
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.495
+    -
+      at_beat: 50.719441
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 50.752006
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 78.5928777142857
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 81.912225
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 105.91477
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 114.752036571429
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 125.074903
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.965
+    -
+      at_beat: 125.19872
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.661
+    -
+      at_beat: 125.268723
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.383
+    -
+      at_beat: 125.340016
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.07
+    -
+      at_beat: 125.41078
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

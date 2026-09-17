@@ -1,0 +1,369 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 494.609641947565
+      duration_seconds: 235.52
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:32ff17e83dff857a38ff59a63986bb4447d0b34c31ffa35c3effc13e27ff5ea139ff39c640ff807f3dff837c46ff9f604bff857a3cff09f631ff09f62bff0cf32fff08f73dff1de233ff18e72fff2cd349ff13ec4cffb14e55ff7d8256ff7f8044ff3cc337ff5ea12dff55aa46ff669937ff6d9248ff96694cff857a3fff9f6040ffaa552fff4db23eff0ff030ff12ed2dff1ee12aff13ec4eff6a9556ffa15e57ff946b4cff66993aff86792bff2fd025ff16e938ff847b31ff798649ff936c44ff97683dff847b32ffa45b40ff42bd40ff758a4bff4ab548ff3fc052ffc83742ffb7484cffa95658ff8d7267ff1fe06eff3fc059ff21de3dff619e41ffa55a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:967cad71c259e47c"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.352
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - Only Girl (In The World) (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 504.801261716603
+      duration_seconds: 240.37
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2affbe41365cdb2444ffc63923ff9b640cff04fb0eff04fb0eff04fb0cff04fb40ffb8473cfcc83745ffb84740ffb74827ff7e812cffc23d3b9ce9165babde214dffcb345d5be11e5c82e619666fe41b19ff0bf46695e31c6669e11e579fda251cff0af545eec53a23ff8f702cffb34c3cffc93655ffd32c59ebd82762abda2528ff08f76783e31c5f87dc234dffd62940ffd82724ff9b641dff0df21bff1ee11aff2cd31cff639c27ff9d6231ffc03f2fff99666469e61958ffde214cffd52a3cffb54a10ff08f752c8e01f5ba5e11e638be41b61a5e01f5b7bde215dadde215ce3db245ce2da2509ff02fd373ee9166631ea15651be6195523ed124affd827"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:841773cb9d4d177a"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.437333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull - Hotel Room Service (Official Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "febcddbf-c91b-4b51-99df-b7aa82ae8308"
+metadata:
+  created_at: "2026-09-04T07:58:07.944Z"
+  name: "hotel room service -> only girl"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 346.72796
+  cues:
+    -
+      color: "#9a72e8"
+      endpoint: "incoming"
+      id: "incoming-cue-7"
+      label: "CUE 7"
+      pairing_group: "pad-7"
+      preferred_input:
+        bank: "custom"
+        pad: 7
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 114.497743
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.5
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 346.72796
+      loop_start_beat: 346.72796
+      playing: true
+      position_beat: 346.72796
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 126.004494
+  timeline:
+    -
+      at_beat: 5.264188
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-7"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_7"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.145855
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.58267
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-7"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_7"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.630886
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.014
+    -
+      at_beat: 13.832493
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.03
+    -
+      at_beat: 15.71416
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 31.439521
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.025
+    -
+      at_beat: 32.290752
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.124
+    -
+      at_beat: 32.817171
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.153
+    -
+      at_beat: 35.068451
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.189
+    -
+      at_beat: 35.684473
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.336
+    -
+      at_beat: 35.87488
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.44
+    -
+      at_beat: 36.535703
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.898
+    -
+      at_beat: 36.647707
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.947
+    -
+      at_beat: 36.882916
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 52.13786
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 52.742681
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 53.145896
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.025
+    -
+      at_beat: 54.221134
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.425
+    -
+      at_beat: 57.693258
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.16
+    -
+      at_beat: 59.619727
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.207
+    -
+      at_beat: 61.736602
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.381
+    -
+      at_beat: 61.94941
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.347
+    -
+      at_beat: 64.738309
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.345
+    -
+      at_beat: 64.839113
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.25
+    -
+      at_beat: 65.992754
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.247
+    -
+      at_beat: 67.952824
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.433
+    -
+      at_beat: 68.064828
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.127
+    -
+      at_beat: 69.565681
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.101
+    -
+      at_beat: 75.065077
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 75.13228
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 94.374566
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.99
+    -
+      at_beat: 94.844983
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.935
+    -
+      at_beat: 95.696213
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 100.859598
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.966
+    -
+      at_beat: 101.330014
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.859
+    -
+      at_beat: 102.998874
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.304
+    -
+      at_beat: 105.026146
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 109.61831
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,213 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 493.144439715908
+      duration_seconds: 231.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:23ff20df26ff788722ff33cc52ff817e4fff76893eff2fd054ff728d51ff758a41ff24db43ff10ef23ff56a93eff12ed36ff13ec41ff13ec43ff0ff043ff53ac31ff2cd34eff38c73fff23dc32ff15ea12ff09f630cc39c620ed28d71aff2fd032ff19e65cdc2ad542ff10ef44ff19e644ff1ee14fff629d60ff966950ff669950ff669950ff3dc22aff4ab549ff96694cff906f40ff1ee13fff33cc3fff24db46ff16e92fff41be3aff28d745ff2fd03fff22dd40ff3ac542ff17e83cff14eb2cff17e833ff23dc52dd47b849ff19e642ff12ed47ff20df27ff21de4bff7d8258ff88775cff817e4eff2dd254ff649b53ff5fa05bff9b644fff0cf31251d52a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:0e8a222acd538bd8"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.117333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - Waiting For Love (Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 494.609641947565
+      duration_seconds: 235.52
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:32ff17e83dff857a38ff59a63986bb4447d0b34c31ffa35c3effc13e27ff5ea139ff39c640ff807f3dff837c46ff9f604bff857a3cff09f631ff09f62bff0cf32fff08f73dff1de233ff18e72fff2cd349ff13ec4cffb14e55ff7d8256ff7f8044ff3cc337ff5ea12dff55aa46ff669937ff6d9248ff96694cff857a3fff9f6040ffaa552fff4db23eff0ff030ff12ed2dff1ee12aff13ec4eff6a9556ffa15e57ff946b4cff66993aff86792bff2fd025ff16e938ff847b31ff798649ff936c44ff97683dff847b32ffa45b40ff42bd40ff758a4bff4ab548ff3fc052ffc83742ffb7484cffa95658ff8d7267ff1fe06eff3fc059ff21de3dff619e41ffa55a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:967cad71c259e47c"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.352
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - Only Girl (In The World) (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "17d98028-baff-4d98-8b9c-6b00f1df154e"
+metadata:
+  created_at: "2026-09-04T08:08:22.858Z"
+  name: "only girl -> waiting for love"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 417.481701
+  cues:
+    -
+      color: "#e4cb58"
+      endpoint: "incoming"
+      id: "incoming-cue-3"
+      label: "CUE 3"
+      pairing_group: "pad-3"
+      preferred_input:
+        bank: "custom"
+        pad: 3
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 79.081115
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.5
+    outgoing:
+      captured: true
+      cue_beat: 412.266559
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 417.481701
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.015959
+  labels: []
+  loops: []
+  master_bpm: 128.015398
+  timeline:
+    -
+      at_beat: 2.520263671875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-3"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_3"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.949369
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.359949
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-3"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_3"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.307793
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.009
+    -
+      at_beat: 25.595412
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 30.236768
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 30.587153
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.009
+    -
+      at_beat: 49.772388
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 53.743717
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 59.80037
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 60.651723
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.478
+    -
+      at_beat: 65.47561
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 66.091443
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

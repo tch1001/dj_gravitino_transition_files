@@ -1,0 +1,522 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 312.161970672348
+      duration_seconds: 195.14
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff14eb1eff0cf337ff0ff026ff19e622ff44bb36ff6f903fff16e953ff867974ff5ea12fff11ee2eff659a58ff11ee51ff728d75ff5fa04bff23dc31ff5fa051ff07f85aff827d5fff6d923aff18e733ff59a64aff2dd254ff98673dff0ff03aff19e62cff669955ff0ef155ff78876aff5ca34aff0cf32cff718e50ff17e826ff728d44ff2fd06dff6f9076ff4eb13aff1be41eff5ba428ff1ae526ff1ae52eff11ee44ff20df22ffb34c34ff21de27ff21de3fff23dc54ff3bc432ff5ba443ff2ed15bff6b9448ff11ee2eff2dd230ff5ca34bff21de53ff837c73ff5ba433ff3ac526ff916e44ff20df50ff9b642aff0cf332ff3ec12aff817e1fff45ba"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:053db017dcd2a705"
+      meter: "4/4"
+      native_bpm: 95.980682
+      reference_downbeat_seconds: 0.245333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Gasolina - Daddy yankee"
+  outgoing:
+    assumptions:
+      duration_beats: 359.677118055556
+      duration_seconds: 215.81
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff56a929ff2bd415ff29d62dff31ce38ff10ef02ff02fd4e78d92649fdd52a53ff827d4affc23d4dbacb3445ff79864dffb74849ffd72840ff96693dffa6594cffb14e20ff27d821ff37c82bff36c916ff0ff022ff2cd326ff02fd47ffbf4054ff847b4cefdd224bffce3149ff817e56f3ce3148ffc03f4bffbd4253a5ca354fb1d8274bffc9363dffad521eff23dc31ff09f624ff09f638ff13ec37ff02fd39ff06f94777dc2343d2d02f46ff7d823bffb04f4affd7284bff7d8246f5b8474cffc43b4effca3548ffbe414affc33c52d5e11e48ffd32c4c30d42b4effd32c4affc13e4fffc23d51d1e7184d36ea154affbd4252ffe41b4affd62944ffca35"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:73ef738ccfce58bd"
+      meter: "4/4"
+      native_bpm: 100
+      reference_downbeat_seconds: 1.397333333333
+    identity:
+      artists:
+        - "DJSnakeVEVO"
+      identifiers:
+        providers: {}
+      title: "DJ Snake, Lil Jon - Turn Down for What (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "f54b5b92-9987-44f8-af9a-9ee6793fe3a4"
+metadata:
+  created_at: "2026-09-06T17:44:40.123Z"
+  name: "turn down for what -> gasolina"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 207.040243
+  cues: []
+  end_beat: 85.944809
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.041782
+    outgoing:
+      captured: true
+      cue_beat: 202.816667
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 222.25
+      loop_start_beat: 222
+      playing: true
+      position_beat: 207.040243
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 223.42
+      endpoint: "outgoing"
+      id: "outgoing-loop-8"
+      label: "L8"
+      pairing_group: "pad-8"
+      preferred_input:
+        bank: "custom"
+        pad: 8
+      purpose: "saved-loop"
+      start_track_beat: 222.42
+    -
+      color: "#e8a13a"
+      end_track_beat: 16
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 100
+  timeline:
+    -
+      at_beat: 3.342686
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.689318
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.975994
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 10.296007
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_8"
+        pad_mode: "sampler"
+      loop_id: "outgoing-loop-8"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 19.061397
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.254
+    -
+      at_beat: 19.114099
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.872
+    -
+      at_beat: 19.16741
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 21.92903
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 35.163846
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 38.232028
+      control: "deck.loop_double"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 39.138254
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 42.197117
+      control: "deck.loop_double"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 42.94372
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 46.143681
+      control: "deck.loop_double"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 47.01035
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 50.96376
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 54.980795
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.981
+    -
+      at_beat: 55.036477
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.965
+    -
+      at_beat: 55.036572
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.471
+    -
+      at_beat: 55.145629
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.444
+    -
+      at_beat: 55.160432
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 56.951228
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.985
+    -
+      at_beat: 57.506956
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.888
+    -
+      at_beat: 57.834405
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.836
+    -
+      at_beat: 58.186943
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.715
+    -
+      at_beat: 58.96077
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.662
+    -
+      at_beat: 59.367098
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.56
+    -
+      at_beat: 60.472292
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.55
+    -
+      at_beat: 60.744556
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.51
+    -
+      at_beat: 61.218084
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.478
+    -
+      at_beat: 62.571302
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.066
+    -
+      at_beat: 62.855434
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 63.306091
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 76.82529
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.038
+    -
+      at_beat: 76.931618
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.168
+    -
+      at_beat: 76.988686
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.258
+    -
+      at_beat: 77.098614
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.526
+    -
+      at_beat: 77.206856
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.732
+    -
+      at_beat: 77.331531
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.905
+    -
+      at_beat: 77.383376
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 80.278474
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.943
+    -
+      at_beat: 80.438257
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.716
+    -
+      at_beat: 80.491719
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.607
+    -
+      at_beat: 80.544981
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.434
+    -
+      at_beat: 80.652044
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.006
+    -
+      at_beat: 81.22498
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.027
+    -
+      at_beat: 81.335977
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.086
+    -
+      at_beat: 81.732592
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.128
+    -
+      at_beat: 81.784828
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.197
+    -
+      at_beat: 81.838227
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.331
+    -
+      at_beat: 81.891484
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.508
+    -
+      at_beat: 81.998157
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.791
+    -
+      at_beat: 82.052163
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.866
+    -
+      at_beat: 82.525051
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.972
+    -
+      at_beat: 82.631737
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.975
+    -
+      at_beat: 82.738373
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.936
+    -
+      at_beat: 82.791618
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.862
+    -
+      at_beat: 82.848431
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.742
+    -
+      at_beat: 82.899087
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.555
+    -
+      at_beat: 82.951609
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.315
+    -
+      at_beat: 83.004785
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.044
+    -
+      at_beat: 83.058159
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

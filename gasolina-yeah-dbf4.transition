@@ -1,0 +1,307 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 437.760020833333
+      duration_seconds: 250.15
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3cffac5345ffac5340ff86794cffb64951cad12e24ff2ad550ffc13e4fffbd422aff20df50ffa25d42ff3bc447ff07f84aff36c927ff0df25cff97681fff0df257ffb64942ff9b642aff04fb45ffac534eff9c634eff857a23ff2cd352fcc33c4effc33c2bff0ef14cffbb4445ffc63933ff0af534ff5ea12cff0cf356ffd32c24ff659a51ffcf3059ff986724ff08f73affb74845ff708f48ffa45b1cff0df252ffb34c5affa7583dff0cf35df6b24d4effa65933ff12ed4cffa25d46ff43bc21ff08f73bff37c839ff906f53ffcf301dff887750ffd42b45ff9a6510ff03fc43ff77883fff758a55ffaf502dffc83752f6c9364cffcb341cff0ff049ffc03f"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:85813df35c251e6b"
+      meter: "4/4"
+      native_bpm: 105
+      reference_downbeat_seconds: 1.59677028136322
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Usher feat. Lil Jon, Ludacris - Yeah! (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 312.161970672348
+      duration_seconds: 195.14
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff14eb1eff0cf337ff0ff026ff19e622ff44bb36ff6f903fff16e953ff867974ff5ea12fff11ee2eff659a58ff11ee51ff728d75ff5fa04bff23dc31ff5fa051ff07f85aff827d5fff6d923aff18e733ff59a64aff2dd254ff98673dff0ff03aff19e62cff669955ff0ef155ff78876aff5ca34aff0cf32cff718e50ff17e826ff728d44ff2fd06dff6f9076ff4eb13aff1be41eff5ba428ff1ae526ff1ae52eff11ee44ff20df22ffb34c34ff21de27ff21de3fff23dc54ff3bc432ff5ba443ff2ed15bff6b9448ff11ee2eff2dd230ff5ca34bff21de53ff837c73ff5ba433ff3ac526ff916e44ff20df50ff9b642aff0cf332ff3ec12aff817e1fff45ba"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:053db017dcd2a705"
+      meter: "4/4"
+      native_bpm: 95.980682
+      reference_downbeat_seconds: 0.245333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Gasolina - Daddy yankee"
+extensions: {}
+format: "gravitino.transition"
+id: "a233a56d-a7e6-4695-9db1-837b22259a0d"
+metadata:
+  created_at: "2026-09-06T18:04:01.178Z"
+  name: "gasolina -> yeah"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 106.746991
+  cues: []
+  end_beat: 59.862194
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 317.6725
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 107.392927
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 106.746991
+      loop_start_beat: 106.746991
+      playing: true
+      position_beat: 106.746991
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.09339
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 16
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 104.944347
+  timeline:
+    -
+      at_beat: 5.289516
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.11495
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.479376
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 21.282488
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.083
+    -
+      at_beat: 21.334039
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.44
+    -
+      at_beat: 21.404725
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 27.528365
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.448
+    -
+      at_beat: 27.664329
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.295
+    -
+      at_beat: 28.288631
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.191
+    -
+      at_beat: 29.453891
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.176
+    -
+      at_beat: 29.598976
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.147
+    -
+      at_beat: 30.774943
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.079
+    -
+      at_beat: 31.147498
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 36.933526
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.464
+    -
+      at_beat: 37.166844
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.372
+    -
+      at_beat: 38.663445
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.322
+    -
+      at_beat: 39.461975
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.294
+    -
+      at_beat: 41.870075
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.237
+    -
+      at_beat: 43.871403
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 47.883592
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.106
+    -
+      at_beat: 48.127575
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.005
+    -
+      at_beat: 48.181136
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 52.378891
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.921
+    -
+      at_beat: 52.597018
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.597
+    -
+      at_beat: 52.665742
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.473
+    -
+      at_beat: 52.724381
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.333
+    -
+      at_beat: 52.775703
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.167
+    -
+      at_beat: 52.837376
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 55.943606
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

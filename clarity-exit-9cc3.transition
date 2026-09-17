@@ -1,0 +1,173 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 572.38498007
+      duration_seconds: 264.36
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c456f596daeee196"
+      meter: "4/4"
+      native_bpm: 129.910345
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "LMFAOVEVO"
+      identifiers:
+        providers: {}
+      title: "LMFAO ft. Lauren Bennett, GoonRock - Party Rock Anthem (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 579.585499588333
+      duration_seconds: 271.7
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a92364ffce5caa22"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "Zedd"
+      identifiers:
+        providers: {}
+      title: "Zedd - Clarity (feat. Foxes)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-878a93b34c869a9aaff7c8977395c48e"
+format: "gravitino.transition"
+id: "ca899d17-b1ba-4f59-8246-1487f6c0ee5b"
+metadata:
+  created_at: "2026-08-18"
+  name: "clarity exit"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 448.32889
+  cues: []
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: false
+      position_beat: 23.984104
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.985049
+      trim: 0.5
+    mixer:
+      captured: true
+      crossfader: 0.472
+    outgoing:
+      captured: true
+      cue_beat: 458.958
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 466.588
+      loop_start_beat: 466.588
+      playing: true
+      position_beat: 448.32889
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.999993
+      trim: 0.5
+  labels: []
+  loops: []
+  master_bpm: 127.99
+  timeline:
+    -
+      at_beat: 31.675099
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 57.746823
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.011
+    -
+      at_beat: 61.436445
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 65.870621
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 69.620059
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.488
+    -
+      at_beat: 70.032016
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 82.796268
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 89.622358
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 94.65850325796053
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.9346039870689655
+    -
+      at_beat: 99.14424836665602
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

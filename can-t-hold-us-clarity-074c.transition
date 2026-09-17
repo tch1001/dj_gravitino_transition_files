@@ -1,0 +1,193 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 579.586922121211
+      duration_seconds: 271.7
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0dc42bd411a543bc25ff2bd41ada46b923ff2ed118ff33cc2dff3ac523ff33cc2ffe3bc438ff47b837ff36c946ff1ce340ff31ce3bff2cd33fff2fd047ff2cd35dff996660ff8d725fff877856ff7c8352ff807f63ffb44b63ffb34c35bcd52a55ff36c95fffa65969ff7e8146e1df200cff44bb32ff1fe021ff3ec12eff2ad51cff3bc42aff33cc1aff46b931ff15ea4fff46b946ff26d943ff2cd347ff20df53ff11ee4eff21de49ff20df4aff2ed12fff55aa32ff32cd2aff35ca37ff55aa3aff59a63cff46b92fff04fb64ffab5454ff3cc354ff50af60ff8e7160ff99665fff718e5cff887764ff41be5eff50af65ff25da6fff728d08ff31ce16ff35ca"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a92364ffce5caa22"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 1.9823498828041788
+    identity:
+      artists:
+        - "Zedd"
+      identifiers:
+        providers: {}
+      title: "Zedd - Clarity (feat. Foxes)"
+  outgoing:
+    assumptions:
+      duration_beats: 625.6056560493364
+      duration_seconds: 257.09000000000003
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff41be0fff4ab524ff26d923ff30cf39ff15ea35ff3ac54aff8f7047ff6e9146ff5fa044ff6f9052ff7c834aff768930ff2cd33bff817e43ff6f9047ff6d925aff936c4bff966942ffa75845ff55aa45ff9e613cffb44b23ff15ea29ff15ea34ff1ae546ffa65941ff4fb051ff6a9550ff996634ff54ab26ff33cc52ff5aa534ff35ca50ff9d624effac5339ff7e814fff54ab41ff15ea49ff738c49ff976858ff8e7154ff8e7150ff4ab547ff88772fff0cf329ff08f738ff5ea138ff28d738ff3cc339ff2dd246ff0ef148ff906f3aff7a8535ff28d747ff9d624cff827d30ff669955a8b84754ffa9564fff728d3aff11ee48ff946b46ff5fa053ff6798"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:bdb8ce4cb8f7148b"
+      meter: "4/4"
+      native_bpm: 146.003896
+      reference_downbeat_seconds: 0.11138693192892728
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Can't Hold Us - Macklemore & Ryan Lewis (feat. Ray Dalton)"
+extensions: {}
+format: "gravitino.transition"
+id: "3cb70115-0803-49c2-9867-def47c657377"
+metadata:
+  created_at: "2026-09-16T17:03:49.929Z"
+  name: "can't hold us -> clarity"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 489.607666
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 76.985855
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0799999999999998
+    outgoing:
+      captured: true
+      cue_beat: 482.080962
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 144
+      loop_start_beat: 144
+      playing: true
+      position_beat: 489.607666
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9462499999999999
+  labels: []
+  loops: []
+  master_bpm: 138.156187
+  timeline:
+    -
+      at_beat: 6.363466382026672
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.442042
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.945551999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.915591
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.009000000000000001
+    -
+      at_beat: 30.497164
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 45.499427
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 53.42520773410797
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.202805999999995
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.982
+    -
+      at_beat: 69.90998983383179
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 70.539501
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

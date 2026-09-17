@@ -1,0 +1,237 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 504.801261716603
+      duration_seconds: 240.37
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2affbe41365cdb2444ffc63923ff9b640cff04fb0eff04fb0eff04fb0cff04fb40ffb8473cfcc83745ffb84740ffb74827ff7e812cffc23d3b9ce9165babde214dffcb345d5be11e5c82e619666fe41b19ff0bf46695e31c6669e11e579fda251cff0af545eec53a23ff8f702cffb34c3cffc93655ffd32c59ebd82762abda2528ff08f76783e31c5f87dc234dffd62940ffd82724ff9b641dff0df21bff1ee11aff2cd31cff639c27ff9d6231ffc03f2fff99666469e61958ffde214cffd52a3cffb54a10ff08f752c8e01f5ba5e11e638be41b61a5e01f5b7bde215dadde215ce3db245ce2da2509ff02fd373ee9166631ea15651be6195523ed124affd827"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:841773cb9d4d177a"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.437333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull - Hotel Room Service (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 415.500224999999
+      duration_seconds: 197.86
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0eff28d713ff25da33ffd7283fffa25d18d3dd221fff4eb120ff41be3eff6c9347ff817e40ffb44b40ffa15e31ff34cb48ff54ab3fff3cc353ff649b52ff3dc25dff55aa5aff35ca58ff6c934eff27d854ff4ab54aff23dc13ff22dd37ffb34c4aff6b9434ff8a7530ff44bb2aff679840ff5aa544ff6c9338ff42bd51ff6b943cff3fc051ff4cb33fff35ca54ff25da4dff728d62ff5ea154ff40bf4bff21de21ff19e60fff28d70dff1be433ff37c81fff8c7325ff1ee126ff2cd31dff1be43eff13ec5fff22dd61ff728d4fff56a963ff4bb454ff619e5eff29d63dff41be52ff5aa56dff41be6fff17e848ff56a94eff15ea43ff34cb5cff3ac521ff0df2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:35d0f9be0de94411"
+      meter: "4/4"
+      native_bpm: 126
+      reference_downbeat_seconds: 7.70209523809525
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "One Direction - Live While We're Young"
+extensions: {}
+format: "gravitino.transition"
+id: "6b68614d-af5d-4c15-9c31-d08704aea6f0"
+metadata:
+  created_at: "2026-09-04T14:57:38.514Z"
+  name: "live while we're young -> hotel room service"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 64
+    outgoing:
+      track_beat: 297.1272
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 64
+  end_beat: 112.857984
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 64
+      loop_start_beat: 64
+      playing: false
+      position_beat: 64
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.547
+    outgoing:
+      captured: true
+      cue_beat: 291.012
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 1
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 297.1272
+      loop_start_beat: 297.1272
+      playing: true
+      position_beat: 297.1272
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 126
+  timeline:
+    -
+      at_beat: 2.881494140625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.2192
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.7792
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 14.1232
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.01
+    -
+      at_beat: 22.3216
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 32.2
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 32.5024
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 45.4496
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 49.729265
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 56.851301
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 73.5504
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.495
+    -
+      at_beat: 79.668156
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.291
+    -
+      at_beat: 83.2832
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.259
+    -
+      at_beat: 86.7776
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 92.2656
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.271
+    -
+      at_beat: 93.67975
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.452
+    -
+      at_beat: 93.8784
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

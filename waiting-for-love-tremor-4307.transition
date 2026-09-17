@@ -1,0 +1,245 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 628.072722281167
+      duration_seconds: 294.43
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1b5abc348a7a152b"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Tremor (Sensation 2014 Anthem)"
+  outgoing:
+    assumptions:
+      duration_beats: 493.148972377
+      duration_seconds: 231.18
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:0e8a222acd538bd8"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - Waiting For Love (Lyric Video)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-09da0fac26cbb71044d91d4a16a87843"
+format: "gravitino.transition"
+id: "2ef57bf0-04e1-4e79-9988-14c5bb7a6e5b"
+metadata:
+  created_at: "2026-08-22"
+  name: "waiting for love -> tremor"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 64
+    outgoing:
+      track_beat: 111.119386
+  cues:
+    -
+      endpoint: "outgoing"
+      id: "outgoing-hotcue-4"
+      label: "HOT CUE 4"
+      preferred_input:
+        bank: "custom"
+        pad: 4
+      purpose: "legacy-hot-cue"
+      track_beat: 256
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-3"
+      label: "HOT CUE 3"
+      preferred_input:
+        bank: "custom"
+        pad: 3
+      purpose: "legacy-hot-cue"
+      track_beat: 64
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 304
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 344
+      loop_start_beat: 328
+      playing: false
+      position_beat: 324.136501
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.411
+    outgoing:
+      captured: true
+      cue_beat: 110.45376
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 111.119386
+      loop_start_beat: 111.119386
+      playing: true
+      position_beat: 111.119386
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 8.89679
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-3"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_3"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.989678
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.466812
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-3"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_3"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 36.489854976
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 39.218970624
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 40.923234304
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 42.026526
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 78.675144
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 79.820819
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 80.992647
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 208.85841
+      control: "deck.transition_cue"
+      cue_id: "outgoing-hotcue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 211.213442
+      control: "deck.play"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 211.68134
+      control: "deck.transition_cue"
+      cue_id: "outgoing-hotcue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 230.7377152
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 240.149781
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 309.047567
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.991
+    -
+      at_beat: 313.321684
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

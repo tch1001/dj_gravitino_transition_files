@@ -1,0 +1,238 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 356.402703761298
+      duration_seconds: 157.25
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0cff20df05ff15ea06ff0af506dc20df03ff14eb2dff0ff027ff1ee11fff16e919e730cf29ff1ce328ff0cf31dff12ed47ffc33c41ff7b846cffce313eff956a3cff4fb083a4d12e64ffb44b25ff837c78ffc73866ffc13e64d3c03f5affba4558ff986764ffd12e48ffaf505dff976850ffcb3437ffac537dffb24d47ff9e6142ff43bc64ffb54a5bffb9462fff23dc6dacc53a7affb6496bffc43b5efcdd2261ffd12e1fff2dd220ff1ae51fff22dd28ff21de26ff12ed21ff15ea49ffa55a40ff708f65ffc53a41ff728d36ff59a674ff966972ff916e49ff7d8279ffb7486cff8e7170ffa15e0eff19e60dff0ff001ff26d909ff17e809ff11ee04ff1de2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c9a3f924460dca02"
+      meter: "4/4"
+      native_bpm: 135.992169
+      reference_downbeat_seconds: 0.298666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Lil Nas X - Old Town Road (Official Video) ft. Billy Ray Cyrus"
+  outgoing:
+    assumptions:
+      duration_beats: 327.057790636704
+      duration_seconds: 155.74
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:44ffb14e44cec6393dffb64941ff906f37ff6d9242ff976835ff99663fff9f6037ff8a7532ff05fa46ffbe415affaf504dffc63957ff99664fffa85759ff9d624cffae5141ff56a950ffa45b41ff8e7154ff7f8037ff8b7429ff49b628ff6c9327ff4fb030ff26d931ff3ac52bff45ba32ff05fa4affbb443cff916e4effc23d38ff847b50ffc43b32ff77884eff9e613aff50af4fff76893aff619e47ff778841ff669940ff609f3bffa25d40ff7e8145ff827d44ff78874eff748b34ff7a852eff4db22cff58a731ff609f29ff708f2fff4eb133ff5fa04eff6e9132ff619e4aff52ad40ff679845ff807f55ffab5441ff55aa56ffb64945ff7d8255ffb44b"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:343e2b3196383f95"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.426666666666667
+    identity:
+      artists:
+        - "TEN Music Group"
+      identifiers:
+        providers: {}
+      title: "Icona Pop - I Love It (Feat. Charli XCX)  [Audio]"
+extensions: {}
+format: "gravitino.transition"
+id: "2885793b-d509-4ec0-ac4b-31ce3963851e"
+metadata:
+  created_at: "2026-09-04T15:25:10.242Z"
+  name: "i love it -> old town road"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 201.907249
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 138.58323
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 31.682685
+      loop_start_beat: 31.682685
+      playing: false
+      position_beat: 31.682685
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.955508
+    mixer:
+      captured: true
+      crossfader: 0.546
+    outgoing:
+      captured: true
+      cue_beat: 201.46973
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: true
+      position_beat: 201.907249
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.031644
+  labels: []
+  loops: []
+  master_bpm: 129.991842
+  timeline:
+    -
+      at_beat: 6.078706
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.039157
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.472349
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 19.810107
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.002
+    -
+      at_beat: 34.69558994275839
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.019
+    -
+      at_beat: 41.520012
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 43.215079
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.297
+    -
+      at_beat: 51.910098
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 62.124655
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 68.029417
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.002
+    -
+      at_beat: 70.44487
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.482
+    -
+      at_beat: 96.150114
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 97.472151
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 103.074736
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.986
+    -
+      at_beat: 103.143433
+      control: "deck.eq_high"
+      curve: "step"
+      target: "incoming"
+      value: 0.008
+    -
+      at_beat: 114.857777
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 117.77837
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,238 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 486.735915369318
+      duration_seconds: 229.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff1fe007ff30cf22ff2bd41bff1ee120ff1ee121ff17e835ff56a954ff1be43eff19e638ff29d630ff18e746ff26d933ff2ed133ff22dd41ff35ca4bff5ba45cff7d824dff48b766ffab5430ff37c832ff2dd224ff43bc44ff1ce337ff39c658ff20df3cff15ea3bff21de33ff17e842ff22dd33ff2ad53cff1de246ff33cc46ff3ec164ff8e7157ff758a63ffae514cff43bc67ff9c6367ff8f7057ff649b39ff3ac526ff1de218ff3ec11bff18e723ff09f624ff34cb37ff3dc22fff15ea27ff619e4bff0ef14aff21de50ff2bd451ff21de5bff10ef64ff9d6264ffa8574eff53ac6bff8a7568ff798652ff3ac556ff5ca369ff926d32ff2bd40a28d52a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:baf629ac6fcbc670"
+      meter: "4/4"
+      native_bpm: 126.990909
+      reference_downbeat_seconds: 0.362666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "AFROJACK - Ten Feet Tall (Lyric Video) ft. Wrabel"
+  outgoing:
+    assumptions:
+      duration_beats: 432.120551884469
+      duration_seconds: 202.57
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:29ff1ce31fff31ce1aff43bc19ff34cb0df779862cff21de21ff2ed123ff27d81cff32cd45ff0bf429ff09f623ff0df23fff3dc23cff34cb53ffa05f57ffb44b55ffba4542ff629d47ff718e47ff7b845bff9b644fff708f4fff78875fffb6495affab545de2b54a4dff97684bffb64954ffc43b3fff708f36ffa15e2dff23dc32ff0cf35cff916e53ff748b58ffb34c60ffb24d5dffb14e4aff847b4eff976853ffb34c4cff6f9043ff679820ff1ce32eff21de18ff2ad520ff37c830ff1be42bff26d932ff17e842ff38c74dff28d74fff9b644fff6e914dff728d40ff649b5affab5460ffa55a55ff926d52ffb34c5affb74859ffb24d0cf147b815ff36c9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b1c0bb3b4d030db6"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.192
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Feel So Close (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "5f628428-4ed6-440a-8d67-c231ef5f011e"
+metadata:
+  created_at: "2026-09-07T07:53:24.154Z"
+  name: "feel so close -> ten feet tall"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 127.358579
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 120.187666
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008487
+    outgoing:
+      captured: true
+      cue_beat: 122.60305
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 144
+      loop_start_beat: 128
+      playing: true
+      position_beat: 127.358579
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 144
+      endpoint: "outgoing"
+      id: "outgoing-loop-7"
+      label: "L7"
+      pairing_group: "pad-7"
+      preferred_input:
+        bank: "custom"
+        pad: 7
+      purpose: "saved-loop"
+      start_track_beat: 128
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 11.076249
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_7"
+        pad_mode: "sampler"
+      loop_id: "outgoing-loop-7"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16.63249298820753
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18.407937
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18.919901
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 30.952495
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 31.140741
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 44.438444
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 47.312196
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 51.947244
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.495
+    -
+      at_beat: 63.142182
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 77.298093
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 94.43420338340931
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 98.433542
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 109.765004
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 112.461345
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

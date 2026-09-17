@@ -1,0 +1,199 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 454.7505208333325
+      duration_seconds: 218.28
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:32ff12ed28ff27d82aff23dc24ff21de27ff06f94effac534be7a95653b4d42b4dffc6394e84b04f3effab544bdec33c3eff986720ff758a49c5aa555397ca354effb64953b9d22d28ff619e3bffa45b48ffb34c34ff906f1fff0ef14affb6494cffca3551ffcf304bffc13e4af5b34c38ff86792dff43bc23ff18e734ff718e4bffc43b50e9c03f4dffcc3352ffce312bff05fa45ff9b6430ff48b730ff609f48ffa7584bffc6394effc13e4effcb344effb7484bff9b642cff20df35ff22dd3fffb64940ffa05f4effc6394effbf4043ffa45b4affab5449ffac5326ff0cf33eff87783eff956a3dffaf504dffcb344fffbe414affa05f47ffb04f1dff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:218329c1da45207d"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 1.0901906027064887
+    identity:
+      artists:
+        - "Far East Movement"
+      identifiers:
+        providers: {}
+      title: "\"LIKE A G6\" (OFFICIAL)  FAR EAST MOVEMENT (FM)  feat The Cataracs & Dev"
+  outgoing:
+    assumptions:
+      duration_beats: 703.2213306565646
+      duration_seconds: 332.25
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0bff2fd008ff48b70eff26d931ff609f35ff857a51ffc03f2cff689725b9936c5badcc335264e9164bfae21d5affb54a3fffbc4347bdd62952f0c03f3affb04f2b82e01f47ffd9262aff887755ffdb244dced12e54e6cb3443ff936c49ffc63946cdb34c32ffd9264b89e91658ffd02f57ffda2525ffaf5051ffc23d56ffc7382aff59a64bffab5455ffd42b4fffd82737ff9e6130ff0ff03affb24d47f9bf4035ff778835bba05f4a91d32c3aff817e57bac93650ffd82754ffbd425bffc53a39e6d02f559ad9262eff986718ff1ce335ff847b31ff619e22ffca354dffdd2252ffc33c5de3d12e4cffb44b49ffab5451ffd42b3aff946b46b3e31c145aec13"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:122736e86e172520"
+      meter: "4/4"
+      native_bpm: 126.99090899999999
+      reference_downbeat_seconds: 0.08533333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Migos ft. Lil Uzi Vert - Bad and Boujee (Clean w_ Lyrics)"
+extensions: {}
+format: "gravitino.transition"
+id: "7a0c1a85-adc0-44b1-a53d-0c88260b684d"
+metadata:
+  created_at: "2026-09-17T20:28:27.421Z"
+  name: "bad and boujee -> like a g6"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 214.807918
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 41.493129479413675
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.016057
+    outgoing:
+      captured: true
+      cue_beat: 32.084661
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 140.125
+      loop_start_beat: 140
+      playing: true
+      position_beat: 214.807918
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 126.99090899999999
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 7.403901573343126
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 8.473811114232937
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.1893310546875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.142199999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.972014999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.228001262966153
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 25.731144967447843
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 26.47933671045014
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 40.38691237212882
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 41.493129479413675
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

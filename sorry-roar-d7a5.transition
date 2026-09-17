@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 335.647809260752
+      duration_seconds: 223.70000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff06f907ff29d633ffbc4333bdb84734ff847b33ffb04f3bf7b34c36ff8c7333ff9a6537ffaf5037ffa95631ffb34c33ffb24d38ff926d37ff8b744bff86795aff8c734eff76894fff7f804cff807f48ff738c44ff7d824aff807f1dff20df31ffbc4335e8a85735ffa6593cff9e613fff8e7134ffb24d3cffa05f34ffac5336ff9a6550ff827d41ff8c734bff897650ff857a51ff906f61ff96694cff5da259ff7a854affa55a55ff5da254ff708f47ff89763fff12ed16ff2ed113ff30cf23ff52ad36ff49b628ff06f958ff7a8546ff8a755dff8d7255ff6a9551ff659a5aff5ea158ff5aa555ff6c9361ff8d7251ff7c836dff79864fff778810ff24db"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:08499ca3d4c72067"
+      meter: "4/4"
+      native_bpm: 90.025806
+      reference_downbeat_seconds: 0.49066666666666664
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Roar (Lyrics)"
+  outgoing:
+    assumptions:
+      duration_beats: 331.2982369419636
+      duration_seconds: 198.79
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2eff1fe013ff1ce330ff1ce34cff9d624226b74846d0ae5139ff708f138bdf2034ff986750ff936c43ffac5351ff996628ff41be2dff5ca32dff87783bff5ba452ff6d924fff807f48ff44bb54ff897652ff916e38ff45ba54ff877851c3bd4251e7b54a56dac03f41ff4bb442ff857a32ff20df3fff6a9545ffa35c41ff837c29ff32cd38ff8d7238ff42bd2b4c8c732fff21de1eff2dd220ff14eb3fff748b55ff7c8342ff9d6238ff4eb14cff89764eff9c6345ff88774cffba453cff6a9545ff708f4fff758a4effac5344ff89765affb44b51ff877851ffba454eff8e7146ff49b654ff5ca356ff9c6354ff877857ff9a6528f43cc319ff21de1dff28d7"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:db8e47267d0f147b"
+      meter: "4/4"
+      native_bpm: 99.99642899999999
+      reference_downbeat_seconds: 0.24533333333333332
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Sorry (Lyric Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "d67ef5fe-06d7-4343-a9b2-7b488fef1ca6"
+metadata:
+  created_at: "2026-09-17T15:46:12.395Z"
+  name: "sorry -> roar"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 8
+    outgoing:
+      track_beat: 246.534462
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 8
+  end_beat: 39.017773
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 8
+      loop_start_beat: 8
+      playing: false
+      position_beat: 8
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.067157
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: true
+      position_beat: 246.534462
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.960117
+  labels: []
+  loops: []
+  master_bpm: 96.008271
+  timeline:
+    -
+      at_beat: 1.46162109375
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 2.358494
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 2.76504
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 11.53806
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.026000000000000002
+    -
+      at_beat: 12.067172999999999
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 20.797915
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 23.306528999999998
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 24.732917684452364
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 36.104654908334346
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

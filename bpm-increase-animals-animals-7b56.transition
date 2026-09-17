@@ -1,0 +1,226 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 399.280573323863
+      duration_seconds: 187.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0aff12ed1dff68970eff11ee17ff36c918ff33cc1aff2ad55b56cc33556cc6395049cc335466d62945ffac5355c4d52a1b3be31c07ff16e90fff4ab522eb837c1bff1de221ff6c931cff53ac4cffa95628ff4ab53eff946b45ff847b3eff9b6448ff926d3fff847b27ff54ab34ff50af31ff43bc19ff2cd3672fd52a625bc639653ad32c6253cb3427ff34cb65cbd42b63ffc13e60f9cc3364cdd02f66bbd6294db7d82716ff46b94dff8c734eff936c51ffa35c31ff51ae4aff976840ffb34c35ff55aa35ff55aa2eff47b815ff23dc6064c6396639d42b60edc53a634ecb3465add32c62ffc13e64a8ce3165b7d12e65bbd42b62a1d22d1fff40bf2819ef10"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7a1e5b9384054b12"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.064
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Martin Garrix - Animals (Official Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 362.943376736111
+      duration_seconds: 229.23
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff1ce312ff13ec1aff0ef11cff0af514ff16e91bff0ff03dffb94634f5cb3439a49a6541ffb04f3cffa25d49ffb24d39ffb6493fffa15e25ff758a3affa25d40ffbc434bffa45b4effa55a40ffaf503effa55a42ff9d6247ffae5134f3bb4430ff8a7541f2a7583dffab543263cc3336d5ac5346ffb64943ffa95639ff9e6143ffab5443ffb24d19ff0bf454ffae514fff936c4fff996657ffa85740ff966941ff9d623cff9a6553ffb54a59ff9c634bff837c49ffaa553233ec134487b04f4a5dc33c3e92c33c3effc03f314ee51a50ff906f56ffaa5559ff996651ffae5144ff629d54ffa55a52ffac535dffaa5556ffa75851ff966951ffab545cffaa55"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8faa1fd42fdcaa5b"
+      meter: "4/4"
+      native_bpm: 95
+      reference_downbeat_seconds: 1.29078618421053
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Maroon 5 - Animals (Lyrics)"
+extensions: {}
+format: "gravitino.transition"
+id: "eb29dd10-3fdb-43a6-b4a2-78433404e280"
+metadata:
+  created_at: "2026-09-07T06:10:56.133Z"
+  name: "bpm increase animals -> animals"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 128
+    outgoing:
+      track_beat: 174.834865
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 128
+  end_beat: 71.107247
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 128
+      loop_start_beat: 128
+      playing: false
+      position_beat: 128
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 163.529271
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 202
+      loop_start_beat: 200
+      playing: true
+      position_beat: 174.834865
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.346905
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 202
+      endpoint: "outgoing"
+      id: "outgoing-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 200
+  master_bpm: 127.955988
+  timeline:
+    -
+      at_beat: 1.1632568359375
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 2.303673
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 2.739938
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12.485677
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "outgoing-loop-1"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 28.702063
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 41.237083
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 49.269874
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 53.64259
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.44
+    -
+      at_beat: 55.824399
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.150667
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.887
+    -
+      at_beat: 60.94057952392837
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 62.138324
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

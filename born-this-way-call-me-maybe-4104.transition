@@ -1,0 +1,207 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 389.336528581559
+      duration_seconds: 194.7
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:07cb26d91aff33cc22ff2ed120d341be1dff2ad51fff22dd22ff3dc21aff2cd320ff31ce34ff738c2dff4bb444ff8d7235ff4db246ff659a3aff2ad53eff6a953cff29d63cff8b7427ff609f3eff609f0eff09f61eff3dc21fff3ac518ff2cd323ff23dc22ff1de227ff38c719ff2fd021ff30cf34ff748b2eff49b644ff8d726cffc6396affbd426fff966969ddc53a6dffac536cffaf506affbd426aebbf406dffa7586bffc03f6cffab546affb8476fff9f6043ff20df1aff27d815ff25da27ff15ea2eff22dd38ff0af569b9c7386cffad526effab546affbd426ac1c13e67ffa6596bffc03f6cffa8576affb54a70ff9c6327ff0ef10cc82bd4097e55aa"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8f3290c41fc39468"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 0.277333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Carly Rae Jepsen _Call Me Maybe_ (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 538.081826339666
+      duration_seconds: 260.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff32cd17ff28d717ff13ec21ff20df26ff30cf2aff4db259ffb94627ff5da212ff8d721cff35ca23ff7e814aff9e6129ffa35c59ffae5147ff5fa051ff8b7451ffa55a44ff926d4dff5da260ff996668ffa7584fff817e28ff2dd22cff4eb153ffd42b2dff926d59ffc63975ccca3546ff916e59ff8b743dffa05f31ff609f5fff956a66ffc53a4aff966949ff55aa53ff7e8157ff9f6061ffa05f28ff4ab50fffaa5531ff1fe032ff827d46ffa05f38ff6b9456ff7e815effab5443ff7c835affbc4356ff807f5aff916e62ff976867ff9d624eff788759ff41be55ff6f9050ff798638ff09f63fff09f626ff07f82eff0bf407ff15ea07ff17e805ff1ce3"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:4dd12b58fa3e0f4e"
+      meter: "4/4"
+      native_bpm: 123.976374
+      reference_downbeat_seconds: 0.256
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Lady Gaga - Born This Way (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "a3435509-5f6d-4729-ad66-304e8d9a3a74"
+metadata:
+  created_at: "2026-09-04T08:33:17.998Z"
+  name: "born this way -> call me maybe"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 8
+    outgoing:
+      track_beat: 450.533847
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 8
+  end_beat: 78.462514
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 8
+      loop_start_beat: 8
+      playing: false
+      position_beat: 8
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0668369071661277
+    mixer:
+      captured: true
+      crossfader: 0.506
+    outgoing:
+      captured: true
+      cue_beat: 439.676444
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 1
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 37.919749
+      loop_start_beat: 37.919749
+      playing: true
+      position_beat: 450.533847
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.032817
+  labels: []
+  loops: []
+  master_bpm: 128.044907
+  timeline:
+    -
+      at_beat: 5.464965820312499
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.068074
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.479622
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.28731
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 17.983335
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.491
+    -
+      at_beat: 35.329005
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 43.705976
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.481
+    -
+      at_beat: 47.213539
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.302
+    -
+      at_beat: 50.751321
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 65.51376342773436
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 67.072839
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 70.271057
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

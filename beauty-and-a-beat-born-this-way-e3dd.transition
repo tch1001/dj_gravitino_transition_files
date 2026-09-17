@@ -1,0 +1,231 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 538.081826339666
+      duration_seconds: 260.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff32cd17ff28d717ff13ec21ff20df26ff30cf2aff4db259ffb94627ff5da212ff8d721cff35ca23ff7e814aff9e6129ffa35c59ffae5147ff5fa051ff8b7451ffa55a44ff926d4dff5da260ff996668ffa7584fff817e28ff2dd22cff4eb153ffd42b2dff926d59ffc63975ccca3546ff916e59ff8b743dffa05f31ff609f5fff956a66ffc53a4aff966949ff55aa53ff7e8157ff9f6061ffa05f28ff4ab50fffaa5531ff1fe032ff827d46ffa05f38ff6b9456ff7e815effab5443ff7c835affbc4356ff807f5aff916e62ff976867ff9d624eff788759ff41be55ff6f9050ff798638ff09f63fff09f626ff07f82eff0bf407ff15ea07ff17e805ff1ce3"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:4dd12b58fa3e0f4e"
+      meter: "4/4"
+      native_bpm: 123.976374
+      reference_downbeat_seconds: 0.256
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Lady Gaga - Born This Way (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 487.151043191287
+      duration_seconds: 228.37
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:19ff2cd30eff27d829ff77884cffb54a3eff748b4eff98673affa25d49ff9c6338ffa35c47ff87783eff827d40ff6e9147ff97682eff4fb03aff619e2fff609f36ff708f4fff8b7442ff629d48ffb44b46ff807f4bffc73837d8a55a4bbbbd422aff12ed41ffb54a48ff996641ffba4537ff926d49ffb14e40ff58a74bff946b3eff6a954bffa45b34ff689728ff966936ff956a32ff55aa4cff8f703dff6c9346ff7c833eff877845ff29d63dff68975cffb14e47ff649b4eff88775affae5142ff7d8236ff4bb442ff57a844ff738c4affaf503eff897647ff8e7141ff788745ff798641ff6a9546ff778844ff8c7341ffa55a49ffc43b40ffb04f4cfdc53a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2474190837da41a5"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.618666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Beauty And A Beat ft. Nicki Minaj (Official Audio) ft. Nicki Minaj"
+extensions: {}
+format: "gravitino.transition"
+id: "e56a8136-7024-4d5f-8866-370aa280d0f4"
+metadata:
+  created_at: "2026-09-04T08:27:48.011Z"
+  name: "beauty and a beat -> born this way"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 24
+    outgoing:
+      track_beat: 410.295339
+  cues:
+    -
+      color: "#7089ed"
+      endpoint: "incoming"
+      id: "incoming-cue-6"
+      label: "CUE 6"
+      pairing_group: "pad-6"
+      preferred_input:
+        bank: "custom"
+        pad: 6
+      purpose: "hot-cue"
+      track_beat: 24
+  end_beat: 83.193129
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 16.001217
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 1
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 37.919749
+      loop_start_beat: 37.919749
+      playing: false
+      position_beat: 37.919749
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.032817
+    mixer:
+      captured: true
+      crossfader: 0.494
+    outgoing:
+      captured: true
+      cue_beat: 405.419418
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 48
+      loop_start_beat: 32
+      playing: true
+      position_beat: 410.295339
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 5.746505
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-6"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.156592
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.547826
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-6"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 25.450281
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 31.576264
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.168
+    -
+      at_beat: 35.7404
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.593
+    -
+      at_beat: 38.606881
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 39.023006
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.891
+    -
+      at_beat: 40.252567
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.456
+    -
+      at_beat: 40.524766
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.908
+    -
+      at_beat: 40.653797
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.933
+    -
+      at_beat: 40.723051
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.405
+    -
+      at_beat: 41.293282
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.954
+    -
+      at_beat: 41.677882
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 46.284866
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.273
+    -
+      at_beat: 50.891373
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.204
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

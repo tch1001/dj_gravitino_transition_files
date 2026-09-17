@@ -1,0 +1,200 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 474.63
+      duration_seconds: 219.06
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2c872dbc0aaf9a2b"
+      meter: "4/4"
+      native_bpm: 130
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "JustinBieberVEVO"
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Baby ft. Ludacris"
+  outgoing:
+    assumptions:
+      duration_beats: 454.75
+      duration_seconds: 218.28
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:218329c1da45207d"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "Far East Movement"
+      identifiers:
+        providers: {}
+      title: "\"LIKE A G6\" (OFFICIAL)  FAR EAST MOVEMENT (FM)  feat The Cataracs & Dev"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-b3404ac0845af133a10d6d788911efdb"
+format: "gravitino.transition"
+id: "8c701124-b3d8-42d6-9d87-07e31bf4b0a2"
+metadata:
+  created_at: "2026-08-21"
+  name: "like a g6 -> baby"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 380
+  cues: []
+  end_beat: 88.480053
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.98502
+    mixer:
+      captured: true
+      crossfader: 0.504
+    outgoing:
+      captured: true
+      cue_beat: 378.617685
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 421
+      loop_start_beat: 417
+      playing: true
+      position_beat: 380.928336
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.024427
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 32
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "LOOP 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 128.053351
+  timeline:
+    -
+      at_beat: 4
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.100159
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.483202
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 36.771883
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.027
+    -
+      at_beat: 38
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 45.581755
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 52.30878
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.49
+    -
+      at_beat: 59.9375
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.139614762931034
+    -
+      at_beat: 64.390916
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 76.454972
+      control: "deck.tempo"
+      curve: "step"
+      target: "incoming"
+      value: 0.985303
+    -
+      at_beat: 87.480053
+      control: "deck.tempo"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

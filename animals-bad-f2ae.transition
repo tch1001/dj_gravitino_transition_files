@@ -1,0 +1,198 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 364.112582339015
+      duration_seconds: 170.69
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:25ff946b12ff946b10b3936c2cff788728ff48b71cff679830ff2fd02bff39c623ff649b31ff27d825ff3fc026ff4ab524ff3ac533ff31ce39ff21de3aff21de2dff12ed54ff54ab4aff3bc449ff11ee4bff46b948ff31ce47ff30cf3eff39c63dff40bf31ff2ed11aff67985cffab5469ffba4565ffaa555dffa25d66ffb24d2cff29d668ffa95669ffa75868ffaf5066ffa35c6cffa35c39ff2fd02bff887720ff609f27ff47b836ff2ad525ff41be29ff2fd02eff2ed123ff3ac530ff28d737ff2dd239ff20df67ffb34c6affaf5068ffb84767ffab546dffab5439ff5aa563ff8d726affa8574bff7e8165ff8b7463ff99662bff5ba42aff3ec11510f30c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:76d5091c2f1377d5"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 1.90878329426806
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 399.280573323863
+      duration_seconds: 187.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0aff12ed1dff68970eff11ee17ff36c918ff33cc1aff2ad55b56cc33556cc6395049cc335466d62945ffac5355c4d52a1b3be31c07ff16e90fff4ab522eb837c1bff1de221ff6c931cff53ac4cffa95628ff4ab53eff946b45ff847b3eff9b6448ff926d3fff847b27ff54ab34ff50af31ff43bc19ff2cd3672fd52a625bc639653ad32c6253cb3427ff34cb65cbd42b63ffc13e60f9cc3364cdd02f66bbd6294db7d82716ff46b94dff8c734eff936c51ffa35c31ff51ae4aff976840ffb34c35ff55aa35ff55aa2eff47b815ff23dc6064c6396639d42b60edc53a634ecb3465add32c62ffc13e64a8ce3165b7d12e65bbd42b62a1d22d1fff40bf2819ef10"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7a1e5b9384054b12"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 0.064
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Martin Garrix - Animals (Official Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "a371e77d-4392-435d-a56b-12f9a2092fb1"
+metadata:
+  created_at: "2026-09-07T06:21:11.413Z"
+  name: "animals -> bad"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 312.173782
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 88.29915
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 311.195407
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 128
+      loop_start_beat: 128
+      playing: true
+      position_beat: 312.173782
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 7.8193603515625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.9026
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.391024
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.87654
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.01
+    -
+      at_beat: 26.019244
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.486
+    -
+      at_beat: 38.301795
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 40.344159
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 43.071035
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.462
+    -
+      at_beat: 52.359737
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 58.616569502501456
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 65.75668073818
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

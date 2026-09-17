@@ -1,0 +1,207 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 504.801261716603
+      duration_seconds: 240.37
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2affbe41365cdb2444ffc63923ff9b640cff04fb0eff04fb0eff04fb0cff04fb40ffb8473cfcc83745ffb84740ffb74827ff7e812cffc23d3b9ce9165babde214dffcb345d5be11e5c82e619666fe41b19ff0bf46695e31c6669e11e579fda251cff0af545eec53a23ff8f702cffb34c3cffc93655ffd32c59ebd82762abda2528ff08f76783e31c5f87dc234dffd62940ffd82724ff9b641dff0df21bff1ee11aff2cd31cff639c27ff9d6231ffc03f2fff99666469e61958ffde214cffd52a3cffb54a10ff08f752c8e01f5ba5e11e638be41b61a5e01f5b7bde215dadde215ce3db245ce2da2509ff02fd373ee9166631ea15651be6195523ed124affd827"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:841773cb9d4d177a"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.437333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull - Hotel Room Service (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 499.28868855718
+      duration_seconds: 249.68
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff0ff005ff6a951bff23dc10ff1ae511ff679828ff86792bffab5428ffa55a35ff45ba22ff49b63bff5fa03bff52ad38ffb14e3affae514bffa7584cffa55a34ff837c53ffae5152ff976826ff1ce318ff57a834ff54ab38ff59a642ffc33c36ffb44b65ffa15e69ff9b6433cdbd4236ffb34c4cffa45b4dffa75834ff76893fff53ac33ff1be43cff3dc23bff1fe035ff2cd36dff966973ff8e713dff9e6140ffb14e56ffa85752ffac534bff7b844aff906f61ff867965ff8b743eff88775bff8e7134ff25da60ffad5220ff0ff02bff936c3aff52ad5fffbc434aff9d6269ffaa556dffa6595eff857a60ffa05f6eff8e712dff09f626ff07f828ff6d92"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:90bbcb7cc0919751"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 24.3275909985637
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taio Cruz - Dynamite (Official Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "5edcfbdc-a4ab-4757-ab04-ecad67642541"
+metadata:
+  created_at: "2026-09-04T07:46:20.147Z"
+  name: "dynamite -> hotel room service"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 246.683502
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 120.503691
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.634
+    outgoing:
+      captured: true
+      cue_beat: 240.801149
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 246.683502
+      loop_start_beat: 246.683502
+      playing: true
+      position_beat: 246.683502
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.050592
+  labels: []
+  loops: []
+  master_bpm: 126.050936
+  timeline:
+    -
+      at_beat: 1.3125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.365946
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.769252
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 23.346721
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.01
+    -
+      at_beat: 28.908448
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 63.193539
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.494
+    -
+      at_beat: 81.8341714285714
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.182785560344828
+    -
+      at_beat: 92.25
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 93.602644
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.885
+    -
+      at_beat: 94.5
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 100.75
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 108.325378
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

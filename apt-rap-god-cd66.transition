@@ -1,0 +1,324 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 910.963147615137
+      duration_seconds: 369.24
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:27ff22dd17ff10ef29f1d62938bab24d32ff0ef141ff966941ff817e56ff5aa54fff6a9544ff19e643ff847b3cff1de23dff19e638ff28d73eff29d646e0936c41ff55aa40ff8b744aff48b754ff619e48ff689735ff24db51ff5ca34cff2ed139ff966950ff768926ff1ee146ff6f9026ff21de48ffc13e2fff0cf35aff857a42ff699648ff7b842eff629d2eff36c951ff5da249ff52ad4aff58a752ff53ac50ff619e37ff30cf4cff837c25ff76894aff6d924aff6c9333ff24db40ff87784eff5fa04bff669938ff6d9237ff33cc46ff6f902fff27d848ca8a7552ff669944ff2ad542ff807f3bff1ae552ff4bb437ffb24d4fff59a645ff1ee118ff29d6"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7d67ca296bbc5f62"
+      meter: "4/4"
+      native_bpm: 148.02631599999998
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Eminem - Rap God (Explicit)"
+  outgoing:
+    assumptions:
+      duration_beats: 422.09237361111104
+      duration_seconds: 169.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:09ff11ee0fff0df24aff8a7540ffba453eff857a16ff24db3affa25d43ff996637ff8a7542ffb04f34ff758a47ff9a654effad5238ffa75854ff9c633aff8f7047ffa35c46ffa05f44ff9f604dff9c632dff4eb135ffa15e21ff0af543ff728d33ff43bc49ff689746ff86794dff7c8343ff728d4bffa65942ff77881cff24db42ff9a6537ff877850ff916e3bff7e8146ff916e30ff679830ff54ab46ff69963fff7d8245ff758a4aff906f44ff68974eff857a5cff877850ffab544cff7e8140ff54ab41ff56a942ff897653ff857a4dffaf5048ff956a47ffa55a3fff768938ff897646ff926d40ff758a44ff88774fff96694eff8e714eff906f42ff936c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:d6abf40e9e86b0ce"
+      meter: "4/4"
+      native_bpm: 149
+      reference_downbeat_seconds: 6.772302369538583
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "ROSÉ & Bruno Mars - APT. (Official Lyric Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "97019917-b979-4b19-b671-982767609015"
+metadata:
+  created_at: "2026-09-16T16:39:47.298Z"
+  name: "apt -> rap god"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 324.850299
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 88.77585499999999
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.007071
+    outgoing:
+      captured: true
+      cue_beat: 319.138167
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: true
+      position_beat: 324.850299
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 149
+  timeline:
+    -
+      at_beat: 11.137706
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.195765
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.787944999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 20.060776999999998
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.001
+    -
+      at_beat: 20.914835
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.059000000000000004
+    -
+      at_beat: 21.379687
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 22.175504999999998
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.152
+    -
+      at_beat: 24.003718
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.28
+    -
+      at_beat: 24.197834999999998
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.389
+    -
+      at_beat: 25.586059
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.292
+    -
+      at_beat: 26.062661
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.381
+    -
+      at_beat: 29.085368
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.647
+    -
+      at_beat: 33.694266
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.871
+    -
+      at_beat: 34.493296
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.877
+    -
+      at_beat: 35.149069
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.9400000000000001
+    -
+      at_beat: 35.695312
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.9470000000000001
+    -
+      at_beat: 36.077867
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 40.063235999999996
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.041
+    -
+      at_beat: 41.477976999999996
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.013000000000000001
+    -
+      at_beat: 42.879408
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 48.814544
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.995
+    -
+      at_beat: 49.241657
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.925
+    -
+      at_beat: 49.986957
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.861
+    -
+      at_beat: 52.966733
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.761
+    -
+      at_beat: 55.171803999999995
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.655
+    -
+      at_beat: 58.181709999999995
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.518
+    -
+      at_beat: 59.997333
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.46
+    -
+      at_beat: 61.08192
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.41600000000000004
+    -
+      at_beat: 62.413104
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.365
+    -
+      at_beat: 64.022185
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.275
+    -
+      at_beat: 65.671132
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.247
+    -
+      at_beat: 69.187686
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

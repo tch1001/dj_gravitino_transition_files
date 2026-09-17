@@ -1,0 +1,180 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 732.0391604450745
+      duration_seconds: 343.17
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3dff7b8408ffd12e14ff14eb51f9af504affbf404fffa85740ff4eb13dff52ad41ff0af523ff1ee135ff15ea40ff67982bff19e628ff16e93eff54ab4cff11ee2cff10ef3bff35ca39ff28d748ff32cd5aff9a655eff97683aff08f75cff89765cff728d59ff09f629ff17e83dff1fe05affa7585cffab545dff827d58ff86795cffa15e54ff659a03ff13ec09ff30cf11ff21de41ff2ad53dff55aa3aff30cf3aff47b837ff58a745ff21de46ff2ad549ff20df37ff0bf45dffa35c61ff788759ff7d8258ff847b5bff728d5863c13e51f2c53a58ffb54a55ffbe414bffbe4126ff0ff042ff87783dff7d822dff13ec3eff7a853fff758a0fff12ed04ff1be4"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e324be39a2d2dff0"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 2.1546666666666665
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Afrojack & Martin Garrix - Turn Up The Speakers (Original Mix)"
+  outgoing:
+    assumptions:
+      duration_beats: 458.3243488829778
+      duration_seconds: 229.39000000000001
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0cff23dc22ff32cd14ff21de18ff24db19ff1ae50dff21de26ff24db2cff32cd21ff3bc425ff42bd16ff54ab1eff52ad28ff1ee128ff2bd434ff936c58ffb9464bffa65957ff9a654aff7f8052ff7c835bff916e4bff89764dff6d9253ff788725ff768921ff6a9529ffa05f24ff8c7330ff966934ff58a731ff609f3cff52ad3aff3cc359ff708f55ff6c935fff976861ff956a5affa05f6aff9b6466ff8d725effa45b44ff728d59ff6e914eff4ab553ff46b93bff4eb127ff8b7420ff619e2eff05fa62ff946b6cff936c64ffab5459ff48b747ff55aa46ff3bc457ff857a44ff2ad544ff38c76bff986773ff9e616dff8e716eff8c731bff0df209f94fb0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:241e2d953ffbe7be"
+      meter: "4/4"
+      native_bpm: 119.88085099999999
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Teenage Dream (Official Music Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "a0b7b047-0e5e-4b83-9af6-dd5293c61788"
+metadata:
+  created_at: "2026-09-17T21:00:45.902Z"
+  name: "teenage dream -> turn up the speakers"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 160
+    outgoing:
+      track_beat: 320.787076
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 160
+  end_beat: 46.965469999999996
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 192
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 160
+      loop_start_beat: 160
+      playing: false
+      position_beat: 160
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 344.25
+      loop_start_beat: 344
+      playing: true
+      position_beat: 320.787076
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.068465
+  labels: []
+  loops: []
+  master_bpm: 128.08854
+  timeline:
+    -
+      at_beat: 6.6947551433619825
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 7.2184919999999995
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.199565
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.711931
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.896235056914463
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 26.64806806356166
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 27.871042789106586
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 43.04913
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

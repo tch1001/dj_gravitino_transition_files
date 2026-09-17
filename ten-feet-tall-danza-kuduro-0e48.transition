@@ -1,0 +1,193 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 431.000905618541
+      duration_seconds: 198.9
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:43ffbf4007ff16e950ffa55a1eff20df2fffad5245ffa25d38ff28d743ffc13e46ffa25d4bff837c44ffb54a3dff2ad540ff2dd247ffad525bff9c6346ffad5244ffaa553dff679845ff936c3bff669942ff629d47ff7e813aff936c43ff8b7441ff53ac46ff718e42ff738c40ff7c834aff7b843dff758a42ff8f703aff4bb43dff5ba444ff847b2cff926d47ff7e8142ff906f2aff88774eff847b31ff51ae31ff4cb350ff5ba440ff38c760ff6e9144ffa25d31ff39c64bff916e2fff44bb32ff4fb047ff9e6132ff3bc443ffbb4445ffb04f4dff8c7343ffb34c35ff38c737ff28d745ffae515cff99664eff798645ffa65947ff2ed148ff708f2bffa05f"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8a0256dd6c37ac13"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.16
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Don Omar - Danza Kuduro (Audio) ft. Lucenzo"
+  outgoing:
+    assumptions:
+      duration_beats: 486.735915369318
+      duration_seconds: 229.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff1fe007ff30cf22ff2bd41bff1ee120ff1ee121ff17e835ff56a954ff1be43eff19e638ff29d630ff18e746ff26d933ff2ed133ff22dd41ff35ca4bff5ba45cff7d824dff48b766ffab5430ff37c832ff2dd224ff43bc44ff1ce337ff39c658ff20df3cff15ea3bff21de33ff17e842ff22dd33ff2ad53cff1de246ff33cc46ff3ec164ff8e7157ff758a63ffae514cff43bc67ff9c6367ff8f7057ff649b39ff3ac526ff1de218ff3ec11bff18e723ff09f624ff34cb37ff3dc22fff15ea27ff619e4bff0ef14aff21de50ff2bd451ff21de5bff10ef64ff9d6264ffa8574eff53ac6bff8a7568ff798652ff3ac556ff5ca369ff926d32ff2bd40a28d52a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:baf629ac6fcbc670"
+      meter: "4/4"
+      native_bpm: 126.990909
+      reference_downbeat_seconds: 0.362666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "AFROJACK - Ten Feet Tall (Lyric Video) ft. Wrabel"
+extensions: {}
+format: "gravitino.transition"
+id: "5b080ad8-7b73-4be7-9ffe-95c92537fa4e"
+metadata:
+  created_at: "2026-09-07T07:59:54.671Z"
+  name: "ten feet tall -> danza kuduro"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 385.763858
+  cues: []
+  end_beat: 101.95627
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 8
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.984893
+    outgoing:
+      captured: true
+      cue_beat: 395.887633
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: true
+      position_beat: 385.763858
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.008487
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 8
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 128.068681
+  timeline:
+    -
+      at_beat: 22.22154971189655
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 23.76192
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 24.237308
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 32.731316
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.006
+    -
+      at_beat: 36.496702
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.494
+    -
+      at_beat: 48.222108
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 49.26943
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 56.862472
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 59.562826
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 75.953263
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

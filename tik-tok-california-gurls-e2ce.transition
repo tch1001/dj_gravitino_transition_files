@@ -1,0 +1,204 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 491.634075
+      duration_seconds: 235.89
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b93b4a1a405f4869"
+      meter: "4/4"
+      native_bpm: 125.05
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - California Gurls ft. Snoop (Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 400.6760519145
+      duration_seconds: 200.37
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b342ba18775d3180"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Kesha - TiK ToK (Lyrics)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-d6ba353cd8ecfd18817ae81a211453e2"
+format: "gravitino.transition"
+id: "4feed7ac-2396-4dc8-a00f-146a22e0feb7"
+metadata:
+  created_at: "2026-08-22"
+  name: "tik tok -> california gurls"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 300.200911
+  cues:
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-5"
+      label: "HOT CUE 5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "legacy-hot-cue"
+      track_beat: 0
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    mixer:
+      captured: true
+      crossfader: 0.493
+    outgoing:
+      captured: true
+      cue_beat: 302.980801
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 72.582736
+      loop_start_beat: 72.582736
+      playing: true
+      position_beat: 300.200911
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.041939
+  labels: []
+  loops: []
+  master_bpm: 125.012694
+  timeline:
+    -
+      at_beat: 7.7937255859375
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.878666
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.389835
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 22.194085
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.031
+    -
+      at_beat: 28.492193149387834
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 32.403561
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.497
+    -
+      at_beat: 32.558845
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 46.460252
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 48.942309
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 55.727856
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.006
+    -
+      at_beat: 57.007589
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 81.288855
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 86.220535
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

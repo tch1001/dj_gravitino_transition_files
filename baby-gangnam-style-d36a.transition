@@ -1,0 +1,229 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 482.998761119
+      duration_seconds: 219.54
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7820d8294bf82ade"
+      meter: "4/4"
+      native_bpm: 132.002941
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Gangnam Style (강남스타일)"
+  outgoing:
+    assumptions:
+      duration_beats: 474.63
+      duration_seconds: 219.06
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2c872dbc0aaf9a2b"
+      meter: "4/4"
+      native_bpm: 130
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "JustinBieberVEVO"
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Baby ft. Ludacris"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-d09cf0873eb4743d1c5d618984f6f888"
+format: "gravitino.transition"
+id: "9c48e62a-e86f-494b-8929-90f1b7172f70"
+metadata:
+  created_at: "2026-08-21"
+  name: "baby -> gangnam style"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 248.611968
+  cues: []
+  end_beat: 142.855495
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 8
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0.900027
+      quantize: true
+      stem_bass: 0
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999777201933706
+    mixer:
+      captured: true
+      crossfader: 0.44
+    outgoing:
+      captured: true
+      cue_beat: 247.398635
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 248.611968
+      loop_start_beat: 348
+      playing: true
+      position_beat: 248.611968
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 8
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "LOOP 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 132
+  timeline:
+    -
+      at_beat: 7.375
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.481778
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.209778
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 21.84
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.454
+    -
+      at_beat: 38.988444
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 65.25
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 71.448
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 77.5
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 78.346667
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.483
+    -
+      at_beat: 94.443556
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 95.864889
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 99.539556
+      control: "deck.loop_in"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 102.913778
+      control: "deck.loop_out"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 119.063255
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.989
+    -
+      at_beat: 129.5
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 141.855495
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

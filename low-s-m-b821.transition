@@ -1,0 +1,180 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 519.7433504545445
+      duration_seconds: 243.65
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff679815ff2fd01aff67982cff0ef13dffcb343fffc9364affb24d53ff8e7143ffac5347ff897642ffa85742ffaf5044ff9e6142f3a25d43ffa65942ffae5132ff19e631ff0ff039ff2ed12bff34cb4cff877851ff847b4cffa75840ff8b7447ff936c48ffb54a4bffa45b3dff9b6435ff52ad33ff54ab26ffae512aff926d3fff20df32ff2cd333ff3dc231ff37c856ff956a4fff8e7151ff936c53ff926d55ffa15e51ff946b49ff9e614eff8f704dff8a7538ff946b33ff817e39ff45ba2dff2fd032ff2cd32cff36c92dff33cc4dff8f7045ff897646ffa15e3eff857a48ff807f44ff758a5aff9c6350ff8a755affb94653ffb14e55ffb8474bffac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:4f87e1279eb70a57"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 1.716233255202786
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - S&M (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 490.3210846969688
+      duration_seconds: 229.85
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0eff2ed116ff1de213ff36c90eff0ff061dbd827618bdb2426d3aa5541ffab540eff12ed3fd7d32c42ffca355dffdf2025ff9a6546a3d62959f0c7385bdfc7382fff936c28ff1ce331ff9a655787dd22558fd9264cffbc433dff8c7361b1e8176a68d82767b8d62942ff9e6163edd82743ffbc4314ff16e95cffdb2430ff5ba418ff16e925ff09f656ffcb3414ff14eb55ffc43b56dbd22d5595e6195799db2446ffbe413bff97683cffa55a26ff67982eff4eb13eff9c6313ff0df23f83e01f5ef7dc235fffde2132ff56a94789dd2257ffd42b2dff976830ff837c2aff1ce330ffa95658c9cc334bffad5248ffc13e38ffa05f62edd9266679d72841ffb24d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:26e5e3b38b5f8845"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 16.227126792257145
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Flo Rida - Low (feat. T-Pain)"
+extensions: {}
+format: "gravitino.transition"
+id: "c8b650d3-27a9-4c0b-ac0b-7e0580c5e317"
+metadata:
+  created_at: "2026-09-17T19:07:34.823Z"
+  name: "low -> s&m"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 379.745165
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 59.613353999999994
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: true
+      position_beat: 379.745165
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 127.99090899999999
+  timeline:
+    -
+      at_beat: 4.256909
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.2835198203125
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.7408498203125005
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 29.673984
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.431
+    -
+      at_beat: 34.246722999999996
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 44.556371
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.988
+    -
+      at_beat: 50.29181
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.067133
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

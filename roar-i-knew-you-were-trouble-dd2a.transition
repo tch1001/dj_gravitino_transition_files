@@ -1,0 +1,342 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 283.238965625
+      duration_seconds: 220.71
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff0df219ff21de4fffba4519ff1be456b5ca35369d976832ff8a7528ff619e3c80ca352ffba45b5de2c13e35f3857a20ff14eb14ff10ef26ff23dc27ff09f653ff98674bff986739ff6d9253ff679830ff17e82dff0bf478ff9f6025ff0cf338ff778853ffb04f1bff15ea59fcc03f57f5a35c2fff45ba34ff867930ffac5331ff778837ff7a8565ff966963ff8e716cff9b644eff51ae44ff08f758ff807f4cff7f804aff56a964ff67984bff4bb434ff0bf40dffbc430bff40bf22ff1ae522ff11ee46ff14eb2aff0df267ff946b62ff926d69ff877851ff629d2dff1ee153ff57a865ffa45b4cff55aa51ff4fb042ff2ed143ff4fb052ff4bb463ff916e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:5e0206c861c4a4c3"
+      meter: "4/4"
+      native_bpm: 77
+      reference_downbeat_seconds: 3.3899157801418434
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taylor Swift - I Knew You Were Trouble (Taylor's Version) (Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 335.647809260752
+      duration_seconds: 223.70000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff06f907ff29d633ffbc4333bdb84734ff847b33ffb04f3bf7b34c36ff8c7333ff9a6537ffaf5037ffa95631ffb34c33ffb24d38ff926d37ff8b744bff86795aff8c734eff76894fff7f804cff807f48ff738c44ff7d824aff807f1dff20df31ffbc4335e8a85735ffa6593cff9e613fff8e7134ffb24d3cffa05f34ffac5336ff9a6550ff827d41ff8c734bff897650ff857a51ff906f61ff96694cff5da259ff7a854affa55a55ff5da254ff708f47ff89763fff12ed16ff2ed113ff30cf23ff52ad36ff49b628ff06f958ff7a8546ff8a755dff8d7255ff6a9551ff659a5aff5ea158ff5aa555ff6c9361ff8d7251ff7c836dff79864fff778810ff24db"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:08499ca3d4c72067"
+      meter: "4/4"
+      native_bpm: 90.025806
+      reference_downbeat_seconds: 0.49066666666666664
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Roar (Lyrics)"
+extensions: {}
+format: "gravitino.transition"
+id: "1b8ef49b-1b46-4139-bff2-499891f12f26"
+metadata:
+  created_at: "2026-09-17T16:26:43.737Z"
+  name: "roar -> i knew you were trouble"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 260.80422799999997
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 48.895320999999996
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -3.994481
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 47.721525
+      loop_start_beat: 47.721525
+      playing: false
+      position_beat: 47.721525
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.130582
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 260.80422799999997
+      loop_start_beat: 260.80422799999997
+      playing: true
+      position_beat: 260.80422799999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.966953
+  labels: []
+  loops: []
+  master_bpm: 87.050735
+  timeline:
+    -
+      at_beat: 3.141588
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.946319
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.526641
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 10.275883
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.011
+    -
+      at_beat: 10.980022
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.155
+    -
+      at_beat: 11.111559999999999
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 11.382387999999999
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.47100000000000003
+    -
+      at_beat: 12.906730999999999
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.426
+    -
+      at_beat: 13.200783999999999
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.359
+    -
+      at_beat: 13.773385999999999
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.512
+    -
+      at_beat: 14.020988
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.559
+    -
+      at_beat: 14.717405999999999
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5690000000000001
+    -
+      at_beat: 14.817998
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.304
+    -
+      at_beat: 14.872138
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.28800000000000003
+    -
+      at_beat: 17.417899
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.10200000000000001
+    -
+      at_beat: 17.835738
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.997
+    -
+      at_beat: 18.08334
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18.710113
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.054
+    -
+      at_beat: 19.313661
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 25.171215
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 25.233107999999998
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.495
+    -
+      at_beat: 25.472989
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.02
+    -
+      at_beat: 25.565859999999997
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.47300000000000003
+    -
+      at_beat: 26.718784
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 28.366944
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.985
+    -
+      at_beat: 28.53718
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.036000000000000004
+    -
+      at_beat: 29.442501999999998
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.6890000000000001
+    -
+      at_beat: 30.231759999999998
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.625
+    -
+      at_beat: 30.827586999999998
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.145
+    -
+      at_beat: 32.173973
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.577
+    -
+      at_beat: 32.375156
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.315
+    -
+      at_beat: 32.970951
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.423
+    -
+      at_beat: 35.431594
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 36.793453
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 45.939575
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

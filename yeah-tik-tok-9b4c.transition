@@ -1,0 +1,192 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 400.6760519145
+      duration_seconds: 200.37
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b342ba18775d3180"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Kesha - TiK ToK (Lyrics)"
+  outgoing:
+    assumptions:
+      duration_beats: 437.7625
+      duration_seconds: 250.15
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:85813df35c251e6b"
+      meter: "4/4"
+      native_bpm: 105
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Usher feat. Lil Jon, Ludacris - Yeah! (Audio)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-f85edc30b152acd1a143ff0f94a32820"
+format: "gravitino.transition"
+id: "66d6aa37-a778-4286-81d6-b7d30de66e30"
+metadata:
+  created_at: "2026-08-22"
+  name: "yeah -> tik tok"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: -4
+    outgoing:
+      track_beat: 306.183211
+  cues:
+    -
+      endpoint: "incoming"
+      id: "incoming-hotcue-1"
+      label: "HOT CUE 1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "legacy-hot-cue"
+      track_beat: -4
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 72.582736
+      loop_start_beat: 72.582736
+      playing: false
+      position_beat: 72.582736
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.957773
+    mixer:
+      captured: true
+      crossfader: 0.507
+    outgoing:
+      captured: true
+      cue_beat: 317.6725
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: true
+      position_beat: 306.183211
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.095109
+  labels: []
+  loops: []
+  master_bpm: 114.986473
+  timeline:
+    -
+      at_beat: 13.8125
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 14.810297
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.49674
+      control: "deck.transition_cue"
+      cue_id: "incoming-hotcue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 43.6875
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 45.871948
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 51.586142
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.498
+    -
+      at_beat: 52.189741
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 67.902469
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 69.125
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 70.279745
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 77.94551
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+version: 1

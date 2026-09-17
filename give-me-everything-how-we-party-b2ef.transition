@@ -1,0 +1,223 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 403.490852054923
+      duration_seconds: 189.15
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2da3e41b054f9f6016ff3fc027dc4ab52fff6a9531ff629d35ff1ce339ff49b632ff49b636ff35ca38ff47b848ff52ad3eff56a937ff68973bff659a3aff55aa42ff3ec145ff34cb42ff36c948ff47b83fff15ea34ff18e769ead32c53ffac5354ff96695cffbb443eff7b844bff946b5bffb74848ff33cc46ff3dc246ff56a93fff738c2aff4ab521ff14eb20ff19e61dff26d93eff40bf38ff55aa35ff629d3aff48b738ff57a83cff5da23cff3fc03aff37c840ff21de42ff3cc362ffc43b57ffa05f63ffc43b4cff966960ffc83761ffaa555fffbd424eff9a653cff4db24bff4ab52bff5aa501ff3bc44dffab5451ffb14e57ff837c55ffc33c5affbc43"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:6847a8c033031d15"
+      meter: "4/4"
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 5.1077163150792
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "R3HAB & VINAI - How We Party (Official Music Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 553.868764736591
+      duration_seconds: 257.39
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1fff52ad2eff2cd334ff32cd28ff31ce27ff26d935ff12ed27ff30cf3eff12ed19ff4fb040ff14eb3eff2bd467ff986755ff4db266ffa15e54ff4fb057ff7e814bff748b65ff9e615cff35ca3cff38c72bff2ad566ff99663eff54ab35ff45ba4eff32cd3bff0af539ff11ee32ff18e737ff3ac53eff27d83bff26d942ff24db61ff817e4dff21de4dff1de256ff6e9166ff7b8433ff14eb52ff48b76aff9d6229ff25da37ff30cf40ff847b62ffae5143ff38c72aff1ae51dff22dd26ff28d734ff18e735ff3ac534ff24db2eff2bd421ff1ce34cff46b961ff98675aff55aa51ff5fa058ff8b7454ff9f6034ff4bb438ff47b81cd65fa01fff33cc11f45aa5"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c0840d591988faac"
+      meter: "4/4"
+      native_bpm: 129.110345
+      reference_downbeat_seconds: 1.01333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull - Give Me Everything (Audio) ft. Ne-Yo, Afrojack, Nayer"
+extensions: {}
+format: "gravitino.transition"
+id: "4315a083-3b14-4745-80af-b639951dabbc"
+metadata:
+  created_at: "2026-09-07T06:54:10.043Z"
+  name: "give me everything -> how we party"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 406.593594
+  cues: []
+  end_beat: 117.374611
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 12.042664
+      eq_high: 0
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 394.07276
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: true
+      position_beat: 406.593594
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.991028
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 16
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 127.951945
+  timeline:
+    -
+      at_beat: 9.422106459691316
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.27028
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.725214
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 41.6384
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 44.368053
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.005
+    -
+      at_beat: 49.065293
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 69.332883
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 70.88818359375
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 79.671438
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 82.855981
+      control: "deck.eq_high"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 101.679149
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 102.624213
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 105.284555
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.985
+    -
+      at_beat: 108.366795
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 111.529827
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,191 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 525.462
+      duration_seconds: 250.22
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:59cbaf2978d0777b"
+      meter: "4/4"
+      native_bpm: 126
+      reference_downbeat_seconds: 0
+    identity:
+      artists:
+        - "David Guetta & Sia"
+      identifiers:
+        providers: {}
+      title: "David Guetta - Titanium (feat. Sia) [Official Audio]"
+  outgoing:
+    assumptions:
+      duration_beats: 464.518185076833
+      duration_seconds: 214.37
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:73a3a5964c9b127b"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Ariana Grande - Break Free feat. Zedd (Audio)"
+extensions:
+  gravitino.legacy:
+    source_id: "legacy-1448ee788ae7786500a69d37d8b1d1ff"
+format: "gravitino.transition"
+id: "ca176bc7-89ca-4290-a5ec-a85ae3705fe2"
+metadata:
+  created_at: "2026-08-21"
+  name: "break free -> titanium"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 311.683031
+  cues: []
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 32
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.032426
+    mixer:
+      captured: true
+      crossfader: 0.504
+    outgoing:
+      captured: true
+      cue_beat: 316.60211
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: true
+      position_beat: 311.683031
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 32
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "LOOP 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 16.298287
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 17.282148
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 17.893275
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 48.24369170819408
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 57.92617230326867
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 75.217885
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.491
+    -
+      at_beat: 100.382718
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 105.283119
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 110.436741
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.986
+    -
+      at_beat: 123.685954
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+version: 1

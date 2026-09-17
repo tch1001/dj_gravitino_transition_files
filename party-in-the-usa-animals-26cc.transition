@@ -1,0 +1,174 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 362.943376736111
+      duration_seconds: 229.23
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff1ce312ff13ec1aff0ef11cff0af514ff16e91bff0ff03dffb94634f5cb3439a49a6541ffb04f3cffa25d49ffb24d39ffb6493fffa15e25ff758a3affa25d40ffbc434bffa45b4effa55a40ffaf503effa55a42ff9d6247ffae5134f3bb4430ff8a7541f2a7583dffab543263cc3336d5ac5346ffb64943ffa95639ff9e6143ffab5443ffb24d19ff0bf454ffae514fff936c4fff996657ffa85740ff966941ff9d623cff9a6553ffb54a59ff9c634bff837c49ffaa553233ec134487b04f4a5dc33c3e92c33c3effc03f314ee51a50ff906f56ffaa5559ff996651ffae5144ff629d54ffa55a52ffac535dffaa5556ffa75851ff966951ffab545cffaa55"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8faa1fd42fdcaa5b"
+      meter: "4/4"
+      native_bpm: 95
+      reference_downbeat_seconds: 1.29078618421053
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Maroon 5 - Animals (Lyrics)"
+  outgoing:
+    assumptions:
+      duration_beats: 328.4602
+      duration_seconds: 205.29
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff29d610ff1ae518ff26d947ff936c1bff26d916ff41be49ffc8372affa75838ff55aa49ffd82737ff7b843bffa85744ff57a819ff13ec4cff99663cff7e8143ff7b844fffa85752ffa95645ff887750ff976842ffa35c2eff25da1aff35ca23ff3ac547cfd42b36ff7a8530ff96694cffa35c33ff8b744affb44b3eff52ad27ff07f83aff47b843ff827d47ff936c50ff9c6352ffab5454ff867948ff966949ff956a4bffab5441ff3ac53bff5ca349ff86792cff0df248ff847b43ff06f94fff8e7153ffad5252ff8f7043ff778851ff758a52ffa05f53ff7d824dff9c634eff8e7155ff9b6452ff8d7245ff77884dffa75850ffa55a4aff96694eff936c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:9a5e53ce1b61d68d"
+      meter: "4/4"
+      native_bpm: 96
+      reference_downbeat_seconds: 1.952
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Miley Cyrus - Party In The U.S.A  (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "67dbfc49-c271-44c7-8a12-12305bc09ee8"
+metadata:
+  created_at: "2026-09-07T05:58:45.649Z"
+  name: "party in the usa -> animals"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 283.9891
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 44.858332
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -1.182411
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 281.28
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 173.877687
+      loop_start_beat: 173.877687
+      playing: true
+      position_beat: 283.9891
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.989023
+  labels: []
+  loops: []
+  master_bpm: 94.94625
+  timeline:
+    -
+      at_beat: 4.0173
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.030067
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.33659
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.583831
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 19.7657
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 32.383375
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 32.940033
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1
