@@ -2,23 +2,23 @@
 endpoints:
   incoming:
     assumptions:
-      duration_beats: 703.2213306565646
-      duration_seconds: 332.25
+      duration_beats: 506.67248885416944
+      duration_seconds: 217.11
       fingerprints:
         -
           algorithm: "gravitino-structure-2"
-          value: "gvsf2:0bff2fd008ff48b70eff26d931ff609f35ff857a51ffc03f2cff689725b9936c5badcc335264e9164bfae21d5affb54a3fffbc4347bdd62952f0c03f3affb04f2b82e01f47ffd9262aff887755ffdb244dced12e54e6cb3443ff936c49ffc63946cdb34c32ffd9264b89e91658ffd02f57ffda2525ffaf5051ffc23d56ffc7382aff59a64bffab5455ffd42b4fffd82737ff9e6130ff0ff03affb24d47f9bf4035ff778835bba05f4a91d32c3aff817e57bac93650ffd82754ffbd425bffc53a39e6d02f559ad9262eff986718ff1ce335ff847b31ff619e22ffca354dffdd2252ffc33c5de3d12e4cffb44b49ffab5451ffd42b3aff946b46b3e31c145aec13"
+          value: "gvsf2:4824ec134a6ae01f4945e6194bbdcd324972de214624eb1447e2ca3557e7ca3550e6d22d5876d52a4e6dd52a529ecc334b56e01f5347e31c4b78d12e50c3c53a586fc6393cffa65956fad22d19ff0ff054dec53a3e49e21d4047e11e4081cf3046ffb34c45ffb74844ffb04f42b6d728428ccd3244c2b34c40bdbe413b97d42b3654dc234084c83745c8d629447ecf3046ffde2142abcb3442a7c8373fd2cd3240adc33c3d45de2140ffbf4043e2bf4042ffbc4342e6d52a41a2d42b41ffb44b439ac6395463d6294b78ce315680d72820ff6f903cffc03f13ff35ca48ceb94620ff0ef154dfc43b19ff21de1cff25da27ff1ee12bff6c930aff59a6023be41b"
         -
           algorithm: "gvfp1"
-          value: "gvfp1:122736e86e172520"
+          value: "gvfp1:d02c782dea6a2ea1"
       meter: "4/4"
-      native_bpm: 126.99090899999999
-      reference_downbeat_seconds: 0.08533333333333333
+      native_bpm: 140.025
+      reference_downbeat_seconds: 7.742354426398046
     identity:
       artists: []
       identifiers:
         providers: {}
-      title: "Migos ft. Lil Uzi Vert - Bad and Boujee (Clean w_ Lyrics)"
+      title: "Gucci Mane - I Get The Bag feat. Migos [Official Music Video]"
   outgoing:
     assumptions:
       duration_beats: 519.7433504545445
@@ -40,17 +40,17 @@ endpoints:
       title: "Rihanna - S&M (Audio)"
 extensions: {}
 format: "gravitino.transition"
-id: "ed033bfb-17ef-49b5-9fd9-03df11b306d4"
+id: "1646dd54-20ca-4858-938e-c24742f1821a"
 metadata:
-  created_at: "2026-09-17T20:11:27.462Z"
-  name: "clean s&m -> bad and boujee"
+  created_at: "2026-09-23T19:21:11.134Z"
+  name: "s&m -> i get the bag"
   tags: []
 performance:
   anchors:
     incoming:
-      track_beat: 32
+      track_beat: 16
     outgoing:
-      track_beat: 377.74915599999997
+      track_beat: 185.95962899999998
   cues:
     -
       color: "#e85d75"
@@ -62,34 +62,11 @@ performance:
         bank: "custom"
         pad: 1
       purpose: "hot-cue"
-      track_beat: 32
-  end_beat: 42.424929
+      track_beat: 16
+  end_beat: 40.05915690809373
   initial_state:
     complete: true
     incoming:
-      captured: true
-      cue_beat: 32.084661
-      eq_high: 0.5
-      eq_low: 0.5
-      eq_mid: 0.5
-      fader: 1
-      filter: 0.5
-      fx_beats: 0.5
-      fx_on: false
-      fx_type: 0
-      fx_wet: 0.5
-      loop_active: false
-      loop_end_beat: 32
-      loop_start_beat: 32
-      playing: false
-      position_beat: 32
-      quantize: true
-      stem_bass: 1
-      stem_drums: 1
-      stem_melody: 1
-      stem_vocals: 1
-      tempo_ratio: 1.0091029999999999
-    outgoing:
       captured: true
       cue_beat: 0
       eq_high: 0.5
@@ -98,32 +75,79 @@ performance:
       fader: 1
       filter: 0.5
       fx_beats: 0.5
-      fx_on: false
-      fx_type: 0
-      fx_wet: 0.5
+      fx_on: true
+      fx_type: 1
+      fx_wet: 0.181
       loop_active: false
-      loop_end_beat: 378.440229
-      loop_start_beat: 378.440229
-      playing: true
-      position_beat: 377.74915599999997
+      loop_end_beat: 92.43036099999999
+      loop_start_beat: 92.43036099999999
+      playing: false
+      position_beat: 92.43036099999999
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1
+      tempo_ratio: 0.925859
+    outgoing:
+      captured: true
+      cue_beat: 180.075514
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.181
+      loop_active: false
+      loop_end_beat: 185.95962899999998
+      loop_start_beat: 185.95962899999998
+      playing: true
+      position_beat: 185.95962899999998
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.01213
   labels: []
   loops: []
-  master_bpm: 127.99090899999999
+  master_bpm: 129.543488
   timeline:
     -
-      at_beat: 5.344329247280772
-      control: "deck.fader"
+      at_beat: 0.75
+      control: "deck.eq_high"
       curve: "step"
       target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 3.722013681157478
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5321255387931034
+    -
+      at_beat: 4.548530153386471
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "incoming"
+      value: 0.3180899784482759
+    -
+      at_beat: 5.119253018955824
+      control: "deck.fx_on"
+      curve: "step"
+      target: "incoming"
       value: 1
     -
-      at_beat: 6.2418212890625
+      at_beat: 6
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 6.032982954758071
       control: "deck.transition_cue"
       cue_id: "incoming-cue-1"
       curve: "step"
@@ -133,13 +157,13 @@ performance:
       target: "incoming"
       value: 1
     -
-      at_beat: 7.451915
+      at_beat: 7.39263
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 8.161629999999999
+      at_beat: 8.395942
       control: "deck.transition_cue"
       cue_id: "incoming-cue-1"
       curve: "step"
@@ -149,17 +173,35 @@ performance:
       target: "incoming"
       value: 0
     -
-      at_beat: 37.80705383540474
-      control: "deck.fader"
+      at_beat: 10.349932974712278
+      control: "deck.eq_low"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 38.580385
-      control: "deck.stop"
+      at_beat: 25.489975984667574
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 27.057157984076547
+      control: "deck.fx_on"
       curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 30.37930031510749
+      control: "deck.fader"
+      curve: "linear"
       target: "outgoing"
       value: 1
+    -
+      at_beat: 37.7850794809866
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
 requires:
   - "timeline.v1"
   - "temporary-cues.v1"

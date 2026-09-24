@@ -190,25 +190,25 @@ performance:
       target: "incoming"
       value: 0
     -
+      at_beat: 51.3241032068637
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
       at_beat: 51.75767735171478
       control: "deck.stem_vocals"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 53.734306646564704
-      control: "deck.fader"
-      curve: "step"
-      target: "outgoing"
-      value: 1
-    -
-      at_beat: 81.33955410323468
+      at_beat: 56.972664012187586
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 82.58128612192863
+      at_beat: 61.25
       control: "deck.loop_exit"
       curve: "step"
       target: "incoming"

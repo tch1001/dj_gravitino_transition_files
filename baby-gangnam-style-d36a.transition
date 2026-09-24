@@ -198,19 +198,19 @@ performance:
       target: "outgoing"
       value: 1
     -
+      at_beat: 102.34580943701054
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
       at_beat: 102.913778
       control: "deck.loop_out"
       curve: "step"
       target: "outgoing"
       value: 1
     -
-      at_beat: 119.063255
-      control: "deck.fader"
-      curve: "step"
-      target: "outgoing"
-      value: 0.989
-    -
-      at_beat: 129.5
+      at_beat: 108.92088594969529
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"

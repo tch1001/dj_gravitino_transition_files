@@ -117,6 +117,12 @@ performance:
   master_bpm: 127.99090899999999
   timeline:
     -
+      at_beat: 0.96767
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
       at_beat: 4.256909
       control: "deck.transition_cue"
       cue_id: "incoming-cue-1"
@@ -141,6 +147,12 @@ performance:
         control: "host.performance_pad_1"
         pad_mode: "sampler"
       target: "incoming"
+      value: 0
+    -
+      at_beat: 9.921125900024977
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
       value: 0
     -
       at_beat: 29.673984

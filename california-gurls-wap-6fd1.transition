@@ -109,6 +109,7 @@ performance:
       stem_vocals: 1
       tempo_ratio: 1.024144
   labels: []
+  loops: []
   master_bpm: 128.069154
   timeline:
     -
@@ -144,59 +145,11 @@ performance:
       target: "incoming"
       value: 0.009
     -
-      at_beat: 20.183678
-      control: "deck.fader"
-      curve: "step"
-      target: "incoming"
-      value: 0.464
-    -
       at_beat: 20.27473
       control: "deck.eq_mid"
       curve: "step"
       target: "outgoing"
       value: 0.475
-    -
-      at_beat: 21.960188
-      control: "deck.eq_mid"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.317
-    -
-      at_beat: 22.506004
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.515
-    -
-      at_beat: 25.921172
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.535
-    -
-      at_beat: 27.218956
-      control: "deck.eq_mid"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.207
-    -
-      at_beat: 28.038598
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.814
-    -
-      at_beat: 28.801316
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.853
-    -
-      at_beat: 30.736595
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.949
     -
       at_beat: 32.933654
       control: "deck.fader"
@@ -222,24 +175,6 @@ performance:
       target: "incoming"
       value: 0.004
     -
-      at_beat: 42.268507
-      control: "deck.eq_low"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.424
-    -
-      at_beat: 44.306214
-      control: "deck.eq_low"
-      curve: "linear"
-      target: "incoming"
-      value: 0.153
-    -
-      at_beat: 49.246818
-      control: "deck.eq_low"
-      curve: "linear"
-      target: "incoming"
-      value: 0.335
-    -
       at_beat: 60.960876
       control: "deck.eq_low"
       curve: "linear"
@@ -257,42 +192,6 @@ performance:
       curve: "step"
       target: "outgoing"
       value: 0.988
-    -
-      at_beat: 74.837909
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.702
-    -
-      at_beat: 74.953697
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.589
-    -
-      at_beat: 75.122903
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.359
-    -
-      at_beat: 75.179409
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.296
-    -
-      at_beat: 75.236332
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.197
-    -
-      at_beat: 75.372932
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.018
     -
       at_beat: 75.433294
       control: "deck.fader"

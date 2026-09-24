@@ -1,0 +1,192 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 611.4818969089166
+      duration_seconds: 282.19
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:10e63ac514ff49b617ff30cf42ff49b640ffb74827ff67984affac5331ff3dc259ffc03f3aff649b33f069963aff5ea135a589764aff609f3dff887748ff5ea132ff12ed59ffcb3434ff47b852ffae511af48d7254ff9c6328ff798613ff16e93aff9c6353fdb94651b498675dffb14e39ffac5365b1ca355dffb84761dacf305bff8c7362ffb8473cff857a37ff689747ff47b845ff6f903fff718e48ff639c3affa6592fffc6395cf9d7281aff9f6030ff1ae545ffb34c4fff807f40ff3bc4604eca3532ff3ac568ffc53a5dffba4564ff9a655eff936c41ff6f9052ff966942ff8a754eff7d8251ff7c8338ff53ac3bff14eb0eff4cb30eff2fd00aff35ca"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:539b0501b0fd8bfc"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.23466666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "will.i.am - Scream & Shout (Audio) (Explicit) ft. Britney Spears"
+  outgoing:
+    assumptions:
+      duration_beats: 441.2844572479656
+      duration_seconds: 203.73000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:48ffc73836ff9e61538fd6294effcc3325ff13ec26ff14eb3bff1be438ff19e622ff1be43dff34cb37ff22dd2bff1ae52eff26d934ff21de4cff21de3eff33cc3fff2bd43eff3cc342ff29d65654d12e5b1fdf204bff649b4eaac53a40ff13ec42ff4ab54fff916e4dff4fb042ff708f27ff13ec4eff7f8043ff728d46ff827d51ff8e7141ff1de246ff57a842ff5ba445ff5ba439ff29d64aff887737ff77883cff48b74bffbf4037ff5ea149ff867952ff8f703fff52ad46ff926d5b97d32c35ff4cb34cffc63941ff37c835ff50af4dffc6393cff2ed137ff41be44ffa15e3aff37c82cff0ff048ffc23d43e140bf47ffba4545ffba453bff21de04ff03fc"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:518179ecbcce791d"
+      meter: "4/4"
+      native_bpm: 129.960345
+      reference_downbeat_seconds: 0.14933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "LMFAO - Sexy and I Know It"
+extensions: {}
+format: "gravitino.transition"
+id: "95334259-53ed-4c33-ba77-e7ae0fabce6e"
+metadata:
+  created_at: "2026-09-23T19:53:28.898Z"
+  name: "sexy and i know it -> scream and shout"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 30
+    outgoing:
+      track_beat: 247.270356
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 30
+  end_beat: 20.750327
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 1
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 30
+      loop_start_beat: 30
+      playing: false
+      position_beat: 30
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 242.707303
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.181
+      loop_active: false
+      loop_end_beat: 247.270356
+      loop_start_beat: 247.270356
+      playing: true
+      position_beat: 247.270356
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 129.960345
+  timeline:
+    -
+      at_beat: 0.4639186134542334
+      control: "deck.fx_type"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 1.0433455015783757
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 1.0536748433870404
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 4.265280356849321
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.22353178879310343
+    -
+      at_beat: 5.032790540813292
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 6.1777661906139105
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 6.727516523578556
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.00393
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.293479999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 19.555847
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1
