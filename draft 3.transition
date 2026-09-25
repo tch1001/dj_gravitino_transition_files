@@ -1,0 +1,1108 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 312.1619706723477
+      duration_seconds: 195.14000000000001
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff14eb1eff0cf337ff0ff026ff19e622ff44bb36ff6f903fff16e953ff867974ff5ea12fff11ee2eff659a58ff11ee51ff728d75ff5fa04bff23dc31ff5fa051ff07f85aff827d5fff6d923aff18e733ff59a64aff2dd254ff98673dff0ff03aff19e62cff669955ff0ef155ff78876aff5ca34aff0cf32cff718e50ff17e826ff728d44ff2fd06dff6f9076ff4eb13aff1be41eff5ba428ff1ae526ff1ae52eff11ee44ff20df22ffb34c34ff21de27ff21de3fff23dc54ff3bc432ff5ba443ff2ed15bff6b9448ff11ee2eff2dd230ff5ca34bff21de53ff837c73ff5ba433ff3ac526ff916e44ff20df50ff9b642aff0cf332ff3ec12aff817e1fff45ba"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:053db017dcd2a705"
+      meter: "4/4"
+      native_bpm: 95.980682
+      reference_downbeat_seconds: 0.24533333333333332
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Gasolina - Daddy yankee"
+  outgoing:
+    assumptions:
+      duration_beats: 460.2713395424095
+      duration_seconds: 273.44
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:03ff15ea11ff15ea4f34e91639ffc33c43afe11e27ffd52a0aff27d84e5eea154af0d42b51e4d8275375e11e5469e21d5167dc233affbc4341ffcd323bffb04f16ff2ad54f3ce21d4d6ce81750ffe51a5577e11e5488e21d50cfe11e25ff96693dffd42b37ffcc33481ff10e5062dd22489bde2151b0e11e4bffca35455fe8174f9ad62944ffd82737ffbe4138ffd52a4b60df200bff18e74c7ae8174f80e8174affb847476bde214affd92642dbd12e35a3b84739ffd22d4d48d8272effb14e537cd6292cffc43b1cff29d64532f00f48ffd9263dffd12e2fffbf403dffb9464c23e81733ff8c733bffd92650ffd926553ce31c555fda2542ffe11e44d5e01f"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:dd7ae82abfe1732d"
+      meter: "4/4"
+      native_bpm: 100.99642899999999
+      reference_downbeat_seconds: 1.0133333333333334
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Not Like Us"
+extensions: {}
+format: "gravitino.transition"
+id: "622fd04a-6c1c-467f-9ede-ca5525851856"
+metadata:
+  created_at: "2026-09-24T19:13:24Z"
+  description: "User-approved vocal-echo entrance: start at outgoing canonical beat 110, four beats before the chosen nor slice. Fade melody/bass/drums out over the first beat, then apply a half-beat echo to vocals only. Let the real nor flow into the sustained vowel; remove the full-mix opening sampler retrigger. Stop the dry vocal after the syllable and retain its echo tail, fading the deck out before rapid tone play. Four-beat hold before rapid passes at 8 and 24. Original rapid-note slice 114–114.5, C/C-sharp pitches, short gates, velocities and Gasolina attack alignment remain unchanged. Requires prepared Not Like Us stems. No song grids or permanent cues changed."
+  name: "draft 3"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 110
+  cues: []
+  end_beat: 53.42844591283699
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0522578803930565
+    outgoing:
+      captured: true
+      cue_beat: 110
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 110
+      loop_start_beat: 110
+      playing: true
+      position_beat: 110
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels:
+    -
+      at_beat: 0
+      label: "Start earlier — fade instruments, keep the vocal"
+    -
+      at_beat: 1.25
+      label: "Vocals-only half-beat echo"
+    -
+      at_beat: 4
+      label: "Original nor flows into four-beat hold — no full-mix retrigger"
+    -
+      at_beat: 4.48
+      label: "Stop dry vocal; let echo ring into the held vowel"
+    -
+      at_beat: 8
+      label: "Rapid Gasolina attack pattern — first pass"
+    -
+      at_beat: 23.837692984435865
+      label: "Full Gasolina enters, aligned to second tone pass"
+    -
+      at_beat: 24
+      label: "Second tone pass over Gasolina"
+  loops: []
+  master_bpm: 100.99642899999999
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 1
+      control: "deck.stem_melody"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 1
+      control: "deck.stem_bass"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 1
+      control: "deck.stem_drums"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 1.25
+      control: "deck.fx_type"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 1.25
+      control: "deck.fx_beats"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 1.25
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 1.25
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.08263739224137934
+    -
+      at_beat: 4.4
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 4.47
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 4.48
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 6
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 6.5
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.44356142241379315
+    -
+      at_beat: 8.05
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.05
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.05
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.05
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.05
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 9.25
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 15.75
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 23.5
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 23.837692984435865
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+  tone_play:
+    effects:
+      echo: 0.06
+      echo_beats: 0.25
+      enabled: true
+      reverb: 0.1
+      sustain_ducking: 0.9
+      tail_beats: 4
+    enabled: true
+    gain: 1
+    notes:
+      -
+        at_beat: 8
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.81883333
+      -
+        at_beat: 8.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.884
+      -
+        at_beat: 8.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.884
+      -
+        at_beat: 8.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.884
+      -
+        at_beat: 8.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 9
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.92933333
+      -
+        at_beat: 9.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.98559524
+      -
+        at_beat: 9.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.98559524
+      -
+        at_beat: 9.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 9.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.77188095
+      -
+        at_beat: 10
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.77188095
+      -
+        at_beat: 10.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.95078571
+      -
+        at_beat: 10.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.95078571
+      -
+        at_beat: 10.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 10.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 11
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.96495238
+      -
+        at_beat: 11.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.89411905
+      -
+        at_beat: 11.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.89411905
+      -
+        at_beat: 11.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.71845238
+      -
+        at_beat: 11.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.71845238
+      -
+        at_beat: 12
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 12.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 12.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 12.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 12.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.748
+      -
+        at_beat: 13
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71157143
+      -
+        at_beat: 13.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.69011905
+      -
+        at_beat: 13.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.69011905
+      -
+        at_beat: 13.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.73666667
+      -
+        at_beat: 13.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.75933333
+      -
+        at_beat: 14
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.75933333
+      -
+        at_beat: 14.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.60471429
+      -
+        at_beat: 14.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.60471429
+      -
+        at_beat: 14.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.70914286
+      -
+        at_beat: 14.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.67554762
+      -
+        at_beat: 15
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.67554762
+      -
+        at_beat: 15.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.6322381
+      -
+        at_beat: 15.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.7362619
+      -
+        at_beat: 15.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71359524
+      -
+        at_beat: 15.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71359524
+      -
+        at_beat: 16
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.65085714
+      -
+        at_beat: 16.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.65085714
+      -
+        at_beat: 16.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.67271429
+      -
+        at_beat: 16.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.67271429
+      -
+        at_beat: 16.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.61442857
+      -
+        at_beat: 17
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.61442857
+      -
+        at_beat: 17.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.5747619
+      -
+        at_beat: 17.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.46911905
+      -
+        at_beat: 17.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.60147619
+      -
+        at_beat: 17.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.60147619
+      -
+        at_beat: 18
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.55614286
+      -
+        at_beat: 18.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.55614286
+      -
+        at_beat: 18.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.62738095
+      -
+        at_beat: 18.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.62738095
+      -
+        at_beat: 18.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.59742857
+      -
+        at_beat: 19
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.51283333
+      -
+        at_beat: 19.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.51283333
+      -
+        at_beat: 19.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.6597619
+      -
+        at_beat: 19.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.62819048
+      -
+        at_beat: 19.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.60147619
+      -
+        at_beat: 20
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.60147619
+      -
+        at_beat: 20.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.5982381
+      -
+        at_beat: 20.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.5982381
+      -
+        at_beat: 20.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.5982381
+      -
+        at_beat: 20.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.49421429
+      -
+        at_beat: 21
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53711905
+      -
+        at_beat: 21.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53711905
+      -
+        at_beat: 21.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.54642857
+      -
+        at_beat: 21.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53469048
+      -
+        at_beat: 21.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.46345238
+      -
+        at_beat: 22
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.47357143
+      -
+        at_beat: 22.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.47357143
+      -
+        at_beat: 22.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.57921429
+      -
+        at_beat: 22.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.57921429
+      -
+        at_beat: 22.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53428571
+      -
+        at_beat: 23
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.38938095
+      -
+        at_beat: 23.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.36428571
+      -
+        at_beat: 23.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.45738095
+      -
+        at_beat: 23.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.45738095
+      -
+        at_beat: 23.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.45738095
+      -
+        at_beat: 24
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.81883333
+      -
+        at_beat: 24.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.884
+      -
+        at_beat: 24.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.884
+      -
+        at_beat: 24.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.884
+      -
+        at_beat: 24.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.92933333
+      -
+        at_beat: 25.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.98559524
+      -
+        at_beat: 25.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.98559524
+      -
+        at_beat: 25.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 25.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.77188095
+      -
+        at_beat: 26
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.77188095
+      -
+        at_beat: 26.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.95078571
+      -
+        at_beat: 26.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.95078571
+      -
+        at_beat: 26.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 26.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 27
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.96495238
+      -
+        at_beat: 27.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.89411905
+      -
+        at_beat: 27.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.89411905
+      -
+        at_beat: 27.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.71845238
+      -
+        at_beat: 27.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.71845238
+      -
+        at_beat: 28
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 28.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 28.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 28.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71845238
+      -
+        at_beat: 28.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.748
+      -
+        at_beat: 29
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71157143
+      -
+        at_beat: 29.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.69011905
+      -
+        at_beat: 29.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.69011905
+      -
+        at_beat: 29.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.73666667
+      -
+        at_beat: 29.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.75933333
+      -
+        at_beat: 30
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.75933333
+      -
+        at_beat: 30.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.60471429
+      -
+        at_beat: 30.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.60471429
+      -
+        at_beat: 30.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.70914286
+      -
+        at_beat: 30.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.67554762
+      -
+        at_beat: 31
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.67554762
+      -
+        at_beat: 31.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.6322381
+      -
+        at_beat: 31.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.7362619
+      -
+        at_beat: 31.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71359524
+      -
+        at_beat: 31.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.71359524
+      -
+        at_beat: 32
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.65085714
+      -
+        at_beat: 32.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.65085714
+      -
+        at_beat: 32.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.67271429
+      -
+        at_beat: 32.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.67271429
+      -
+        at_beat: 32.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.61442857
+      -
+        at_beat: 33
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.61442857
+      -
+        at_beat: 33.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.5747619
+      -
+        at_beat: 33.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.46911905
+      -
+        at_beat: 33.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.60147619
+      -
+        at_beat: 33.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.60147619
+      -
+        at_beat: 34
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.55614286
+      -
+        at_beat: 34.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.55614286
+      -
+        at_beat: 34.375
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.62738095
+      -
+        at_beat: 34.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.62738095
+      -
+        at_beat: 34.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.59742857
+      -
+        at_beat: 35
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.51283333
+      -
+        at_beat: 35.25
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.51283333
+      -
+        at_beat: 35.5
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.6597619
+      -
+        at_beat: 35.75
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.62819048
+      -
+        at_beat: 35.875
+        duration_beats: 0.0625
+        pitch: 60
+        velocity: 0.60147619
+      -
+        at_beat: 36
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.60147619
+      -
+        at_beat: 36.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.5982381
+      -
+        at_beat: 36.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.5982381
+      -
+        at_beat: 36.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.5982381
+      -
+        at_beat: 36.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.49421429
+      -
+        at_beat: 37
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53711905
+      -
+        at_beat: 37.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53711905
+      -
+        at_beat: 37.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.54642857
+      -
+        at_beat: 37.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53469048
+      -
+        at_beat: 37.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.46345238
+      -
+        at_beat: 38
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.47357143
+      -
+        at_beat: 38.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.47357143
+      -
+        at_beat: 38.375
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.57921429
+      -
+        at_beat: 38.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.57921429
+      -
+        at_beat: 38.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.53428571
+      -
+        at_beat: 39
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.38938095
+      -
+        at_beat: 39.25
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.36428571
+      -
+        at_beat: 39.5
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.45738095
+      -
+        at_beat: 39.75
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.45738095
+      -
+        at_beat: 39.875
+        duration_beats: 0.0625
+        pitch: 61
+        velocity: 0.45738095
+    replace_outgoing: false
+    root_note: 60
+    source_end_beat: 114.5
+    source_start_beat: 114
+    sustain:
+      at_beat: 4.32
+      attack_ms: 180
+      crossfade_ms: 12
+      duration_beats: 35.18
+      enabled: true
+      gain: 0.42
+      loop_end_beat: 114.34619331349207
+      loop_start_beat: 114.25754089285714
+      pitch: 60
+      release_ms: 500
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+  - "tone-play.v1"
+  - "tone-play-sustain.v1"
+  - "tone-play-effects.v1"
+version: 1
