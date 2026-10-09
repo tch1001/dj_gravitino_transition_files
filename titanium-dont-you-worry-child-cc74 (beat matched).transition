@@ -36,12 +36,12 @@ endpoints:
       title: "David Guetta - Titanium (feat. Sia) [Official Audio]"
 extensions:
   gravitino.legacy:
-    source_id: "legacy-a1354fe14111a7cb79f3a3b7eaf19e44"
+    source_id: ""
 format: "gravitino.transition"
-id: "3a1d044c-64d4-4cb8-bf80-b2d66d75770c"
+id: "c840a668-5d6f-4bf9-ac94-aee7f0dd4e7d"
 metadata:
   created_at: "2026-08-21"
-  name: "titanium -> dont you worry child"
+  name: "titanium -> dont you worry child (beat matched)"
   tags: []
 performance:
   anchors:
@@ -83,7 +83,7 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1
+      tempo_ratio: 0.9998835907306504
     mixer:
       captured: true
       crossfader: 0.509
@@ -109,7 +109,7 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.023772
+      tempo_ratio: 1.0237724365079366
   labels: []
   loops: []
   master_bpm: 128.995327

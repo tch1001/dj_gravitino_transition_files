@@ -1,0 +1,222 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 409.71980628511153
+      duration_seconds: 193.56
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:10ff16e92cff3bc419ff26d917ff19e629ff29d62bff32cd3bff619e33ff5ba42dff6b9445ff67985cff946b3aff708f44ff728d5dffa7583eff5fa056ff6b9454ffae513dff43bc51ffa05f5eff7a8542ff54ab44ff916e48ff37c856ff936c42ff748b4cff699657ffb54a2fff857a4fff7c8355ffa05f2bff659a51ffad5258ffae5134ff708f56ff9b6452ff9f603cff4fb058ffb64951ff807f3eff4fb051ff946b42ff69963aff43bc38ff49b651ffb74826ff2cd324ff18e71dff0ef124ff20df28ff20df30ff49b62dff788733ff43bc33ff58a745ff679840ff629d5cff837c38ff6a9546ff847b5bff946b44ff46b950ff7b8457ffb64934ff57a8"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:298276bb3f83c083"
+      meter: "4/4"
+      native_bpm: 127.004494
+      reference_downbeat_seconds: 0.18133333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Alexandra Stan - Mr. Saxobeat (Official Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 440.1336713608147
+      duration_seconds: 220.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff14eb1bf4a35c15ff39c61bff9b6454ffb8475dffca351cff31ce1bff47b860ffb64958ffc33c36ffb44b20ff2cd35bffbd425dffb14e3cff11ee3aff0ff063ffb64938ff48b736ff12ed5bffac535bffa05f3aff12ed1eff25da59ffba4563ffcc3321ff33cc27ff49b662ffb7485dffc13e38ffa7582cff1ce33aff837c65ffbc4340ff34cb3eff14eb63ffb94660ff9a6535ff29d639ff79865dffa35c65ff9f6026ff837c18ff3ec121ff906f58ffc8372aff46b92cff50af53ffb34c47ff6c9321ff21de20ff17e82dff1ee125ff14eb42ff4ab563ffb7485fff9a6545ff12ed3cff59a65fff976862ff99664cff3dc23bff748b5fffa65906ff51ae"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:585c23a261185d6f"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 0.30933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Ke$ha - Blow"
+extensions: {}
+format: "gravitino.transition"
+id: "fa548c02-7053-4297-9083-d9d0be0835fe"
+metadata:
+  created_at: "2026-10-02T13:09:30.058Z"
+  name: "blow -> mr saxobeat"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 3.968908
+    outgoing:
+      track_beat: 276.065726
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 3.968908
+  end_beat: 67.497042
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 66.990522
+      loop_start_beat: 66.990522
+      playing: false
+      position_beat: 66.990522
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.985332
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 276.065726
+      loop_start_beat: 276.065726
+      playing: true
+      position_beat: 276.065726
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.042994
+  labels: []
+  loops: []
+  master_bpm: 125.13925099999999
+  timeline:
+    -
+      at_beat: 3.9041259765625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.918124
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.8004
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.473046
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.016
+    -
+      at_beat: 25.78426
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 29.888813
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.498
+    -
+      at_beat: 30.333741999999997
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.004
+    -
+      at_beat: 42.13903
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 44.616296
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 53.612466999999995
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.496
+    -
+      at_beat: 53.689153999999995
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.486
+    -
+      at_beat: 54.8203125
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.188114
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.844
+    -
+      at_beat: 58.376058
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 62.30264
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

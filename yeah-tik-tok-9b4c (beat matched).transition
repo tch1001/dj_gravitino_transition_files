@@ -2,53 +2,51 @@
 endpoints:
   incoming:
     assumptions:
-      duration_beats: 457.771707508333
-      duration_seconds: 212.9
+      duration_beats: 400.6760519145
+      duration_seconds: 200.37
       fingerprints:
         -
           algorithm: "gvfp1"
-          value: "gvfp1:b3d6d2370286cda8"
+          value: "gvfp1:b342ba18775d3180"
       meter: "4/4"
-      native_bpm: 129.010345
+      native_bpm: 119.980851
       reference_downbeat_seconds: 0
     identity:
-      artists:
-        - "Swedish House Mafia - Topic"
+      artists: []
       identifiers:
         providers: {}
-      title: "Don't You Worry Child (Radio Edit)"
+      title: "Kesha - TiK ToK (Lyrics)"
   outgoing:
     assumptions:
-      duration_beats: 525.462
-      duration_seconds: 250.22
+      duration_beats: 437.7625
+      duration_seconds: 250.15
       fingerprints:
         -
           algorithm: "gvfp1"
-          value: "gvfp1:59cbaf2978d0777b"
+          value: "gvfp1:85813df35c251e6b"
       meter: "4/4"
-      native_bpm: 126
+      native_bpm: 105
       reference_downbeat_seconds: 0
     identity:
-      artists:
-        - "David Guetta & Sia"
+      artists: []
       identifiers:
         providers: {}
-      title: "David Guetta - Titanium (feat. Sia) [Official Audio]"
+      title: "Usher feat. Lil Jon, Ludacris - Yeah! (Audio)"
 extensions:
   gravitino.legacy:
-    source_id: "legacy-a1354fe14111a7cb79f3a3b7eaf19e44"
+    source_id: ""
 format: "gravitino.transition"
-id: "3a1d044c-64d4-4cb8-bf80-b2d66d75770c"
+id: "dfc713be-9f25-4abe-9549-8db44e8d2212"
 metadata:
-  created_at: "2026-08-21"
-  name: "titanium -> dont you worry child"
+  created_at: "2026-08-22"
+  name: "yeah -> tik tok (beat matched)"
   tags: []
 performance:
   anchors:
     incoming:
-      track_beat: 0
+      track_beat: -4
     outgoing:
-      track_beat: 433.769651
+      track_beat: 306.183211
   cues:
     -
       endpoint: "incoming"
@@ -58,7 +56,7 @@ performance:
         bank: "custom"
         pad: 1
       purpose: "legacy-hot-cue"
-      track_beat: 0
+      track_beat: -4
   initial_state:
     complete: true
     incoming:
@@ -74,22 +72,22 @@ performance:
       fx_type: 0
       fx_wet: 0.5
       loop_active: false
-      loop_end_beat: 0
-      loop_start_beat: 0
+      loop_end_beat: 72.582736
+      loop_start_beat: 72.582736
       playing: false
-      position_beat: 0
+      position_beat: 72.582736
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1
+      tempo_ratio: 0.95837354079110515
     mixer:
       captured: true
-      crossfader: 0.509
+      crossfader: 0.507
     outgoing:
       captured: true
-      cue_beat: 434.541549
+      cue_beat: 317.6725
       eq_high: 0.5
       eq_low: 0.5
       eq_mid: 0.5
@@ -99,23 +97,23 @@ performance:
       fx_on: false
       fx_type: 0
       fx_wet: 0.5
-      loop_active: true
-      loop_end_beat: 464
-      loop_start_beat: 448
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 0
       playing: true
-      position_beat: 433.769651
+      position_beat: 306.183211
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.023772
+      tempo_ratio: 1.0951092666666666
   labels: []
   loops: []
-  master_bpm: 128.995327
+  master_bpm: 114.986473
   timeline:
     -
-      at_beat: 14.232673645019522
+      at_beat: 13.8125
       control: "deck.transition_cue"
       cue_id: "incoming-hotcue-1"
       curve: "step"
@@ -125,13 +123,13 @@ performance:
       target: "incoming"
       value: 1
     -
-      at_beat: 15.048368
+      at_beat: 14.810297
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 15.628506
+      at_beat: 16.49674
       control: "deck.transition_cue"
       cue_id: "incoming-hotcue-1"
       curve: "step"
@@ -141,49 +139,49 @@ performance:
       target: "incoming"
       value: 0
     -
-      at_beat: 29.745435
+      at_beat: 43.6875
       control: "deck.fader"
       curve: "step"
       target: "incoming"
-      value: 0.018
+      value: 0
     -
-      at_beat: 33.636888
+      at_beat: 45.871948
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
       value: 1
     -
-      at_beat: 39.714551
+      at_beat: 51.586142
       control: "deck.eq_low"
       curve: "step"
       target: "outgoing"
       value: 0.498
     -
-      at_beat: 45.345396
+      at_beat: 52.189741
       control: "deck.eq_low"
       curve: "step"
       target: "incoming"
-      value: 0.001
+      value: 0.003
     -
-      at_beat: 58.059661
+      at_beat: 67.902469
       control: "deck.eq_low"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 62.313423
+      at_beat: 69.125
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 70.279745
       control: "deck.eq_low"
       curve: "linear"
       target: "incoming"
       value: 0.5
     -
-      at_beat: 69.5829
-      control: "deck.fader"
-      curve: "step"
-      target: "outgoing"
-      value: 0.996
-    -
-      at_beat: 79.73046875
+      at_beat: 77.94551
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"

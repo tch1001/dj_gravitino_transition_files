@@ -2,65 +2,65 @@
 endpoints:
   incoming:
     assumptions:
-      duration_beats: 504.801261716603
-      duration_seconds: 240.37
+      duration_beats: 403.490852054923
+      duration_seconds: 189.15
       fingerprints:
         -
           algorithm: "gravitino-structure-2"
-          value: "gvsf2:2affbe41365cdb2444ffc63923ff9b640cff04fb0eff04fb0eff04fb0cff04fb40ffb8473cfcc83745ffb84740ffb74827ff7e812cffc23d3b9ce9165babde214dffcb345d5be11e5c82e619666fe41b19ff0bf46695e31c6669e11e579fda251cff0af545eec53a23ff8f702cffb34c3cffc93655ffd32c59ebd82762abda2528ff08f76783e31c5f87dc234dffd62940ffd82724ff9b641dff0df21bff1ee11aff2cd31cff639c27ff9d6231ffc03f2fff99666469e61958ffde214cffd52a3cffb54a10ff08f752c8e01f5ba5e11e638be41b61a5e01f5b7bde215dadde215ce3db245ce2da2509ff02fd373ee9166631ea15651be6195523ed124affd827"
+          value: "gvsf2:2da3e41b054f9f6016ff3fc027dc4ab52fff6a9531ff629d35ff1ce339ff49b632ff49b636ff35ca38ff47b848ff52ad3eff56a937ff68973bff659a3aff55aa42ff3ec145ff34cb42ff36c948ff47b83fff15ea34ff18e769ead32c53ffac5354ff96695cffbb443eff7b844bff946b5bffb74848ff33cc46ff3dc246ff56a93fff738c2aff4ab521ff14eb20ff19e61dff26d93eff40bf38ff55aa35ff629d3aff48b738ff57a83cff5da23cff3fc03aff37c840ff21de42ff3cc362ffc43b57ffa05f63ffc43b4cff966960ffc83761ffaa555fffbd424eff9a653cff4db24bff4ab52bff5aa501ff3bc44dffab5451ffb14e57ff837c55ffc33c5affbc43"
         -
           algorithm: "gvfp1"
-          value: "gvfp1:841773cb9d4d177a"
+          value: "gvfp1:6847a8c033031d15"
       meter: "4/4"
-      native_bpm: 126.004494
-      reference_downbeat_seconds: 0.437333333333333
+      native_bpm: 127.990909
+      reference_downbeat_seconds: 5.1077163150792
     identity:
       artists: []
       identifiers:
         providers: {}
-      title: "Pitbull - Hotel Room Service (Official Audio)"
+      title: "R3HAB & VINAI - How We Party (Official Music Video)"
   outgoing:
     assumptions:
-      duration_beats: 462.261830203651
-      duration_seconds: 218.38
+      duration_beats: 553.868764736591
+      duration_seconds: 257.39
       fingerprints:
         -
           algorithm: "gravitino-structure-2"
-          value: "gvsf2:1dff16e925ff1ae51aff1be423ff20df29ff37c839ffa45b5195dc2351e9d32c3cffb34c52ffca353fffa95651c1c83751e4cc3365ddbd422dff718e55d8bd423fffae5143ffa05f42ffc6395680c7382aff79862fff8c7346f7c03f3dffce3153ff996629ff2dd232ff36c92bff07f851ff956a54fdac532dff35ca59ded02f3cff9f6037ff55aa5cffd42b49ffb24d43ffbd4246ffbc4355fdc13e4dfcda255875a9563eff8d7249ffaa555991c83727ffb54a1fff1ae525ff18e731ff0df225ff2cd338ff45ba2aff13ec50e6c8373aff12ed21ff26d959a4c43b44ffb14e4dffb04f4cffbc43616bc13e29ff56a93eff986744ffb84744ffc33c5effac53"
+          value: "gvsf2:1fff52ad2eff2cd334ff32cd28ff31ce27ff26d935ff12ed27ff30cf3eff12ed19ff4fb040ff14eb3eff2bd467ff986755ff4db266ffa15e54ff4fb057ff7e814bff748b65ff9e615cff35ca3cff38c72bff2ad566ff99663eff54ab35ff45ba4eff32cd3bff0af539ff11ee32ff18e737ff3ac53eff27d83bff26d942ff24db61ff817e4dff21de4dff1de256ff6e9166ff7b8433ff14eb52ff48b76aff9d6229ff25da37ff30cf40ff847b62ffae5143ff38c72aff1ae51dff22dd26ff28d734ff18e735ff3ac534ff24db2eff2bd421ff1ce34cff46b961ff98675aff55aa51ff5fa058ff8b7454ff9f6034ff4bb438ff47b81cd65fa01fff33cc11f45aa5"
         -
           algorithm: "gvfp1"
-          value: "gvfp1:1e2b3b99b71e8cde"
+          value: "gvfp1:c0840d591988faac"
       meter: "4/4"
-      native_bpm: 127.004494
-      reference_downbeat_seconds: 1.59261225715268
+      native_bpm: 129.110345
+      reference_downbeat_seconds: 1.01333333333333
     identity:
       artists: []
       identifiers:
         providers: {}
-      title: "Nicki Minaj - Super Bass (Official Video)"
+      title: "Pitbull - Give Me Everything (Audio) ft. Ne-Yo, Afrojack, Nayer"
 extensions: {}
 format: "gravitino.transition"
-id: "3323c8c0-f48b-4f7d-b381-48229a7ad984"
+id: "5d705e6b-21a5-474f-955c-3a3bb14c5eba"
 metadata:
-  created_at: "2026-09-07T08:27:01.681Z"
-  name: "super bass -> hotel room service"
+  created_at: "2026-09-07T06:54:10.043Z"
+  name: "give me everything -> how we party (beat matched)"
   tags: []
 performance:
   anchors:
     incoming:
-      track_beat: 64
+      track_beat: 0
     outgoing:
-      track_beat: 314.362985
+      track_beat: 406.593594
   cues: []
-  end_beat: 84.606773
+  end_beat: 117.374611
   initial_state:
     complete: true
     incoming:
       captured: true
-      cue_beat: 0
-      eq_high: 0.5
+      cue_beat: 12.042664
+      eq_high: 0
       eq_low: 0.5
-      eq_mid: 0
+      eq_mid: 0.5
       fader: 0
       filter: 0.5
       fx_beats: 0.5
@@ -68,19 +68,19 @@ performance:
       fx_type: 0
       fx_wet: 0.5
       loop_active: true
-      loop_end_beat: 80
-      loop_start_beat: 64
+      loop_end_beat: 16
+      loop_start_beat: 0
       playing: false
-      position_beat: 64
+      position_beat: 0
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.008233
+      tempo_ratio: 0.99969557212848603
     outgoing:
       captured: true
-      cue_beat: 312.37973
+      cue_beat: 394.07276
       eq_high: 0.5
       eq_low: 0.5
       eq_mid: 0.5
@@ -91,21 +91,21 @@ performance:
       fx_type: 0
       fx_wet: 0.5
       loop_active: false
-      loop_end_beat: 335.413012
-      loop_start_beat: 335.413012
+      loop_end_beat: 32
+      loop_start_beat: 32
       playing: true
-      position_beat: 314.362985
+      position_beat: 406.593594
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1
+      tempo_ratio: 0.99102782972193282
   labels: []
   loops:
     -
       color: "#e8a13a"
-      end_track_beat: 80
+      end_track_beat: 16
       endpoint: "incoming"
       id: "incoming-loop-1"
       label: "L1"
@@ -114,11 +114,11 @@ performance:
         bank: "custom"
         pad: 1
       purpose: "saved-loop"
-      start_track_beat: 64
-  master_bpm: 127.004494
+      start_track_beat: 0
+  master_bpm: 127.951945
   timeline:
     -
-      at_beat: 5.688553
+      at_beat: 9.422106459691316
       control: "deck.transition_loop"
       curve: "step"
       input_hint:
@@ -128,13 +128,13 @@ performance:
       target: "incoming"
       value: 1
     -
-      at_beat: 6.361051
+      at_beat: 10.27028
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 6.839868
+      at_beat: 10.725214
       control: "deck.transition_loop"
       curve: "step"
       input_hint:
@@ -144,67 +144,73 @@ performance:
       target: "incoming"
       value: 0
     -
-      at_beat: 22.37537
-      control: "deck.fader"
-      curve: "step"
-      target: "incoming"
-      value: 0.005
-    -
-      at_beat: 22.828546
-      control: "deck.eq_low"
-      curve: "step"
-      target: "outgoing"
-      value: 0.492
-    -
-      at_beat: 45.785287
+      at_beat: 41.6384
       control: "deck.loop_exit"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 48.911931
-      control: "deck.eq_low"
-      curve: "linear"
-      target: "outgoing"
-      value: 0
-    -
-      at_beat: 59.19927
-      control: "deck.eq_mid"
+      at_beat: 44.368053
+      control: "deck.fader"
       curve: "step"
       target: "incoming"
-      value: 0.007
+      value: 0.005
     -
-      at_beat: 64.5
+      at_beat: 49.065293
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.484
+    -
+      at_beat: 69.332883
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
       value: 1
     -
-      at_beat: 66.661317
-      control: "deck.eq_mid"
+      at_beat: 70.88818359375
+      control: "deck.eq_low"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 68.41674
-      control: "deck.eq_mid"
+      at_beat: 79.671438
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 82.855981
+      control: "deck.eq_high"
+      curve: "step"
+      target: "incoming"
+      value: 0.003
+    -
+      at_beat: 101.679149
+      control: "deck.eq_high"
       curve: "linear"
       target: "incoming"
-      value: 0.48
+      value: 0.5
     -
-      at_beat: 69.71935
+      at_beat: 102.624213
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 105.284555
       control: "deck.fader"
       curve: "step"
       target: "outgoing"
-      value: 0.982
+      value: 0.985
     -
-      at_beat: 71.264556
+      at_beat: 108.366795
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 81.911297
+      at_beat: 111.529827
       control: "deck.stop"
       curve: "step"
       target: "outgoing"

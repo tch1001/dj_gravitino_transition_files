@@ -1,0 +1,98 @@
+gravitino-transition 1
+
+[meta]
+name        = timber -> yeah
+created     = 2026-08-22
+
+[from]
+title       = Pitbull, Ke$ha - Timber (featuring Ke$ha - Official Audio)
+bpm         = 130.013953
+duration    = 205.71
+fingerprint = gvfp1:de26b458aa05f5e4
+
+[to]
+title       = Usher feat. Lil Jon, Ludacris - Yeah! (Audio)
+bpm         = 105.00
+duration    = 250.15
+fingerprint = gvfp1:85813df35c251e6b
+
+[sync]
+anchor_from = 386.361982 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 120.994235 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.527
+tempo_ratio = 0.930625
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 386.361982
+cue_beat    = 372.04704
+loop_active = 0
+loop_start_beat = 0.000
+loop_end_beat = 16.000
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.153026
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 1.194521
+to_cue_beat = 1.194521
+to_loop_active = 0
+to_loop_start_beat = 1.194521
+to_loop_end_beat = 1.194521
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = 0.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+13.680402 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+14.75003 b        play
+15.266106 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+18.78918 b        fader       0.022
+19.359078 b        fader       0.261  linear
+21.015356 b        fader       0.38   linear
+25.235215 b        fader       0.877
+25.363728 b        fader       0.921  linear
+25.478717 b        fader       0.994  linear
+25.532483 b        fader       1.00   linear
+28.523129 a        eq_low      0.484
+29.103127 a        eq_low      0.446  linear
+29.146149 b        eq_low      0.006
+31.771474 a        eq_low      0.411  linear
+36.309015 b        eq_low      0.138  linear
+41.234828 b        eq_low      0.292  linear
+42.245822 a        eq_low      0.209  linear
+42.860384 b        eq_low      0.32   linear
+43.314147 b        eq_low      0.406  linear
+43.753603 b        eq_low      0.50   linear
+44.654918 a        eq_low      0.00   linear
+47.171636 a        fader       0.984
+47.236146 a        fader       0.98   linear

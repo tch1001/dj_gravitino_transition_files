@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 309.89195992571155
+      duration_seconds: 143.01
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3975c03f25ff1ce33256c03f0fffca351cb6a6594942dc232fff0ff02fff29d62cc32bd41df125da1bff3ec12aff1fe014ff3bc409ff10ef64b1b8473eff2ad55eff778841ff7a8565ff827d4cffbf403eff30cf58ff8f704dff3ac55eff6e915eddb24d50ffb6496063de213eff956a12ff1de239ff1ae52fff1ee136ff16e947ff13ec27ff1ae535ff16e94fffb74862bfc6394fffaa5552ff807f66ff5aa55bff8a7532ff3ac556ff8b7440ff16e93dff11ee37ff29d631ff1be447ff12ed3cff1ce30dff28d745ff708f50fecb344dffda2550f4c53a3dff16e962db97681aff20df41ff8b745251db2438ff7d8259b0d12e5affb14e66bcbd4243ff13ec"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:ad8522ab0601d0e5"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 1.056
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "BIANCA MAIELI - KOI LADKI AFRO BLND"
+  outgoing:
+    assumptions:
+      duration_beats: 211.21347626602613
+      duration_seconds: 97.48
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:06ff23dc12ff14eb1eff639c1bff4eb10cff22dd19ff08f718ff0df21aff41be1dff1ee116ff0df2436cdd2214ff08f721ff53ac24ff26d912ff0af52cffa65914ff08f71dff47b815ff27d814ff28d76bffc03f7693d02f5effb34c3dff35ca4fff956a56ffbd427a81c23d59ffb04f52ff916e24ff13ec66ffb8477396cc3353ff96696ffdc33c58ffa75858ffba457591bb4460ffb54a5cffa05f20ff14eb5fffd7283effc63953ffb24d6fe5cd3260ffcf303effa75856f3c13e67c8c93654ffb6496affca3562ffd92639ffc8374dffaa556adecb3467ffcf303cffae5164ffcf3040ff936c4dffa8576dffc43b12ff8f700942d02f054dce310234d728"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:81c60adc9691fa62"
+      meter: "4/4"
+      native_bpm: 130.007692
+      reference_downbeat_seconds: 0.12111653046469684
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "TAKA AFRO (EGNEVER EDIT)"
+extensions: {}
+format: "gravitino.transition"
+id: "4a73213d-b4bd-46da-8831-d13564821d33"
+metadata:
+  created_at: "2026-09-25T11:12:05.019Z"
+  name: "taka afro -> koi ladki afro blend"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 154.740287
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 44.635237
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.512
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 36.156253
+      loop_start_beat: 36.156253
+      playing: false
+      position_beat: 36.156253
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0.500277
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: true
+      position_beat: 154.740287
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.007692
+  timeline:
+    -
+      at_beat: 5.25
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.665039
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 7.75830078125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.2694
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.269651
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 18.694336
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18.785645
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 29.86572265625
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 36.390625
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

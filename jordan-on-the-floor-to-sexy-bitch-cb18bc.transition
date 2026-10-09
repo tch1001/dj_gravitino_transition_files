@@ -1,0 +1,276 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 425.06369203004004
+      duration_seconds: 196.1621875
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:5970e21d36be87785d40e01f30ff837c5c5cdf203da7a35c5d27df2035ff97685254d926257ca9565d28df2032ff8a754cfdd92634ff7986559dd6292dff59a638ff788733ff7c8339ff877833ff4fb030ff37c83aff34cb31ff3cc334ff4ab540ff8e7150ffd42b3aff7f8050f7d42b3bff8f7056ffd92634ff7c8350ffce313bff926d58ffd52a3effa8575335d7283fc7a25d5b26e01f3fc2a857499ddc233bff916e51ffd72838ff916e3dff926d34ff7e8136ff7b843dff748b2dff52ad32ff4ab533ff34cb3cff43bc3cff50af35ff6c9331ff46b94fe9d22d3cff976849e8ce3139ff8f704cffc53a3dff946b4bffcf303aff926d4effca3517ff0df2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:09d3f929089aab92"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.576
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta - Sexy B_itch (feat. Akon) _ Lyrics"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 617.3687752341751
+      duration_seconds: 284.9088541666667
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fff3ec10df055aa21ff33cc22ff3fc032ff936c27ff39c62bff3cc33fff996651ffa35c21ff39c655f9b64949ff9d6235ffad523bffa95644ff9f604dffa35c3cffb04f4affa6592fff32cd22ff46b92dff20df20ff30cf2fff78875fff89765bff7c8354ff8a7546ffbe414cffa85747ff936c24ff15ea4fffa05f45ffa05f49ff9f6048ffa95630ff6b941fd5708f2cff1fe020ff38c72cff5aa55eff8c735cff7d8251ffb64957ff76895bff956a5aff916e5fffce3140ffa45b50ff906f55ff986741ff38c720cf728d2bff34cb29ff3ec12bff50af4dff827d60ff7f8064ff97685aff758a65ff758a4cff758a54ffa65951ff8e714dff9d6237ff817e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2257ecec11f33f85"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.128
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "On The Floor"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "10B"
+    incoming_recipe_phase_offset: 0.011684
+    key_lock: true
+    outgoing_camelot: "2A"
+    outgoing_recipe_phase_offset: 0.105478
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "loop-intro"
+format: "gravitino.transition"
+id: "cb18bc92-a2af-51ae-9e18-d6530c73cdc0"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Repeat an eight-beat incoming intro, introduce highs and mids, swap bass, then release the loop to the next phrase. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — On the Floor → Sexy Bitch"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 0.011684
+    outgoing:
+      track_beat: 432.105478
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 432.105478
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 0.011684
+  end_beat: 32
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0.011684
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.22
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0.011684
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999962436916
+    outgoing:
+      captured: true
+      cue_beat: 432.105478
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 432.105478
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999962436916
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · loop intro"
+    -
+      at_beat: 16
+      label: "Bass swap"
+    -
+      at_beat: 23.98
+      label: "Release intro loop"
+    -
+      at_beat: 32
+      label: "Clean incoming mix · transition complete"
+  loops:
+    -
+      color: "#c59bff"
+      end_track_beat: 8.011684
+      endpoint: "incoming"
+      id: "incoming-phrase-loop"
+      label: "Eight-beat phrase"
+      pairing_group: "phrase"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: 0.011684
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 0.01
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 14
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.22
+    -
+      at_beat: 15.8
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.3
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 18
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 23.98
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "temporary-loops.v1"
+version: 1

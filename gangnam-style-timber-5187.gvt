@@ -1,0 +1,79 @@
+gravitino-transition 1
+
+[meta]
+name        = gangnam style -> timber
+created     = 2026-08-22
+
+[from]
+title       = Gangnam Style (강남스타일)
+bpm         = 132.002941
+duration    = 219.54
+fingerprint = gvfp1:7820d8294bf82ade
+
+[to]
+title       = Pitbull, Ke$ha - Timber (featuring Ke$ha - Official Audio)
+bpm         = 130.013953
+duration    = 205.71
+fingerprint = gvfp1:de26b458aa05f5e4
+
+[sync]
+anchor_from = 34.963788 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 129.963599 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.629
+tempo_ratio = 0.984551
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 34.963788
+cue_beat    = 30.400657
+loop_active = 0
+loop_start_beat = -392.066001
+loop_end_beat = -384.066001
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 1.098663
+to_cue_beat = -1.000
+to_loop_active = 1
+to_loop_start_beat = 0.000
+to_loop_end_beat = 16.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+9.071941 b        saved_loop_1 1.00   via=performance_pad_1@custom
+10.029531 b        play
+10.558814 b        saved_loop_1 0.00   via=performance_pad_1@custom
+28.137293 b        loop_exit
+30.909886 b        fader       0.005
+34.479503 b        fader       0.641
+36.424913 b        fader       0.904  linear
+36.759473 b        fader       1.00   linear

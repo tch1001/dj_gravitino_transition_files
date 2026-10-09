@@ -1,0 +1,240 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 544.02421875
+      duration_seconds: 261.13
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0ece53ac16ff778806ff2cd310ff05fa13ff0ef112ff10ef13ff1be40fff0cf332ff50af0fff11ee13ff15ea1aff16e926ff0ef11fff1ae524ff0ff046ff6c934aff976853ff8c733eff768950ff8e713fff0ff04cff16e92cff0cf335ff17e85aff24db41ff17e867ff1ae551ff28d770ffbf4072ffb24d73ffb74870ffc03f26ff35ca1bff7a8521ff2ad52eff3bc443ff36c937ff41be4fff639c33ff3bc439ff23dc32ff20df46ff1ce364ff14eb5dff18e75dff26d950ff1de258ff29d654ff50af7eff8e7159ff4fb077ff9c6331ff1ee121ff15ea30ff11ee1eff14eb6bff15ea4eff1fe067ff0df237ff07f85fff728d5fff55aa69ff4fb071ff926d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:534cc376e186c4b5"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 48.11252788869284
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Nicki Minaj - Starships (Explicit) (Official Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 519.6610513888888
+      duration_seconds: 251.45000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2aff5da224ff8d7238ff2bd43aff2ed13aff38c72fff2ad536ff45ba37ff45ba2eff42bd28ff58a75dffa05f4cff6d925dff78874bff708f53ffa35c49ff58a759ff7a853fff24db2bff3bc43dff24db39ff46b92aff04fb58ffa45b6effb64957ffa05f3fff05fa56ff9d624dff768954ff9b6442ff04fb2cff2ad535ff22dd30ff2ed127ff2ad528ff16e92aff21de2dff3bc42bff16e95ce9b94653ffbd4246ff649b2bff0ef143ff837c5bff807f47ff52ad3cff78872cff42bd3eff1de23bff26d92fff0bf44aff7f8048ff6b943eff07f83eff0af56cffb74850ff857a6cffb7484cff6c9353ff79864fff807f49ff649b45ff25da0400fe010300fe01"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:81e823ba09d4ab27"
+      meter: "4/4"
+      native_bpm: 124
+      reference_downbeat_seconds: 1.0724352354037734
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - Wake Me Up (Official Lyric Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "1b7ffc8d-7979-496b-b77a-0727960aaaaa"
+metadata:
+  created_at: "2026-10-02T14:50:18.098Z"
+  name: "wake me up -> starships"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 426.880986
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 72.14905092981996
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9921089999999999
+    outgoing:
+      captured: true
+      cue_beat: 0.120345
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 80
+      loop_start_beat: 80
+      playing: true
+      position_beat: 426.880986
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 124
+  timeline:
+    -
+      at_beat: 4.731538
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 4.73153844277298
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 4.83984375
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.064859879463172
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.117832685110421
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 6.767644
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.175466999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12.76865
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 21.600855
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 30.7021484375
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 30.969626364088295
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 33.24637437250509
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 34.18008088479456
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 34.425601
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 39.390464025642
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 44.2268767741053
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 63.47009239960984
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 69.0389993296777
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,395 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 522.2694821401506
+      duration_seconds: 244.83120833333334
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b634a8d80cf8c23e"
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:20ff1ee123ff30cf22ff1ee10fff5ca32affd52a30ffa75835ff7b842bffd52a52ff837c50ffae514dffa35c4affbf402dff0ff017ff14eb19ff11ee27ff09f633ff25da36ff23dc34ff21de28ff0af563ffbd4264ffbd4260ffb7485fffb64960ffb9465dffb94657ffac535dffbc435fffb54a5effb44b5fffb14e3aff827d57ff768951ff89764fff916e50ffb54a2bff15ea1eff10ef25ff0cf329ff07f833ff23dc35ff23dc37ff20df28ff0af563ffba4565ffb6495fffb44b3cff5da248a5d62946d9ce314797d629459ddb244cffbb444dffc23d4cffca3545ff837c52ffc7384cffb74852ff9d624aff897623ff2cd323ff26d91cff1ce319ff11ee"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 1.9093333333333333
+    identity:
+      artists:
+        - "Rihanna"
+      identifiers:
+        providers: {}
+      title: "Rihanna - Where Have You Been (Audio)"
+      version: "Local source arrangement"
+    notes: "Uses the existing local beatgrid; do not move the song grid. Preview with Key Lock on."
+  outgoing:
+    assumptions:
+      duration_beats: 368.5249560697104
+      duration_seconds: 254.18885416666666
+      fingerprints:
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:96cdf1bb9410712a"
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:41ff9c633cff837c32ffaf502aff12ed43ff0ff04eff996636ff788759ffb34c2eff47b845ff11ee2dff47b839ff4db22cff8c735aff9c632aff35ca3aff2bd42aff3dc257ffa6595cff9a6558ff926d2cff14eb29ff22dd49ff88776cff8b744dffcf3036ff2fd02bff0ff05bffaa552fff45ba2dff847b2dff45ba35ff77884dff5aa536ff738c43ff728d67ff8f705cff9c6345ff4db23cff629d5dffa05f60ff8b7456ffae5134ff5da223ff14eb49ff9a6527ff2cd34effae5138ff42bd3cff52ad43ff3ac548ff768944ff6e9168ff976833ff57a844ff53ac35ff8f705effaa554fff8e7154ffb04f49ff39c62dff3ec120ff847b18ffa05f05ffb04f"
+      meter: "4/4"
+      native_bpm: 86.98846153846128
+      reference_downbeat_seconds: 1.1946666666666668
+    identity:
+      artists:
+        - "Rihanna"
+      identifiers:
+        providers: {}
+      title: "Rihanna - Umbrella (Orange Version) (Official Music Video) ft. JAŸ-Z"
+      version: "Local source arrangement"
+    notes: "Uses the existing local beatgrid; do not move the song grid. Preview with Key Lock on."
+extensions:
+  gravitino.reference:
+    approximation_notes: "Core vocal note pattern and tempo build; external bass production omitted, intermediate rise rounded to piano semitones."
+    expected_note_seconds:
+      - 12.69516666666666
+      - 13.346479166666663
+      - 14.013166666666658
+      - 14.68672916666666
+      - 15.303291666666661
+      - 15.85679166666666
+      - 16.377854166666662
+      - 16.87516666666667
+      - 17.36004166666667
+      - 17.838166666666663
+      - 18.311541666666667
+      - 18.780354166666665
+      - 19.26510416666667
+      - 19.720979166666663
+      - 20.185541666666662
+    file: "UMBRELLA x WHERE HAVE YOU BEEN (Maoni Mashup) _ Rihanna, Jay - Z.mp3"
+    reference_timeline_origin_seconds: 84.0395
+    section_start_seconds: 85
+format: "gravitino.transition"
+id: "bfb9a3b8-56fe-4251-a911-acf23f1e21cf"
+metadata:
+  created_at: "2026-09-25T20:31:58.239Z"
+  description: "Editable first draft inspired by the Maoni mashup from about 1:25. Original Umbrella phrase at 90 BPM, isolated B-flat vocal repeats, acceleration to 128 BPM, then E-flat–D–C riff and the incoming vocal entry. Uses only the two original songs and prepared vocal stems, not baked audio from the reference. Source reference has additional produced bass/FX not recreated here. Use Key Lock ON for the original lead-in. Intermediate rise notes use the nearest piano semitone; all notes/timing are editable."
+  name: "Umbrella → Where Have You Been — tone-play draft"
+  tags:
+    - "tone-play"
+    - "draft"
+    - "Maoni-inspired"
+performance:
+  anchors:
+    incoming:
+      track_beat: 93.07654453598467
+    outgoing:
+      track_beat: 125.99972743556944
+  cues:
+    -
+      color: "#ae78ee"
+      endpoint: "outgoing"
+      id: "umbrella-phrase"
+      label: "Original phrase · KEY LOCK ON"
+      pairing_group: "handoff"
+      preferred_input:
+        bank: "custom"
+      purpose: "phrase-start"
+      track_beat: 125.99972743556944
+    -
+      color: "#ae78ee"
+      endpoint: "incoming"
+      id: "where-vocal-entry"
+      label: "Where Have You Been entry"
+      pairing_group: "handoff"
+      preferred_input:
+        bank: "custom"
+      purpose: "start-track"
+      track_beat: 93.07654453598467
+  end_beat: 62.05795729226008
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 93.07654453598467
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.1
+      loop_active: false
+      loop_end_beat: 93.07654453598467
+      loop_start_beat: 93.07654453598467
+      playing: false
+      position_beat: 93.07654453598467
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0000710277718605
+    outgoing:
+      captured: true
+      cue_beat: 125.99972743556944
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.1
+      loop_active: false
+      loop_end_beat: 125.99972743556944
+      loop_start_beat: 125.99972743556944
+      playing: true
+      position_beat: 125.99972743556944
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0346199761241575
+  labels:
+    -
+      at_beat: 0
+      label: "Original phrase · reference ≈1:24 · Key Lock ON"
+    -
+      at_beat: 12.030749999999996
+      label: "Isolate outgoing vocal"
+    -
+      at_beat: 15.042749999999991
+      label: "B♭ vocal repeats · reference ≈1:34"
+    -
+      at_beat: 18.030093749999992
+      label: "Accelerate 90 → 128 BPM"
+    -
+      at_beat: 22.999557292260096
+      label: "E♭–D–C tone-play riff"
+    -
+      at_beat: 30.057957292260078
+      label: "Incoming vocal takes over"
+  loops: []
+  master_bpm: 90
+  timeline:
+    -
+      at_beat: 9.990749999999998
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 9.990749999999998
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 9.990749999999998
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12.030749999999996
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 12.030749999999996
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 12.030749999999996
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 13.020749999999992
+      control: "deck.fx_type"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 13.020749999999992
+      control: "deck.fx_beats"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 13.020749999999992
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.13
+    -
+      at_beat: 13.020749999999992
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 15.021749999999997
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 15.053249999999998
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 15.062249999999999
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 17.190749999999994
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 18.030093749999992
+      control: "deck.tempo"
+      curve: "step"
+      target: "outgoing"
+      value: 1.0346199761241575
+    -
+      at_beat: 18.397819137013457
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 18.413423530839474
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21.96515729226009
+      control: "deck.tempo"
+      curve: "linear"
+      target: "outgoing"
+      value: 1.4714595215988018
+    -
+      at_beat: 30.057957292260078
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 30.057957292260078
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 1
+  tone_play:
+    effects:
+      echo: 0.1
+      echo_beats: 0.5
+      enabled: true
+      reverb: 0.06
+      sustain_ducking: 0
+      tail_beats: 2
+    enabled: true
+    gain: 0.95
+    notes:
+      -
+        at_beat: 15.042749999999991
+        duration_beats: 0.47999999999998977
+        pitch: 58
+        velocity: 1
+      -
+        at_beat: 16.019718749999996
+        duration_beats: 0.47999999999998977
+        pitch: 58
+        velocity: 0.86
+      -
+        at_beat: 17.019749999999988
+        duration_beats: 0.4799999999999933
+        pitch: 58
+        velocity: 0.93
+      -
+        at_beat: 18.030093749999992
+        duration_beats: 0.49257562789933473
+        pitch: 58
+        velocity: 0.94
+      -
+        at_beat: 19.002381455478144
+        duration_beats: 0.5439630760208232
+        pitch: 59
+        velocity: 0.9
+      -
+        at_beat: 19.96132548530084
+        duration_beats: 0.5946452828473454
+        pitch: 59
+        velocity: 0.9
+      -
+        at_beat: 20.945572293997547
+        duration_beats: 0.6466647947013691
+        pitch: 60
+        velocity: 0.92
+      -
+        at_beat: 21.96515729226009
+        duration_beats: 0.6826666666666519
+        pitch: 60
+        velocity: 0.92
+      -
+        at_beat: 22.999557292260096
+        duration_beats: 0.7253333333333423
+        pitch: 63
+        velocity: 1
+      -
+        at_beat: 24.019557292260078
+        duration_beats: 0.7253333333333423
+        pitch: 62
+        velocity: 0.94
+      -
+        at_beat: 25.029423958926753
+        duration_beats: 0.7253333333333423
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 26.029557292260083
+        duration_beats: 0.7253333333333423
+        pitch: 60
+        velocity: 1
+      -
+        at_beat: 27.06369062559343
+        duration_beats: 0.7253333333333387
+        pitch: 63
+        velocity: 1
+      -
+        at_beat: 28.036223958926744
+        duration_beats: 0.7253333333333423
+        pitch: 62
+        velocity: 0.95
+      -
+        at_beat: 29.02729062559341
+        duration_beats: 0.7253333333333423
+        pitch: 60
+        velocity: 0.96
+    replace_outgoing: false
+    root_note: 58
+    source_end_beat: 141.71193615384573
+    source_start_beat: 141.05952269230727
+    source_stem: "vocals"
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "tone-play.v1"
+  - "tone-play-effects.v1"
+  - "tone-play-stem-source.v1"
+version: 1

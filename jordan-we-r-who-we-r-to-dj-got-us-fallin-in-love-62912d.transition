@@ -1,0 +1,260 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 441.8052379122331
+      duration_seconds: 220.937875
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:13ff30cf0eff2fd04dffae512eff916e30ff619e28ffab542cffa35c4bffac5355ffac534fff9a652fff738c2dff13ec3eff5aa54fffa45b53ffa45b4eff8d7253ff8d7239ff659a41ff5da23eff57a851ff9d624febad524affa05f4dffa85731ff7b8438ff54ab29ffa25d4dffb7484cffa25d43ff9d6246ff639c3bff56a946ff51ae3eff58a751ffa25d57ff8c734eff916e48ff54ab44ff3fc044ff4eb151ff857a4fff7a854bff857a4dff8e712eff1ee12bff17e83dff2ed12aff2ed127ff669930ff40bf27ff48b744ff6b943cff59a645ff51ae52ff7b8456ff817e56ff8e7144ff4eb146ff5ca341ff49b644ff4cb352ff7a8552ff8d7203ff2ed1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a54f92760a466fe4"
+      meter: "4/4"
+      native_bpm: 119.98085106382955
+      reference_downbeat_seconds: 0.37333333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Usher - DJ Got Us Fallin' In Love (Lyrics) ft. Pitbull"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 409.02388648049566
+      duration_seconds: 204.54458333333332
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:07ff1fe007ff37c818ff04fb1dff29d61dff27d831ff748b35ff768960ffd02f2eff7e815ec6d32c33ff748b3aff5ca35dffb8473eff748b3bff54ab33ff3ec138ff7a8534ff40bf44ff689742ff758a69ffcd324aff768921ff07f820ff27d838ff619e60ffcf303aff68971bff12ed54ffca353aff58a762ffc8373bff5aa540ff47b837ff6c933fff7c8339ff2fd038ff37c842ff3bc469ffbd4243ff6f906bffca356cffb94613ff0bf425ff45ba2cff59a637ff50af53ffc33c40ff58a72dff817e2eff9a6550ffbe4150ffbd4225ff1be450ff50af6affaf5047ff4eb169ffb04f50ff3ec155ff4db26cffac534aff4bb46affb24d67ffc9360bff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3b45acc8c7fbc959"
+      meter: "4/4"
+      native_bpm: 119.98085106382955
+      reference_downbeat_seconds: 0.21333333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "We R Who We R"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "6A"
+    incoming_recipe_phase_offset: -0.035142
+    key_lock: true
+    outgoing_camelot: "5A"
+    outgoing_recipe_phase_offset: -0.047684
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "filter-drop"
+format: "gravitino.transition"
+id: "62912d4a-1c49-5d77-9931-058266bd718a"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "High-pass the outgoing groove, open the incoming low-pass, then swap bass on the phrase boundary. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — We R Who We R → DJ Got Us Fallin' in Love"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 15.964858
+    outgoing:
+      track_beat: 271.952316
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 271.952316
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 15.964858
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 15.964858
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.39
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 15.964858
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999994680022
+    outgoing:
+      captured: true
+      cue_beat: 271.952316
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 271.952316
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999994680022
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · filter drop"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 119.980851
+  timeline:
+    -
+      at_beat: 8
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "incoming"
+      value: 0.39
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.65
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.filter"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.25
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

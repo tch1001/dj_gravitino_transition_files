@@ -1,0 +1,103 @@
+gravitino-transition 1
+
+[meta]
+name        = california gurls -> turn up the speakers
+created     = 2026-08-22
+
+[from]
+title       = Katy Perry - California Gurls ft. Snoop (Lyric Video)
+bpm         = 125.05
+duration    = 235.89
+fingerprint = gvfp1:b93b4a1a405f4869
+
+[to]
+title       = Afrojack & Martin Garrix - Turn Up The Speakers (Original Mix)
+bpm         = 127.990909
+duration    = 343.17
+fingerprint = gvfp1:e324be39a2d2dff0
+
+[sync]
+anchor_from = 401.88966 ; beat in FROM track where the transition begins
+anchor_to   = 128.0     ; beat in TO track aligned to transition beat 0
+master_bpm  = 125.05    ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.500
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 401.88966
+cue_beat    = 408.306418
+loop_active = 0
+loop_start_beat = 401.88966
+loop_end_beat = 401.88966
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 0.976758
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 128.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 128.000
+to_loop_end_beat = 128.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b2          = 128.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+13.977334 b        hotcue_2    1.00   via=performance_pad_2@hot_cue
+15.108144 b        play
+15.477987 b        hotcue_2    0.00   via=performance_pad_2@hot_cue
+29.812596 b        fader       0.001
+29.960475 a        eq_low      0.479
+30.18001 a        eq_low      0.442  linear
+30.679518 b        fader       0.07   linear
+31.923876 b        fader       0.098  linear
+32.880455 a        eq_low      0.289  linear
+34.181379 a        eq_low      0.223  linear
+36.07528 a        eq_low      0.179  linear
+36.450687 b        fader       0.362  linear
+39.855954 b        fader       0.387  linear
+40.188724 a        eq_low      0.166  linear
+40.323648 b        fader       0.49   linear
+40.483303 a        eq_low      0.135  linear
+41.75043 b        fader       0.576  linear
+43.118914 a        eq_low      0.00   linear
+46.256082 b        fader       1.00   linear
+54.024298 b        eq_mid      0.485
+54.286601 b        eq_mid      0.46   linear
+54.792999 b        eq_mid      0.476  linear
+54.856512 b        eq_mid      0.498  linear
+54.92894 b        eq_mid      0.50   linear
+58.467822 a        eq_high     0.492
+59.126621 a        eq_high     0.388  linear
+59.92768 a        eq_high     0.319  linear
+67.282458 a        eq_high     0.00   linear

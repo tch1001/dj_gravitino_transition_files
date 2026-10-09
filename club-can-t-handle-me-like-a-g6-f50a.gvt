@@ -1,0 +1,133 @@
+gravitino-transition 1
+
+[meta]
+name        = club can't handle me -> like a g6
+created     = 2026-08-21
+
+[from]
+title       = Club Can't Handle Me (feat. David Guetta) (From the Step Up 3D Soundtrack)
+bpm         = 127.990909
+duration    = 232.66
+fingerprint = gvfp1:20c2a15e5025d765
+
+[to]
+title       = "LIKE A G6" (OFFICIAL)  FAR EAST MOVEMENT (FM)  feat The Cataracs & Dev
+artist      = Far East Movement
+bpm         = 125.00
+duration    = 218.28
+fingerprint = gvfp1:218329c1da45207d
+
+[sync]
+anchor_from = 375.559768 ; beat in FROM track where the transition begins
+anchor_to   = 193.0     ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.990909 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.496
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 375.559768
+cue_beat    = 374.911281
+loop_active = 0
+loop_start_beat = 375.559768
+loop_end_beat = 375.559768
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.023645
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.000
+to_eq_high  = 0.000
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 194.944926
+to_cue_beat = 0.000
+to_loop_active = 1
+to_loop_start_beat = 193.000
+to_loop_end_beat = 209.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+8.499226 b        saved_loop_1 1.00   via=performance_pad_1@custom
+9.442885 b        play
+10.125503 b        saved_loop_1 0.00   via=performance_pad_1@custom
+24.66527 a        eq_low      0.485
+24.847302 a        eq_low      0.435  linear
+26.281593 a        eq_low      0.401  linear
+32.833935 a        eq_low      0.297  linear
+39.91041 b        fader       0.017
+39.955918 a        eq_low      0.263  linear
+40.024179 b        fader       0.068  linear
+40.081064 b        fader       0.123  linear
+40.149326 b        fader       0.222  linear
+40.217588 b        fader       0.345  linear
+40.354112 b        fader       0.81
+40.422373 b        fader       1.00   linear
+40.558897 a        eq_low      0.147  linear
+40.92296 a        eq_low      0.132  linear
+44.313297 a        eq_low      0.11   linear
+45.086931 a        eq_low      0.033  linear
+46.429413 a        eq_low      0.00   linear
+51.514919 a        eq_high     0.473
+51.571804 a        eq_high     0.431  linear
+51.685573 a        eq_high     0.409  linear
+53.551396 b        eq_mid      0.004
+55.872298 b        eq_mid      0.089  linear
+59.615321 a        eq_high     0.343  linear
+60.33207 b        eq_mid      0.155  linear
+65.053729 b        eq_mid      0.268  linear
+68.910305 b        eq_mid      0.384  linear
+76.862807 b        eq_mid      0.50   linear
+79.127296 a        eq_high     0.089  linear
+80.094166 b        loop_exit
+85.816482 a        eq_high     0.00   linear
+93.325282 a        eq_mid      0.484
+93.393544 a        eq_mid      0.469  linear
+94.417472 b        eq_high     0.007
+95.327629 b        eq_high     0.061  linear
+97.227583 a        eq_mid      0.422  linear
+97.455122 b        eq_high     0.098  linear
+101.732863 a        eq_mid      0.412  linear
+103.029838 a        eq_mid      0.245  linear
+103.804164 b        eq_high     0.109  linear
+103.985503 b        eq_high     0.195  linear
+104.11065 b        eq_high     0.291  linear
+104.167535 b        eq_high     0.313  linear
+104.167535 a        eq_mid      0.004  linear
+104.247173 a        eq_mid      0.00   linear
+104.315435 b        eq_high     0.339  linear
+104.520221 b        eq_high     0.434  linear
+104.588482 b        eq_high     0.483  linear
+104.656744 b        eq_high     0.50   linear
+113.348749 a        fader       0.967
+113.997236 a        fader       0.514
+114.202022 a        fader       0.43   linear
+114.418184 a        fader       0.405  linear
+114.896017 a        fader       0.382  linear
+115.646897 a        fader       0.184  linear
+116.045091 a        fader       0.011  linear
+116.113353 a        fader       0.00   linear
+133.222622 b        tempo       1.023304
+151.333936 b        tempo       1.00   linear

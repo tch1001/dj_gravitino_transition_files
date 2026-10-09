@@ -1,0 +1,314 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 476.74546995066083
+      duration_seconds: 193.306125
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1dff13ec1aff12ed18ff12ed28ff1ae52bff1be438ff15ea2bff1de234ff1ae551ffb9464dffc93644ffcf303cff966914ff36c92aff1fe036ff22dd32ff32cd5bffbc4342ff916e4bffa05f59ffbf404eff98674fffb9462aff659a52ffc13e3bffae514bffc63952ffc53a40ffae5150ffbc434cffbf4015ff33cc37ff21de11ff35ca13ff31ce2fff0cf326ffa7584dffd12e31ff837c42ffba455bffc33c46ff728d4cff8f7053ffaa555effb94656ff996645ff18e74fffa65950ffa9564fffb04f3bff768946ff8f704effb54a55ff9d6248ff837c5effa05f45ff718e4aff96695bffa6593fffc03f4dffc7384fffb94637ff629d51ffba4535ffa956"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:07730b63a7d0a4c2"
+      meter: "4/4"
+      native_bpm: 147.9763157894746
+      reference_downbeat_seconds: 0.7786666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Travis Scott - FE!N (Official Audio) ft. Playboi Carti"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 489.92212872176566
+      duration_seconds: 216.1545625
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:05fe42bd188598672bff877841ff7f8039ff5ca333ff3ec138ffa15e39ff2ed12eff50af42ff76893cff8d722cff6c932e8a956a42ff619e49ff728d47ff46b94eff57a84eff4bb442ff33cc45ff718e3fff5fa040ffa75824ff4ab53fff3ac536ff44bb45ff916e34ff946b37ff1be440ff5aa546ff66993cff49b640ff619e36ff55aa4fff43bc4aff5fa04dff5ca340ff58a745ff659a52ff4bb44cff2fd037ff689745ff877848ff7e813dff718e41ff877846ff867948ff5ba451ff31ce46ff5ba44bff8c732c8d857a26ff40bf4fff30cf41ff77884dff32cd48ff6f9052ff47b83dff4bb454ff33cc50ff53ac42ff708f50ff5aa558ff3cc34fff3ec1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c9fdfbb457d6f57a"
+      meter: "4/4"
+      native_bpm: 135.9921686746998
+      reference_downbeat_seconds: 0.032
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Paramore - Still into You _ Lyrics"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "2A"
+    incoming_recipe_phase_offset: -0.125574
+    key_lock: true
+    outgoing_camelot: "8B"
+    outgoing_recipe_phase_offset: -0.036939
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "tempo-build"
+format: "gravitino.transition"
+id: "ee862df3-bc8b-5b21-98bf-903962545989"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Eight-beat outgoing loop, key-locked tempo lift, tightening loop, then phrase-aligned launch with a short echo tail. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Still into You → FE!N"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.125574
+    outgoing:
+      track_beat: 335.963061
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 335.963061
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.125574
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.125574
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.125574
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 335.963061
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 335.963061
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · tempo build"
+    -
+      at_beat: 2
+      label: "Tempo lift begins · KEY LOCK ON"
+    -
+      at_beat: 16
+      label: "Launch at incoming native BPM"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops:
+    -
+      color: "#c59bff"
+      end_track_beat: 343.963061
+      endpoint: "outgoing"
+      id: "outgoing-phrase-loop"
+      label: "Eight-beat phrase"
+      pairing_group: "phrase"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: 335.963061
+  master_bpm: 135.9921686746998
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "outgoing-phrase-loop"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 0.01
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "outgoing-phrase-loop"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 2
+      control: "deck.tempo"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.16
+    -
+      at_beat: 16
+      control: "deck.tempo"
+      curve: "linear"
+      target: "outgoing"
+      value: 1.0881238032422402
+    -
+      at_beat: 16
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.64
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.3
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "temporary-loops.v1"
+version: 1

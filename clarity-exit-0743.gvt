@@ -1,0 +1,109 @@
+gravitino-transition 1
+
+[meta]
+name        = clarity exit
+created     = 2026-08-18
+
+[from]
+title       = Zedd - Clarity (feat. Foxes)
+artist      = Zedd
+bpm         = 127.990909
+duration    = 271.70
+fingerprint = gvfp1:a92364ffce5caa22
+
+[to]
+title       = LMFAO ft. Lauren Bennett, GoonRock - Party Rock Anthem (Official Audio)
+artist      = LMFAOVEVO
+bpm         = 129.910345
+duration    = 264.36
+fingerprint = gvfp1:c456f596daeee196
+
+[sync]
+anchor_from = 448.32889 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.99    ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.472
+tempo_ratio = 0.999993
+fader       = 1.000
+trim        = 0.500
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 448.32889
+cue_beat    = 458.958
+loop_active = 0
+loop_start_beat = 466.588
+loop_end_beat = 466.588
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 0.985049
+to_fader    = 0.000
+to_trim     = 0.500
+to_eq_low   = 0.000
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 23.984104
+to_cue_beat = 0.000
+to_loop_active = 1
+to_loop_start_beat = 0.000
+to_loop_end_beat = 32.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve
+31.675099 b        play
+57.746823 b        fader       0.011
+58.232225 b        fader       0.049  linear
+58.776484 b        fader       0.17   linear
+59.248181 b        fader       0.372  linear
+60.066536 b        fader       0.583  linear
+60.616064 b        fader       0.841  linear
+61.094081 b        fader       0.948  linear
+61.436445 b        fader       1.00   linear
+65.870621 b        loop_exit
+69.620059 a        eq_low      0.488
+70.032016 b        eq_low      0.004
+71.810923 b        eq_low      0.089  linear
+71.822589 a        eq_low      0.362  linear
+73.934395 a        eq_low      0.343  linear
+76.259286 b        eq_low      0.183  linear
+77.681397 b        eq_low      0.308  linear
+77.831666 a        eq_low      0.34   linear
+78.8392  a        eq_low      0.292  linear
+80.557758 b        eq_low      0.452  linear
+81.037681 b        eq_low      0.458  linear
+81.383298 b        eq_low      0.483  linear
+82.796268 b        eq_low      0.50   linear
+84.80333 a        eq_low      0.141  linear
+88.190077 a        eq_low      0.042  linear
+89.101005 a        eq_low      0.032  linear
+89.369751 a        eq_low      0.001  linear
+89.622358 a        eq_low      0.00   linear
+95.536938 a        fader       0.855
+95.58862 a        fader       0.539  linear
+95.639442 a        fader       0.162  linear
+95.705719 a        fader       0.00   linear
+116.076663 b        tempo       0.985605
+120.135428 b        tempo       1.00   linear

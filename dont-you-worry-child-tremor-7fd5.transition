@@ -200,7 +200,7 @@ performance:
       target: "outgoing"
       value: 0
     -
-      at_beat: 218.507733
+      at_beat: 179.3154296875
       control: "deck.stop"
       curve: "step"
       target: "outgoing"

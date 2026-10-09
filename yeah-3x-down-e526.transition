@@ -1,0 +1,240 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 488.0036137727897
+      duration_seconds: 221.84
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff4db23aff29d623ff45ba31b6c43b22ffc43b2affa65923ff946b34ff847b36ff827d5fffb44b2fff2bd408ff39c616ff1de225ff699654ffa15e567cc83758d299664effbc4362ffa9563bff5da24fffbf4039ff4eb141ff66993dffba4554ff8f7045ffaa554dff807f58f99a6551ffbe411eff27d822ff17e82dff23dc17ffc33c4cff8c7360d2837c3fff5ba44cff6c935effb44b58ffa35c55ffbf403dff47b83eff6c9335ff55aa4dff619e24ff2ad531ff3ac552ffa85752ff877845ff79863aff7e8143ff51ae5dff96695eff976850ffb24d59ff5aa550ff9d6236ffb84745ffbb445fffa35c40ff639c4fff50af5fff8c7332ffb24d04ffb44b"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:ff9cd9331f90cb8c"
+      meter: "4/4"
+      native_bpm: 131.985938
+      reference_downbeat_seconds: 11.573649600210098
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Jay Sean - Down ft. Lil Wayne (Official Music Video) ft. Lil Wayne"
+  outgoing:
+    assumptions:
+      duration_beats: 528.210081455105
+      duration_seconds: 243.76
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:21ff867925ff976829ff718e21ff17e824ff8c7317ff48b71aff28d72aff2cd34effab5446ff8c735fffb04f32ff708f55ff827d4fff738c52ff5da259ff57a829ff6f9040ff7d8237ff659a35ff08f749ff98675affa05f22ff52ad31ff2ed154ff807f59ff99665fffa05f32ffa25d5fff97685aff7e8165ff8f7046ff59a65cffa6594eff8e713eff9f604eff44bb3bff46b93fff708f3bff50af39ff07f841ff2fd04cff7d8241ff986722ff05fa3dff5aa54dff7c8355ff8f703cff609f3fff5aa547ff679858ff778837ff609f26ff1ae51fff14eb28ff09f62cff14eb5df2b74859ffa95647ffcf3037ff19e627ff906f56ff8d724effd12e34ff40bf"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c553a37f077fcd94"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.512
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Chris Brown - Yeah 3x (Lyrics)"
+extensions: {}
+format: "gravitino.transition"
+id: "f5e2c0d1-072c-4dde-9b43-3f323643b307"
+metadata:
+  created_at: "2026-10-02T14:04:56.229Z"
+  name: "yeah 3x -> down"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 150.125302
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 53.562200999999995
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9850979999999999
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 150.125302
+      loop_start_beat: 150.125302
+      playing: true
+      position_beat: 150.125302
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 4.62744140625
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 4.7646484375
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.8300659999999995
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.481
+    -
+      at_beat: 8.228439
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 9.867133500652443
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.129194
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.834159
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12.7314453125
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 13.18798828125
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 28.96533203125
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 29.4931640625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 29.686035
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 30.54931640625
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 41.53125
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 42.50146484375
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 43.4072265625
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 47.105745999999996
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 49.474643
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

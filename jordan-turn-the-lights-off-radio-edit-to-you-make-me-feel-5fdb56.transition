@@ -1,0 +1,254 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 475.7550086989409
+      duration_seconds: 216.24745833333333
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:29ff17e828ff1fe028ff24db28ff31ce5dff738c37ff9f6027ff31ce37ff639c4fffba455bff9a6561ff7c8345ff9a653cff14eb3aff44bb2aff1ee13dff1ae531ff27d82cff0af558ff8b7460ffc03f3dff728d5cff8c735cffb6495dfdd42b48ff738c33ff38c726ff19e64fff629d19ffaa5537ff11ee36ff11ee5bff827d55ff897649ffa65941ff4fb032ff12ed5bffc13e49ff7d8231ff17e840ff936c26ff45ba5cff966957ff89764bff6a9562ff8a755fffa05f53ffa35c44ff51ae05ff1ee148ff24db2dff28d73eff18e7068da45b01ff24db2eff0ff05effbd4253ff956a42ff32cd45ff3bc45aff4cb347ff39c642ff2dd258ff4cb306ff12ed"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a55a227327b8737d"
+      meter: "4/4"
+      native_bpm: 132.0029411764714
+      reference_downbeat_seconds: 0.14933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Cobra Starship - You Make Me Feel... (Audio)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 408.37383236928355
+      duration_seconds: 185.62033333333332
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:39ff22dd2fff1de21eff28d723ff44bb1eff2cd336ff25da29ff22dd1dff26d929ff34cb23ff2bd467ff9f6044ff916e38ff996664e7bb445dffc03f62ff936c46ffaf5034ff996665ffae5168ffae5154ff6f9057ff916e35ffa55a63ffab5466ffb24d44ff5ca34bff7a8544ffc43b3bff996666faad5245ff847b3bff9b6458ffbb445dffb64968ffa7584eff8e713fff966960ffb14e5fffa15e58ff946b3eff67981fff3dc215ff4bb422ff649b15ff4cb32cff13ec2aff1ae518ff48b726ff55aa19ff37c830ff22dd60ffad5259ffa85756ff99663dff768947ff7a8564ffa35c64ffa15e50ff89762bff45ba03ff986716ff0ef128ff14eb2cff0bf4"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:f49fbfa06207368d"
+      meter: "4/4"
+      native_bpm: 132.0029411764714
+      reference_downbeat_seconds: 0.5866666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Kato Feat. Jon - Turn The Lights Off [Official Video] HD"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "6B"
+    incoming_recipe_phase_offset: 0.035245
+    key_lock: true
+    outgoing_camelot: "12A"
+    outgoing_recipe_phase_offset: -0.456562
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "echo-cut"
+format: "gravitino.transition"
+id: "5fdb5618-9ead-5d5b-9b22-062271cc1622"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Restrained half-beat echo and bass cut; short phrase-boundary handoff keeps competing vocals apart. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Turn the Lights Off (Radio Edit) → You Make Me Feel…"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 32.035245
+    outgoing:
+      track_beat: 255.543438
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 255.543438
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 32.035245
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 32.035245
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 32.035245
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999986631252
+    outgoing:
+      captured: true
+      cue_beat: 255.543438
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 255.543438
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999986631252
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · echo cut"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 132.002941
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.61
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

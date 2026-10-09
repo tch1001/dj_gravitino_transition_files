@@ -2,61 +2,59 @@
 endpoints:
   incoming:
     assumptions:
-      duration_beats: 457.771707508333
-      duration_seconds: 212.9
+      duration_beats: 491.634075
+      duration_seconds: 235.89
       fingerprints:
         -
           algorithm: "gvfp1"
-          value: "gvfp1:b3d6d2370286cda8"
+          value: "gvfp1:b93b4a1a405f4869"
       meter: "4/4"
-      native_bpm: 129.010345
+      native_bpm: 125.05
       reference_downbeat_seconds: 0
     identity:
-      artists:
-        - "Swedish House Mafia - Topic"
+      artists: []
       identifiers:
         providers: {}
-      title: "Don't You Worry Child (Radio Edit)"
+      title: "Katy Perry - California Gurls ft. Snoop (Lyric Video)"
   outgoing:
     assumptions:
-      duration_beats: 525.462
-      duration_seconds: 250.22
+      duration_beats: 400.6760519145
+      duration_seconds: 200.37
       fingerprints:
         -
           algorithm: "gvfp1"
-          value: "gvfp1:59cbaf2978d0777b"
+          value: "gvfp1:b342ba18775d3180"
       meter: "4/4"
-      native_bpm: 126
+      native_bpm: 119.980851
       reference_downbeat_seconds: 0
     identity:
-      artists:
-        - "David Guetta & Sia"
+      artists: []
       identifiers:
         providers: {}
-      title: "David Guetta - Titanium (feat. Sia) [Official Audio]"
+      title: "Kesha - TiK ToK (Lyrics)"
 extensions:
   gravitino.legacy:
-    source_id: "legacy-a1354fe14111a7cb79f3a3b7eaf19e44"
+    source_id: ""
 format: "gravitino.transition"
-id: "3a1d044c-64d4-4cb8-bf80-b2d66d75770c"
+id: "1dcbdaba-a4de-40a6-b579-00ed7e324b5a"
 metadata:
-  created_at: "2026-08-21"
-  name: "titanium -> dont you worry child"
+  created_at: "2026-08-22"
+  name: "tik tok -> california gurls (beat matched)"
   tags: []
 performance:
   anchors:
     incoming:
       track_beat: 0
     outgoing:
-      track_beat: 433.769651
+      track_beat: 300.200911
   cues:
     -
       endpoint: "incoming"
-      id: "incoming-hotcue-1"
-      label: "HOT CUE 1"
+      id: "incoming-hotcue-5"
+      label: "HOT CUE 5"
       preferred_input:
         bank: "custom"
-        pad: 1
+        pad: 5
       purpose: "legacy-hot-cue"
       track_beat: 0
   initial_state:
@@ -66,7 +64,7 @@ performance:
       cue_beat: 0
       eq_high: 0.5
       eq_low: 0
-      eq_mid: 0.5
+      eq_mid: 0
       fader: 0
       filter: 0.5
       fx_beats: 0.5
@@ -83,13 +81,13 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1
+      tempo_ratio: 0.99970167133146737
     mixer:
       captured: true
-      crossfader: 0.509
+      crossfader: 0.493
     outgoing:
       captured: true
-      cue_beat: 434.541549
+      cue_beat: 302.980801
       eq_high: 0.5
       eq_low: 0.5
       eq_mid: 0.5
@@ -99,95 +97,107 @@ performance:
       fx_on: false
       fx_type: 0
       fx_wet: 0.5
-      loop_active: true
-      loop_end_beat: 464
-      loop_start_beat: 448
+      loop_active: false
+      loop_end_beat: 72.582736
+      loop_start_beat: 72.582736
       playing: true
-      position_beat: 433.769651
+      position_beat: 300.200911
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.023772
+      tempo_ratio: 1.0419387173708243
   labels: []
   loops: []
-  master_bpm: 128.995327
+  master_bpm: 125.012694
   timeline:
     -
-      at_beat: 14.232673645019522
+      at_beat: 7.7937255859375
       control: "deck.transition_cue"
-      cue_id: "incoming-hotcue-1"
+      cue_id: "incoming-hotcue-5"
       curve: "step"
       input_hint:
-        control: "host.performance_pad_1"
+        control: "host.performance_pad_5"
         pad_mode: "sampler"
       target: "incoming"
       value: 1
     -
-      at_beat: 15.048368
+      at_beat: 8.878666
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 15.628506
+      at_beat: 9.389835
       control: "deck.transition_cue"
-      cue_id: "incoming-hotcue-1"
+      cue_id: "incoming-hotcue-5"
       curve: "step"
       input_hint:
-        control: "host.performance_pad_1"
+        control: "host.performance_pad_5"
         pad_mode: "sampler"
       target: "incoming"
       value: 0
     -
-      at_beat: 29.745435
+      at_beat: 22.194085
       control: "deck.fader"
       curve: "step"
       target: "incoming"
-      value: 0.018
+      value: 0.031
     -
-      at_beat: 33.636888
+      at_beat: 28.492193149387834
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
       value: 1
     -
-      at_beat: 39.714551
-      control: "deck.eq_low"
+      at_beat: 32.403561
+      control: "deck.eq_mid"
       curve: "step"
       target: "outgoing"
-      value: 0.498
+      value: 0.497
     -
-      at_beat: 45.345396
-      control: "deck.eq_low"
+      at_beat: 32.558845
+      control: "deck.eq_mid"
       curve: "step"
       target: "incoming"
-      value: 0.001
+      value: 0.003
     -
-      at_beat: 58.059661
-      control: "deck.eq_low"
-      curve: "linear"
-      target: "outgoing"
-      value: 0
-    -
-      at_beat: 62.313423
-      control: "deck.eq_low"
+      at_beat: 46.460252
+      control: "deck.eq_mid"
       curve: "linear"
       target: "incoming"
       value: 0.5
     -
-      at_beat: 69.5829
-      control: "deck.fader"
-      curve: "step"
-      target: "outgoing"
-      value: 0.996
-    -
-      at_beat: 79.73046875
-      control: "deck.fader"
+      at_beat: 48.942309
+      control: "deck.eq_mid"
       curve: "linear"
       target: "outgoing"
       value: 0
+    -
+      at_beat: 55.727856
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0.006
+    -
+      at_beat: 57.007589
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.499
+    -
+      at_beat: 81.288855
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 86.220535
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
 requires:
   - "timeline.v1"
   - "temporary-cues.v1"

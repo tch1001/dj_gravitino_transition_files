@@ -1,0 +1,103 @@
+gravitino-transition 1
+
+[meta]
+name        = break free -> titanium
+created     = 2026-08-21
+
+[from]
+title       = Ariana Grande - Break Free feat. Zedd (Audio)
+bpm         = 130.013953
+duration    = 214.37
+fingerprint = gvfp1:73a3a5964c9b127b
+
+[to]
+title       = David Guetta - Titanium (feat. Sia) [Official Audio]
+artist      = David Guetta & Sia
+bpm         = 126.00
+duration    = 250.22
+fingerprint = gvfp1:59cbaf2978d0777b
+
+[sync]
+anchor_from = 311.683031 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 130.013953 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.504
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 311.683031
+cue_beat    = 316.60211
+loop_active = 0
+loop_start_beat = 16.000
+loop_end_beat = 16.000
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.032426
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 0.000
+to_cue_beat = 0.000
+to_loop_active = 1
+to_loop_start_beat = 0.000
+to_loop_end_beat = 32.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+7.323832 b        eq_low      0.387
+7.396979 b        eq_low      0.249  linear
+7.463605 b        eq_low      0.067  linear
+7.538437 b        eq_low      0.00   linear
+16.298287 b        saved_loop_1 1.00   via=performance_pad_1@custom
+17.282148 b        play
+17.893275 b        saved_loop_1 0.00   via=performance_pad_1@custom
+26.790426 b        fader       0.004
+27.189082 b        fader       0.027  linear
+28.341205 b        fader       0.00   linear
+48.615121 b        fader       0.023  linear
+48.727555 b        fader       0.101  linear
+48.944469 b        fader       0.372  linear
+49.004435 b        fader       0.47   linear
+49.142025 b        fader       0.583  linear
+49.906152 b        fader       0.867  linear
+50.395761 b        fader       0.999  linear
+50.46364 b        fader       1.00   linear
+75.217885 a        eq_low      0.491
+75.510197 a        eq_low      0.446  linear
+75.985933 a        eq_low      0.405  linear
+100.382718 a        eq_low      0.00   linear
+102.740341 b        eq_low      0.50
+105.283119 b        loop_exit
+110.436741 a        fader       0.986
+111.823557 a        fader       0.629  linear
+117.512946 a        fader       0.356  linear
+119.064513 a        fader       0.267  linear
+121.948441 a        fader       0.104  linear
+123.372131 a        fader       0.094  linear
+123.685954 a        fader       0.00   linear

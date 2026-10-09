@@ -1,0 +1,117 @@
+gravitino-transition 1
+
+[meta]
+name        = beauty and a beat -> club can't handle me
+created     = 2026-08-21
+
+[from]
+title       = Justin Bieber - Beauty And A Beat ft. Nicki Minaj (Official Audio) ft. Nicki Minaj
+bpm         = 127.990909
+duration    = 228.37
+fingerprint = gvfp1:2474190837da41a5
+
+[to]
+title       = Club Can't Handle Me (feat. David Guetta) (From the Step Up 3D Soundtrack)
+bpm         = 127.990909
+duration    = 232.66
+fingerprint = gvfp1:20c2a15e5025d765
+
+[sync]
+anchor_from = 281.610726 ; beat in FROM track where the transition begins
+anchor_to   = 96.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.990909 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.529
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 281.610726
+cue_beat    = 280.802961
+loop_active = 0
+loop_start_beat = 281.610726
+loop_end_beat = 281.610726
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.000
+to_eq_high  = 0.000
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 288.570121
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 96.000
+to_loop_end_beat = 112.000
+to_fx_type  = 1
+to_fx_on    = 0
+to_fx_wet   = 0.351
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+6.439365 b        saved_loop_1 1.00   via=performance_pad_1@custom
+7.952502 b        play
+8.464465 b        saved_loop_1 0.00   via=performance_pad_1@custom
+31.434567 b        fader       0.022
+31.662107 b        fader       0.108  linear
+32.162693 b        fader       0.122  linear
+32.572264 b        fader       0.272  linear
+32.913573 a        eq_low      0.494
+33.687207 a        eq_low      0.391  linear
+35.052444 b        fader       0.529  linear
+35.097952 a        eq_low      0.285  linear
+35.575784 b        fader       0.548  linear
+35.78057 a        eq_low      0.204  linear
+36.520073 b        fader       0.692  linear
+37.066167 b        fader       0.827  linear
+37.396099 a        eq_low      0.062  linear
+37.623639 a        eq_low      0.002  linear
+37.691901 a        eq_low      0.00   linear
+37.817047 b        fader       0.909  linear
+38.090095 b        fader       0.991  linear
+38.169733 b        fader       1.00   linear
+43.721695 a        eq_mid      0.476
+45.007292 a        eq_mid      0.405  linear
+45.086931 b        eq_mid      0.001
+47.123408 b        eq_mid      0.075  linear
+48.43176 b        eq_mid      0.202  linear
+52.163406 b        eq_mid      0.335  linear
+55.030402 b        eq_mid      0.494  linear
+55.701644 b        eq_mid      0.50   linear
+56.486655 a        eq_mid      0.169  linear
+59.729091 a        eq_mid      0.00   linear
+69.979741 a        eq_high     0.494
+70.173149 a        eq_high     0.456  linear
+71.083307 b        eq_high     0.003
+74.109581 a        eq_high     0.274  linear
+77.45441 b        eq_high     0.248  linear
+77.704703 a        eq_high     0.149  linear
+78.876531 b        loop_exit
+80.583076 b        eq_high     0.254  linear
+84.439869 a        eq_high     0.00   linear
+86.567362 b        eq_high     0.50   linear
+93.791738 a        fader       0.991
+94.474356 a        fader       0.807  linear
+95.293498 a        fader       0.41   linear
+96.044378 a        fader       0.224  linear
+97.477876 a        fader       0.00   linear

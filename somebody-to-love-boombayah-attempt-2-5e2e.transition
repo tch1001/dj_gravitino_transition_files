@@ -1,0 +1,210 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 508.2751736111102
+      duration_seconds: 243.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:13ff0ef10fff0ef129ff16e92cff18e751ffb7485af7cb3456ffbb4452e2c33c4affc53a55ffce315dffd32c51ffbb4449ffad5249ffa8573eff6f9030ff57a832ff50af2fff38c726ff48b735ff58a73eff47b830ff0bf440ff9b6447ff877847ff926d3eff827d44ff9a6541ff9a6546ff98673dff877822ff15ea0fff12ed4fffce3159ffcf3020ff10ef54ffc43b4affb54a4dffd62956ffc83759abc93636ff49b636ff41be47ff29d64bff1ce334ff38c739ff32cd45ff59a648ffb9464dff8f704aff9c6347ffae5133ff34cb45ff926d40ffa45b3dff817e25ff1be449ff98674bff7f8041ff956a4bffb44b44ff877841ff7b8440ff8e7148ff7a85"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:008307f42fd54934"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 2.0906666666666665
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "BLACKPINK - '붐바야 (BOOMBAYAH)' M_V"
+  outgoing:
+    assumptions:
+      duration_beats: 478.80044533107383
+      duration_seconds: 220.96
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2cffb54a36ffb64940ffb64926ff827d27ff857a40fcd52a48ffae5142ff7c833effb24d47ff936c37ff3dc233ff857a51ff7a8552ff897651ff4ab546ff58a735ff87784fff966944ffb64942ff08f721ff9c6322ff8c7349e3d72847ff8e7147ff8d7245ffaf5051ff7d822cffd12e38ff41be55ff827d5bff827d46ff669943ff76893eff639c3dff86794fff87785aff738c27ff817e2cff926d43ffac5347ffc9364dff768914ff56a91fff16e934ff0bf41bff11ee59ff807f47ffb74850ff748b47ff857a4cff57a852ff817e4eff936c54ff7a853fff708f45ff43bc3cff7f8044ff798636ff8a7542ffc03f46ffac5322ff936c55ff6d924695c23d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e537196e5e33e5fb"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.2773333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Somebody To Love"
+extensions: {}
+format: "gravitino.transition"
+id: "d3a76316-a9b4-4f08-97a8-8206bc972996"
+metadata:
+  created_at: "2026-10-02T09:14:07.656Z"
+  name: "somebody to love -> boombayah attempt 2"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 69.00762999999999
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 88.37823558571635
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 16
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.039477
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 69.00762999999999
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 14.742887
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 23.806015917955108
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 26.988419
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 28.083014
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 28.859406
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 35.132659
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.494
+    -
+      at_beat: 51.855343
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.42561936329879
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 59.945796
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 66.73231105415331
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 69.1927539984585
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 78.46621351413776
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 81.83023509485389
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

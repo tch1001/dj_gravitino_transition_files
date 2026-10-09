@@ -1,0 +1,119 @@
+gravitino-transition 1
+
+[meta]
+name        = turn down for what -> stronger
+created     = 2026-08-21
+
+[from]
+title       = DJ Snake, Lil Jon - Turn Down for What (Audio)
+artist      = DJSnakeVEVO
+bpm         = 100.00
+duration    = 215.81
+fingerprint = gvfp1:73ef738ccfce58bd
+
+[to]
+title       = Kanye West - Stronger
+bpm         = 104.016667
+duration    = 266.29
+fingerprint = gvfp1:2c81e4ed242af790
+
+[sync]
+anchor_from = 213.956101 ; beat in FROM track where the transition begins
+anchor_to   = 120.0     ; beat in TO track aligned to transition beat 0
+master_bpm  = 104.08253 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.519
+tempo_ratio = 1.040825
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 213.956101
+cue_beat    = 210.829
+loop_active = 0
+loop_start_beat = 213.956101
+loop_end_beat = 213.956101
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 120.000
+to_cue_beat = 0.000
+to_loop_active = 1
+to_loop_start_beat = 120.000
+to_loop_end_beat = 136.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 0.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+10.02893 b        saved_loop_1 1.00   via=performance_pad_1@custom
+11.15918 b        play
+11.610984 b        saved_loop_1 0.00   via=performance_pad_1@custom
+18.929143 b        eq_low      0.082
+19.058668 b        eq_low      0.252  linear
+19.428739 b        eq_low      0.496  linear
+23.159547 b        eq_low      0.446  linear
+23.240472 b        eq_low      0.362  linear
+23.360746 b        eq_low      0.161  linear
+23.49027 b        eq_low      0.00   linear
+42.021587 b        loop_exit
+42.133417 b        fader       0.012
+42.855079 b        fader       0.189  linear
+43.631396 b        fader       0.509  linear
+44.121741 b        fader       0.578  linear
+47.498641 b        fader       0.832  linear
+48.359056 b        fader       0.89   linear
+49.274982 b        fader       0.957  linear
+50.672001 b        fader       0.972  linear
+50.783023 b        fader       1.00   linear
+57.101989 a        eq_mid      0.465
+59.322416 a        eq_mid      0.327  linear
+61.202988 a        eq_mid      0.271  linear
+63.977888 a        eq_low      0.448
+64.096335 a        eq_low      0.412  linear
+64.95675 a        eq_low      0.362  linear
+68.046845 a        eq_low      0.272  linear
+70.979659 a        eq_mid      0.00   linear
+71.544018 a        eq_low      0.168  linear
+71.932593 a        eq_low      0.101  linear
+73.165177 a        eq_low      0.02   linear
+74.920918 a        eq_low      0.00   linear
+75.013436 b        eq_low      0.009  linear
+76.16272 b        eq_low      0.119  linear
+84.579777 b        eq_low      0.478  linear
+84.692062 b        eq_low      0.50   linear
+86.855714 a        eq_high     0.469
+87.022247 a        eq_high     0.423  linear
+90.019823 a        eq_high     0.347  linear
+95.376604 a        eq_high     0.219  linear
+95.663409 a        eq_high     0.187  linear
+99.234597 a        eq_high     0.00   linear
+103.120344 a        fader       0.984
+103.675451 a        fader       0.789  linear
+106.136425 a        fader       0.507  linear
+108.791686 a        fader       0.247  linear
+110.281222 a        fader       0.00   linear

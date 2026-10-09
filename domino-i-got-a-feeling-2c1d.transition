@@ -1,0 +1,204 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 616.6781987215898
+      duration_seconds: 289.09000000000003
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff718e1bff7e8127ffa35c2beba25d16ff2bd414ff4ab531ff13ec2fff13ec22ff37c81fff19e618ff18e727ff16e92bff10ef31ffa55a3dff6b944aff3dc23fff5ea142ff5aa53eff6c933aff708f4eff7f8051ff8d726bffc73843ff748b6dffbf405bff7a851cff16e969ffc53a3bff99666affc93656ff857a58ffa55a6effba4522ee99661aff26d934ff13ec25ff2cd335ff2ad52bff43bc1aff2ad530ff18e74eff13ec47ff38c73aff5da231ff15ea34ff11ee47ff22dd4cff31ce42ff31ce47ff21de55ff699658ff9d6266ff956a37ffa35c6affb54a59ff78875dff8f706dffa15e47ff7f8068ffc33c52ff897659ffa25d6fffa7580dff07f8"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3675f87cc0e80f40"
+      meter: "4/4"
+      native_bpm: 127.99090899999999
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Black Eyed Peas - I Gotta Feeling (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 493.61626518623666
+      duration_seconds: 233.22
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0eff1fe00fff09f636da96694982d02f4abecd3225ffb44b40ff926d3fffc23d4dff916e1dff19e652ffba454dff8a7543ffa45b39ff7a852dff51ae53ffa6593cff7e8151ff956a44ffa55a45ff9d624bff718e53ff926d3cff50af30ff718e39ffbb444cff807f49ffa45b18ff37c855ffad522fffa95635ff976850ff728d4bffb44b31ffb34c3eff768954ff8f703affa9564fff8e714fff6a954cffb54a3aff43bc41ff6b944bff7e813fffb8474cff26d930ff2cd359ff986720ff699644759d6225ff877822ff5aa535ff6c934bff996635ff629d3bff679852ff708f4dff807f52ff9e6140ff5ba45bff6a9557ff6f9042ff8e713cff33cc5bff8976"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1ecd11b1f2c833f8"
+      meter: "4/4"
+      native_bpm: 126.99090899999999
+      reference_downbeat_seconds: 0.512
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Domino (audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "0e5905aa-bffc-415f-9a78-fc01f1e88e1e"
+metadata:
+  created_at: "2026-10-09T08:14:18.654Z"
+  name: "domino -> i got a feeling"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 348.288889
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 75.653522
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9917579999999999
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 348.288889
+      loop_start_beat: 348.288889
+      playing: true
+      position_beat: 348.288889
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 126.99090899999999
+  timeline:
+    -
+      at_beat: 3.25
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.17483836206896552
+    -
+      at_beat: 3.71455078125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.274502052756174
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 8.765397
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.22431
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 31.169962925209312
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 31.40308291794944
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 35.9052734375
+      control: "deck.eq_high"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 52.13818359375
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 53.9814453125
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 66.071285
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 70.849768
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

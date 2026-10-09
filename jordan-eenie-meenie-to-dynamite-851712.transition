@@ -1,0 +1,254 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 499.28868855717985
+      duration_seconds: 249.6841875
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff0ff005ff6a951bff23dc10ff1ae511ff679828ff86792bffab5428ffa55a35ff45ba22ff49b63bff5fa03bff52ad38ffb14e3affae514bffa7584cffa55a34ff837c53ffae5152ff976826ff1ce318ff57a834ff54ab38ff59a642ffc33c36ffb44b65ffa15e69ff9b6433cdbd4236ffb34c4cffa45b4dffa75834ff76893fff53ac33ff1be43cff3dc23bff1fe035ff2cd36dff966973ff8e713dff9e6140ffb14e56ffa85752ffac534bff7b844aff906f61ff867965ff8b743eff88775bff8e7134ff25da60ffad5220ff0ff02bff936c3aff52ad5fffbc434aff9d6269ffaa556dffa6595eff857a60ffa05f6eff8e712dff09f626ff07f828ff6d92"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:90bbcb7cc0919751"
+      meter: "4/4"
+      native_bpm: 119.98085106382955
+      reference_downbeat_seconds: 24.32759099856365
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taio Cruz - Dynamite (Official Video)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 405.94256399641495
+      duration_seconds: 201.01516666666666
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fd737c80fff18e72696cb3421ff1de217ff28d721ff1ee11bff1be424ff2fd02cff17e82aff1fe052dbbb4455ffb44b23ff09f65eff956a47ff5ba453ff5fa04cff6d924fff9a6558ff857a58ffa7585cffa95647ff4ab554ff4ab533ff946b53ff87784bffa8573bff7a850000fc0318ff51ae23ff53ac46ff897647ff8b744fff798656ff847b4bff649b3fff738c43ff4fb05fff8d7261ff7d8258ff57a852ff6c9356ff5ea148ff68972fff1ce348ff7f8030ff16e92aff6c9342ffb04f3fffc13e17ff609f2aff3fc026ff28d72bff1ee133ff1de240ff609f64ff6d9257ff659a56ff6a9561ff54ab4fff51ae53ff29d64fff28d761ff807f5fff5ea1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:03774736b2a769fa"
+      meter: "4/4"
+      native_bpm: 121.16774193548363
+      reference_downbeat_seconds: 0.4266666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Sean Kingston, Justin Bieber - Eenie Meenie (Lyrics)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "12B"
+    incoming_recipe_phase_offset: -0.094214
+    key_lock: true
+    outgoing_camelot: "3B"
+    outgoing_recipe_phase_offset: -0.078406
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "echo-cut"
+format: "gravitino.transition"
+id: "851712ec-c2a2-56e6-bdb2-5e75248b7981"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Restrained half-beat echo and bass cut; short phrase-boundary handoff keeps competing vocals apart. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Eenie Meenie → Dynamite"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.094214
+    outgoing:
+      track_beat: 271.921594
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 271.921594
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.094214
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.094214
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.094214
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0049461637495365
+    outgoing:
+      captured: true
+      cue_beat: 271.921594
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 271.921594
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9951022778339831
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · echo cut"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 120.574296
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.61
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

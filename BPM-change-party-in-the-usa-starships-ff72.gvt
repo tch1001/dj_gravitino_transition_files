@@ -1,0 +1,89 @@
+gravitino-transition 1
+
+[meta]
+name        = (BPM change) party in the usa -> starships
+created     = 2026-08-21
+
+[from]
+title       = Miley Cyrus - Party In The U.S.A  (Audio)
+bpm         = 96.00
+duration    = 205.29
+fingerprint = gvfp1:9a5e53ce1b61d68d
+
+[to]
+title       = Nicki Minaj - Starships (Explicit) (Official Video)
+bpm         = 125.00
+duration    = 261.13
+fingerprint = gvfp1:534cc376e186c4b5
+
+[sync]
+anchor_from = 173.877687 ; beat in FROM track where the transition begins
+anchor_to   = 32.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 105.074233 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.500
+tempo_ratio = 1.094523
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 173.877687
+cue_beat    = 0.000
+loop_active = 0
+loop_start_beat = 173.877687
+loop_end_beat = 173.877687
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 0.840
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 32.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 32.000
+to_loop_end_beat = 32.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = 32.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+2.083971 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+3.010811 b        play
+3.418433 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+9.959713 b        fader       0.019
+11.049167 b        fader       0.49
+11.585076 b        fader       0.542  linear
+12.095233 b        fader       0.575  linear
+14.280767 b        fader       1.00   linear
+15.813615 a        filter      0.446
+15.8779  a        filter      0.413  linear
+16.195467 a        filter      0.39   linear
+17.699994 a        filter      0.183  linear
+17.923333 a        filter      0.098  linear
+18.0303  a        filter      0.00   linear

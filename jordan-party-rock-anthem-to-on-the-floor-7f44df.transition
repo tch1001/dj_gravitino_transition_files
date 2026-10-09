@@ -1,0 +1,282 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 617.3687752341751
+      duration_seconds: 284.9088541666667
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fff3ec10df055aa21ff33cc22ff3fc032ff936c27ff39c62bff3cc33fff996651ffa35c21ff39c655f9b64949ff9d6235ffad523bffa95644ff9f604dffa35c3cffb04f4affa6592fff32cd22ff46b92dff20df20ff30cf2fff78875fff89765bff7c8354ff8a7546ffbe414cffa85747ff936c24ff15ea4fffa05f45ffa05f49ff9f6048ffa95630ff6b941fd5708f2cff1fe020ff38c72cff5aa55eff8c735cff7d8251ffb64957ff76895bff956a5aff916e5fffce3140ffa45b50ff906f55ff986741ff38c720cf728d2bff34cb29ff3ec12bff50af4dff827d60ff7f8064ff97685aff758a65ff758a4cff758a54ffa65951ff8e714dff9d6237ff817e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2257ecec11f33f85"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.128
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "On The Floor"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 572.3855206034495
+      duration_seconds: 264.36025
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:4efee11e49ffaf5043ffbe4148ff9e614bff2ed138ff40bf2bff5da234ff2dd232ff50af2dff5aa532ff44bb35ff2cd336ff3ec141ff27d820ff33cc45ffc83745ffa25d53ffcd324affa35c46ffc83746ff837c0aff1be455ff956a34ff1be44cff51ae44ff28d736ff39c633ff46b931ff45ba45ff817e4dff847b4dff748b0dff619e2cf329d64affc33c3bff7c833bffb54a30ff5ba436ff47b845ff9e6132ff5aa52eff12ed2aff11ee40ff59a643ff2fd049ff35ca40ff5aa551ff47b84bff877854ff9a6550ff689752ff89764fff6a9555ff8f704bffb84751f6c63942ffc53a4bffc83743ffb24d4bffcc334affb94651ffd12e49ff986748ffa15e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c456f596daeee196"
+      meter: "4/4"
+      native_bpm: 129.9103448275865
+      reference_downbeat_seconds: 0.6293333333333333
+    identity:
+      artists:
+        - "LMFAOVEVO"
+      identifiers:
+        providers: {}
+      title: "LMFAO ft. Lauren Bennett, GoonRock - Party Rock Anthem (Official Audio)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "2A"
+    incoming_recipe_phase_offset: 0.105478
+    key_lock: true
+    outgoing_camelot: "4A"
+    outgoing_recipe_phase_offset: 0.002406
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "vocal-echo"
+format: "gravitino.transition"
+id: "7f44dfc1-0cf8-5b4d-b813-dd22899436f0"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Use prepared outgoing stems for a brief vocals-only echo handoff; restore a clean full incoming mix. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Party Rock Anthem → On the Floor"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 16.105478
+    outgoing:
+      track_beat: 384.002406
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 384.002406
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 16.105478
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 16.105478
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 16.105478
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.999601546703392
+    outgoing:
+      captured: true
+      cue_beat: 384.002406
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 384.002406
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0003987686468099
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · vocal echo"
+    -
+      at_beat: 12
+      label: "Vocals-only echo"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 129.962149
+  timeline:
+    -
+      at_beat: 8
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.stem_bass"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.18
+    -
+      at_beat: 14
+      control: "deck.stem_drums"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 14
+      control: "deck.stem_melody"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.32
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

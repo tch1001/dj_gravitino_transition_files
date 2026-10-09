@@ -1,0 +1,222 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 425.06369203004004
+      duration_seconds: 196.16
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:5970e21d36be87785d40e01f30ff837c5c5cdf203da7a35c5d27df2035ff97685254d926257ca9565d28df2032ff8a754cfdd92634ff7986559dd6292dff59a638ff788733ff7c8339ff877833ff4fb030ff37c83aff34cb31ff3cc334ff4ab540ff8e7150ffd42b3aff7f8050f7d42b3bff8f7056ffd92634ff7c8350ffce313bff926d58ffd52a3effa8575335d7283fc7a25d5b26e01f3fc2a857499ddc233bff916e51ffd72838ff916e3dff926d34ff7e8136ff7b843dff748b2dff52ad32ff4ab533ff34cb3cff43bc3cff50af35ff6c9331ff46b94fe9d22d3cff976849e8ce3139ff8f704cffc53a3dff946b4bffcf303aff926d4effca3517ff0df2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:09d3f929089aab92"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.576
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta - Sexy B_itch (feat. Akon) _ Lyrics"
+  outgoing:
+    assumptions:
+      duration_beats: 544.02421875
+      duration_seconds: 261.13
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0ece53ac16ff778806ff2cd310ff05fa13ff0ef112ff10ef13ff1be40fff0cf332ff50af0fff11ee13ff15ea1aff16e926ff0ef11fff1ae524ff0ff046ff6c934aff976853ff8c733eff768950ff8e713fff0ff04cff16e92cff0cf335ff17e85aff24db41ff17e867ff1ae551ff28d770ffbf4072ffb24d73ffb74870ffc03f26ff35ca1bff7a8521ff2ad52eff3bc443ff36c937ff41be4fff639c33ff3bc439ff23dc32ff20df46ff1ce364ff14eb5dff18e75dff26d950ff1de258ff29d654ff50af7eff8e7159ff4fb077ff9c6331ff1ee121ff15ea30ff11ee1eff14eb6bff15ea4eff1fe067ff0df237ff07f85fff728d5fff55aa69ff4fb071ff926d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:534cc376e186c4b5"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 48.11252788869284
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Nicki Minaj - Starships (Explicit) (Official Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "9d150a45-251e-4cb7-8203-8f4775cce60e"
+metadata:
+  created_at: "2026-10-02T15:05:55.846Z"
+  name: "starships -> sexy bitch"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 284.827865
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 44.430561
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.961602
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 284.827865
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 125
+  timeline:
+    -
+      at_beat: 1.166545
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 2.88950456920566
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.19356142241379315
+    -
+      at_beat: 3.177978515625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.349670133057551
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 4.355556
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.888889
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.0943560282033635
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.160736
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 17.694399928080063
+      control: "deck.eq_high"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 26.525398
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 27.37886096946304
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 33.28116
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 35.29806956971987
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5886314655172413
+    -
+      at_beat: 38.0650940471191
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 40.068495
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

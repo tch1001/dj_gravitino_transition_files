@@ -1,0 +1,211 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 457.7696463146555
+      duration_seconds: 212.9
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff1be40bff2ad518ff27d820ff1ce328ff2ad541ff2fd045ff1fe052ff708f2dff7a852eff6b9435ff649b2fff6e913dff4db23aff55aa46ff36c93cff4cb336ff28d714ff1ae527ff22dd2bff13ec30ff3dc254ff9d6257ff956a50ffa55a52ff7e8162ff738c5dff827d5cff6a954dff23dc47ff0ef143ff0cf32bff1ae51bff4fb027ff3ec12fff2fd03fff7a854aff5ca34bff53ac43ff5da23cff5ea14eff659a55ff708f48ff619e45ff2ad564ff46b931ff13ec3fff09f635ff1de249ff15ea35ff18e744ff15ea47ff11ee3aff0af540ff1ae565ff6b9462ff817e57ff59a657ff58a75bff5ea15dff639c5aff5aa55bff4ab554ff2dd207dcb24d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b3d6d2370286cda8"
+      meter: "4/4"
+      native_bpm: 129.010345
+      reference_downbeat_seconds: 0.13866666666666666
+    identity:
+      artists:
+        - "Swedish House Mafia - Topic"
+      identifiers:
+        providers: {}
+      title: "Don't You Worry Child (Radio Edit)"
+  outgoing:
+    assumptions:
+      duration_beats: 425.06369203004004
+      duration_seconds: 196.16
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:5970e21d36be87785d40e01f30ff837c5c5cdf203da7a35c5d27df2035ff97685254d926257ca9565d28df2032ff8a754cfdd92634ff7986559dd6292dff59a638ff788733ff7c8339ff877833ff4fb030ff37c83aff34cb31ff3cc334ff4ab540ff8e7150ffd42b3aff7f8050f7d42b3bff8f7056ffd92634ff7c8350ffce313bff926d58ffd52a3effa8575335d7283fc7a25d5b26e01f3fc2a857499ddc233bff916e51ffd72838ff916e3dff926d34ff7e8136ff7b843dff748b2dff52ad32ff4ab533ff34cb3cff43bc3cff50af35ff6c9331ff46b94fe9d22d3cff976849e8ce3139ff8f704cffc53a3dff946b4bffcf303aff926d4effca3517ff0df2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:09d3f929089aab92"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.576
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta - Sexy B_itch (feat. Akon) _ Lyrics"
+extensions: {}
+format: "gravitino.transition"
+id: "aba2635d-a479-49ab-8204-c1ad21888304"
+metadata:
+  created_at: "2026-10-02T15:25:15.297Z"
+  name: "sexy bitch -> dont you worry child"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 48
+    outgoing:
+      track_beat: 345.175923
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 48
+  end_beat: 72.95703125
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 47.955832
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 48
+      quantize: true
+      stem_bass: 0
+      stem_drums: 0
+      stem_melody: 0
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 345.175923
+      loop_start_beat: 345.175923
+      playing: true
+      position_beat: 345.175923
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.992656
+  labels: []
+  loops: []
+  master_bpm: 129.05916399999998
+  timeline:
+    -
+      at_beat: 6.232465
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 6.30192
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.830341284674649
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.915572
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.3394
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 19.235023337248247
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 31.5400390625
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 33.8232421875
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 63.96044921875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 65.29425548979917
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 67.06557768321149
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 67.90580996690396
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 70.318246
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

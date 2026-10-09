@@ -1,0 +1,276 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 488.0036137727897
+      duration_seconds: 221.84345833333333
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff4db23aff29d623ff45ba31b6c43b22ffc43b2affa65923ff946b34ff847b36ff827d5fffb44b2fff2bd408ff39c616ff1de225ff699654ffa15e567cc83758d299664effbc4362ffa9563bff5da24fffbf4039ff4eb141ff66993dffba4554ff8f7045ffaa554dff807f58f99a6551ffbe411eff27d822ff17e82dff23dc17ffc33c4cff8c7360d2837c3fff5ba44cff6c935effb44b58ffa35c55ffbf403dff47b83eff6c9335ff55aa4dff619e24ff2ad531ff3ac552ffa85752ff877845ff79863aff7e8143ff51ae5dff96695eff976850ffb24d59ff5aa550ff9d6236ffb84745ffbb445fffa35c40ff639c4fff50af5fff8c7332ffb24d04ffb44b"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:ff9cd9331f90cb8c"
+      meter: "4/4"
+      native_bpm: 131.9859375000009
+      reference_downbeat_seconds: 11.573649600210098
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Jay Sean - Down ft. Lil Wayne (Official Music Video) ft. Lil Wayne"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 475.7550086989409
+      duration_seconds: 216.24745833333333
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:29ff17e828ff1fe028ff24db28ff31ce5dff738c37ff9f6027ff31ce37ff639c4fffba455bff9a6561ff7c8345ff9a653cff14eb3aff44bb2aff1ee13dff1ae531ff27d82cff0af558ff8b7460ffc03f3dff728d5cff8c735cffb6495dfdd42b48ff738c33ff38c726ff19e64fff629d19ffaa5537ff11ee36ff11ee5bff827d55ff897649ffa65941ff4fb032ff12ed5bffc13e49ff7d8231ff17e840ff936c26ff45ba5cff966957ff89764bff6a9562ff8a755fffa05f53ffa35c44ff51ae05ff1ee148ff24db2dff28d73eff18e7068da45b01ff24db2eff0ff05effbd4253ff956a42ff32cd45ff3bc45aff4cb347ff39c642ff2dd258ff4cb306ff12ed"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a55a227327b8737d"
+      meter: "4/4"
+      native_bpm: 132.0029411764714
+      reference_downbeat_seconds: 0.14933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Cobra Starship - You Make Me Feel... (Audio)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "10B"
+    incoming_recipe_phase_offset: -0.031209
+    key_lock: true
+    outgoing_camelot: "6B"
+    outgoing_recipe_phase_offset: 0.035245
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "loop-intro"
+format: "gravitino.transition"
+id: "83b3a207-468d-5fa1-a60d-0968a05ca2df"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Repeat an eight-beat incoming intro, introduce highs and mids, swap bass, then release the loop to the next phrase. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — You Make Me Feel… → Down"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.031209
+    outgoing:
+      track_beat: 304.035245
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 304.035245
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.031209
+  end_beat: 32
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.031209
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.22
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.031209
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.000064412165115
+    outgoing:
+      captured: true
+      cue_beat: 304.035245
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 304.035245
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999355910073243
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · loop intro"
+    -
+      at_beat: 16
+      label: "Bass swap"
+    -
+      at_beat: 23.98
+      label: "Release intro loop"
+    -
+      at_beat: 32
+      label: "Clean incoming mix · transition complete"
+  loops:
+    -
+      color: "#c59bff"
+      end_track_beat: 7.968791
+      endpoint: "incoming"
+      id: "incoming-phrase-loop"
+      label: "Eight-beat phrase"
+      pairing_group: "phrase"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: -0.031209
+  master_bpm: 131.994439
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 0.01
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 14
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.22
+    -
+      at_beat: 15.8
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.3
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 18
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 23.98
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "temporary-loops.v1"
+version: 1

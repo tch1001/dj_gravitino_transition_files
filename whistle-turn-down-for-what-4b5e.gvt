@@ -1,0 +1,107 @@
+gravitino-transition 1
+
+[meta]
+name        = whistle -> turn down for what
+created     = 2026-08-21
+
+[from]
+title       = Flo Rida - Whistle [Oficial Audio HD]
+artist      = David Potůček
+bpm         = 104.016667
+duration    = 225.59
+fingerprint = gvfp1:8b44115f5f0d7708
+
+[to]
+title       = DJ Snake, Lil Jon - Turn Down for What (Audio)
+artist      = DJSnakeVEVO
+bpm         = 100.00
+duration    = 215.81
+fingerprint = gvfp1:73ef738ccfce58bd
+
+[sync]
+anchor_from = 283.195058 ; beat in FROM track where the transition begins
+anchor_to   = 96.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 104.016667 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.519
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 283.195058
+cue_beat    = 282.436892
+loop_active = 0
+loop_start_beat = 288.000
+loop_end_beat = 292.000
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.241
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.040571
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 96.000
+to_cue_beat = 0.000
+to_loop_active = 1
+to_loop_start_beat = 96.000
+to_loop_end_beat = 112.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.241
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+4.840945 b        saved_loop_1 1.00   via=performance_pad_1@custom
+4.855236 a        loop_in
+5.570904 b        play
+5.985218 b        saved_loop_1 0.00   via=performance_pad_1@custom
+12.474052 a        loop_out
+20.696466 a        loop_halve
+21.849319 b        fader       0.013
+22.186249 b        fader       0.183  linear
+22.410944 b        fader       0.217  linear
+23.797884 b        fader       0.203  linear
+24.352572 b        fader       0.117  linear
+25.898793 b        fader       0.143  linear
+28.318988 b        fader       0.159  linear
+28.564615 b        fader       0.22   linear
+28.781881 b        fader       0.324  linear
+28.908459 b        fader       0.343  linear
+28.927477 a        loop_halve
+35.080054 b        fader       0.60   linear
+36.064682 b        fader       0.703  linear
+36.666255 a        loop_halve
+38.117263 b        fader       0.732  linear
+39.358469 b        loop_exit
+40.937104 b        fader       0.812  linear
+42.705525 b        fader       1.00   linear
+45.278737 a        loop_halve
+52.705473 a        loop_halve
+60.76311 a        loop_halve
+64.401803 a        fx_on       1.00
+64.67554 a        fader       0.974
+64.897232 a        fader       0.794  linear
+65.233488 a        fader       0.644  linear
+65.617977 a        fader       0.411  linear
+67.038602 a        fader       0.00   linear
+74.328402 a        stop

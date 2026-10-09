@@ -1,0 +1,193 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 312.1619706723477
+      duration_seconds: 195.14000000000001
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff14eb1eff0cf337ff0ff026ff19e622ff44bb36ff6f903fff16e953ff867974ff5ea12fff11ee2eff659a58ff11ee51ff728d75ff5fa04bff23dc31ff5fa051ff07f85aff827d5fff6d923aff18e733ff59a64aff2dd254ff98673dff0ff03aff19e62cff669955ff0ef155ff78876aff5ca34aff0cf32cff718e50ff17e826ff728d44ff2fd06dff6f9076ff4eb13aff1be41eff5ba428ff1ae526ff1ae52eff11ee44ff20df22ffb34c34ff21de27ff21de3fff23dc54ff3bc432ff5ba443ff2ed15bff6b9448ff11ee2eff2dd230ff5ca34bff21de53ff837c73ff5ba433ff3ac526ff916e44ff20df50ff9b642aff0cf332ff3ec12aff817e1fff45ba"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:053db017dcd2a705"
+      meter: "4/4"
+      native_bpm: 95.980682
+      reference_downbeat_seconds: 0.24533333333333332
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Gasolina - Daddy yankee"
+  outgoing:
+    assumptions:
+      duration_beats: 598.0272406899628
+      duration_seconds: 398.57
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff35ca32ff1ee143ff88773fff6f9046ffa35c59ffc33c34ff08f73fff38c73dff817e1aff45ba3bff966924ff2fd024ff16e932ff39c62dff14eb34ff0bf451ff0ef15bffba454affa55a24ff87783994ad5254ffa6593fffa55a32ff3cc339ff51ae29ff66993bac9a655affa15e4aff9d6238ff29d654ffaa5538ff25da3eff30cf3bff1ce333ff07f84fff738c50ffb64942c0807f59ff9f604cffa35c46ffac533bff788735ff49b657ffa7585191c03f40ff8e7145ff9d6251ffaf5022ff14eb30ff3dc251ff9e6123ff13ec42ff5ba440ff639c62ffb44b51ffbf403cff7f8033ff43bc29ff5aa545ff847b66ffcb3428ff19e66fffb94662ffb34c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:15b9e37e15841662"
+      meter: "4/4"
+      native_bpm: 90.025806
+      reference_downbeat_seconds: 0.5973333333333334
+    identity:
+      artists:
+        - "VinylTube"
+      identifiers:
+        providers: {}
+      title: "BLACKPINK - Pink Venom [Extended]"
+extensions: {}
+format: "gravitino.transition"
+id: "1be53f3f-7901-4e6b-89a4-79edd84e6a18"
+metadata:
+  created_at: "2026-10-02T12:26:49.770Z"
+  name: "pink venom -> gasolina"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 431.721318
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 37.144306
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.777
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.533
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9584379999999999
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.3
+      loop_active: false
+      loop_end_beat: 112
+      loop_start_beat: 112
+      playing: true
+      position_beat: 431.721318
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.021585
+  labels: []
+  loops: []
+  master_bpm: 91.968983
+  timeline:
+    -
+      at_beat: 0.2836669921875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 1.7612379999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 1.9860120096737683
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 2.141864
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 20.360566
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 31.305954555505
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 31.491662754471022
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 33.0781006871684
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 33.80364067831857
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 34.081645
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

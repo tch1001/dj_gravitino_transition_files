@@ -1,0 +1,254 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 475.93246391957507
+      duration_seconds: 219.6375625
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:11ff32cd47ffb34c23ff36c927ff58a733ff6e9131ff9d6234ff926d2affa25d26ff738c48ffa15e5cffa25d5aedb04f3eff8d723fff89764eff728d4fff8e7147ff7f8045ff916e38ff7b8412ff12ed45ffbd424cf1aa5548ffb34c34ff916e42ff79863fff936c48ffa15e1fff46b940ff56a935ff5aa55cffa25d57ff9e614effae5153ffab5453ff8a7554ffa65956ff8b7427ff837c20ff3fc01eff916e25ff6b9444ffc7383effd02f36ffbc434bffaf5027ff19e655ffa45b58ffae513eff4ab53dff38c743ff669941ff6b944aff8b7444ff956a4bff55aa58ff9c635cffb54a5bffae515dffc13e47ff55aa3fff629d47ff877846ff807f16ff0ff0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:13e0e1e49daf799f"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.6613333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Part Of Me (Lyric Video)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 479.1345124999989
+      duration_seconds: 228.15929166666666
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:15ff34cb17ff0cf310ff30cf27ff21de13ff1be41fff11ee24ff32cd23ff31ce22ff3dc20dff0df229ff17e831ff18e72eff13ec33ff29d634ff23dc30ff0ef12fff0ff021ff07f838ff1ae565ff6d9271ffaa555dffa05f5dff768969ff55aa73ff788770ff817e65ff55aa6bff768929ff708f2fd099662fff748b2fff748b2aff69962ede98672eff8d7234ff42bd34ff847b35ff659a24ff1ee12ae2996625ff9d623fff49b636ff31ce47ff619e36ff40bf3cff34cb42ff26d941ff35ca63ff6c9379ffb04f6aff8b746fffae5161ff5aa573ff916e76ff887771ff906f5aff13ec61ff6a956fff986770ffa15e6cffb34c0dff10ef1ebf2ed106c72fd0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b43c6507c4cab801"
+      meter: "4/4"
+      native_bpm: 125.99999999999972
+      reference_downbeat_seconds: 0.896
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Galantis - Runaway (U & I) [Official Audio]"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "7B"
+    incoming_recipe_phase_offset: 0.040361
+    key_lock: true
+    outgoing_camelot: "3B"
+    outgoing_recipe_phase_offset: 0.010545
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "echo-cut"
+format: "gravitino.transition"
+id: "64959e8b-a14f-5cf3-9e6a-31906a707e26"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Restrained half-beat echo and bass cut; short phrase-boundary handoff keeps competing vocals apart. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Runaway (U & I) → Part of Me"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 16.040361
+    outgoing:
+      track_beat: 336.010545
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 336.010545
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 16.040361
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 16.040361
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 16.040361
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.984563376202909
+    outgoing:
+      captured: true
+      cue_beat: 336.010545
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 336.010545
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0159283888888913
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · echo cut"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 128.006977
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.61
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,276 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 522.2694821401506
+      duration_seconds: 244.83120833333334
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:20ff1ee123ff30cf22ff1ee10fff5ca32affd52a30ffa75835ff7b842bffd52a52ff837c50ffae514dffa35c4affbf402dff0ff017ff14eb19ff11ee27ff09f633ff25da36ff23dc34ff21de28ff0af563ffbd4264ffbd4260ffb7485fffb64960ffb9465dffb94657ffac535dffbc435fffb54a5effb44b5fffb14e3aff827d57ff768951ff89764fff916e50ffb54a2bff15ea1eff10ef25ff0cf329ff07f833ff23dc35ff23dc37ff20df28ff0af563ffba4565ffb6495fffb44b3cff5da248a5d62946d9ce314797d629459ddb244cffbb444dffc23d4cffca3545ff837c52ffc7384cffb74852ff9d624aff897623ff2cd323ff26d91cff1ce319ff11ee"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b634a8d80cf8c23e"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 1.9093333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - Where Have You Been (Audio)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 521.6750799147718
+      duration_seconds: 244.5525625
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:10ff13ec2aff0ff011ff11ee2cff10ef35ff5aa538ff45ba22ff4fb02dff30cf25ff40bf28ff36c943ff807f44ff8a7543ff718e42ff6e9140ff77883eff7f804fffac5352ffaa554cffad524bffa6594dffa55a4bffa55a38ff33cc2aff35ca35ff23dc3dff50af40ff679842ff629d45ff3cc33dff51ae2cff4ab53dff2fd045ff8e7143ff956a46ff7b8443ff7a853fff7f804fffb84748ffb84748ffb9464dff9e614effa15e4dff966955ffa45b38ff22dd42ff1ce33eff20df3aff29d643ff609f40ff6f9045ff649b48ff6a9543ff6e9143ff649b41ff669943ff778852ff847b54ff7b8453ff7f804cff87784affa15e4bff9f604bff9e6149ffa55a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:9b646677f9b7f765"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.5973333333333334
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Hangover"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "5A"
+    incoming_recipe_phase_offset: -0.029587
+    key_lock: true
+    outgoing_camelot: "5B"
+    outgoing_recipe_phase_offset: -0.055744
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "loop-intro"
+format: "gravitino.transition"
+id: "126efd73-8fce-5cdd-8b11-809b802a93f3"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Repeat an eight-beat incoming intro, introduce highs and mids, swap bass, then release the loop to the next phrase. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Hangover → Where Have You Been"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.029587
+    outgoing:
+      track_beat: 351.944256
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 351.944256
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.029587
+  end_beat: 32
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.029587
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.22
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.029587
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999992897242
+    outgoing:
+      captured: true
+      cue_beat: 351.944256
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 351.944256
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999992897242
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · loop intro"
+    -
+      at_beat: 16
+      label: "Bass swap"
+    -
+      at_beat: 23.98
+      label: "Release intro loop"
+    -
+      at_beat: 32
+      label: "Clean incoming mix · transition complete"
+  loops:
+    -
+      color: "#c59bff"
+      end_track_beat: 7.970413
+      endpoint: "incoming"
+      id: "incoming-phrase-loop"
+      label: "Eight-beat phrase"
+      pairing_group: "phrase"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: -0.029587
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 0.01
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 14
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.22
+    -
+      at_beat: 15.8
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.3
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 18
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 23.98
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "temporary-loops.v1"
+version: 1

@@ -1,4 +1,5 @@
-# This repository backs up portable transition recipes only.
+# This repository backs up portable and legacy transition recipes only.
 /*
 !/.gitignore
 !/*.transition
+!/*.gvt

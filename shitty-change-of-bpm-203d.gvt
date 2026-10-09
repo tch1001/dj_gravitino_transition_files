@@ -1,0 +1,108 @@
+gravitino-transition 1
+
+[meta]
+name        = shitty change of bpm
+created     = 2026-08-21
+
+[from]
+title       = Gangnam Style (강남스타일)
+bpm         = 132.002941
+duration    = 219.54
+fingerprint = gvfp1:7820d8294bf82ade
+
+[to]
+title       = DJ Snake, Lil Jon - Turn Down for What (Audio)
+artist      = DJSnakeVEVO
+bpm         = 100.00
+duration    = 215.81
+fingerprint = gvfp1:73ef738ccfce58bd
+
+[sync]
+anchor_from = -7.974817 ; beat in FROM track where the transition begins
+anchor_to   = 24.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 132.002941 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.608
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = -7.974817
+cue_beat    = -10.075131
+loop_active = 0
+loop_start_beat = -0.022533
+loop_end_beat = 15.759152
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 24.000
+to_cue_beat = 3.240188
+to_loop_active = 0
+to_loop_start_beat = 24.000
+to_loop_end_beat = 24.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b2          = 24.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+7.954358 a        loop_in
+23.782977 a        loop_out
+40.604346 a        loop_halve
+55.810932 a        loop_halve
+64.648491 a        eq_low      0.469
+64.767132 a        eq_low      0.405  linear
+65.539485 a        eq_low      0.363  linear
+71.784912 a        loop_halve
+71.895347 a        eq_low      0.275  linear
+88.262557 a        eq_low      0.052  linear
+88.415245 a        loop_halve
+91.430321 a        eq_low      0.00   linear
+98.75979 a        eq_high     0.454
+98.897612 a        eq_high     0.383  linear
+103.13556 a        eq_high     0.17   linear
+103.868131 a        eq_high     0.096  linear
+103.896518 a        loop_halve
+109.709256 a        eq_high     0.00   linear
+112.076485 a        loop_halve
+120.124096 b        hotcue_2    1.00   via=performance_pad_2@hot_cue
+120.438731 b        fader       0.083
+120.508415 b        fader       0.206  linear
+120.577155 b        fader       0.387  linear
+120.64921 b        fader       0.555  linear
+120.718318 b        fader       0.687  linear
+120.860377 b        fader       0.868  linear
+121.000061 b        fader       1.00   linear
+125.085299 a        fader       0.901
+125.151687 a        fader       0.271
+125.226078 a        fader       0.00   linear
+128.427076 b        play
+129.802205 b        hotcue_2    0.00   via=performance_pad_2@hot_cue

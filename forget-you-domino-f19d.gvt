@@ -1,0 +1,134 @@
+gravitino-transition 1
+
+[meta]
+name        = forget you -> domino
+created     = 2026-08-19
+
+[from]
+title       = Cee Lo Green - Forget You
+bpm         = 127.490909
+duration    = 233.89
+fingerprint = gvfp1:04a158ec554241d8
+
+[to]
+title       = Domino (audio)
+bpm         = 126.990909
+duration    = 233.22
+fingerprint = gvfp1:1ecd11b1f2c833f8
+
+[sync]
+anchor_from = 324.796246 ; beat in FROM track where the transition begins
+anchor_to   = 16.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.490909 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.529
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.529
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 324.796246
+cue_beat    = 324.18429
+loop_active = 0
+loop_start_beat = 47.02689
+loop_end_beat = 47.02689
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.003448
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.000
+to_eq_high  = 0.000
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 16.000
+to_cue_beat = 15.851844
+to_loop_active = 0
+to_loop_start_beat = 16.000
+to_loop_end_beat = 16.000
+to_fx_type  = 1
+to_fx_on    = 0
+to_fx_wet   = 0.000
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b2          = 16.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+10.23327 b        hotcue_2    1.00   via=performance_pad_2@hot_cue
+12.035142 b        play
+12.47711 b        hotcue_2    0.00   via=performance_pad_2@hot_cue
+35.323481 b        fader       0.022
+35.527467 b        fader       0.124  linear
+35.664207 b        fader       0.139  linear
+38.655244 b        fader       0.297  linear
+41.51104 b        fader       0.565  linear
+42.397182 b        fader       0.717  linear
+42.955944 b        fader       0.742  linear
+44.095304 b        fader       0.947  linear
+44.434832 b        fader       0.973  linear
+44.573438 b        fader       1.00   linear
+46.102995 a        eq_low      0.461
+46.217623 a        eq_low      0.376  linear
+46.270701 a        eq_low      0.357  linear
+46.610676 b        eq_low      0.011
+46.927987 b        eq_low      0.057  linear
+47.770633 b        eq_low      0.086  linear
+48.518878 a        eq_low      0.285  linear
+48.718526 a        eq_low      0.255  linear
+52.458259 a        eq_low      0.085  linear
+52.59425 b        eq_low      0.335  linear
+54.173044 a        eq_low      0.00   linear
+55.473361 b        eq_low      0.499  linear
+55.688029 b        eq_low      0.50   linear
+63.099501 a        eq_high     0.523
+63.214096 a        eq_high     0.50   linear
+64.115036 b        eq_mid      0.004
+65.921299 b        eq_mid      0.136  linear
+66.10262 a        eq_high     0.479  linear
+66.468161 a        eq_high     0.408  linear
+67.689173 b        eq_high     0.005
+69.355055 b        eq_high     0.065  linear
+70.136999 a        eq_high     0.27   linear
+71.440239 a        eq_high     0.19   linear
+72.278846 b        eq_high     0.137  linear
+72.51696 b        eq_high     0.177  linear
+76.869968 a        eq_mid      0.49
+78.704388 b        eq_mid      0.283  linear
+79.79231 a        eq_mid      0.467  linear
+79.928301 a        eq_mid      0.444  linear
+81.152213 a        eq_mid      0.361  linear
+82.319463 b        eq_mid      0.343  linear
+84.079101 a        eq_mid      0.351  linear
+84.282821 a        eq_mid      0.32   linear
+87.679748 b        eq_mid      0.454  linear
+90.467549 b        eq_mid      0.50   linear
+91.355504 a        eq_mid      0.094  linear
+91.759457 a        eq_mid      0.001  linear
+91.832447 a        eq_mid      0.00   linear
+95.431195 a        eq_high     0.165  linear
+95.500976 a        eq_high     0.14   linear
+95.567185 a        eq_high     0.091  linear
+95.635181 a        eq_high     0.065  linear
+96.598445 a        eq_high     0.037  linear
+96.793556 a        eq_high     0.00   linear
+104.20257 b        eq_high     0.324  linear
+105.358487 b        eq_high     0.50   linear

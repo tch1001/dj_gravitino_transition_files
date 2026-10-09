@@ -1,0 +1,282 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 387.42715641697816
+      duration_seconds: 184.48
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:25ff37c81be67d822eff50af22ff748b3eff47b84bff817e52ff79865eff758a42ff44bb3bff3cc350ff669942ff3cc347ff5da24dff699653ff5fa04aff936c43ff40bf2eff19e62aff0df244ff1ee13cff14eb3bff0ef161ffa55a57ff9d625fffb24d5aff807f55ff36c929ff41be0aff11ee0aff0cf31bff47b805ff4eb117ff3ec11352ad5228ff7f802aff7a854eff8a754cff6d9238ff3cc355ff30cf4cff7c8337ff2dd249ff837c4dff679845ff3cc348ff23dc3dff39c643ff32cd3bff29d647ff21de34ff12ed5fff619e5aff7b845dff9d625eff8c7355ff659a4bff24db56ff926d4dff609f51ff8c7359ffac5353ff6e9140ff47b807ff38c7"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:fac5678be049755f"
+      meter: "4/4"
+      native_bpm: 126.00449438202227
+      reference_downbeat_seconds: 0.4693333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris & Alesso - Under Control (Lyrics)"
+  outgoing:
+    assumptions:
+      duration_beats: 579.586922121211
+      duration_seconds: 271.7
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0dc42bd411a543bc25ff2bd41ada46b923ff2ed118ff33cc2dff3ac523ff33cc2ffe3bc438ff47b837ff36c946ff1ce340ff31ce3bff2cd33fff2fd047ff2cd35dff996660ff8d725fff877856ff7c8352ff807f63ffb44b63ffb34c35bcd52a55ff36c95fffa65969ff7e8146e1df200cff44bb32ff1fe021ff3ec12eff2ad51cff3bc42aff33cc1aff46b931ff15ea4fff46b946ff26d943ff2cd347ff20df53ff11ee4eff21de49ff20df4aff2ed12fff55aa32ff32cd2aff35ca37ff55aa3aff59a63cff46b92fff04fb64ffab5454ff3cc354ff50af60ff8e7160ff99665fff718e5cff887764ff41be5eff50af65ff25da6fff728d08ff31ce16ff35ca"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a92364ffce5caa22"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 1.9823498828041788
+    identity:
+      artists:
+        - "Zedd"
+      identifiers:
+        providers: {}
+      title: "Zedd - Clarity (feat. Foxes)"
+extensions: {}
+format: "gravitino.transition"
+id: "e8e6de11-56c6-4e9f-b107-836402624da3"
+metadata:
+  created_at: "2026-10-09T08:35:24.724Z"
+  name: "clarity -> under control"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 96
+    outgoing:
+      track_beat: 532.505827
+  cues:
+    -
+      color: "#df70bc"
+      endpoint: "outgoing"
+      id: "outgoing-cue-8"
+      label: "CUE 8"
+      pairing_group: "pad-8"
+      preferred_input:
+        bank: "custom"
+        pad: 8
+      purpose: "hot-cue"
+      track_beat: 528
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 96
+  end_beat: 49.5
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 96
+      loop_start_beat: 96
+      playing: false
+      position_beat: 96
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.015764633782539
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.514
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 544
+      loop_start_beat: 543
+      playing: true
+      position_beat: 532.505827
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 544
+      endpoint: "outgoing"
+      id: "outgoing-loop-7"
+      label: "L7"
+      pairing_group: "pad-7"
+      preferred_input:
+        bank: "custom"
+        pad: 7
+      purpose: "saved-loop"
+      start_track_beat: 543
+  master_bpm: 127.99090909090886
+  timeline:
+    -
+      at_beat: 3.1969279999999998
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_7"
+        pad_mode: "sampler"
+      loop_id: "outgoing-loop-7"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 3.5
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 3.75
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 5.25
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 7
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.75
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 9.25
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 10
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 10.5
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.75
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 14.5
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.25
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.465921
+    -
+      at_beat: 18.25
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 25.75
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.4619477370689655
+    -
+      at_beat: 26.5
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-8"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_8"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 27.75
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 42.5
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 46.75
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-8"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_8"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 47.25
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

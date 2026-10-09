@@ -1,0 +1,276 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 433.4083715246204
+      duration_seconds: 203.17460416666665
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:35ffa45b33ffab5429ff5ca32aff867933ff956a2dff35ca22ff3dc22fff1de23aff946b35ff689734ff659a38ff9e6136ffa85738ff9e6141ff916e46ff0df229ff2ad531ff32cd2fff34cb49ff40bf3eff1fe03eff32cd46ff16e92aff08f755ffb44b54ffaa5551ff6b944bff986747ff897641ff916e3dff5aa53aff5ea14beaac534789b9464dff9d6233ffa95643ff8d7242ff817e39ff2ad53dff51ae24ff2cd342ff49b63dff23dc4fff6d924aff3dc23cff25da44ff1ee142ff1ce353ffa45b5affa9564aff67984aff29d642ff11ee53ff778856ff6d9257ff3dc251ffae5158ff9e6159ffa05f4cff827d5bff5da259ff6b9424ffb6490bff10ef"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:d6a2ce0d0e7da9b2"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.18133333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Cash Cash - Take Me Home feat. Bebe Rexha [Official Lyric Video]"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 482.4949739015143
+      duration_seconds: 226.18558333333334
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff2dd21dff34cb2aff22dd30ff2ad518ff2ad518ff2ad51fff2ed11dff21de2bff27d81bff2ed12cff1ee131ff1ce350ff27d841ff24db43ff26d92fff42bd44ff31ce33ff27d84aff2bd463ffa35c4aff52ad68ffa35c54ff6b943dff16e93bff847b57ff956a56ff8d723cff9c6352ff79865dff50af52ff778855ff7b843fff18e747ff1be44dff18e72aff22dd2cff2fd038ff32cd51ff1be449ff27d848ff26d957ff7e8156ff8e7163ffa55a5dff817e0bff22dd16ff18e71bff0cf316ff11ee20ff0bf43dff2ad545ff1ce343ff24db4eff0df214ff05fa57ff7d8255ff8e7163ffa45b5cff817e61ffa15e52ff54ab67ffbc434dff4bb463ff9966"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cfc5855a57f1fa06"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Outside [Audio] ft. Ellie Goulding"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "9B"
+    incoming_recipe_phase_offset: -0.035861
+    key_lock: true
+    outgoing_camelot: "7A"
+    outgoing_recipe_phase_offset: -0.008478
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "loop-intro"
+format: "gravitino.transition"
+id: "45a09e50-81cb-5180-ae53-89bcfd670810"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Repeat an eight-beat incoming intro, introduce highs and mids, swap bass, then release the loop to the next phrase. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Outside → Take Me Home"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.035861
+    outgoing:
+      track_beat: 367.991522
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 367.991522
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.035861
+  end_beat: 32
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.035861
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.22
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.035861
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999992897242
+    outgoing:
+      captured: true
+      cue_beat: 367.991522
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 367.991522
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999992897242
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · loop intro"
+    -
+      at_beat: 16
+      label: "Bass swap"
+    -
+      at_beat: 23.98
+      label: "Release intro loop"
+    -
+      at_beat: 32
+      label: "Clean incoming mix · transition complete"
+  loops:
+    -
+      color: "#c59bff"
+      end_track_beat: 7.964139
+      endpoint: "incoming"
+      id: "incoming-phrase-loop"
+      label: "Eight-beat phrase"
+      pairing_group: "phrase"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: -0.035861
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 0.01
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 14
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.22
+    -
+      at_beat: 15.8
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.3
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 18
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 23.98
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "temporary-loops.v1"
+version: 1

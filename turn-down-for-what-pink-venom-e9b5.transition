@@ -1,0 +1,278 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 598.0272406899628
+      duration_seconds: 398.57
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff35ca32ff1ee143ff88773fff6f9046ffa35c59ffc33c34ff08f73fff38c73dff817e1aff45ba3bff966924ff2fd024ff16e932ff39c62dff14eb34ff0bf451ff0ef15bffba454affa55a24ff87783994ad5254ffa6593fffa55a32ff3cc339ff51ae29ff66993bac9a655affa15e4aff9d6238ff29d654ffaa5538ff25da3eff30cf3bff1ce333ff07f84fff738c50ffb64942c0807f59ff9f604cffa35c46ffac533bff788735ff49b657ffa7585191c03f40ff8e7145ff9d6251ffaf5022ff14eb30ff3dc251ff9e6123ff13ec42ff5ba440ff639c62ffb44b51ffbf403cff7f8033ff43bc29ff5aa545ff847b66ffcb3428ff19e66fffb94662ffb34c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:15b9e37e15841662"
+      meter: "4/4"
+      native_bpm: 90.025806
+      reference_downbeat_seconds: 0.5973333333333334
+    identity:
+      artists:
+        - "VinylTube"
+      identifiers:
+        providers: {}
+      title: "BLACKPINK - Pink Venom [Extended]"
+  outgoing:
+    assumptions:
+      duration_beats: 359.6771180555555
+      duration_seconds: 215.81
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff56a929ff2bd415ff29d62dff31ce38ff10ef02ff02fd4e78d92649fdd52a53ff827d4affc23d4dbacb3445ff79864dffb74849ffd72840ff96693dffa6594cffb14e20ff27d821ff37c82bff36c916ff0ff022ff2cd326ff02fd47ffbf4054ff847b4cefdd224bffce3149ff817e56f3ce3148ffc03f4bffbd4253a5ca354fb1d8274bffc9363dffad521eff23dc31ff09f624ff09f638ff13ec37ff02fd39ff06f94777dc2343d2d02f46ff7d823bffb04f4affd7284bff7d8246f5b8474cffc43b4effca3548ffbe414affc33c52d5e11e48ffd32c4c30d42b4effd32c4affc13e4fffc23d51d1e7184d36ea154affbd4252ffe41b4affd62944ffca35"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:73ef738ccfce58bd"
+      meter: "4/4"
+      native_bpm: 100
+      reference_downbeat_seconds: 1.397333333333
+    identity:
+      artists:
+        - "DJSnakeVEVO"
+      identifiers:
+        providers: {}
+      title: "DJ Snake, Lil Jon - Turn Down for What (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "457cdc06-9392-4635-b5b5-72b3d6c1688d"
+metadata:
+  created_at: "2026-10-02T11:50:19.047Z"
+  name: "turn down for what -> pink venom"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 112
+    outgoing:
+      track_beat: 92.280777
+  cues:
+    -
+      color: "#e4cb58"
+      endpoint: "incoming"
+      id: "incoming-cue-3"
+      label: "CUE 3"
+      pairing_group: "pad-3"
+      preferred_input:
+        bank: "custom"
+        pad: 3
+      purpose: "hot-cue"
+      track_beat: 112
+  end_beat: 119.570866
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.3
+      loop_active: false
+      loop_end_beat: 112
+      loop_start_beat: 112
+      playing: false
+      position_beat: 112
+      quantize: true
+      stem_bass: 0
+      stem_drums: 0
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.05571
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.533
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 111.46
+      loop_start_beat: 95.466833
+      playing: true
+      position_beat: 92.280777
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.950449
+  labels: []
+  loops: []
+  master_bpm: 95.0449
+  timeline:
+    -
+      at_beat: 3.2206949999999996
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-3"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_3"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.247104390541048
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 4.122847
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.602919
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-3"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_3"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 23.74949
+      control: "deck.filter"
+      curve: "step"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 26.94023413891977
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.41258081896551724
+    -
+      at_beat: 32.7370439996438
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0.4695581896551724
+    -
+      at_beat: 33.1025390625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 35.117462085395545
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 36.97067372756935
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 39.962987
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.009
+    -
+      at_beat: 55.56982421875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 60.0205078125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 65.016602
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 66.3427734375
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 70.70068359375
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0.4845096982758621
+    -
+      at_beat: 77.705078125
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 94.74658203125
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 95.00244140625
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 95.3486328125
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 97.9111328125
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 99.640625
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 100.51171875
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 101.5947265625
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

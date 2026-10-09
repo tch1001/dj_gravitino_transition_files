@@ -1,0 +1,198 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 211.21347626602613
+      duration_seconds: 97.48
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:06ff23dc12ff14eb1eff639c1bff4eb10cff22dd19ff08f718ff0df21aff41be1dff1ee116ff0df2436cdd2214ff08f721ff53ac24ff26d912ff0af52cffa65914ff08f71dff47b815ff27d814ff28d76bffc03f7693d02f5effb34c3dff35ca4fff956a56ffbd427a81c23d59ffb04f52ff916e24ff13ec66ffb8477396cc3353ff96696ffdc33c58ffa75858ffba457591bb4460ffb54a5cffa05f20ff14eb5fffd7283effc63953ffb24d6fe5cd3260ffcf303effa75856f3c13e67c8c93654ffb6496affca3562ffd92639ffc8374dffaa556adecb3467ffcf303cffae5164ffcf3040ff936c4dffa8576dffc43b12ff8f700942d02f054dce310234d728"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:81c60adc9691fa62"
+      meter: "4/4"
+      native_bpm: 130.007692
+      reference_downbeat_seconds: 0.12111653046469684
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "TAKA AFRO (EGNEVER EDIT)"
+  outgoing:
+    assumptions:
+      duration_beats: 231.14851241440638
+      duration_seconds: 106.67
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:31ff946b28ff728d36ff956a1bff13ec27ff6f9020ff16e92aff2bd433ff53ac1cff10ef5bffbf4023ff88773bff778827ff09f631ff43bc25ff13ec2dff23dc3aff45ba1bff0cf318ff2fd057c7e01f75f8c63966ffc53a31ff867940ffa6594affc13e61b0d8276f57e41b7a7dd52a5ad0dc2373ffcb3461ffc03f35ff827d42ffaa555fffc03f63afd9265de3c23d14ff4eb16effc93670ffc53a1effc03f37ff926d3fffcb3462ffcf3068cbdf204affde2125ff13ec27ff07f826ff768917ff1ee126ff5ba435ff3cc32eff669933dda6592774a05f08ff07f871ffcc3367ffc23d2cff8d723dff97685dffb64960ffd22d6c7ac13e4fffd42b08ff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:07e966a07f130d31"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.9571111803290826
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "new juice"
+extensions: {}
+format: "gravitino.transition"
+id: "349cd61f-ca9d-451e-bbe2-e69976d575ed"
+metadata:
+  created_at: "2026-09-25T11:05:58.180Z"
+  name: "new juice -> taka afro"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 184.802541
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 51.104893999999994
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0.500277
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: -1.496124
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 184.802541
+      loop_start_beat: 184.802541
+      playing: true
+      position_beat: 184.802541
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 7.1981201171875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.745443999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.745690999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 11.622559
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 11.622559
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 11.7177734375
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 25.863457999999998
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 26.200195
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 26.2001953125
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 31.888671875
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 46.258123999999995
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

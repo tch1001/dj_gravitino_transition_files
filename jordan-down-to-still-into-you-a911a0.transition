@@ -1,0 +1,254 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 489.92212872176566
+      duration_seconds: 216.1545625
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:05fe42bd188598672bff877841ff7f8039ff5ca333ff3ec138ffa15e39ff2ed12eff50af42ff76893cff8d722cff6c932e8a956a42ff619e49ff728d47ff46b94eff57a84eff4bb442ff33cc45ff718e3fff5fa040ffa75824ff4ab53fff3ac536ff44bb45ff916e34ff946b37ff1be440ff5aa546ff66993cff49b640ff619e36ff55aa4fff43bc4aff5fa04dff5ca340ff58a745ff659a52ff4bb44cff2fd037ff689745ff877848ff7e813dff718e41ff877846ff867948ff5ba451ff31ce46ff5ba44bff8c732c8d857a26ff40bf4fff30cf41ff77884dff32cd48ff6f9052ff47b83dff4bb454ff33cc50ff53ac42ff708f50ff5aa558ff3cc34fff3ec1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c9fdfbb457d6f57a"
+      meter: "4/4"
+      native_bpm: 135.9921686746998
+      reference_downbeat_seconds: 0.032
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Paramore - Still into You _ Lyrics"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 488.0036137727897
+      duration_seconds: 221.84345833333333
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff4db23aff29d623ff45ba31b6c43b22ffc43b2affa65923ff946b34ff847b36ff827d5fffb44b2fff2bd408ff39c616ff1de225ff699654ffa15e567cc83758d299664effbc4362ffa9563bff5da24fffbf4039ff4eb141ff66993dffba4554ff8f7045ffaa554dff807f58f99a6551ffbe411eff27d822ff17e82dff23dc17ffc33c4cff8c7360d2837c3fff5ba44cff6c935effb44b58ffa35c55ffbf403dff47b83eff6c9335ff55aa4dff619e24ff2ad531ff3ac552ffa85752ff877845ff79863aff7e8143ff51ae5dff96695eff976850ffb24d59ff5aa550ff9d6236ffb84745ffbb445fffa35c40ff639c4fff50af5fff8c7332ffb24d04ffb44b"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:ff9cd9331f90cb8c"
+      meter: "4/4"
+      native_bpm: 131.9859375000009
+      reference_downbeat_seconds: 11.573649600210098
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Jay Sean - Down ft. Lil Wayne (Official Music Video) ft. Lil Wayne"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "8B"
+    incoming_recipe_phase_offset: -0.036939
+    key_lock: true
+    outgoing_camelot: "10B"
+    outgoing_recipe_phase_offset: -0.031209
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "echo-cut"
+format: "gravitino.transition"
+id: "a911a01f-05c4-52f4-bca5-6b4cafb82fde"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Restrained half-beat echo and bass cut; short phrase-boundary handoff keeps competing vocals apart. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Down → Still into You"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 15.963061
+    outgoing:
+      track_beat: 303.968791
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 303.968791
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 15.963061
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 15.963061
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 15.963061
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9852703600933717
+    outgoing:
+      captured: true
+      cue_beat: 303.968791
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 303.968791
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0151767342638234
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · echo cut"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 133.989053
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.61
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

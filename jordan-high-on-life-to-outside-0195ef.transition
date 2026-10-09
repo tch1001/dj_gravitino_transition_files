@@ -1,0 +1,260 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 482.4949739015143
+      duration_seconds: 226.18558333333334
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff2dd21dff34cb2aff22dd30ff2ad518ff2ad518ff2ad51fff2ed11dff21de2bff27d81bff2ed12cff1ee131ff1ce350ff27d841ff24db43ff26d92fff42bd44ff31ce33ff27d84aff2bd463ffa35c4aff52ad68ffa35c54ff6b943dff16e93bff847b57ff956a56ff8d723cff9c6352ff79865dff50af52ff778855ff7b843fff18e747ff1be44dff18e72aff22dd2cff2fd038ff32cd51ff1be449ff27d848ff26d957ff7e8156ff8e7163ffa55a5dff817e0bff22dd16ff18e71bff0cf316ff11ee20ff0bf43dff2ad545ff1ce343ff24db4eff0df214ff05fa57ff7d8255ff8e7163ffa45b5cff817e61ffa15e52ff54ab67ffbc434dff4bb463ff9966"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cfc5855a57f1fa06"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Outside [Audio] ft. Ellie Goulding"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 483.9314052083325
+      duration_seconds: 226.85895833333333
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0eb65da20ead67984aff4fb038ff36c926ff33cc34ff12ed35ff5ca33cff4bb420ff807f31ff1fe013ff817e44ff44bb45ff5ca349ff619e4cff6e9121ff22dd2fff23dc27ff29d62aff21de52ff748b44ff609f4eff6a9550ff679841ff66993eff6d9245ff7b8442ff4fb053ff807f6fffb9465cff946b6effaf505cff7a8507ff3ac52dff738c30ff4fb038ff35ca2dff32cd3fff6a953fff679832ff57a832ff659a4eff817e3aff49b658ff857a43ff50af4dff79861dff15ea1aff1de21dff29d637ff2fd043ff7a8543ff7a8558ff649b4bff4eb16cffab545dff9c6369ffa65964ffab545cff7c8361ff8f706aff9a6565ffa25d58ff669909bea35c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e6d51234bb632c08"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.032
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Martin Garrix feat. Bonn - High On Life (Official Video)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "7A"
+    incoming_recipe_phase_offset: -0.008478
+    key_lock: true
+    outgoing_camelot: "11B"
+    outgoing_recipe_phase_offset: 0
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "filter-drop"
+format: "gravitino.transition"
+id: "0195ef5b-2098-5811-a154-6fd7c258c1ac"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "High-pass the outgoing groove, open the incoming low-pass, then swap bass on the phrase boundary. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — High on Life → Outside"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 15.991522
+    outgoing:
+      track_beat: 336
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 336
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 15.991522
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 15.991522
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.39
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 15.991522
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999992897242
+    outgoing:
+      captured: true
+      cue_beat: 336
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 336
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999992897242
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · filter drop"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 127.990909
+  timeline:
+    -
+      at_beat: 8
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "incoming"
+      value: 0.39
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.65
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.filter"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.25
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

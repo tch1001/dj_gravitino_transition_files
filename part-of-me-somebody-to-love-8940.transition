@@ -1,0 +1,210 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 478.80044533107383
+      duration_seconds: 220.96
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2cffb54a36ffb64940ffb64926ff827d27ff857a40fcd52a48ffae5142ff7c833effb24d47ff936c37ff3dc233ff857a51ff7a8552ff897651ff4ab546ff58a735ff87784fff966944ffb64942ff08f721ff9c6322ff8c7349e3d72847ff8e7147ff8d7245ffaf5051ff7d822cffd12e38ff41be55ff827d5bff827d46ff669943ff76893eff639c3dff86794fff87785aff738c27ff817e2cff926d43ffac5347ffc9364dff768914ff56a91fff16e934ff0bf41bff11ee59ff807f47ffb74850ff748b47ff857a4cff57a852ff817e4eff936c54ff7a853fff708f45ff43bc3cff7f8044ff798636ff8a7542ffc03f46ffac5322ff936c55ff6d924695c23d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e537196e5e33e5fb"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.2773333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Somebody To Love"
+  outgoing:
+    assumptions:
+      duration_beats: 475.93246391957507
+      duration_seconds: 219.64000000000001
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:11ff32cd47ffb34c23ff36c927ff58a733ff6e9131ff9d6234ff926d2affa25d26ff738c48ffa15e5cffa25d5aedb04f3eff8d723fff89764eff728d4fff8e7147ff7f8045ff916e38ff7b8412ff12ed45ffbd424cf1aa5548ffb34c34ff916e42ff79863fff936c48ffa15e1fff46b940ff56a935ff5aa55cffa25d57ff9e614effae5153ffab5453ff8a7554ffa65956ff8b7427ff837c20ff3fc01eff916e25ff6b9444ffc7383effd02f36ffbc434bffaf5027ff19e655ffa45b58ffae513eff4ab53dff38c743ff669941ff6b944aff8b7444ff956a4bff55aa58ff9c635cffb54a5bffae515dffc13e47ff55aa3fff629d47ff877846ff807f16ff0ff0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:13e0e1e49daf799f"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 0.6613333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Part Of Me (Lyric Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "b4642570-67b9-4765-8ab7-dd801b2fd9db"
+metadata:
+  created_at: "2026-10-02T09:01:46.430Z"
+  name: "part of me -> somebody to love"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 262.074909
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 42.071154
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 262.074909
+      loop_start_beat: 262.074909
+      playing: true
+      position_beat: 262.074909
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 1.524915194174267
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 1.9307861328125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.0993079999999997
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.6084669999999996
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.967234
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 20.24804382457821
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 23.539021441722706
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 27.020165
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 29.990461
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 33.560935
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 36.728583
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.9420000000000001
+    -
+      at_beat: 37.224967
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.404091
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

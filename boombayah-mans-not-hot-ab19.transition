@@ -1,0 +1,214 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 417.1513465978521
+      duration_seconds: 185.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:4aff46b903a24ab513ff0cf327ff04fb19ff1ee141ff23dc34ff0ef141ff08f72eff06f916ff0af524ff12ed3dff0ff030ff11ee33ff1ae531ff0cf34bff7f804dffa65955ffa9564bffaf503bff14eb43ffd22d48ffa15e64ffa85763ff996647ff807f4eff17e83bff1de232ff2dd215ff2ad538ff23dc30ff0bf440ff15ea40ff14eb33ff08f743ff798659a2b24d44ffbe4149ff7f8072b9c7384769ce3155ff7b846affa9563effa45b4aff728d3bff0cf341ff0ef13dff0df21bff3bc464ff1ae51aff19e652ffac5341ff629d49ff956a48ff738c65ffc13e61ffbf4064ffb64951ff9b6464ffad523effbd4247ffa45b50ffba451effbf4009ffab54"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e47c73412dafb4ef"
+      meter: "4/4"
+      native_bpm: 134.992169
+      reference_downbeat_seconds: 0.14933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "MANS NOT HOT AUDIO FULL SONG"
+  outgoing:
+    assumptions:
+      duration_beats: 508.2751736111102
+      duration_seconds: 243.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:13ff0ef10fff0ef129ff16e92cff18e751ffb7485af7cb3456ffbb4452e2c33c4affc53a55ffce315dffd32c51ffbb4449ffad5249ffa8573eff6f9030ff57a832ff50af2fff38c726ff48b735ff58a73eff47b830ff0bf440ff9b6447ff877847ff926d3eff827d44ff9a6541ff9a6546ff98673dff877822ff15ea0fff12ed4fffce3159ffcf3020ff10ef54ffc43b4affb54a4dffd62956ffc83759abc93636ff49b636ff41be47ff29d64bff1ce334ff38c739ff32cd45ff59a648ffb9464dff8f704aff9c6347ffae5133ff34cb45ff926d40ffa45b3dff817e25ff1be449ff98674bff7f8041ff956a4bffb44b44ff877841ff7b8440ff8e7148ff7a85"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:008307f42fd54934"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 2.0906666666666665
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "BLACKPINK - '붐바야 (BOOMBAYAH)' M_V"
+extensions: {}
+format: "gravitino.transition"
+id: "e1d43a83-aade-452a-9429-26d8682ed066"
+metadata:
+  created_at: "2026-10-02T09:25:33.152Z"
+  name: "boombayah -> mans not hot"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 357.01680999999996
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 113.800305
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9629099999999999
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 400
+      loop_start_beat: 368
+      playing: true
+      position_beat: 357.01680999999996
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.039477
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 400
+      endpoint: "outgoing"
+      id: "outgoing-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 368
+  master_bpm: 129.93462499999998
+  timeline:
+    -
+      at_beat: 6.779731
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "outgoing-loop-1"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10.892528013728265
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 10.976547743618715
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.054129999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.882812
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 40.74879497329899
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 64.910711
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 89.0283203125
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 105.9189453125
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 106.60638766524401
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 106.77738699999999
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

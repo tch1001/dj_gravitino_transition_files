@@ -1,0 +1,112 @@
+gravitino-transition 1
+
+[meta]
+name        = waiting for love -> tremor
+created     = 2026-08-22
+
+[from]
+title       = Avicii - Waiting For Love (Lyric Video)
+bpm         = 127.990909
+duration    = 231.18
+fingerprint = gvfp1:0e8a222acd538bd8
+
+[to]
+title       = Tremor (Sensation 2014 Anthem)
+bpm         = 127.990909
+duration    = 294.43
+fingerprint = gvfp1:1b5abc348a7a152b
+
+[sync]
+anchor_from = 111.119386 ; beat in FROM track where the transition begins
+anchor_to   = 64.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.990909 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.411
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 111.119386
+cue_beat    = 110.45376
+loop_active = 0
+loop_start_beat = 111.119386
+loop_end_beat = 111.119386
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 324.136501
+to_cue_beat = 304.000
+to_loop_active = 0
+to_loop_start_beat = 328.000
+to_loop_end_beat = 344.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.000
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+a4          = 256.000
+b3          = 64.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+8.89679  b        hotcue_3    1.00   via=performance_pad_3@hot_cue
+9.989678 b        play
+10.466812 b        hotcue_3    0.00   via=performance_pad_3@hot_cue
+38.055964 b        fader       0.02
+38.363142 b        fader       0.145  linear
+39.72882 b        fader       0.668
+40.251719 b        fader       1.00   linear
+41.446301 a        fader       0.918
+41.503185 a        fader       0.693  linear
+41.571447 a        fader       0.456  linear
+41.639709 a        fader       0.314  linear
+41.707971 a        fader       0.22   linear
+41.776233 a        fader       0.154  linear
+41.969641 a        fader       0.016  linear
+42.026526 a        fader       0.00   linear
+78.675144 a        stem_melody 0.00
+79.820819 a        stem_bass   0.00
+80.992647 a        stem_drums  0.00
+208.85841 a        hotcue_4    1.00   via=performance_pad_4@hot_cue
+211.213442 a        play
+211.68134 a        hotcue_4    0.00   via=performance_pad_4@hot_cue
+238.731848 a        fader       0.013  linear
+239.662273 a        fader       0.393  linear
+239.876853 a        fader       0.535  linear
+239.98601 a        fader       0.635  linear
+240.037237 a        fader       0.719  linear
+240.149781 a        fader       1.00   linear
+309.047567 a        fader       0.991  linear
+309.389416 a        fader       0.937  linear
+312.253618 a        fader       0.562  linear
+312.946744 a        fader       0.396  linear
+313.070381 a        fader       0.313  linear
+313.147668 a        fader       0.241  linear
+313.218142 a        fader       0.145  linear
+313.268917 a        fader       0.049  linear
+313.321684 a        fader       0.00   linear

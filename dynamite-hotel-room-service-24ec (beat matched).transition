@@ -21,38 +21,49 @@ endpoints:
       title: "Pitbull - Hotel Room Service (Official Audio)"
   outgoing:
     assumptions:
-      duration_beats: 462.261830203651
-      duration_seconds: 218.38
+      duration_beats: 499.28868855718
+      duration_seconds: 249.68
       fingerprints:
         -
           algorithm: "gravitino-structure-2"
-          value: "gvsf2:1dff16e925ff1ae51aff1be423ff20df29ff37c839ffa45b5195dc2351e9d32c3cffb34c52ffca353fffa95651c1c83751e4cc3365ddbd422dff718e55d8bd423fffae5143ffa05f42ffc6395680c7382aff79862fff8c7346f7c03f3dffce3153ff996629ff2dd232ff36c92bff07f851ff956a54fdac532dff35ca59ded02f3cff9f6037ff55aa5cffd42b49ffb24d43ffbd4246ffbc4355fdc13e4dfcda255875a9563eff8d7249ffaa555991c83727ffb54a1fff1ae525ff18e731ff0df225ff2cd338ff45ba2aff13ec50e6c8373aff12ed21ff26d959a4c43b44ffb14e4dffb04f4cffbc43616bc13e29ff56a93eff986744ffb84744ffc33c5effac53"
+          value: "gvsf2:1bff0ff005ff6a951bff23dc10ff1ae511ff679828ff86792bffab5428ffa55a35ff45ba22ff49b63bff5fa03bff52ad38ffb14e3affae514bffa7584cffa55a34ff837c53ffae5152ff976826ff1ce318ff57a834ff54ab38ff59a642ffc33c36ffb44b65ffa15e69ff9b6433cdbd4236ffb34c4cffa45b4dffa75834ff76893fff53ac33ff1be43cff3dc23bff1fe035ff2cd36dff966973ff8e713dff9e6140ffb14e56ffa85752ffac534bff7b844aff906f61ff867965ff8b743eff88775bff8e7134ff25da60ffad5220ff0ff02bff936c3aff52ad5fffbc434aff9d6269ffaa556dffa6595eff857a60ffa05f6eff8e712dff09f626ff07f828ff6d92"
         -
           algorithm: "gvfp1"
-          value: "gvfp1:1e2b3b99b71e8cde"
+          value: "gvfp1:90bbcb7cc0919751"
       meter: "4/4"
-      native_bpm: 127.004494
-      reference_downbeat_seconds: 1.59261225715268
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 24.3275909985637
     identity:
       artists: []
       identifiers:
         providers: {}
-      title: "Nicki Minaj - Super Bass (Official Video)"
+      title: "Taio Cruz - Dynamite (Official Video)"
 extensions: {}
 format: "gravitino.transition"
-id: "3323c8c0-f48b-4f7d-b381-48229a7ad984"
+id: "74fa7a74-3844-401c-a75f-7d49112192fe"
 metadata:
-  created_at: "2026-09-07T08:27:01.681Z"
-  name: "super bass -> hotel room service"
+  created_at: "2026-09-04T07:46:20.147Z"
+  name: "dynamite -> hotel room service (beat matched)"
   tags: []
 performance:
   anchors:
     incoming:
-      track_beat: 64
+      track_beat: 0
     outgoing:
-      track_beat: 314.362985
-  cues: []
-  end_beat: 84.606773
+      track_beat: 246.683502
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 120.503691
   initial_state:
     complete: true
     incoming:
@@ -67,20 +78,23 @@ performance:
       fx_on: false
       fx_type: 0
       fx_wet: 0.5
-      loop_active: true
-      loop_end_beat: 80
-      loop_start_beat: 64
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
       playing: false
-      position_beat: 64
+      position_beat: 0
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.008233
+      tempo_ratio: 1.0003685741557757
+    mixer:
+      captured: true
+      crossfader: 0.634
     outgoing:
       captured: true
-      cue_beat: 312.37973
+      cue_beat: 240.801149
       eq_high: 0.5
       eq_low: 0.5
       eq_mid: 0.5
@@ -91,120 +105,96 @@ performance:
       fx_type: 0
       fx_wet: 0.5
       loop_active: false
-      loop_end_beat: 335.413012
-      loop_start_beat: 335.413012
+      loop_end_beat: 246.683502
+      loop_start_beat: 246.683502
       playing: true
-      position_beat: 314.362985
+      position_beat: 246.683502
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1
+      tempo_ratio: 1.0505921149034023
   labels: []
-  loops:
-    -
-      color: "#e8a13a"
-      end_track_beat: 80
-      endpoint: "incoming"
-      id: "incoming-loop-1"
-      label: "L1"
-      pairing_group: "pad-1"
-      preferred_input:
-        bank: "custom"
-        pad: 1
-      purpose: "saved-loop"
-      start_track_beat: 64
-  master_bpm: 127.004494
+  loops: []
+  master_bpm: 126.050936
   timeline:
     -
-      at_beat: 5.688553
-      control: "deck.transition_loop"
+      at_beat: 1.3125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
       curve: "step"
       input_hint:
-        control: "host.performance_pad_1"
+        control: "host.performance_pad_5"
         pad_mode: "sampler"
-      loop_id: "incoming-loop-1"
       target: "incoming"
       value: 1
     -
-      at_beat: 6.361051
+      at_beat: 3.365946
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 6.839868
-      control: "deck.transition_loop"
+      at_beat: 3.769252
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
       curve: "step"
       input_hint:
-        control: "host.performance_pad_1"
+        control: "host.performance_pad_5"
         pad_mode: "sampler"
-      loop_id: "incoming-loop-1"
       target: "incoming"
       value: 0
     -
-      at_beat: 22.37537
+      at_beat: 23.346721
       control: "deck.fader"
       curve: "step"
       target: "incoming"
-      value: 0.005
+      value: 0.01
     -
-      at_beat: 22.828546
-      control: "deck.eq_low"
-      curve: "step"
-      target: "outgoing"
-      value: 0.492
-    -
-      at_beat: 45.785287
-      control: "deck.loop_exit"
-      curve: "step"
-      target: "incoming"
-      value: 1
-    -
-      at_beat: 48.911931
-      control: "deck.eq_low"
-      curve: "linear"
-      target: "outgoing"
-      value: 0
-    -
-      at_beat: 59.19927
-      control: "deck.eq_mid"
-      curve: "step"
-      target: "incoming"
-      value: 0.007
-    -
-      at_beat: 64.5
+      at_beat: 28.908448
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
       value: 1
     -
-      at_beat: 66.661317
-      control: "deck.eq_mid"
-      curve: "linear"
+      at_beat: 63.193539
+      control: "deck.filter"
+      curve: "step"
       target: "outgoing"
-      value: 0
+      value: 0.494
     -
-      at_beat: 68.41674
+      at_beat: 81.8341714285714
       control: "deck.eq_mid"
       curve: "linear"
       target: "incoming"
-      value: 0.48
+      value: 0.182785560344828
     -
-      at_beat: 69.71935
+      at_beat: 92.25
       control: "deck.fader"
       curve: "step"
       target: "outgoing"
-      value: 0.982
+      value: 1
     -
-      at_beat: 71.264556
+      at_beat: 93.602644
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.885
+    -
+      at_beat: 94.5
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 100.75
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 81.911297
+      at_beat: 108.325378
       control: "deck.stop"
       curve: "step"
       target: "outgoing"

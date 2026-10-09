@@ -1,0 +1,104 @@
+gravitino-transition 1
+
+[meta]
+name        = yeah -> tik tok
+created     = 2026-08-22
+
+[from]
+title       = Usher feat. Lil Jon, Ludacris - Yeah! (Audio)
+bpm         = 105.00
+duration    = 250.15
+fingerprint = gvfp1:85813df35c251e6b
+
+[to]
+title       = Kesha - TiK ToK (Lyrics)
+bpm         = 119.980851
+duration    = 200.37
+fingerprint = gvfp1:b342ba18775d3180
+
+[sync]
+anchor_from = 306.183211 ; beat in FROM track where the transition begins
+anchor_to   = -4.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 114.986473 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.507
+tempo_ratio = 1.095109
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 306.183211
+cue_beat    = 317.6725
+loop_active = 0
+loop_start_beat = 0.000
+loop_end_beat = 16.000
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 0.957773
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 72.582736
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 72.582736
+to_loop_end_beat = 72.582736
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = -4.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+13.798385 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+14.810297 b        play
+16.49674 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+45.75951 b        fader       0.11
+45.810625 b        fader       0.636
+45.871948 b        fader       1.00   linear
+51.586142 a        eq_low      0.498
+52.004568 a        eq_low      0.462  linear
+52.189741 b        eq_low      0.003
+55.387719 a        eq_low      0.391  linear
+57.769214 b        eq_low      0.138  linear
+57.779422 a        eq_low      0.354  linear
+64.044896 a        eq_low      0.111  linear
+65.95626 a        eq_low      0.051  linear
+66.109568 b        eq_low      0.345  linear
+67.902469 a        eq_low      0.00   linear
+70.279745 b        eq_low      0.50   linear
+74.981411 a        filter      0.481
+75.257365 a        filter      0.298  linear
+75.369802 a        filter      0.245  linear
+76.596333 a        filter      0.063  linear
+76.85187 a        filter      0.00   linear
+77.086953 a        fader       0.98
+77.649104 a        fader       0.806  linear
+77.700182 a        fader       0.774  linear
+77.761505 a        fader       0.682  linear
+77.822865 a        fader       0.435  linear
+77.884188 a        fader       0.01   linear
+77.94551 a        fader       0.00   linear

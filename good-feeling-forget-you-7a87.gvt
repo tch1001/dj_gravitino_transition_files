@@ -1,0 +1,89 @@
+gravitino-transition 1
+
+[meta]
+name        = good feeling -> forget you
+created     = 2026-08-19
+
+[from]
+title       = Flo Rida - Good Feeling (Audio)
+bpm         = 127.990909
+duration    = 247.18
+fingerprint = gvfp1:04fdbf59005fb5ab
+
+[to]
+title       = Cee Lo Green - Forget You
+bpm         = 127.490909
+duration    = 233.89
+fingerprint = gvfp1:04a158ec554241d8
+
+[sync]
+anchor_from = 482.451569 ; beat in FROM track where the transition begins
+anchor_to   = -17.0     ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.990909 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.471
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 482.451569
+cue_beat    = 477.950497
+loop_active = 0
+loop_start_beat = 479.372618
+loop_end_beat = 479.372618
+fx_type     = 1
+fx_on       = 0
+fx_wet      = 0.000
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.003829
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = -17.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 47.02689
+to_loop_end_beat = 47.02689
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = -17.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+5.473093 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+6.542059 b        play
+7.000374 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+26.270143 b        fader       0.005
+28.60266 b        fader       0.35   linear
+31.35026 b        fader       0.414  linear
+31.741745 a        fx_on       1.00
+32.553326 b        fader       0.424  linear
+34.465266 b        fader       0.703  linear
+35.981261 a        fx_wet      0.002
+37.332122 b        fader       1.00   linear
+37.536278 a        fx_wet      0.26   linear
+41.913545 a        fx_wet      0.351  linear
+47.225184 a        fx_on       0.00

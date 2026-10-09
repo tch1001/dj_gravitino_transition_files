@@ -1,0 +1,254 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 548.099803566341
+      duration_seconds: 222.2381875
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:13ff1be412ad4db228ff1ae529ff23dc2aff33cc3cff39c646ff748b37ff679832ff5ea147ff69963cff7a8546ff7f8041ff79863cff57a83dff728d42ff50af3dff57a83eff32cd4aff609f4fff4bb447ff53ac46ff5aa53fff36c94eff4fb045ff609f44ff718e3dff54ab45ff55aa48ff5ca33aff5ca346ff5ea13bff56a940ff57a83eff659a44ff6c9344ff837c48ff5ca343ff56a940ff609f49ff609f46ff5ea14aff5ea147ff798642ff5ba448ff38c748ff47b845ff629d3eff2ed147ff5ca344ff53ac46ff5ea146ff53ac4bff659a4dff5aa543ff3ec148ff5ea14cff53ac3eff50af4dff41be45ff5ca34cff42bd47ff6a9537a6956a0c34a659"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:08662dd99384d3c2"
+      meter: "4/4"
+      native_bpm: 147.97631578947457
+      reference_downbeat_seconds: 0.2986666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Mr. Brightside"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 452.4075826656023
+      duration_seconds: 185.94541666666666
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff26d909ff05fa36ff619e36ff3dc232ff79862dff916e36ff4bb438ff6b9432ff758a32ff59a63dff50af59ffb8474dff7c8345ffae5149ffbf4062ffb54a4dffaa555fffb7484effab544af5d32c3fff788734ff6f903aff38c73eff5ca335ff6e916895b8475dff936c53ff956a67daae5143ceaf5059ffa65944ffb04f4dffc33c46ffa9561cff0ff02bff996639ff649b30ff728d2fff18e744ffc03f57ffad524effbb446b9eba4537ff51ae35ff4bb45edeaa5564ceb24d3fff2dd23aff629d39ff53ac26ff7a853dff4cb336ff57a85effa35c29ff936c35ff619e4effd42b31ff7b8452ffc63937ff4eb137ff59a624ff10ef30ff28d71eff22dd"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e0b01e6de8aa746f"
+      meter: "4/4"
+      native_bpm: 145.98076923077053
+      reference_downbeat_seconds: 0.5546666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Sheck Wes - Mo Bamba"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "3B"
+    incoming_recipe_phase_offset: -0.127656
+    key_lock: true
+    outgoing_camelot: "9A"
+    outgoing_recipe_phase_offset: -0.052478
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "echo-cut"
+format: "gravitino.transition"
+id: "4bce595e-c24f-587e-a7e3-3a7c3622aad3"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Restrained half-beat echo and bass cut; short phrase-boundary handoff keeps competing vocals apart. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Mo Bamba → Mr. Brightside"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.127656
+    outgoing:
+      track_beat: 303.947522
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 303.947522
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.127656
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.127656
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.127656
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9932572129252488
+    outgoing:
+      captured: true
+      cue_beat: 303.947522
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 303.947522
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0068349671979886
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · echo cut"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 146.978543
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.61
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

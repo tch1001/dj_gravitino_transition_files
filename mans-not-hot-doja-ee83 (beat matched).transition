@@ -1,0 +1,249 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 226.48572250868176
+      duration_seconds: 97.08
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff06f934ff0df207ff0af537ff1de230ff16e920ff1ae531ff18e736ff1ee136ff14eb34ff1ce38254dc2315ff09f681d6aa5537ff21de80ffa25d39ff22dd3bff19e672ffbd4235ff19e67aff956a39ff1ce33fff0ef142ff1be485ffa95679f9bc4322ff34cb73dcca352fff17e83dff639c39ff1ae531ff0ff03dff16e929ff0ef127ff0df234ff13ec36ff28d736ff23dc21ff08f77effaa5531ff19e68cbcbb4431ff20df77ffa85784ff9a6562ff956a3aff1ce380ffa85726ff10ef43ff1ae56cffa7583bff17e866ff88773dff13ec30ff16e979ffb94644ff18e71aff15ea17ff08f70fff04fb0aff04fb0eff07f807ff06f904ff04fb03ff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:03ac61eb9db4d60b"
+      meter: "4/4"
+      native_bpm: 139.975
+      reference_downbeat_seconds: 1.4437083333333334
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Central Cee - Doja (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 417.1513465978521
+      duration_seconds: 185.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:4aff46b903a24ab513ff0cf327ff04fb19ff1ee141ff23dc34ff0ef141ff08f72eff06f916ff0af524ff12ed3dff0ff030ff11ee33ff1ae531ff0cf34bff7f804dffa65955ffa9564bffaf503bff14eb43ffd22d48ffa15e64ffa85763ff996647ff807f4eff17e83bff1de232ff2dd215ff2ad538ff23dc30ff0bf440ff15ea40ff14eb33ff08f743ff798659a2b24d44ffbe4149ff7f8072b9c7384769ce3155ff7b846affa9563effa45b4aff728d3bff0cf341ff0ef13dff0df21bff3bc464ff1ae51aff19e652ffac5341ff629d49ff956a48ff738c65ffc13e61ffbf4064ffb64951ff9b6464ffad523effbd4247ffa45b50ffba451effbf4009ffab54"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:e47c73412dafb4ef"
+      meter: "4/4"
+      native_bpm: 134.992169
+      reference_downbeat_seconds: 0.14933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "MANS NOT HOT AUDIO FULL SONG"
+extensions: {}
+format: "gravitino.transition"
+id: "0fc6b32b-49f0-4e0f-b600-310d299a509e"
+metadata:
+  created_at: "2026-10-02T09:54:42.994Z"
+  name: "mans not hot -> doja (beat matched)"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 185.342007
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+    -
+      color: "#e4cb58"
+      endpoint: "incoming"
+      id: "incoming-cue-3"
+      label: "CUE 3"
+      pairing_group: "pad-3"
+      preferred_input:
+        bank: "custom"
+        pad: 3
+      purpose: "hot-cue"
+      track_beat: 52
+  end_beat: 60.73583984375
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -3.019669
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 48
+      loop_start_beat: 32
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 0
+      tempo_ratio: 0.977136667262011
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 224
+      loop_start_beat: 208
+      playing: true
+      position_beat: 185.342007
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.013204736342891
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 224
+      endpoint: "outgoing"
+      id: "outgoing-loop-6"
+      label: "L6"
+      pairing_group: "pad-6"
+      preferred_input:
+        bank: "custom"
+        pad: 6
+      purpose: "saved-loop"
+      start_track_beat: 208
+    -
+      color: "#e8a13a"
+      end_track_beat: 48
+      endpoint: "incoming"
+      id: "incoming-loop-2"
+      label: "L2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: 32
+  master_bpm: 136.77470499999998
+  timeline:
+    -
+      at_beat: 4.105969752878628
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 6.646653573005899
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.619859
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 9.058076
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.704592898380614
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 18.34772
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      loop_id: "outgoing-loop-6"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 37.8349609375
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 38.6806640625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 39.33674533556974
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 39.36962890625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 44.89306640625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 54.47537374844637
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.2265625
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

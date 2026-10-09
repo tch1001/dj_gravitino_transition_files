@@ -1,0 +1,104 @@
+gravitino-transition 1
+
+[meta]
+name        = stronger -> whistle
+created     = 2026-08-21
+
+[from]
+title       = Kanye West - Stronger
+bpm         = 104.016667
+duration    = 266.29
+fingerprint = gvfp1:2c81e4ed242af790
+
+[to]
+title       = Flo Rida - Whistle [Oficial Audio HD]
+artist      = David Potůček
+bpm         = 104.016667
+duration    = 225.59
+fingerprint = gvfp1:8b44115f5f0d7708
+
+[sync]
+anchor_from = 291.946817 ; beat in FROM track where the transition begins
+anchor_to   = 48.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 104.016667 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.481
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 291.946817
+cue_beat    = 289.949697
+loop_active = 0
+loop_start_beat = 120.000
+loop_end_beat = 136.000
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.000
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 58.567562
+to_cue_beat = 0.000
+to_loop_active = 1
+to_loop_start_beat = 48.000
+to_loop_end_beat = 64.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+4.049716 b        saved_loop_1 1.00   via=performance_pad_1@custom
+4.9928   b        play
+5.455727 b        saved_loop_1 0.00   via=performance_pad_1@custom
+13.785676 b        fader       0.001
+14.881177 a        eq_low      0.499
+16.664053 a        eq_low      0.477  linear
+16.712354 b        fader       0.244  linear
+19.453428 b        fader       0.258  linear
+20.407779 b        fader       0.383  linear
+24.733121 a        eq_low      0.173  linear
+27.335215 b        fader       0.588  linear
+28.91652 b        fader       0.653  linear
+30.115854 b        fader       0.762  linear
+30.552827 a        eq_low      0.00   linear
+31.773312 b        fader       0.776  linear
+33.472091 b        fader       0.946  linear
+34.358112 b        fader       0.963  linear
+34.525894 b        fader       1.00   linear
+46.654942 a        eq_mid      0.462
+46.785561 a        eq_mid      0.406  linear
+48.245241 a        eq_mid      0.355  linear
+49.414272 b        eq_mid      0.004
+52.721878 a        eq_mid      0.273  linear
+52.942172 b        eq_mid      0.164  linear
+54.608064 b        loop_exit
+63.066461 b        eq_mid      0.50   linear
+63.759905 a        eq_mid      0.00   linear
+67.108976 a        fader       0.917
+67.164388 a        fader       0.793  linear
+67.219937 a        fader       0.608  linear
+67.330728 a        fader       0.16   linear
+67.386325 a        fader       0.00   linear

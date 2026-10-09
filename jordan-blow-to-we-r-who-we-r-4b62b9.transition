@@ -1,0 +1,254 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 409.02388648049566
+      duration_seconds: 204.54458333333332
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:07ff1fe007ff37c818ff04fb1dff29d61dff27d831ff748b35ff768960ffd02f2eff7e815ec6d32c33ff748b3aff5ca35dffb8473eff748b3bff54ab33ff3ec138ff7a8534ff40bf44ff689742ff758a69ffcd324aff768921ff07f820ff27d838ff619e60ffcf303aff68971bff12ed54ffca353aff58a762ffc8373bff5aa540ff47b837ff6c933fff7c8339ff2fd038ff37c842ff3bc469ffbd4243ff6f906bffca356cffb94613ff0bf425ff45ba2cff59a637ff50af53ffc33c40ff58a72dff817e2eff9a6550ffbe4150ffbd4225ff1be450ff50af6affaf5047ff4eb169ffb04f50ff3ec155ff4db26cffac534aff4bb46affb24d67ffc9360bff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3b45acc8c7fbc959"
+      meter: "4/4"
+      native_bpm: 119.98085106382955
+      reference_downbeat_seconds: 0.21333333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "We R Who We R"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 440.1336713608147
+      duration_seconds: 220.10195833333333
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff14eb1bf4a35c15ff39c61bff9b6454ffb8475dffca351cff31ce1bff47b860ffb64958ffc33c36ffb44b20ff2cd35bffbd425dffb14e3cff11ee3aff0ff063ffb64938ff48b736ff12ed5bffac535bffa05f3aff12ed1eff25da59ffba4563ffcc3321ff33cc27ff49b662ffb7485dffc13e38ffa7582cff1ce33aff837c65ffbc4340ff34cb3eff14eb63ffb94660ff9a6535ff29d639ff79865dffa35c65ff9f6026ff837c18ff3ec121ff906f58ffc8372aff46b92cff50af53ffb34c47ff6c9321ff21de20ff17e82dff1ee125ff14eb42ff4ab563ffb7485fff9a6545ff12ed3cff59a65fff976862ff99664cff3dc23bff748b5fffa65906ff51ae"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:585c23a261185d6f"
+      meter: "4/4"
+      native_bpm: 119.98085106382955
+      reference_downbeat_seconds: 0.30933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Ke$ha - Blow"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "5A"
+    incoming_recipe_phase_offset: -0.047684
+    key_lock: true
+    outgoing_camelot: "1B"
+    outgoing_recipe_phase_offset: -0.057415
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "echo-cut"
+format: "gravitino.transition"
+id: "4b62b9c9-2dc9-5a8e-b4c5-0937873c3efc"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Restrained half-beat echo and bass cut; short phrase-boundary handoff keeps competing vocals apart. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Blow → We R Who We R"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 31.952316
+    outgoing:
+      track_beat: 303.942585
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 303.942585
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 31.952316
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 31.952316
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 31.952316
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999994680022
+    outgoing:
+      captured: true
+      cue_beat: 303.942585
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 303.942585
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9999999994680022
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · echo cut"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 119.980851
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 14
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 18
+      control: "deck.filter"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.61
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

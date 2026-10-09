@@ -1,0 +1,102 @@
+gravitino-transition 1
+
+[meta]
+name        = tik tok -> california gurls
+created     = 2026-08-22
+
+[from]
+title       = Kesha - TiK ToK (Lyrics)
+bpm         = 119.980851
+duration    = 200.37
+fingerprint = gvfp1:b342ba18775d3180
+
+[to]
+title       = Katy Perry - California Gurls ft. Snoop (Lyric Video)
+bpm         = 125.05
+duration    = 235.89
+fingerprint = gvfp1:b93b4a1a405f4869
+
+[sync]
+anchor_from = 300.200911 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 125.012694 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.493
+tempo_ratio = 1.041939
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 300.200911
+cue_beat    = 302.980801
+loop_active = 0
+loop_start_beat = 72.582736
+loop_end_beat = 72.582736
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.000
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 0.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 0.000
+to_loop_end_beat = 0.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b5          = 0.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+7.856329 b        hotcue_5    1.00   via=performance_pad_5@hot_cue
+8.878666 b        play
+9.389835 b        hotcue_5    0.00   via=performance_pad_5@hot_cue
+22.194085 b        fader       0.031
+22.369029 b        fader       0.211  linear
+22.480037 b        fader       0.367  linear
+22.535614 b        fader       0.425  linear
+22.791196 b        fader       0.746  linear
+23.060344 b        fader       1.00   linear
+32.403561 a        eq_mid      0.497
+32.558845 b        eq_mid      0.003
+33.596094 b        eq_mid      0.066  linear
+34.336812 a        eq_mid      0.384  linear
+38.526143 b        eq_mid      0.207  linear
+43.616819 b        eq_mid      0.367  linear
+46.460252 b        eq_mid      0.50   linear
+48.942309 a        eq_mid      0.00   linear
+55.727856 b        eq_low      0.006
+57.007589 a        eq_low      0.499
+57.028023 b        eq_low      0.056  linear
+60.420318 a        eq_low      0.392  linear
+65.328865 b        eq_low      0.198  linear
+78.66509 b        eq_low      0.50   linear
+81.288855 a        eq_low      0.00   linear
+84.330791 b        eq_low      0.516  linear
+84.534766 b        eq_low      0.548  linear
+86.220535 b        eq_low      0.50   linear

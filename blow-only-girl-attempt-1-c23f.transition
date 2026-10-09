@@ -1,0 +1,262 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 494.60964194756474
+      duration_seconds: 235.52
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:32ff17e83dff857a38ff59a63986bb4447d0b34c31ffa35c3effc13e27ff5ea139ff39c640ff807f3dff837c46ff9f604bff857a3cff09f631ff09f62bff0cf32fff08f73dff1de233ff18e72fff2cd349ff13ec4cffb14e55ff7d8256ff7f8044ff3cc337ff5ea12dff55aa46ff669937ff6d9248ff96694cff857a3fff9f6040ffaa552fff4db23eff0ff030ff12ed2dff1ee12aff13ec4eff6a9556ffa15e57ff946b4cff66993aff86792bff2fd025ff16e938ff847b31ff798649ff936c44ff97683dff847b32ffa45b40ff42bd40ff758a4bff4ab548ff3fc052ffc83742ffb7484cffa95658ff8d7267ff1fe06eff3fc059ff21de3dff619e41ffa55a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:967cad71c259e47c"
+      meter: "4/4"
+      native_bpm: 126.004494
+      reference_downbeat_seconds: 0.352
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - Only Girl (In The World) (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 440.1336713608147
+      duration_seconds: 220.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff14eb1bf4a35c15ff39c61bff9b6454ffb8475dffca351cff31ce1bff47b860ffb64958ffc33c36ffb44b20ff2cd35bffbd425dffb14e3cff11ee3aff0ff063ffb64938ff48b736ff12ed5bffac535bffa05f3aff12ed1eff25da59ffba4563ffcc3321ff33cc27ff49b662ffb7485dffc13e38ffa7582cff1ce33aff837c65ffbc4340ff34cb3eff14eb63ffb94660ff9a6535ff29d639ff79865dffa35c65ff9f6026ff837c18ff3ec121ff906f58ffc8372aff46b92cff50af53ffb34c47ff6c9321ff21de20ff17e82dff1ee125ff14eb42ff4ab563ffb7485fff9a6545ff12ed3cff59a65fff976862ff99664cff3dc23bff748b5fffa65906ff51ae"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:585c23a261185d6f"
+      meter: "4/4"
+      native_bpm: 119.980851
+      reference_downbeat_seconds: 0.30933333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Ke$ha - Blow"
+extensions: {}
+format: "gravitino.transition"
+id: "4e30be9b-4412-4eb6-a3da-394d82b432c1"
+metadata:
+  created_at: "2026-10-02T13:18:56.398Z"
+  name: "blow -> only girl attempt 1"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 275.88043999999996
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 16
+  end_beat: 108.91816399999999
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 116.85745399999999
+      loop_start_beat: 116.85745399999999
+      playing: false
+      position_beat: 116.85745399999999
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 0
+      stem_vocals: 0
+      tempo_ratio: 0.99291
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 275.88043999999996
+      loop_start_beat: 275.88043999999996
+      playing: true
+      position_beat: 275.88043999999996
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.042994
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 328
+      endpoint: "outgoing"
+      id: "outgoing-loop"
+      label: "New loop"
+      preferred_input:
+        bank: "custom"
+      purpose: "saved-loop"
+      start_track_beat: 296
+  master_bpm: 125.13925099999999
+  timeline:
+    -
+      at_beat: 4.078174
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 4.1223876953125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.541808800285713
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.1501779999999995
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.750832
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12.257309666705439
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 12.293187
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20.118601
+      control: "deck.loop_in"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 36.119946
+      control: "deck.loop_out"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 61.3427734375
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 69.702148
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 70.84805620266188
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 71.069824
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 81.47941349255275
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 81.988281
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 83.638184
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 88.02734375
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 102.08024999999999
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 0.975
+    -
+      at_beat: 102.92565599999999
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 104.30497799999999
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

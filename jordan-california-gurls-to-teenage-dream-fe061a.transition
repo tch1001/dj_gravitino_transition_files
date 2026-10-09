@@ -1,0 +1,281 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 458.3243488829778
+      duration_seconds: 229.3899375
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0cff23dc22ff32cd14ff21de18ff24db19ff1ae50dff21de26ff24db2cff32cd21ff3bc425ff42bd16ff54ab1eff52ad28ff1ee128ff2bd434ff936c58ffb9464bffa65957ff9a654aff7f8052ff7c835bff916e4bff89764dff6d9253ff788725ff768921ff6a9529ffa05f24ff8c7330ff966934ff58a731ff609f3cff52ad3aff3cc359ff708f55ff6c935fff976861ff956a5affa05f6aff9b6466ff8d725effa45b44ff728d59ff6e914eff4ab553ff46b93bff4eb127ff8b7420ff619e2eff05fa62ff946b6cff936c64ffab5459ff48b747ff55aa46ff3bc457ff857a44ff2ad544ff38c76bff986773ff9e616dff8e716eff8c731bff0df209f94fb0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:241e2d953ffbe7be"
+      meter: "4/4"
+      native_bpm: 119.88085106382955
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Teenage Dream (Official Music Video)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 491.637244670138
+      duration_seconds: 235.89152083333335
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:01f351ae10ff28d72dff41be41ffb04f37a5bd423bff926d41ff8c734bffbc4348ffa15e34ff926d46ff926d24ffd42b4bffa9562cff56a940ff956a1aff37c839ff798645ff5ca333ff2dd24eff857a46ff7a855effaa5550ff926d43ff9d6243ff8e7147ff976846ffa35c39ff9d6248ff847b3fff6d923effc53a34ff41be3effa05f23ff4bb42dffb44b46ff47b83aff2ad553ff877842ff6d9259ff9a652aff758a32ff4bb449ff7e814bffae5150ffad5237ff9c634fff778848ff738c4aff926d38ff7a853cff807f38ff16e935ff827d46ff50af35ff2ed153ff847b41ff77885bff9a654fff7f8058ff728d55ff639c58ff916e57ff728d47ff7986"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b93b4a1a405f4869"
+      meter: "4/4"
+      native_bpm: 125.04999999999977
+      reference_downbeat_seconds: 0.10666666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - California Gurls ft. Snoop (Lyric Video)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "6B"
+    incoming_recipe_phase_offset: -0.012012
+    key_lock: true
+    outgoing_camelot: "7A"
+    outgoing_recipe_phase_offset: -0.012375
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "vocal-echo"
+format: "gravitino.transition"
+id: "fe061af3-9a9b-5c19-82f6-0011401e91b1"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Use prepared outgoing stems for a brief vocals-only echo handoff; restore a clean full incoming mix. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — California Gurls → Teenage Dream"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 15.987988
+    outgoing:
+      track_beat: 319.987625
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 319.987625
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 15.987988
+  end_beat: 24
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 15.987988
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 15.987988
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0215595310947059
+    outgoing:
+      captured: true
+      cue_beat: 319.987625
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 319.987625
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9793316753298698
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · vocal echo"
+    -
+      at_beat: 12
+      label: "Vocals-only echo"
+    -
+      at_beat: 16
+      label: "Incoming takes over"
+    -
+      at_beat: 24
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 122.465426
+  timeline:
+    -
+      at_beat: 8
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.stem_bass"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 12
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.18
+    -
+      at_beat: 14
+      control: "deck.stem_drums"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 14
+      control: "deck.stem_melody"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 14
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.9
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fx_wet"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.32
+    -
+      at_beat: 16
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 21
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

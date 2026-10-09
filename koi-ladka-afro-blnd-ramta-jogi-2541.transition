@@ -1,0 +1,210 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 396.8981368718429
+      duration_seconds: 187.52
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:42ffc9360fffb6495ba3d8273fffc33c0effce3133c3718e1eff19e629ff847b25ff0ef12ffc7b8419ff10ef42ff47b814ff17e84bff88772fff2ad54fffa05f19ff8b745292c6392eff906f41ff936c3fffbe4149ffa35c3bbeaf5052e6cd3236ff37c842ff7e8141ffbd4234ff5da222ff6e911bff1ae525ff37c844ffae514e3adc2360ffc23d1dedbb44537ad02f57e0cb3445ffa75849ffc53a5cffc639408cce312bff44bb56ffca3548ffa25d526dda2559ffc83728ff887753d3d12e5ab0cd324cffc53a48e0d42b57ffc73851fac13e53e5cd325ac7cb3457c1c6394cd8d82759ffcb3456a8c93659d9d9265a9ed12e57ffc23d4fecd22d04ff0af5"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a39697a89b13fa28"
+      meter: "4/4"
+      native_bpm: 126.99090899999999
+      reference_downbeat_seconds: 0.032
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "ramta jogi (saie edit)"
+  outgoing:
+    assumptions:
+      duration_beats: 309.89195992571155
+      duration_seconds: 143.01
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3975c03f25ff1ce33256c03f0fffca351cb6a6594942dc232fff0ff02fff29d62cc32bd41df125da1bff3ec12aff1fe014ff3bc409ff10ef64b1b8473eff2ad55eff778841ff7a8565ff827d4cffbf403eff30cf58ff8f704dff3ac55eff6e915eddb24d50ffb6496063de213eff956a12ff1de239ff1ae52fff1ee136ff16e947ff13ec27ff1ae535ff16e94fffb74862bfc6394fffaa5552ff807f66ff5aa55bff8a7532ff3ac556ff8b7440ff16e93dff11ee37ff29d631ff1be447ff12ed3cff1ce30dff28d745ff708f50fecb344dffda2550f4c53a3dff16e962db97681aff20df41ff8b745251db2438ff7d8259b0d12e5affb14e66bcbd4243ff13ec"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:ad8522ab0601d0e5"
+      meter: "4/4"
+      native_bpm: 130.013953
+      reference_downbeat_seconds: 1.056
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "BIANCA MAIELI - KOI LADKI AFRO BLND"
+extensions: {}
+format: "gravitino.transition"
+id: "eec4fd19-1c54-4f55-bbb8-b822dabca642"
+metadata:
+  created_at: "2026-09-25T11:57:52.644Z"
+  name: "koi ladka afro blnd -> ramta jogi"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 56
+    outgoing:
+      track_beat: 219.58178099999998
+  cues:
+    -
+      color: "#66c783"
+      endpoint: "incoming"
+      id: "incoming-cue-4"
+      label: "CUE 4"
+      pairing_group: "pad-4"
+      preferred_input:
+        bank: "custom"
+        pad: 4
+      purpose: "hot-cue"
+      track_beat: 56
+  end_beat: 75.500547
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 56
+      loop_start_beat: 56
+      playing: false
+      position_beat: 56
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0233999999999999
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.512
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 36.156253
+      loop_start_beat: 36.156253
+      playing: true
+      position_beat: 219.58178099999998
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.013953
+  timeline:
+    -
+      at_beat: 4.4204833984375
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 5.990201
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 6.113939471425867
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8.078199999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.078199999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-4"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_4"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 30.19247227689976
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 30.733050282727273
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 31.432085
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 31.539110005955397
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 38.365237245201016
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.391175
+      control: "deck.eq_mid"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 42.95647467480065
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 58.481785965814744
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

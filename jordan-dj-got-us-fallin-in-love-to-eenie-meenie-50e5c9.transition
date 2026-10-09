@@ -1,0 +1,276 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 405.94256399641495
+      duration_seconds: 201.01516666666666
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fd737c80fff18e72696cb3421ff1de217ff28d721ff1ee11bff1be424ff2fd02cff17e82aff1fe052dbbb4455ffb44b23ff09f65eff956a47ff5ba453ff5fa04cff6d924fff9a6558ff857a58ffa7585cffa95647ff4ab554ff4ab533ff946b53ff87784bffa8573bff7a850000fc0318ff51ae23ff53ac46ff897647ff8b744fff798656ff847b4bff649b3fff738c43ff4fb05fff8d7261ff7d8258ff57a852ff6c9356ff5ea148ff68972fff1ce348ff7f8030ff16e92aff6c9342ffb04f3fffc13e17ff609f2aff3fc026ff28d72bff1ee133ff1de240ff609f64ff6d9257ff659a56ff6a9561ff54ab4fff51ae53ff29d64fff28d761ff807f5fff5ea1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:03774736b2a769fa"
+      meter: "4/4"
+      native_bpm: 121.16774193548363
+      reference_downbeat_seconds: 0.4266666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Sean Kingston, Justin Bieber - Eenie Meenie (Lyrics)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 441.8052379122331
+      duration_seconds: 220.937875
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:13ff30cf0eff2fd04dffae512eff916e30ff619e28ffab542cffa35c4bffac5355ffac534fff9a652fff738c2dff13ec3eff5aa54fffa45b53ffa45b4eff8d7253ff8d7239ff659a41ff5da23eff57a851ff9d624febad524affa05f4dffa85731ff7b8438ff54ab29ffa25d4dffb7484cffa25d43ff9d6246ff639c3bff56a946ff51ae3eff58a751ffa25d57ff8c734eff916e48ff54ab44ff3fc044ff4eb151ff857a4fff7a854bff857a4dff8e712eff1ee12bff17e83dff2ed12aff2ed127ff669930ff40bf27ff48b744ff6b943cff59a645ff51ae52ff7b8456ff817e56ff8e7144ff4eb146ff5ca341ff49b644ff4cb352ff7a8552ff8d7203ff2ed1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a54f92760a466fe4"
+      meter: "4/4"
+      native_bpm: 119.98085106382955
+      reference_downbeat_seconds: 0.37333333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Usher - DJ Got Us Fallin' In Love (Lyrics) ft. Pitbull"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "3B"
+    incoming_recipe_phase_offset: -0.078406
+    key_lock: true
+    outgoing_camelot: "6A"
+    outgoing_recipe_phase_offset: -0.035142
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "loop-intro"
+format: "gravitino.transition"
+id: "50e5c99c-9e4c-53f1-b96f-718a89547c1b"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Repeat an eight-beat incoming intro, introduce highs and mids, swap bass, then release the loop to the next phrase. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — DJ Got Us Fallin' in Love → Eenie Meenie"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: 15.921594
+    outgoing:
+      track_beat: 303.964858
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 303.964858
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: 15.921594
+  end_beat: 32
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 15.921594
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.22
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 15.921594
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9951022778339831
+    outgoing:
+      captured: true
+      cue_beat: 303.964858
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 303.964858
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0049461637495365
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · loop intro"
+    -
+      at_beat: 16
+      label: "Bass swap"
+    -
+      at_beat: 23.98
+      label: "Release intro loop"
+    -
+      at_beat: 32
+      label: "Clean incoming mix · transition complete"
+  loops:
+    -
+      color: "#c59bff"
+      end_track_beat: 23.921594
+      endpoint: "incoming"
+      id: "incoming-phrase-loop"
+      label: "Eight-beat phrase"
+      pairing_group: "phrase"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: 15.921594
+  master_bpm: 120.574296
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 0.01
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-phrase-loop"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.72
+    -
+      at_beat: 14
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.22
+    -
+      at_beat: 15.8
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.3
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 18
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 20
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 23.98
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+  - "temporary-loops.v1"
+version: 1

@@ -1,0 +1,106 @@
+gravitino-transition 1
+
+[meta]
+name        = titanium -> dont you worry child
+created     = 2026-08-21
+
+[from]
+title       = David Guetta - Titanium (feat. Sia) [Official Audio]
+artist      = David Guetta & Sia
+bpm         = 126.00
+duration    = 250.22
+fingerprint = gvfp1:59cbaf2978d0777b
+
+[to]
+title       = Don't You Worry Child (Radio Edit)
+artist      = Swedish House Mafia - Topic
+bpm         = 129.010345
+duration    = 212.90
+fingerprint = gvfp1:b3d6d2370286cda8
+
+[sync]
+anchor_from = 433.769651 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 128.995327 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.509
+tempo_ratio = 1.023772
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 433.769651
+cue_beat    = 434.541549
+loop_active = 1
+loop_start_beat = 448.000
+loop_end_beat = 464.000
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 0.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 0.000
+to_loop_end_beat = 0.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = 0.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+14.33719 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+15.048368 b        play
+15.628506 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+29.745435 b        fader       0.018
+30.287075 b        fader       0.276  linear
+30.622533 b        fader       0.385  linear
+31.769568 b        fader       0.717  linear
+33.636888 b        fader       1.00   linear
+39.714551 a        eq_low      0.498
+42.810412 a        eq_low      0.376  linear
+45.345396 b        eq_low      0.001
+50.453114 b        eq_low      0.23   linear
+50.482346 a        eq_low      0.225  linear
+52.079737 b        eq_low      0.247  linear
+52.209102 b        eq_low      0.31   linear
+58.059661 a        eq_low      0.00   linear
+62.313423 b        eq_low      0.50   linear
+69.5829  a        fader       0.996
+70.158704 a        fader       0.93   linear
+71.274219 a        fader       0.846  linear
+71.758499 a        fader       0.773  linear
+72.98583 a        fader       0.682  linear
+74.36245 a        fader       0.473  linear
+75.069575 a        fader       0.405  linear
+75.6026  a        fader       0.398  linear
+75.872503 a        fader       0.321  linear
+77.803137 a        fader       0.067  linear
+78.012262 a        fader       0.003  linear
+78.073712 a        fader       0.00   linear

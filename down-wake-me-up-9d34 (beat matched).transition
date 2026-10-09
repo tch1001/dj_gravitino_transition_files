@@ -1,0 +1,252 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 519.6610513888888
+      duration_seconds: 251.45000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2aff5da224ff8d7238ff2bd43aff2ed13aff38c72fff2ad536ff45ba37ff45ba2eff42bd28ff58a75dffa05f4cff6d925dff78874bff708f53ffa35c49ff58a759ff7a853fff24db2bff3bc43dff24db39ff46b92aff04fb58ffa45b6effb64957ffa05f3fff05fa56ff9d624dff768954ff9b6442ff04fb2cff2ad535ff22dd30ff2ed127ff2ad528ff16e92aff21de2dff3bc42bff16e95ce9b94653ffbd4246ff649b2bff0ef143ff837c5bff807f47ff52ad3cff78872cff42bd3eff1de23bff26d92fff0bf44aff7f8048ff6b943eff07f83eff0af56cffb74850ff857a6cffb7484cff6c9353ff79864fff807f49ff649b45ff25da0400fe010300fe01"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:81e823ba09d4ab27"
+      meter: "4/4"
+      native_bpm: 124
+      reference_downbeat_seconds: 1.0724352354037734
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - Wake Me Up (Official Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 488.0036137727897
+      duration_seconds: 221.84
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff4db23aff29d623ff45ba31b6c43b22ffc43b2affa65923ff946b34ff847b36ff827d5fffb44b2fff2bd408ff39c616ff1de225ff699654ffa15e567cc83758d299664effbc4362ffa9563bff5da24fffbf4039ff4eb141ff66993dffba4554ff8f7045ffaa554dff807f58f99a6551ffbe411eff27d822ff17e82dff23dc17ffc33c4cff8c7360d2837c3fff5ba44cff6c935effb44b58ffa35c55ffbf403dff47b83eff6c9335ff55aa4dff619e24ff2ad531ff3ac552ffa85752ff877845ff79863aff7e8143ff51ae5dff96695eff976850ffb24d59ff5aa550ff9d6236ffb84745ffbb445fffa35c40ff639c4fff50af5fff8c7332ffb24d04ffb44b"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:ff9cd9331f90cb8c"
+      meter: "4/4"
+      native_bpm: 131.985938
+      reference_downbeat_seconds: 11.573649600210098
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Jay Sean - Down ft. Lil Wayne (Official Music Video) ft. Lil Wayne"
+extensions: {}
+format: "gravitino.transition"
+id: "808a49c0-24be-4e03-a747-424b9d7f8113"
+metadata:
+  created_at: "2026-10-02T14:33:00.684Z"
+  name: "down -> wake me up (beat matched)"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 80
+    outgoing:
+      track_beat: 294.39669399999997
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 80
+  end_beat: 77.32861328125
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0.120345
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 80
+      loop_start_beat: 80
+      playing: false
+      position_beat: 80
+      quantize: true
+      stem_bass: 0
+      stem_drums: 0
+      stem_melody: 0
+      stem_vocals: 1
+      tempo_ratio: 1.048541
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: true
+      position_beat: 294.39669399999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9850980033948767
+  labels: []
+  loops: []
+  master_bpm: 130.019084
+  timeline:
+    -
+      at_beat: 5.016666787468912
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8.041015625
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8.16357421875
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 9.604085
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.505576999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.025637999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 18.05320683717614
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 29.79491209362127
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 29.822335790807088
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 32.74202464232878
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 48.31591796875
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 55.64990234375
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 59.4013671875
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 70.06787109375
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 70.259765625
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 70.31689453125
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 70.316895
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 72.1640625
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 73.146484375
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 73.2373046875
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

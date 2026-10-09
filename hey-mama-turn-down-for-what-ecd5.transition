@@ -1,0 +1,213 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 359.6771180555555
+      duration_seconds: 215.81
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff56a929ff2bd415ff29d62dff31ce38ff10ef02ff02fd4e78d92649fdd52a53ff827d4affc23d4dbacb3445ff79864dffb74849ffd72840ff96693dffa6594cffb14e20ff27d821ff37c82bff36c916ff0ff022ff2cd326ff02fd47ffbf4054ff847b4cefdd224bffce3149ff817e56f3ce3148ffc03f4bffbd4253a5ca354fb1d8274bffc9363dffad521eff23dc31ff09f624ff09f638ff13ec37ff02fd39ff06f94777dc2343d2d02f46ff7d823bffb04f4affd7284bff7d8246f5b8474cffc43b4effca3548ffbe414affc33c52d5e11e48ffd32c4c30d42b4effd32c4affc13e4fffc23d51d1e7184d36ea154affbd4252ffe41b4affd62944ffca35"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:73ef738ccfce58bd"
+      meter: "4/4"
+      native_bpm: 100
+      reference_downbeat_seconds: 1.397333333333
+    identity:
+      artists:
+        - "DJSnakeVEVO"
+      identifiers:
+        providers: {}
+      title: "DJ Snake, Lil Jon - Turn Down for What (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 276.1304074188627
+      duration_seconds: 192.66
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff6b9428ff18e717ff02fd3fff08f755ff8d7243ff847b3cff9f604cff7f8069d4c43b6affc43b5bffa75836ff41be37ff0af53eff07f82aff09f637ff21de3aff12ed39ff0cf33bff22dd1aff05fa27ff04fb21ff02fd32ff0ef15dffb6495dffcd3252ff99666effa75868ffa6595eff807f5eff9f6037ff26d933ff0bf42dff11ee30ff0df23aff0ef144ff0ff040ff09f649ff09f627ff0cf323ff1ae524ff0df262ff946b65ffa05f56ff8f7064ffb94662ffab5471ffb44b48ff5aa52aff0df230ff1ee137ff11ee31ff17e83aff11ee37ff0df237ff0df238ff0bf446ff36c93dff0cf345ff0df23eff0cf330ff619e26ff39c61cff0df238ff0bf4"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:06a30deb783c9ddf"
+      meter: "4/4"
+      native_bpm: 85.996939
+      reference_downbeat_seconds: 0.5973333333333334
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta feat. Nicki Minaj, AFROJACK, Bebe Rexha - Hey Mama _ Lyrics"
+extensions: {}
+format: "gravitino.transition"
+id: "a74a9b5d-37fb-45d7-85e8-7e9d4c7605e7"
+metadata:
+  created_at: "2026-10-02T10:33:53.664Z"
+  name: "hey mama -> turn down for what"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 95
+    outgoing:
+      track_beat: 205.917321
+  cues:
+    -
+      color: "#7089ed"
+      endpoint: "incoming"
+      id: "incoming-cue-6"
+      label: "CUE 6"
+      pairing_group: "pad-6"
+      preferred_input:
+        bank: "custom"
+        pad: 6
+      purpose: "hot-cue"
+      track_beat: 29.751002999999997
+  end_beat: 71.63883895723366
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 111
+      loop_start_beat: 95
+      playing: false
+      position_beat: 29.751002999999997
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 0
+      stem_vocals: 1
+      tempo_ratio: 0.950449
+    outgoing:
+      captured: true
+      cue_beat: 176
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.3
+      loop_active: false
+      loop_end_beat: 178
+      loop_start_beat: 176
+      playing: true
+      position_beat: 205.917321
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.104954
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 111.46
+      endpoint: "incoming"
+      id: "incoming-loop-1"
+      label: "L1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "saved-loop"
+      start_track_beat: 95.46683277095867
+  master_bpm: 95.02268
+  timeline:
+    -
+      at_beat: 0.6935305751217415
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 2.07919921875
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.490542
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 3.997174
+      control: "deck.transition_loop"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      loop_id: "incoming-loop-1"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.379127356027894
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0.533
+    -
+      at_beat: 18.068026291314382
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 34.252658
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 64.37504922783205
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-6"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 67.34998228609896
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 69.63641449707059
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-6"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,112 @@
+gravitino-transition 1
+
+[meta]
+name        = like a g6 -> california girls
+created     = 2026-08-21
+
+[from]
+title       = "LIKE A G6" (OFFICIAL)  FAR EAST MOVEMENT (FM)  feat The Cataracs & Dev
+artist      = Far East Movement
+bpm         = 125.00
+duration    = 218.28
+fingerprint = gvfp1:218329c1da45207d
+
+[to]
+title       = Katy Perry - California Gurls ft. Snoop (Lyric Video)
+bpm         = 125.05
+duration    = 235.89
+fingerprint = gvfp1:b93b4a1a405f4869
+
+[sync]
+anchor_from = 376.933502 ; beat in FROM track where the transition begins
+anchor_to   = 16.0      ; beat in TO track aligned to transition beat 0
+master_bpm  = 125.00    ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.496
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 376.933502
+cue_beat    = 368.966835
+loop_active = 0
+loop_start_beat = 376.933502
+loop_end_beat = 376.933502
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.000
+to_fader    = 0.000
+to_eq_low   = 0.000
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.500
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 16.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 16.000
+to_loop_end_beat = 16.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = 16.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+8.059028 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+9.200    b        play
+9.633333 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+18.933333 b        fader       0.015
+20.433333 b        fader       0.138  linear
+22.000   b        fader       0.292  linear
+22.800   b        fader       0.46   linear
+23.933333 b        fader       0.621  linear
+24.533333 b        fader       0.671  linear
+25.400   b        fader       0.719  linear
+28.200   b        fader       0.88   linear
+29.200   b        fader       0.957  linear
+29.888889 a        eq_high     0.475
+30.004582 a        eq_high     0.423  linear
+31.066667 b        fader       1.00   linear
+32.86862 a        eq_high     0.196  linear
+36.066667 a        eq_high     0.036  linear
+36.277778 a        eq_high     0.00   linear
+39.601794 a        eq_mid      0.473
+39.733539 a        eq_mid      0.412  linear
+40.0142  a        eq_mid      0.379  linear
+40.670699 a        eq_mid      0.302  linear
+44.177778 a        eq_mid      0.268  linear
+47.966667 a        eq_mid      0.214  linear
+51.845675 a        eq_mid      0.192  linear
+56.778536 a        eq_low      0.49
+57.755556 a        eq_low      0.464  linear
+61.111111 b        eq_low      0.001
+63.133333 a        eq_mid      0.152  linear
+63.400   b        eq_low      0.051  linear
+70.090999 b        eq_low      0.133  linear
+70.278326 b        eq_low      0.162  linear
+71.400   b        eq_low      0.261  linear
+71.666667 b        eq_low      0.349  linear
+71.859768 b        eq_low      0.458  linear
+75.266667 b        eq_low      0.50   linear

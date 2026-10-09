@@ -1,0 +1,266 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 544.02421875
+      duration_seconds: 261.131625
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0ece53ac16ff778806ff2cd310ff05fa13ff0ef112ff10ef13ff1be40fff0cf332ff50af0fff11ee13ff15ea1aff16e926ff0ef11fff1ae524ff0ff046ff6c934aff976853ff8c733eff768950ff8e713fff0ff04cff16e92cff0cf335ff17e85aff24db41ff17e867ff1ae551ff28d770ffbf4072ffb24d73ffb74870ffc03f26ff35ca1bff7a8521ff2ad52eff3bc443ff36c937ff41be4fff639c33ff3bc439ff23dc32ff20df46ff1ce364ff14eb5dff18e75dff26d950ff1de258ff29d654ff50af7eff8e7159ff4fb077ff9c6331ff1ee121ff15ea30ff11ee1eff14eb6bff15ea4eff1fe067ff0df237ff07f85fff728d5fff55aa69ff4fb071ff926d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:534cc376e186c4b5"
+      meter: "4/4"
+      native_bpm: 125
+      reference_downbeat_seconds: 48.11252788869284
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Nicki Minaj - Starships (Explicit) (Official Video)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+  outgoing:
+    assumptions:
+      duration_beats: 498.21319444444356
+      duration_seconds: 239.14233333333334
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:22ff04fb34ff718e2fff45ba38ff48b729c6926d2aff4fb03aff926d1cff659a33ff8e7149ffa45b34ff27d840ff5da24dff679836ff54ab4affa8574fff9e6144ff7b844cff52ad4cff39c64aff629d50ff619e48ffa15e47ff926d44ff8c733bff7d8247eeac5349ff9c6332ff837c4fff78874cff5ea115ff5ca35aff6a954aff49b653ff54ab47ff49b62cff27d84cff7f804bff3dc23fff2dd250ff3dc241ff31ce51ff47b850ff5ca32fff36c953ff88773bff43bc51ff639c44ff39c632ff23dc36ff12ed49ff3dc23dff2fd039ff718e52ff728d50ff4fb049ff639c4cff66993aff7b8455ff708f2eff17e840ff09f62aff09f631ff0ff020ff0af5"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:5983c150345ba4aa"
+      meter: "4/4"
+      native_bpm: 124.99999999999977
+      reference_downbeat_seconds: 0.6826666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna - Disturbia (Audio)"
+    notes: "Exact local arrangement. Draft entry/exit coordinates do not alter the song grid or permanent cues."
+extensions:
+  gravitino.ai_authoring:
+    batch: "jordan-2026-09-26-v1"
+    generator: "Codex"
+    incoming_camelot: "10B"
+    incoming_recipe_phase_offset: -0.010879
+    key_lock: true
+    outgoing_camelot: "10B"
+    outgoing_recipe_phase_offset: -0.043092
+    review_status: "needs-listening"
+    song_grids_modified: false
+    technique: "eq-blend"
+format: "gravitino.transition"
+id: "87f1d5c3-6c41-5e17-babc-fb2972a3d230"
+metadata:
+  author: "Codex (AI-generated for Jordan)"
+  created_at: "2026-09-25T20:59:27.550750+00:00"
+  description: "Longer 32-beat blend for matching keys: bring in highs, exchange bass at beat 16, then remove the outgoing mids. Listening draft; not a user-authored transition. Preview with key lock ON and the crossfader bypassed. Phrase choices and harmonic fit need listening feedback."
+  name: "Jordan — Disturbia → Starships"
+  tags:
+    - "Jordan"
+    - "ai-generated"
+    - "draft"
+    - "needs-review"
+performance:
+  anchors:
+    incoming:
+      track_beat: -0.010879
+    outgoing:
+      track_beat: 335.956908
+  cues:
+    -
+      color: "#4ec9da"
+      endpoint: "outgoing"
+      id: "outgoing-entry"
+      label: "Jordan mix entry"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-transition"
+      track_beat: 335.956908
+    -
+      color: "#4ec9da"
+      endpoint: "incoming"
+      id: "incoming-launch"
+      label: "Jordan launch"
+      pairing_group: "entry"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "start-track"
+      track_beat: -0.010879
+  end_beat: 32
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -0.010879
+      eq_high: 0.5
+      eq_low: 0
+      eq_mid: 0.28
+      fader: 0
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: -0.010879
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+    outgoing:
+      captured: true
+      cue_beat: 335.956908
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 335.956908
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0000000000000018
+  labels:
+    -
+      at_beat: 0
+      label: "Jordan AI draft · eq blend"
+    -
+      at_beat: 16
+      label: "Bass swap"
+    -
+      at_beat: 32
+      label: "Clean incoming mix · transition complete"
+  loops: []
+  master_bpm: 125
+  timeline:
+    -
+      at_beat: 0
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 0
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 0.01
+      control: "deck.transition_cue"
+      cue_id: "incoming-launch"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.82
+    -
+      at_beat: 12
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 15.5
+      control: "deck.eq_low"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 16
+      control: "deck.eq_mid"
+      curve: "step"
+      target: "incoming"
+      value: 0.28
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0.82
+    -
+      at_beat: 16.5
+      control: "deck.eq_low"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 24
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0.15
+    -
+      at_beat: 24
+      control: "deck.eq_mid"
+      curve: "scurve"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 24
+      control: "deck.fader"
+      curve: "scurve"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 30
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "timeline-end.v1"
+version: 1

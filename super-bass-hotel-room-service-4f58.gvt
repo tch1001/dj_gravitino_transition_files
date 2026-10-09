@@ -1,0 +1,107 @@
+gravitino-transition 1
+
+[meta]
+name        = super bass -> hotel room service
+created     = 2026-08-21
+
+[from]
+title       = Nicki Minaj - Super Bass (Official Video)
+bpm         = 127.004494
+duration    = 218.38
+fingerprint = gvfp1:1e2b3b99b71e8cde
+
+[to]
+title       = Pitbull - Hotel Room Service (Official Audio)
+bpm         = 126.004494
+duration    = 240.37
+fingerprint = gvfp1:841773cb9d4d177a
+
+[sync]
+anchor_from = 335.413012 ; beat in FROM track where the transition begins
+anchor_to   = 0.0       ; beat in TO track aligned to transition beat 0
+master_bpm  = 127.004494 ; tempo the mix runs at during the transition
+
+[initial]
+complete    = 1
+crossfader  = 0.500
+tempo_ratio = 1.000
+fader       = 1.000
+eq_low      = 0.500
+eq_mid      = 0.500
+eq_high     = 0.500
+filter      = 0.500
+quantize    = 1
+playing     = 1
+position_beat = 335.413012
+cue_beat    = 330.987611
+loop_active = 0
+loop_start_beat = 335.413012
+loop_end_beat = 335.413012
+fx_type     = 0
+fx_on       = 0
+fx_wet      = 0.500
+fx_beats    = 0.500
+stem_vocals = 1.000
+stem_melody = 1.000
+stem_bass   = 1.000
+stem_drums  = 1.000
+to_tempo_ratio = 1.008233
+to_fader    = 0.000
+to_eq_low   = 0.500
+to_eq_mid   = 0.500
+to_eq_high  = 0.500
+to_filter   = 0.000
+to_quantize = 1
+to_playing  = 0
+to_position_beat = 0.000
+to_cue_beat = 0.000
+to_loop_active = 0
+to_loop_start_beat = 0.000
+to_loop_end_beat = 0.000
+to_fx_type  = 0
+to_fx_on    = 0
+to_fx_wet   = 0.500
+to_fx_beats = 0.500
+to_stem_vocals = 1.000
+to_stem_melody = 1.000
+to_stem_bass = 1.000
+to_stem_drums = 1.000
+
+[hotcues]
+; role+pad = track-relative beat
+b1          = 0.000
+
+[events]
+; beat | target | control | value | curve | optional via=gesture@mode
+5.847851 b        filter      0.011
+6.523691 b        filter      0.07   linear
+9.234638 b        filter      0.142  linear
+19.67047 b        hotcue_1    1.00   via=performance_pad_1@hot_cue
+20.712064 b        play
+21.156126 b        hotcue_1    0.00   via=performance_pad_1@hot_cue
+27.265351 b        fader       0.007
+27.895994 a        eq_low      0.479
+28.010661 a        eq_low      0.448  linear
+28.138987 b        fader       0.169  linear
+30.313441 b        fader       0.378  linear
+30.9104  a        eq_low      0.397  linear
+30.986916 b        fader       0.42   linear
+31.520403 a        eq_low      0.342  linear
+32.540029 b        fader       0.538  linear
+32.964722 a        eq_low      0.314  linear
+33.962546 b        fader       0.692  linear
+34.97524 b        fader       0.82   linear
+37.351048 b        fader       1.00   linear
+38.36314 a        eq_low      0.175  linear
+38.5687  a        eq_low      0.144  linear
+39.919605 a        eq_low      0.071  linear
+40.259693 a        eq_low      0.024  linear
+41.098227 a        eq_low      0.00   linear
+42.586071 b        filter      0.184  linear
+42.763824 b        filter      0.256  linear
+42.92893 b        filter      0.347  linear
+43.176795 b        filter      0.445  linear
+43.380152 b        filter      0.50   linear
+49.746986 a        fader       0.978
+51.330081 a        fader       0.019
+51.380908 a        fader       0.00   linear
