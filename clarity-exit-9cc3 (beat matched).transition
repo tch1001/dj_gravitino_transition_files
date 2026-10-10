@@ -132,6 +132,12 @@ performance:
       target: "incoming"
       value: 1
     -
+      at_beat: 66.99169921875
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
       at_beat: 69.620059
       control: "deck.eq_low"
       curve: "step"
@@ -143,6 +149,12 @@ performance:
       curve: "step"
       target: "incoming"
       value: 0.004
+    -
+      at_beat: 81.86279296875
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
     -
       at_beat: 82.796268
       control: "deck.eq_low"

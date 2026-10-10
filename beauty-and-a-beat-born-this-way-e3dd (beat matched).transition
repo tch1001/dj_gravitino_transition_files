@@ -120,7 +120,7 @@ performance:
   master_bpm: 127.990909
   timeline:
     -
-      at_beat: 5.746505
+      at_beat: 5.7051025390625
       control: "deck.transition_cue"
       cue_id: "incoming-cue-6"
       curve: "step"
@@ -146,83 +146,47 @@ performance:
       target: "incoming"
       value: 0
     -
+      at_beat: 22.38623046875
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
       at_beat: 25.450281
       control: "deck.fader"
       curve: "step"
       target: "incoming"
       value: 0.003
     -
-      at_beat: 31.576264
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.168
-    -
-      at_beat: 35.7404
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.593
-    -
-      at_beat: 38.606881
-      control: "deck.eq_mid"
-      curve: "step"
-      target: "outgoing"
-      value: 0.497
-    -
-      at_beat: 39.023006
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.891
-    -
-      at_beat: 40.252567
-      control: "deck.eq_mid"
+      at_beat: 37.2421875
+      control: "deck.stem_drums"
       curve: "linear"
       target: "outgoing"
-      value: 0.456
+      value: 1
     -
-      at_beat: 40.524766
-      control: "deck.fader"
+      at_beat: 38.53076171875
+      control: "deck.stem_drums"
       curve: "linear"
       target: "incoming"
-      value: 0.908
+      value: 0
     -
-      at_beat: 40.653797
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.933
-    -
-      at_beat: 40.723051
-      control: "deck.eq_mid"
-      curve: "linear"
-      target: "outgoing"
-      value: 0.405
-    -
-      at_beat: 41.293282
-      control: "deck.fader"
-      curve: "linear"
-      target: "incoming"
-      value: 0.954
-    -
-      at_beat: 41.677882
+      at_beat: 40.94580078125
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
       value: 1
     -
-      at_beat: 46.284866
-      control: "deck.eq_mid"
+      at_beat: 50.1103515625
+      control: "deck.stem_drums"
       curve: "linear"
-      target: "outgoing"
-      value: 0.273
+      target: "incoming"
+      value: 1
     -
-      at_beat: 50.891373
-      control: "deck.eq_mid"
+      at_beat: 50.5537109375
+      control: "deck.stem_drums"
       curve: "linear"
       target: "outgoing"
-      value: 0.204
+      value: 0
 requires:
   - "timeline.v1"
   - "temporary-cues.v1"

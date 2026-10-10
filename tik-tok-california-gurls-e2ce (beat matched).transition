@@ -57,6 +57,7 @@ performance:
         pad: 5
       purpose: "legacy-hot-cue"
       track_beat: 0
+  end_beat: 90.3759765625
   initial_state:
     complete: true
     incoming:
@@ -81,7 +82,7 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 0.99970167133146737
+      tempo_ratio: 0.9997016713314674
     mixer:
       captured: true
       crossfader: 0.493
@@ -198,7 +199,26 @@ performance:
       curve: "linear"
       target: "incoming"
       value: 0.5
+    -
+      at_beat: 86.6281516325875
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 88.18686969108352
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 89.34731867915924
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
 requires:
   - "timeline.v1"
   - "temporary-cues.v1"
+  - "timeline-end.v1"
 version: 1

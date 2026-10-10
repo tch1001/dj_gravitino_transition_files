@@ -177,7 +177,7 @@ performance:
       target: "outgoing"
       value: 0
     -
-      at_beat: 18.61725668353708
+      at_beat: 19.92578125
       control: "deck.stem_vocals"
       curve: "step"
       target: "outgoing"
@@ -205,17 +205,23 @@ performance:
       target: "outgoing"
       value: 0.5
     -
-      at_beat: 36.748095
+      at_beat: 37.49951171875
       control: "deck.stem_vocals"
       curve: "linear"
       target: "outgoing"
-      value: 0
+      value: 0.7547144396551724
     -
       at_beat: 38.346084618659326
       control: "deck.stem_bass"
       curve: "linear"
       target: "outgoing"
       value: 1
+    -
+      at_beat: 51.28857421875
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
     -
       at_beat: 52.48582068556388
       control: "deck.stem_bass"
