@@ -98,7 +98,7 @@ performance:
       eq_low: 0.5
       eq_mid: 0.5
       fader: 1
-      filter: 0.533
+      filter: 0.5
       fx_beats: 0.5
       fx_on: false
       fx_type: 0
@@ -221,7 +221,7 @@ performance:
       control: "deck.filter"
       curve: "linear"
       target: "incoming"
-      value: 0.4845096982758621
+      value: 0.5
     -
       at_beat: 77.705078125
       control: "deck.eq_high"

@@ -73,7 +73,7 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.023645
+      tempo_ratio: 1.023927272
     mixer:
       captured: true
       crossfader: 0.496
@@ -177,7 +177,7 @@ performance:
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
-      value: 0.9760910560344828
+      value: 1.0
     -
       at_beat: 76.862807
       control: "deck.eq_mid"

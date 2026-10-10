@@ -89,7 +89,7 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.042271
+      tempo_ratio: 1.0427019741459793
     outgoing:
       captured: true
       cue_beat: 0

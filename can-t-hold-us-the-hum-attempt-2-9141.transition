@@ -94,7 +94,7 @@ performance:
       cue_beat: 482.080962
       eq_high: 0.5
       eq_low: 0.5
-      eq_mid: 0.498
+      eq_mid: 0.5
       fader: 1
       filter: 0.5
       fx_beats: 0.5

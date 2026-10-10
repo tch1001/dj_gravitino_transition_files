@@ -70,7 +70,7 @@ performance:
       captured: true
       cue_beat: 0
       eq_high: 0.5
-      eq_low: 0.504
+      eq_low: 0.5
       eq_mid: 0.5
       fader: 1
       filter: 0.5

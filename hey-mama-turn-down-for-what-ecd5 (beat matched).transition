@@ -166,7 +166,7 @@ performance:
       control: "deck.filter"
       curve: "linear"
       target: "incoming"
-      value: 0.533
+      value: 0.5
     -
       at_beat: 18.068026291314382
       control: "deck.stem_melody"

@@ -88,7 +88,7 @@ performance:
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.008087
+      tempo_ratio: 1.0078745794315087
     mixer:
       captured: true
       crossfader: 0.589
