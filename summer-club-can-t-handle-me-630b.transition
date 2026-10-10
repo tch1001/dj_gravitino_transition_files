@@ -1,0 +1,198 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 496.3145256628779
+      duration_seconds: 232.66
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1dff2dd226ff11ee20ff0cf323ff15ea35ff0df239ff10ef38ff0af534ff0bf444ff0af534ff0ef13bff16e945ff0cf33bff15ea55ff867943ff639c3aff40bf53ff916e3cff14eb43ff4ab553ff837c55ff8b7430ff1ce336ff21de2bff2bd42aff1de22dff0ff035ff0ff039ff16e935ff1ae548ff718e49ff6a954dff946b4dff956a3eff4eb148ff45ba51ffa75842ff45ba42ff1ae550ff9f6052ff986735ff50af51ff956a54ff807f3bff619e45ff51ae4bffae5140ff21de41ff21de4cff9b6454ff68973dff28d739ff1ee14bff738c46ff827d48ff827d4aff5fa04fff7a8550ff6e914eff3ec142ff58a753ff926d46ff3ec13fff33cc09ffa35c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:20c2a15e5025d765"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.224
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Club Can't Handle Me (feat. David Guetta) (From the Step Up 3D Soundtrack)"
+  outgoing:
+    assumptions:
+      duration_beats: 473.77728198863554
+      duration_seconds: 222.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:03ff17e816ff699610ff609f18ff2ed133ff1be449ff3dc243ff2ed136ff35ca43ff39c629ff4eb130ff34cb3bff1de238ff2bd43dff22dd4eff847b57ff88774eff748b55ff679842ff50af51ff877857ff86794aff4eb149ff48b755ffb34c5bff827d4dff50af56ff649b48ff718e53ff748b54ff956a42ff4db233ff38c73bff4cb33cff46b941ff1be43aff2ad546ff837c52ff708f4aff8d724cff748b4bff5ba455ff7f8056ff8e7148ff4db248ff56a931ff2ad52eff5ca31dff2fd01bff26d926ff2cd335ff28d73cff2dd238ff20df46ff2bd452ff887751ff946b45ff778852ff708f41ff24db4cff8b7452ff88774aff5da24bff43bc05ff0ef1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7ecc566857f0bc68"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.13866666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Summer (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "807ce933-7b90-4472-bf6e-38f23b234c67"
+metadata:
+  created_at: "2026-10-10T08:52:41.866Z"
+  name: "summer -> club can't handle me"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 319.182726
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 67.5068359375
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 137.257035
+      loop_start_beat: 137.257035
+      playing: false
+      position_beat: 137.257035
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0000710277718605
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 120.31517
+      loop_start_beat: 120.31517
+      playing: true
+      position_beat: 319.182726
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0000710277718605
+  labels: []
+  loops: []
+  master_bpm: 127.99999999999999
+  timeline:
+    -
+      at_beat: 8.00732421875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8.010254
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.8159423828125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.322147
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.322147
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.075550999999999
+      control: "deck.tempo_sync"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 56.80810546875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 57.34326171875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 60.32275390625
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 63.044278
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 64.78369140625
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

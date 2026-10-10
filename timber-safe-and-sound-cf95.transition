@@ -1,0 +1,216 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 380.3111161762144
+      duration_seconds: 193.4
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:58ffc53a5bbfce314fffc13e4fffc23d3dff936c27ff52ad58ffc13e57ffb7484effb14e3aff9b6428ff6c9331e4c73834ff77882dffb24d43ff936c2dff25da32ff5fa056ffaf504effa55a44ff8d722fff1ae532ff30cf37ff778852ff926d44ff986738ff8b7430ff8e7137ff708f34ff7b844eff946b3fff6d922fff8a7522ff67983aff897641ffcc3329ff659a2cff689726ff6f9033ff887747ffaa5554ffbf402bff22dd2f12ed1233ff9f603b4ae01f4560d22d6ce2cc332fff59a635ff6c933bff916e55ffb84754ffa55a2eff4ab52eff8d723effa25d51ffb84758ffb54a5cffc33c37ff5ca349ff827d58ffab5453ff9f6055ffa05f50ff916e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:cdfd8019e543fa7e"
+      meter: "4/4"
+      native_bpm: 117.98749999999973
+      reference_downbeat_seconds: 1.7460044193543538
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Capital Cities - Safe And Sound"
+  outgoing:
+    assumptions:
+      duration_beats: 445.6954305555555
+      duration_seconds: 205.71
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff7f801bff4eb128ff10ef27ff11ee1eff1fe025ff2ed115ff16e92dff13ec20ff19e62bff16e92eff2dd237ff24db4bffc43b53ff9c6351ff956a24ff18e74bffa55a52ff916e54ffa45b56ff9f604dffa35c3fffa35c29ff55aa1eff40bf32ff1fe01cff19e63bff6f9036ff20df38ff33cc2dff25da40ff29d653ff827d4fffa35c51ff877853ff877842ff88774dff9c634fffae514fffa75856ffa55a57ff956a4eff936c53ffa15e53ff6a9552ff966945ff649b31ff20df22ff35ca37ff1ee134ff19e63fff54ab34ff28d73eff2fd03cff15ea57ff7b8455ffaf5055ff8a7555ff877854ff857a50ffaf5059ff8f705dff718e5aff877853ff758a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:de26b458aa05f5e4"
+      meter: "4/4"
+      native_bpm: 130
+      reference_downbeat_seconds: 1.6127189494547514
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull, Ke$ha - Timber (featuring Ke$ha - Official Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "45d4cb3e-bc00-4cd1-b34c-4334bc5cd759"
+metadata:
+  created_at: "2026-10-10T05:52:40.463Z"
+  name: "timber -> safe and sound"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 363.56818799999996
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 87.30859054219846
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: -2.111985
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0424833139103742
+    outgoing:
+      captured: true
+      cue_beat: 16.023062
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: true
+      position_beat: 363.56818799999996
+      quantize: true
+      stem_bass: 0
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9461538461538461
+  labels: []
+  loops: []
+  master_bpm: 123
+  timeline:
+    -
+      at_beat: 2.509672
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 2.509672483390012
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 2.7636988449377347
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 3.328435136312423
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 3.3758213997416324
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 4.233625811371119
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 4.42392578125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 4.493297460103868
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 7.631660999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.631982
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 35.85813487654541
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 36.05103672077177
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 78.85794025963627
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 84.52779665285904
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

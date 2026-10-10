@@ -1,0 +1,186 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 369.0920586828958
+      duration_seconds: 175.75
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3bff659a38ff22dd3aff33cc34ff59a632ff53ac43ff46b949ff936c42ff98674eff996654ff7b843cff51ae36ff639c50ffb14e3bff7b843aff22dd40ff4bb43fff17e84eff6d923fff2ad54cff17e838ff0cf336ff0bf433ff08f74effa15e52ff9f6055ff877858ffa55a47ff857a3fff38c73dff28d72fff30cf36ff33cc37ff30cf38ff2ad547ff7d8252ff8a7539ff49b639ff31ce48ff906f47ff5ba450ffbc4342ff619e38ff36c934ff30cf39ff14eb2fff11ee40ff19e645ff24db3eff11ee39ff08f739ff09f63aff48b73eff5ca337ff3fc03cff609f54ff708f3cff10ef4aff956a56ffac5346ff649b40ff47b846ff7f803dff33cc10ba8778"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1fb2841ca57ba519"
+      meter: "4/4"
+      native_bpm: 126.00449438202227
+      reference_downbeat_seconds: 2.6580971335517036
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - The Nights (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 462.73157765151427
+      duration_seconds: 216.92000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff08f719ff08f72fff09f617ff05fa3eff05fa2bff07f83bff07f84eff16e93aff1de242ff0cf34fff0ef147ff07f831ff1fe04eff11ee49ff0df239ff24db22ff28d72dff42bd32ff2ed139ff35ca48ff8b7447ffaf5048ffb94658ffc43b50ffa8574dffa35c4bffab5453ff8f705affa6595eff966953ffcb3455ffbc434effbc4342ff15ea5cff986767ff6f9058ff827d4aff877850ff79860bff30cf0eff3bc424ff1be41dff2cd324ff0ef11dff22dd54ff09f633ff21de4cff12ed51ff0df23dff23dc24ff28d72dff41be33ff2cd338ff33cc49ff837c47ffaf5048ffba4552ffbb4450ffa95655ff857a50ff9e615aff78875eff9a6530ff23dc"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:932267a552b7ee95"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.7786666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna, Calvin Harris - We Found Love (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "80641e13-a8f4-479c-955e-bb6e0054ef87"
+metadata:
+  created_at: "2026-10-09T19:12:54.911Z"
+  name: "we found love -> the nights"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 367.433174
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 98.644014
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0.34700000000000003
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.32
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0118024683048104
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 367.433174
+      loop_start_beat: 367.433174
+      playing: true
+      position_beat: 367.433174
+      quantize: false
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9960993272004615
+  labels: []
+  loops: []
+  master_bpm: 127.49165843322974
+  timeline:
+    -
+      at_beat: 7.585113797050368
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 14.808243
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 14.80824319263173
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 16.57325553287859
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 19.684691
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 19.684691
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 35.619030987265575
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 46.81982421875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 78.98046875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

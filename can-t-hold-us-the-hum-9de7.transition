@@ -1,0 +1,293 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 771.635477433788
+      duration_seconds: 356.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:34ff3dc22fff40bf38ff38c733ff21de29ff29d64effc33c52ffca3542ff8a753fff758a3fff689728ff20df0b5fba450e56c53a24c05ba422ff54ab2aee4eb11dd9609f27ff4eb12dff4db23cff21de34ff0df231ff16e942ff19e63eff0bf422ff16e95dffaf505bffac5357ff9f6054ff8c7354ffa95659ffb7485cffaf5030ff08f707ff2bd423779e6130a7629d269e619e339d7c8336ff34cb4fff48b756ff46b953ff44bb54ff19e643ff0df222ff15ea5affaa555bffaa5557ff9d6259ff926d50ff817e5cffba455cffa75839ff09f654ffcd3258ffc53a54ffb04f4cffa05f4effb94651fad12e51ffd42b55ced22d58ffb84750ffac532bffb14e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:f251c1e759dd2c64"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Dimitri Vegas & Like Mike vs Ummet Ozcan - The Hum (Original Mix)"
+  outgoing:
+    assumptions:
+      duration_beats: 625.6056560493364
+      duration_seconds: 257.09000000000003
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff41be0fff4ab524ff26d923ff30cf39ff15ea35ff3ac54aff8f7047ff6e9146ff5fa044ff6f9052ff7c834aff768930ff2cd33bff817e43ff6f9047ff6d925aff936c4bff966942ffa75845ff55aa45ff9e613cffb44b23ff15ea29ff15ea34ff1ae546ffa65941ff4fb051ff6a9550ff996634ff54ab26ff33cc52ff5aa534ff35ca50ff9d624effac5339ff7e814fff54ab41ff15ea49ff738c49ff976858ff8e7154ff8e7150ff4ab547ff88772fff0cf329ff08f738ff5ea138ff28d738ff3cc339ff2dd246ff0ef148ff906f3aff7a8535ff28d747ff9d624cff827d30ff669955a8b84754ffa9564fff728d3aff11ee48ff946b46ff5fa053ff6798"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:bdb8ce4cb8f7148b"
+      meter: "4/4"
+      native_bpm: 146.00389610389698
+      reference_downbeat_seconds: 0.11138693192892728
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Can't Hold Us - Macklemore & Ryan Lewis (feat. Ray Dalton)"
+extensions: {}
+format: "gravitino.transition"
+id: "11a0c791-b355-41af-a7eb-3f177cc20d8d"
+metadata:
+  created_at: "2026-10-09T12:40:26.522Z"
+  name: "can't hold us -> the hum"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 232
+    outgoing:
+      track_beat: 419.19176799999997
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 232
+  end_beat: 36
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 0.8
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 232
+      loop_start_beat: 232
+      playing: false
+      position_beat: 232
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0626258435588276
+    outgoing:
+      captured: true
+      cue_beat: 482.080962
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.498
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 144
+      loop_start_beat: 144
+      playing: true
+      position_beat: 419.19176799999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9462500021347887
+  labels: []
+  loops: []
+  master_bpm: 138.156187
+  timeline:
+    -
+      at_beat: 8
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 12
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 22.5
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 23
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.49737338362068967
+    -
+      at_beat: 24
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 26.75
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 32
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+  tone_play:
+    effects:
+      echo: 0.04
+      echo_beats: 0.25
+      enabled: true
+      reverb: 0.08
+      sustain_ducking: 0
+      tail_beats: 1
+    enabled: true
+    filter:
+      at_beat: 20
+      duration_beats: 8
+      enabled: true
+      from_hz: 20
+      mode: "high_pass"
+      to_hz: 6000
+    gain: 0.7
+    notes:
+      -
+        at_beat: 11.625
+        duration_beats: 0.1875
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 11.875
+        duration_beats: 0.1875
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 12.125
+        duration_beats: 0.1875
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 12.375
+        duration_beats: 0.125
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 12.625
+        duration_beats: 0.25
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 10.0625
+        duration_beats: 3.375
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 10.75
+        duration_beats: 0.75
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 10
+        duration_beats: 0.5
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 21.625
+        duration_beats: 0.1875
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 21.875
+        duration_beats: 0.1875
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 22.125
+        duration_beats: 0.1875
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 22.375
+        duration_beats: 0.125
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 22.625
+        duration_beats: 0.25
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 20.75
+        duration_beats: 0.75
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 20
+        duration_beats: 0.5
+        pitch: 53
+        velocity: 0.8
+      -
+        at_beat: 23
+        duration_beats: 1
+        pitch: 53
+        velocity: 0.8
+    replace_outgoing: false
+    root_note: 60
+    source_end_beat: 625.0113724316259
+    source_start_beat: 622.0020877356494
+    sustain:
+      at_beat: 13
+      attack_ms: 100
+      crossfade_ms: 32
+      duration_beats: 11
+      enabled: true
+      gain: 0.8
+      loop_end_beat: 622.97644
+      loop_start_beat: 622.443099
+      pitch: 60
+      pitch_glide:
+        curve: "smooth"
+        duration_beats: 6
+        to_pitch: 53
+      release_ms: 50
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+  - "tone-play.v1"
+  - "tone-play-effects.v1"
+  - "tone-play-sustain.v1"
+  - "tone-play-glide.v1"
+  - "tone-play-glide-curve.v1"
+  - "tone-play-filter.v1"
+version: 1

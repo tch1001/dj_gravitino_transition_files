@@ -1,0 +1,216 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 445.6954305555555
+      duration_seconds: 205.71
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1bff7f801bff4eb128ff10ef27ff11ee1eff1fe025ff2ed115ff16e92dff13ec20ff19e62bff16e92eff2dd237ff24db4bffc43b53ff9c6351ff956a24ff18e74bffa55a52ff916e54ffa45b56ff9f604dffa35c3fffa35c29ff55aa1eff40bf32ff1fe01cff19e63bff6f9036ff20df38ff33cc2dff25da40ff29d653ff827d4fffa35c51ff877853ff877842ff88774dff9c634fffae514fffa75856ffa55a57ff956a4eff936c53ffa15e53ff6a9552ff966945ff649b31ff20df22ff35ca37ff1ee134ff19e63fff54ab34ff28d73eff2fd03cff15ea57ff7b8455ffaf5055ff8a7555ff877854ff857a50ffaf5059ff8f705dff718e5aff877853ff758a"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:de26b458aa05f5e4"
+      meter: "4/4"
+      native_bpm: 130
+      reference_downbeat_seconds: 1.6127189494547514
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull, Ke$ha - Timber (featuring Ke$ha - Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 503.25367736434265
+      duration_seconds: 232.25
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2affba4525fb996639ff9f602996b04f30ff867939ff8b7440ff906f2fff88772cff639c37ff7e8144ff5da244ff6b9436ff55aa45ff98673eff639c46ff906f43ff57a852ff6d9244ff44bb3cffb6494cff8f704bff768931ff58a73eff36c933ff44bb3aff44bb37ff4fb04fff77884dff837c36ff798643ff54ab4aff69964bff659a45ff35ca31ff5aa549ff7f805aff47b843ff66994bff32cd4cff3ec151ff47b849ff3cc341ff59a64eff7f8053ff679853ff778846ff748b50ff877830ff2dd21cff14eb3dff48b73eff45ba46ff768944ff4ab54dff5ca34fff2ad54eff30cf4bff6e914fff738c46ff3ac540ff4ab54cff7c831e77a55a0645ac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8d2b17fb82675d11"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.2986666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taylor Swift - You Belong With Me (Taylor's Version) (Lyric Video)"
+extensions: {}
+format: "gravitino.transition"
+id: "efec1ff5-a420-435b-810e-8a0fefe3bd94"
+metadata:
+  created_at: "2026-10-10T05:38:46.428Z"
+  name: "you belong with me -> timber"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 448.44442399999997
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 33.96484375
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 16.023062
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0001073345259424
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 448.44442399999997
+      loop_start_beat: 448.44442399999997
+      playing: true
+      position_beat: 448.44442399999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.0139534883725
+  timeline:
+    -
+      at_beat: 4.87353515625
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 5.013671875
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10.79443359375
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 11.048828
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 11.048828125
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 11.5580322265625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.75927734375
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 14.942936999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 14.942936999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 17.599609375
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 26.16064453125
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 26.98095703125
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 29.8603515625
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 32.26220703125
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

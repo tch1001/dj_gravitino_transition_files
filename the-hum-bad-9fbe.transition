@@ -1,0 +1,174 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 364.1125823390145
+      duration_seconds: 170.69
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:25ff946b12ff946b10b3936c2cff788728ff48b71cff679830ff2fd02bff39c623ff649b31ff27d825ff3fc026ff4ab524ff3ac533ff31ce39ff21de3aff21de2dff12ed54ff54ab4aff3bc449ff11ee4bff46b948ff31ce47ff30cf3eff39c63dff40bf31ff2ed11aff67985cffab5469ffba4565ffaa555dffa25d66ffb24d2cff29d668ffa95669ffa75868ffaf5066ffa35c6cffa35c39ff2fd02bff887720ff609f27ff47b836ff2ad525ff41be29ff2fd02eff2ed123ff3ac530ff28d737ff2dd239ff20df67ffb34c6affaf5068ffb84767ffab546dffab5439ff5aa563ff8d726affa8574bff7e8165ff8b7463ff99662bff5ba42aff3ec11510f30c"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:76d5091c2f1377d5"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 1.9087832942680594
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 771.635477433788
+      duration_seconds: 356.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:34ff3dc22fff40bf38ff38c733ff21de29ff29d64effc33c52ffca3542ff8a753fff758a3fff689728ff20df0b5fba450e56c53a24c05ba422ff54ab2aee4eb11dd9609f27ff4eb12dff4db23cff21de34ff0df231ff16e942ff19e63eff0bf422ff16e95dffaf505bffac5357ff9f6054ff8c7354ffa95659ffb7485cffaf5030ff08f707ff2bd423779e6130a7629d269e619e339d7c8336ff34cb4fff48b756ff46b953ff44bb54ff19e643ff0df222ff15ea5affaa555bffaa5557ff9d6259ff926d50ff817e5cffba455cffa75839ff09f654ffcd3258ffc53a54ffb04f4cffa05f4effb94651fad12e51ffd42b55ced22d58ffb84750ffac532bffb14e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:f251c1e759dd2c64"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Dimitri Vegas & Like Mike vs Ummet Ozcan - The Hum (Original Mix)"
+extensions: {}
+format: "gravitino.transition"
+id: "ba3894d6-37bd-4eff-94b8-9203bf2e79ac"
+metadata:
+  created_at: "2026-10-09T13:21:34.835Z"
+  name: "the hum -> bad"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 378.47464199999996
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 22.874482950709442
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.498
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 12.446627
+      loop_start_beat: 12.446627
+      playing: false
+      position_beat: 12.446627
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.015806156951559
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 378.47464199999996
+      loop_start_beat: 378.47464199999996
+      playing: true
+      position_beat: 378.47464199999996
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 130.0139534883725
+  timeline:
+    -
+      at_beat: 12.11118097027483
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 13.16733396725967
+      control: "deck.fader"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.520604848834525
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 17.89022960712888
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 17.907496085215143
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 19.161168
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 19.161168
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

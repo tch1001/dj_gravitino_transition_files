@@ -1,0 +1,252 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 409.8711534226219
+      duration_seconds: 183.55
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:06ff1ce342ff9c6338fbb24d40ffb04f4ae3b9461bff24db3cff5ea119ff57a822ff50af1dff47b822ff3fc04fff807f37ff738c30ff708f32ff38c739ff708f4eff867930ff619e42ff44bb4dff8d724eff887746ffb34c4cff728d4cff8f704bff8c734dff837c36ff0bf461ffa85759ffa55a54ffa25d3fff88770dff21de42ff847b3eff41be2ec4b04f3cff778833ff847b42ff76893fff4ab536f07e813cff946b31ff857a49ff788748ff88774bff58a753ff708f53ff877850ff8a753aff8e7153ff867952ffa15e4fff8c732fff12ed48ffa9566cc8c9366affc73864ff857a34ff0bf44bff5ba459ffaf5071ffc03f52ff2cd30fff2cd3085baf50"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:069f45c5dcde8a52"
+      meter: "4/4"
+      native_bpm: 133.97857142857234
+      reference_downbeat_seconds: 0.544
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii, Sandro Cavazza - Without You “Audio”"
+  outgoing:
+    assumptions:
+      duration_beats: 466.0997828598476
+      duration_seconds: 218.5
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:10ff34cb21ff47b81bff28d71bff35ca22ff23dc26ff27d840ff7a8523ff53ac2cff1ce32eff24db24ff2dd22bff39c629ff42bd24ff34cb2dff3ac531ff3dc22cff18e765ffad5262ffae5150ff887754ff8d725fd8ae515bbbb34c5effaa5557ffab544cff817e48ff728d36ff817e30ff15ea27ff31ce26ff2ad527ff32cd35ff4db23aff48b734ff3dc232ff28d729ff21de48ff817e4aff837c64ffaf5059ffa35c58ff9d625bffa95651ff857a4eff728d65ffac5323ff56a928ff50af34ff33cc36ff3ec14effa25d46ff837c53ff9c6326ff11ee21ff1ae54aff6b946bff986767ffa15e52ff7b8456ff728d5bff8c735eff7e815aff6f9067ff9d62"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:bed80fb93344fccd"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.18133333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Zedd - Beautiful Now ft. Jon Bellion (Official Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "c4f969c9-970c-4c35-b5c6-5b0ceb133e11"
+metadata:
+  created_at: "2026-10-10T08:12:28.998Z"
+  name: "beautiful now -> without you"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 104
+    outgoing:
+      track_beat: 318.37825899999996
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 104
+  end_beat: 84.24794899999999
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 104
+      loop_start_beat: 104
+      playing: false
+      position_beat: 104
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9629177520851927
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 318.37825899999996
+      loop_start_beat: 318.37825899999996
+      playing: true
+      position_beat: 318.37825899999996
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0079649073822372
+  labels: []
+  loops: []
+  master_bpm: 129.0103448275863
+  timeline:
+    -
+      at_beat: 7.673828125
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 7.8232421875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 7.87841796875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 8.23291015625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.617236328125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.174591999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.174802
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 22.45654296875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 24.24560546875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 24.83251953125
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 26.86962890625
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.814453125
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 39.02685546875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 49.3330078125
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 57.90283203125
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 72.90478515625
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 73.46655780673674
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 73.94894465503147
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 75.1826171875
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 81.32667699999999
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

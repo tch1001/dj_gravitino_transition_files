@@ -1,0 +1,175 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 532.1433333333366
+      duration_seconds: 212.86
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff15ea11ff12ed29ff6f907dffc83758ffb6491cff10ef36ff8f7034ffa75832ff9f606affc03f44ffb04f6086d6291bff1ce37594d32c15ff11ee5f71d22d37ff718e15ff0af55ffcd82766ffce3117ff25da6976d82760ffd82723ff20df4bffc33c33ffae5131eec13e1bff817e1fff758a22ff1be41dff19e61bff13ec38ff659a5affb34c63ffc13e65ffb24d26ffa05f15ff1de25effd8276ca1cc3373ffca351fff2ed16b89d8271bff35ca816bcf3063ffbe417f60ce3166ffbf4044ffb94638ffa15e2dff58a719ff17e85fffc6396ca1d9264affa75866bcd9262cff6c9321ff14eb1eff12ed22ff12ed31ff9b643aff9c632bff768927ff629d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:94491267eb029c56"
+      meter: "4/4"
+      native_bpm: 150.0000000000009
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Lil Nas X - Industry Baby (Lyrics) ft. Jack Harlow"
+  outgoing:
+    assumptions:
+      duration_beats: 226.48572250868176
+      duration_seconds: 97.08
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff06f934ff0df207ff0af537ff1de230ff16e920ff1ae531ff18e736ff1ee136ff14eb34ff1ce38254dc2315ff09f681d6aa5537ff21de80ffa25d39ff22dd3bff19e672ffbd4235ff19e67aff956a39ff1ce33fff0ef142ff1be485ffa95679f9bc4322ff34cb73dcca352fff17e83dff639c39ff1ae531ff0ff03dff16e929ff0ef127ff0df234ff13ec36ff28d736ff23dc21ff08f77effaa5531ff19e68cbcbb4431ff20df77ffa85784ff9a6562ff956a3aff1ce380ffa85726ff10ef43ff1ae56cffa7583bff17e866ff88773dff13ec30ff16e979ffb94644ff18e71aff15ea17ff08f70fff04fb0aff04fb0eff07f807ff06f904ff04fb03ff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:03ac61eb9db4d60b"
+      meter: "4/4"
+      native_bpm: 139.97500000000076
+      reference_downbeat_seconds: 1.4437083333333334
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Central Cee - Doja (Official Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "386bfc71-51b5-4339-8308-712bcdfb065f"
+metadata:
+  created_at: "2026-10-09T08:58:11.741Z"
+  name: "doja -> industry baby drum play"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 189.795762
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 42.814532
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.013204738784484
+    outgoing:
+      captured: true
+      cue_beat: -3.019669
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0
+      loop_active: false
+      loop_end_beat: 48
+      loop_start_beat: 32
+      playing: true
+      position_beat: 189.795762
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9771366672620057
+  labels: []
+  loops: []
+  master_bpm: 136.77470499999998
+  timeline:
+    -
+      at_beat: 12
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 14.653065
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 15.756421999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 32.841592999999996
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+  tone_play:
+    enabled: true
+    gain: 0.7
+    notes:
+      -
+        at_beat: 2.25
+        duration_beats: 0.5
+        pitch: 60
+        velocity: 0.8
+      -
+        at_beat: 3.25
+        duration_beats: 0.5
+        pitch: 60
+        velocity: 0.8
+    replace_outgoing: false
+    root_note: 60
+    source_end_beat: 196.713215088306
+    source_start_beat: 195.9658454358276
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+  - "tone-play.v1"
+version: 1

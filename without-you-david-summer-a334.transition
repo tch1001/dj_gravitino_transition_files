@@ -1,0 +1,192 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 473.77728198863554
+      duration_seconds: 222.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:03ff17e816ff699610ff609f18ff2ed133ff1be449ff3dc243ff2ed136ff35ca43ff39c629ff4eb130ff34cb3bff1de238ff2bd43dff22dd4eff847b57ff88774eff748b55ff679842ff50af51ff877857ff86794aff4eb149ff48b755ffb34c5bff827d4dff50af56ff649b48ff718e53ff748b54ff956a42ff4db233ff38c73bff4cb33cff46b941ff1be43aff2ad546ff837c52ff708f4aff8d724cff748b4bff5ba455ff7f8056ff8e7148ff4db248ff56a931ff2ad52eff5ca31dff2fd01bff26d926ff2cd335ff28d73cff2dd238ff20df46ff2bd452ff887751ff946b45ff778852ff708f41ff24db4cff8b7452ff88774aff5da24bff43bc05ff0ef1"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7ecc566857f0bc68"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.13866666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Summer (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 444.3550606723477
+      duration_seconds: 208.31
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff4db21dc851ae2463b14e23f9649b15ff2cd328ff44bb31ff41be3599609f29ff46b937ff4ab532ff29d631ff30cf1fff2bd423ff35ca2dff3bc439ff18e74eff31ce56ff18e73cff37c829ff53ac44ff17e84aff16e94aff0ff065ff9b6473ffc33c73ffab547cffb7485dff55aa54ff6a9562ff8d722aff3ac549ff807f2bff867943ff34cb21f9649b3be231ce3cff56a940ff2dd24eff8c7340ff25da26ff2dd239ff2dd22dff39c644ff3dc24bff1de250ff1ee140ff1ee13fff10ef3aff14eb53ff06f977ff9a6577ffb54a69ff916e62ff7d8261ff4eb15eff5ea168ff748b26ff42bd1fff39c63aff36c93eff21de26ff4cb326ff31ce10ff8877"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:0977c505917ed36b"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.18133333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta - Without You (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "0d48af40-2521-4c4d-8098-d1b5e5f7b71c"
+metadata:
+  created_at: "2026-10-10T08:46:53.634Z"
+  name: "without you david -> summer"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 72
+    outgoing:
+      track_beat: 343.149453
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 72
+  end_beat: 58.21257
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 120.31517
+      loop_start_beat: 120.31517
+      playing: false
+      position_beat: 120.31517
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0000710277718605
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 343.149453
+      loop_start_beat: 343.149453
+      playing: true
+      position_beat: 343.149453
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0000710277718605
+  labels: []
+  loops: []
+  master_bpm: 127.99999999999999
+  timeline:
+    -
+      at_beat: 15.78662109375
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 16.0224609375
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 16.8486328125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20.416289
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20.416472
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 31.927734375
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 32.01513671875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 48.58573152075183
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 48.942027062929775
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 54.317474999999995
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

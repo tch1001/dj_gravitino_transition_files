@@ -1,0 +1,258 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 771.635477433788
+      duration_seconds: 356.1
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:34ff3dc22fff40bf38ff38c733ff21de29ff29d64effc33c52ffca3542ff8a753fff758a3fff689728ff20df0b5fba450e56c53a24c05ba422ff54ab2aee4eb11dd9609f27ff4eb12dff4db23cff21de34ff0df231ff16e942ff19e63eff0bf422ff16e95dffaf505bffac5357ff9f6054ff8c7354ffa95659ffb7485cffaf5030ff08f707ff2bd423779e6130a7629d269e619e339d7c8336ff34cb4fff48b756ff46b953ff44bb54ff19e643ff0df222ff15ea5affaa555bffaa5557ff9d6259ff926d50ff817e5cffba455cffa75839ff09f654ffcd3258ffc53a54ffb04f4cffa05f4effb94651fad12e51ffd42b55ced22d58ffb84750ffac532bffb14e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:f251c1e759dd2c64"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.096
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Dimitri Vegas & Like Mike vs Ummet Ozcan - The Hum (Original Mix)"
+  outgoing:
+    assumptions:
+      duration_beats: 625.6056560493364
+      duration_seconds: 257.09000000000003
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:16ff41be0fff4ab524ff26d923ff30cf39ff15ea35ff3ac54aff8f7047ff6e9146ff5fa044ff6f9052ff7c834aff768930ff2cd33bff817e43ff6f9047ff6d925aff936c4bff966942ffa75845ff55aa45ff9e613cffb44b23ff15ea29ff15ea34ff1ae546ffa65941ff4fb051ff6a9550ff996634ff54ab26ff33cc52ff5aa534ff35ca50ff9d624effac5339ff7e814fff54ab41ff15ea49ff738c49ff976858ff8e7154ff8e7150ff4ab547ff88772fff0cf329ff08f738ff5ea138ff28d738ff3cc339ff2dd246ff0ef148ff906f3aff7a8535ff28d747ff9d624cff827d30ff669955a8b84754ffa9564fff728d3aff11ee48ff946b46ff5fa053ff6798"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:bdb8ce4cb8f7148b"
+      meter: "4/4"
+      native_bpm: 146.00389610389698
+      reference_downbeat_seconds: 0.11138693192892728
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Can't Hold Us - Macklemore & Ryan Lewis (feat. Ray Dalton)"
+extensions: {}
+format: "gravitino.transition"
+id: "9a376c52-2107-4685-bd35-dff3757cc8ec"
+metadata:
+  created_at: "2026-10-09T15:47:41.577Z"
+  name: "can't hold us -> the hum attempt 2"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 192
+    outgoing:
+      track_beat: 416.273052
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 192
+  end_beat: 132.89774
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 200
+      loop_start_beat: 192
+      playing: false
+      position_beat: 192
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0626258435588276
+    outgoing:
+      captured: true
+      cue_beat: 482.080962
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.498
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 144
+      loop_start_beat: 144
+      playing: true
+      position_beat: 416.273052
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9462500021347887
+  labels: []
+  loops: []
+  master_bpm: 138.156187
+  timeline:
+    -
+      at_beat: 14.08203125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.26185344827586204
+    -
+      at_beat: 15.7272216796875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 21.994473
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 21.994473
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 42.998046875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.7119477370689655
+    -
+      at_beat: 43.188953
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 45.0146484375
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 48.36669921875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0.693292025862069
+    -
+      at_beat: 69.0224609375
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 69.38134765625
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0.6870285560344828
+    -
+      at_beat: 70.6748046875
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 70.74041451074734
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5822332974137931
+    -
+      at_beat: 71.63214128026334
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 71.649414
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 75.49169921875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 76.120117
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 78.56201171875
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 78.98907562671829
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.7414466594827587
+    -
+      at_beat: 79.3671875
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.40315193965517243
+    -
+      at_beat: 111.080078125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 111.74232731853567
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

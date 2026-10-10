@@ -1,0 +1,220 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 616.6781987215898
+      duration_seconds: 289.09000000000003
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff718e1bff7e8127ffa35c2beba25d16ff2bd414ff4ab531ff13ec2fff13ec22ff37c81fff19e618ff18e727ff16e92bff10ef31ffa55a3dff6b944aff3dc23fff5ea142ff5aa53eff6c933aff708f4eff7f8051ff8d726bffc73843ff748b6dffbf405bff7a851cff16e969ffc53a3bff99666affc93656ff857a58ffa55a6effba4522ee99661aff26d934ff13ec25ff2cd335ff2ad52bff43bc1aff2ad530ff18e74eff13ec47ff38c73aff5da231ff15ea34ff11ee47ff22dd4cff31ce42ff31ce47ff21de55ff699658ff9d6266ff956a37ffa35c6affb54a59ff78875dff8f706dffa15e47ff7f8068ffc33c52ff897659ffa25d6fffa7580dff07f8"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3675f87cc0e80f40"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Black Eyed Peas - I Gotta Feeling (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 489.97713921348236
+      duration_seconds: 233.31
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:335bd92642ffa35c35ff817e4c92cb344dffa25d49ffae5154ffa8573affa15e44ff8d724cffb04f30ff649b38ff8d7233ff3ac534ff5ba43dff9d623cff8e7122ff12ed51ffc03f3aff748b40ffb74840ff728d2eff16e94fff8b7446ff857a3cff6d9252ffa15e4affad5249ffad5252ffb44b33ff936c25ffa05f38ff6f903dff33cc2cff09f646ff8f704cffcd324fffc9363dffab5438ff976838ff33cc41ff26d944ff36c945ff38c74aff1ce33dff2dd246ff8d7253ffb04f4ddbca3542ff906f43ffcf303aff56a934ff8f7045ff9d6206ff06f94affa55a49ff857a34ff6d9252ffb14e44ffbc4350ffad5253ffbd423bff8f7041ffc03f36ff7986"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7964fdd6c1269d5a"
+      meter: "4/4"
+      native_bpm: 126.00449438202227
+      reference_downbeat_seconds: 0.39466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "PSY - GENTLEMAN [Official Audio Video]"
+extensions: {}
+format: "gravitino.transition"
+id: "6f54c19e-af18-4baf-b65b-c20f68e2b064"
+metadata:
+  created_at: "2026-10-09T18:33:20.708Z"
+  name: "gentleman -> i gotta feeling"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 288
+    outgoing:
+      track_beat: 364.368297
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 288
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue"
+      label: "New cue"
+      preferred_input:
+        bank: "custom"
+      purpose: "start-track"
+      track_beat: 64
+  end_beat: 47.8464527933501
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.491
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 288
+      loop_start_beat: 288
+      playing: false
+      position_beat: 288
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9766318630584558
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: -0.189778
+      loop_start_beat: -0.189778
+      playing: true
+      position_beat: 364.368297
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9920281067199312
+  labels: []
+  loops: []
+  master_bpm: 124.99999999999977
+  timeline:
+    -
+      at_beat: 7.523173
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 7.6352294921875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.79447252788072
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 10.726007
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.726215999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 33.861868
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 35.38391991861263
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 35.45678529076472
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 35.62258319077182
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 38.93513331163346
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 39.633642578125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 39.670178
+      control: "deck.filter"
+      curve: "linear"
+      target: "incoming"
+      value: 0.5
+    -
+      at_beat: 43.726004881475355
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

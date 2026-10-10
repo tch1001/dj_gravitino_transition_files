@@ -21,49 +21,49 @@ endpoints:
       title: "Maroon 5 - Animals (Lyrics)"
   outgoing:
     assumptions:
-      duration_beats: 276.1304074188627
-      duration_seconds: 192.66
+      duration_beats: 434.669520793439
+      duration_seconds: 219.20000000000002
       fingerprints:
         -
           algorithm: "gravitino-structure-2"
-          value: "gvsf2:1bff6b9428ff18e717ff02fd3fff08f755ff8d7243ff847b3cff9f604cff7f8069d4c43b6affc43b5bffa75836ff41be37ff0af53eff07f82aff09f637ff21de3aff12ed39ff0cf33bff22dd1aff05fa27ff04fb21ff02fd32ff0ef15dffb6495dffcd3252ff99666effa75868ffa6595eff807f5eff9f6037ff26d933ff0bf42dff11ee30ff0df23aff0ef144ff0ff040ff09f649ff09f627ff0cf323ff1ae524ff0df262ff946b65ffa05f56ff8f7064ffb94662ffab5471ffb44b48ff5aa52aff0df230ff1ee137ff11ee31ff17e83aff11ee37ff0df237ff0df238ff0bf446ff36c93dff0cf345ff0df23eff0cf330ff619e26ff39c61cff0df238ff0bf4"
+          value: "gvsf2:13ff0df210a350af50ff86794dffa55a31ff1fe04eff916e4cffa85735ff54ab37ff87784eff23dc33ff27d837ff0ef14aff897644ff3fc040ff27d84eff6e913cff2ed139ff8a754bff35ca3fff4db24aff5fa048ff6e9109ec42bd33ff27d84cffa85748ff986741ff57a83fff39c63bff56a951ff8c7351ff8f703dff57a847ff20df55ff738c4fff7d8238ff8f7044ff926d41ff4db251ff6b944dff78873aff36c92fff28d74bff6b944aff718e42ff56a943ff7d823aff51ae08ff34cb17ff0cf33dff41be3eff2bd44fff728d4aff6f9043ff36c944ff8f704cff2fd042ff1ee149ff748b4dff6b9439ff2bd450ff6b944aff8c733dff47b847ff758a"
         -
           algorithm: "gvfp1"
-          value: "gvfp1:06a30deb783c9ddf"
+          value: "gvfp1:e5fffcfa3b6b507b"
       meter: "4/4"
-      native_bpm: 85.996939
-      reference_downbeat_seconds: 0.5973333333333334
+      native_bpm: 118.9808510638296
+      reference_downbeat_seconds: 0.20266666666666666
     identity:
       artists: []
       identifiers:
         providers: {}
-      title: "David Guetta feat. Nicki Minaj, AFROJACK, Bebe Rexha - Hey Mama _ Lyrics"
+      title: "Cake By The Ocean"
 extensions: {}
 format: "gravitino.transition"
-id: "25a7ddf1-7c3f-48c4-a5ea-d940a7e954fd"
+id: "604e807f-a63b-4146-859f-e7b9e9019874"
 metadata:
-  created_at: "2026-10-02T10:19:21.156Z"
-  name: "hey mama -> animals"
+  created_at: "2026-10-10T10:05:30.262Z"
+  name: "cake by the ocean -> animals (maroon 5)"
   tags: []
 performance:
   anchors:
     incoming:
-      track_beat: 64
+      track_beat: 0
     outgoing:
-      track_beat: 206.419149
+      track_beat: 381.335443
   cues:
     -
-      color: "#9a72e8"
+      color: "#e85d75"
       endpoint: "incoming"
-      id: "incoming-cue-7"
-      label: "CUE 7"
-      pairing_group: "pad-7"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
       preferred_input:
         bank: "custom"
-        pad: 7
+        pad: 1
       purpose: "hot-cue"
-      track_beat: 64
-  end_beat: 54.194168
+      track_beat: 0
+  end_beat: 46.2392578125
   initial_state:
     complete: true
     incoming:
@@ -77,151 +77,151 @@ performance:
       fx_beats: 0.5
       fx_on: false
       fx_type: 0
-      fx_wet: 0.25
+      fx_wet: 0.5
       loop_active: false
-      loop_end_beat: 64
-      loop_start_beat: 64
+      loop_end_beat: 32.195191
+      loop_start_beat: 32.195191
       playing: false
-      position_beat: 64
-      quantize: false
+      position_beat: 32.195191
+      quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
-      stem_vocals: 0
-      tempo_ratio: 0.947969
+      stem_vocals: 1
+      tempo_ratio: 1.1578947368421053
     outgoing:
       captured: true
-      cue_beat: 176
+      cue_beat: 0
       eq_high: 0.5
-      eq_low: 0.5
+      eq_low: 0.504
       eq_mid: 0.5
       fader: 1
       filter: 0.5
       fx_beats: 0.5
       fx_on: false
       fx_type: 0
-      fx_wet: 0.3
+      fx_wet: 0.5
       loop_active: false
-      loop_end_beat: 178
-      loop_start_beat: 176
+      loop_end_beat: 381.335443
+      loop_start_beat: 381.335443
       playing: true
-      position_beat: 206.419149
+      position_beat: 381.335443
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.046978
+      tempo_ratio: 0.9245185171939
   labels: []
   loops: []
-  master_bpm: 90.036937
+  master_bpm: 110
   timeline:
     -
-      at_beat: 1.2215977216522163
-      control: "deck.eq_low"
+      at_beat: 9.19580078125
+      control: "deck.stem_melody"
       curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
       target: "incoming"
       value: 0
     -
-      at_beat: 1.584643
-      control: "deck.transition_cue"
-      cue_id: "incoming-cue-7"
+      at_beat: 9.21044921875
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.72900390625
+      control: "deck.stem_melody"
       curve: "step"
       input_hint:
-        control: "host.performance_pad_7"
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 9.949814843553266
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 10.66376953125
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
         pad_mode: "sampler"
       target: "incoming"
       value: 1
     -
-      at_beat: 2.649094
+      at_beat: 14.265763
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 2.9612209999999997
+      at_beat: 14.265763
       control: "deck.transition_cue"
-      cue_id: "incoming-cue-7"
+      cue_id: "incoming-cue-1"
       curve: "step"
       input_hint:
-        control: "host.performance_pad_7"
+        control: "host.performance_pad_1"
         pad_mode: "sampler"
       target: "incoming"
       value: 0
     -
-      at_beat: 13.550729
-      control: "deck.eq_low"
+      at_beat: 15.654753692600206
+      control: "deck.fader"
       curve: "linear"
-      target: "incoming"
-      value: 0.5
-    -
-      at_beat: 17.46205609255477
-      control: "deck.eq_mid"
-      curve: "linear"
-      target: "incoming"
-      value: 0
-    -
-      at_beat: 17.708815
-      control: "deck.eq_high"
-      curve: "step"
-      target: "outgoing"
-      value: 0.5
-    -
-      at_beat: 32.77483726260188
-      control: "deck.eq_high"
-      curve: "linear"
-      target: "outgoing"
-      value: 0
-    -
-      at_beat: 33.046361
-      control: "deck.stem_vocals"
-      curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 33.069067
-      control: "deck.eq_mid"
+      at_beat: 23.607282592696457
+      control: "deck.stem_melody"
       curve: "linear"
       target: "incoming"
-      value: 0.5
+      value: 1
     -
-      at_beat: 33.445855020098406
-      control: "deck.eq_high"
-      curve: "linear"
-      target: "incoming"
-      value: 0
-    -
-      at_beat: 33.927676
-      control: "deck.eq_mid"
+      at_beat: 26.52677199007661
+      control: "deck.stem_vocals"
       curve: "step"
-      target: "outgoing"
-      value: 0.5
-    -
-      at_beat: 44.58690549068576
-      control: "deck.eq_mid"
-      curve: "linear"
-      target: "outgoing"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
       value: 0
     -
-      at_beat: 44.765324
-      control: "deck.eq_high"
+      at_beat: 27.77490234375
+      control: "deck.stem_vocals"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 34.0625
+      control: "deck.stem_vocals"
       curve: "linear"
       target: "incoming"
-      value: 0.5
+      value: 1
     -
-      at_beat: 46.963257
-      control: "deck.fader"
-      curve: "step"
-      target: "outgoing"
-      value: 0.975
-    -
-      at_beat: 49.292221
-      control: "deck.fader"
+      at_beat: 42.0185546875
+      control: "deck.stem_melody"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 50.516721999999994
+      at_beat: 42.068359375
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.6150996767241379
+    -
+      at_beat: 44.89990234375
       control: "deck.stop"
       curve: "step"
       target: "outgoing"

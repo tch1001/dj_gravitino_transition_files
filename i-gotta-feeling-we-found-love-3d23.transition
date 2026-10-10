@@ -1,0 +1,192 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 462.73157765151427
+      duration_seconds: 216.92000000000002
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff08f719ff08f72fff09f617ff05fa3eff05fa2bff07f83bff07f84eff16e93aff1de242ff0cf34fff0ef147ff07f831ff1fe04eff11ee49ff0df239ff24db22ff28d72dff42bd32ff2ed139ff35ca48ff8b7447ffaf5048ffb94658ffc43b50ffa8574dffa35c4bffab5453ff8f705affa6595eff966953ffcb3455ffbc434effbc4342ff15ea5cff986767ff6f9058ff827d4aff877850ff79860bff30cf0eff3bc424ff1be41dff2cd324ff0ef11dff22dd54ff09f633ff21de4cff12ed51ff0df23dff23dc24ff28d72dff41be33ff2cd338ff33cc49ff837c47ffaf5048ffba4552ffbb4450ffa95655ff857a50ff9e615aff78875eff9a6530ff23dc"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:932267a552b7ee95"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.7786666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Rihanna, Calvin Harris - We Found Love (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 616.6781987215898
+      duration_seconds: 289.09000000000003
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff718e1bff7e8127ffa35c2beba25d16ff2bd414ff4ab531ff13ec2fff13ec22ff37c81fff19e618ff18e727ff16e92bff10ef31ffa55a3dff6b944aff3dc23fff5ea142ff5aa53eff6c933aff708f4eff7f8051ff8d726bffc73843ff748b6dffbf405bff7a851cff16e969ffc53a3bff99666affc93656ff857a58ffa55a6effba4522ee99661aff26d934ff13ec25ff2cd335ff2ad52bff43bc1aff2ad530ff18e74eff13ec47ff38c73aff5da231ff15ea34ff11ee47ff22dd4cff31ce42ff31ce47ff21de55ff699658ff9d6266ff956a37ffa35c6affb54a59ff78875dff8f706dffa15e47ff7f8068ffc33c52ff897659ffa25d6fffa7580dff07f8"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:3675f87cc0e80f40"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Black Eyed Peas - I Gotta Feeling (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "51322c9d-bc3e-4f46-a942-d7d05cb1f1bd"
+metadata:
+  created_at: "2026-10-09T19:02:22.932Z"
+  name: "i gotta feeling -> we found love"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 112
+    outgoing:
+      track_beat: 569.387215
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 112
+  end_beat: 51.531524999999995
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.502
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 112
+      loop_start_beat: 112
+      playing: false
+      position_beat: 112
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9766318630584558
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.491
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 288
+      loop_start_beat: 288
+      playing: true
+      position_beat: 569.387215
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9766318630584558
+  labels: []
+  loops: []
+  master_bpm: 124.99999999999977
+  timeline:
+    -
+      at_beat: 4.533755075999034
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.610107421875
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.277802999999999
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.277802999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 11.09084995969689
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 28.921875
+      control: "deck.eq_low"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 38.7080078125
+      control: "deck.eq_low"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.971048210846085
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 40.08893
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 46.133345
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,216 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 475.93246391957507
+      duration_seconds: 219.64000000000001
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:11ff32cd47ffb34c23ff36c927ff58a733ff6e9131ff9d6234ff926d2affa25d26ff738c48ffa15e5cffa25d5aedb04f3eff8d723fff89764eff728d4fff8e7147ff7f8045ff916e38ff7b8412ff12ed45ffbd424cf1aa5548ffb34c34ff916e42ff79863fff936c48ffa15e1fff46b940ff56a935ff5aa55cffa25d57ff9e614effae5153ffab5453ff8a7554ffa65956ff8b7427ff837c20ff3fc01eff916e25ff6b9444ffc7383effd02f36ffbc434bffaf5027ff19e655ffa45b58ffae513eff4ab53dff38c743ff669941ff6b944aff8b7444ff956a4bff55aa58ff9c635cffb54a5bffae515dffc13e47ff55aa3fff629d47ff877846ff807f16ff0ff0"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:13e0e1e49daf799f"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.6613333333333333
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Katy Perry - Part Of Me (Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 356.4027037612978
+      duration_seconds: 157.25
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0cff20df05ff15ea06ff0af506dc20df03ff14eb2dff0ff027ff1ee11fff16e919e730cf29ff1ce328ff0cf31dff12ed47ffc33c41ff7b846cffce313eff956a3cff4fb083a4d12e64ffb44b25ff837c78ffc73866ffc13e64d3c03f5affba4558ff986764ffd12e48ffaf505dff976850ffcb3437ffac537dffb24d47ff9e6142ff43bc64ffb54a5bffb9462fff23dc6dacc53a7affb6496bffc43b5efcdd2261ffd12e1fff2dd220ff1ae51fff22dd28ff21de26ff12ed21ff15ea49ffa55a40ff708f65ffc53a41ff728d36ff59a674ff966972ff916e49ff7d8279ffb7486cff8e7170ffa15e0eff19e60dff0ff001ff26d909ff17e809ff11ee04ff1de2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c9a3f924460dca02"
+      meter: "4/4"
+      native_bpm: 135.9921686746998
+      reference_downbeat_seconds: 0.2986666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Lil Nas X - Old Town Road (Official Video) ft. Billy Ray Cyrus"
+extensions: {}
+format: "gravitino.transition"
+id: "f0cdf685-8e23-451f-966e-e4cd5b7aa291"
+metadata:
+  created_at: "2026-10-10T15:49:19.059Z"
+  name: "old town road -> part of me"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 40
+    outgoing:
+      track_beat: 278.294452
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 40
+  end_beat: 49.784102999999995
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.507
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.32
+      loop_active: false
+      loop_end_beat: 40
+      loop_start_beat: 40
+      playing: false
+      position_beat: 40
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0419013043358831
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 278.294452
+      loop_start_beat: 278.294452
+      playing: true
+      position_beat: 278.294452
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9960993272004615
+  labels: []
+  loops: []
+  master_bpm: 135.46170772140013
+  timeline:
+    -
+      at_beat: 4.943531875846433
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.712083440316829
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 7.442089949981266
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 8.482543422519276
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.191386797718069
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.693031
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 10.054246681653359
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 12.643483
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 12.643713
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 13.1211042393169
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 17.049290701703637
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 25.620324722681854
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 25.818739628569034
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 43.275493999999995
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

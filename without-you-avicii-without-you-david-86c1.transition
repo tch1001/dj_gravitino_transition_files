@@ -1,0 +1,222 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 444.3550606723477
+      duration_seconds: 208.31
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:1aff4db21dc851ae2463b14e23f9649b15ff2cd328ff44bb31ff41be3599609f29ff46b937ff4ab532ff29d631ff30cf1fff2bd423ff35ca2dff3bc439ff18e74eff31ce56ff18e73cff37c829ff53ac44ff17e84aff16e94aff0ff065ff9b6473ffc33c73ffab547cffb7485dff55aa54ff6a9562ff8d722aff3ac549ff807f2bff867943ff34cb21f9649b3be231ce3cff56a940ff2dd24eff8c7340ff25da26ff2dd239ff2dd22dff39c644ff3dc24bff1de250ff1ee140ff1ee13fff10ef3aff14eb53ff06f977ff9a6577ffb54a69ff916e62ff7d8261ff4eb15eff5ea168ff748b26ff42bd1fff39c63aff36c93eff21de26ff4cb326ff31ce10ff8877"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:0977c505917ed36b"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.18133333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "David Guetta - Without You (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 409.8711534226219
+      duration_seconds: 183.55
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:06ff1ce342ff9c6338fbb24d40ffb04f4ae3b9461bff24db3cff5ea119ff57a822ff50af1dff47b822ff3fc04fff807f37ff738c30ff708f32ff38c739ff708f4eff867930ff619e42ff44bb4dff8d724eff887746ffb34c4cff728d4cff8f704bff8c734dff837c36ff0bf461ffa85759ffa55a54ffa25d3fff88770dff21de42ff847b3eff41be2ec4b04f3cff778833ff847b42ff76893fff4ab536f07e813cff946b31ff857a49ff788748ff88774bff58a753ff708f53ff877850ff8a753aff8e7153ff867952ffa15e4fff8c732fff12ed48ffa9566cc8c9366affc73864ff857a34ff0bf44bff5ba459ffaf5071ffc03f52ff2cd30fff2cd3085baf50"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:069f45c5dcde8a52"
+      meter: "4/4"
+      native_bpm: 133.97857142857234
+      reference_downbeat_seconds: 0.544
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii, Sandro Cavazza - Without You “Audio”"
+extensions: {}
+format: "gravitino.transition"
+id: "0e46657d-df67-4444-ada9-3db4f3cbd3a9"
+metadata:
+  created_at: "2026-10-10T08:31:44.615Z"
+  name: "without you avicii -> without you david"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 96
+    outgoing:
+      track_beat: 321.70741599999997
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 96
+  end_beat: 87.707976
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 96
+      loop_start_beat: 96
+      playing: false
+      position_beat: 96
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0079649073822372
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 104
+      loop_start_beat: 104
+      playing: true
+      position_beat: 321.70741599999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9629177520851927
+  labels: []
+  loops: []
+  master_bpm: 129.0103448275863
+  timeline:
+    -
+      at_beat: 4.931640625
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.289791516831479
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.530883454930461
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.2955322265625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.65139
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 8.651621
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 24.768829693724822
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 26.41259765625
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 34.27649288691618
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 36.671387
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 36.83447265625
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 49.46533203125
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 66.729004
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 68.6259765625
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 69.58544921875
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

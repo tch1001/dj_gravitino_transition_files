@@ -1,0 +1,179 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 528.210081455105
+      duration_seconds: 243.76
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:21ff867925ff976829ff718e21ff17e824ff8c7317ff48b71aff28d72aff2cd34effab5446ff8c735fffb04f32ff708f55ff827d4fff738c52ff5da259ff57a829ff6f9040ff7d8237ff659a35ff08f749ff98675affa05f22ff52ad31ff2ed154ff807f59ff99665fffa05f32ffa25d5fff97685aff7e8165ff8f7046ff59a65cffa6594eff8e713eff9f604eff44bb3bff46b93fff708f3bff50af39ff07f841ff2fd04cff7d8241ff986722ff05fa3dff5aa54dff7c8355ff8f703cff609f3fff5aa547ff679858ff778837ff609f26ff1ae51fff14eb28ff09f62cff14eb5df2b74859ffa95647ffcf3037ff19e627ff906f56ff8d724effd12e34ff40bf"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:c553a37f077fcd94"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.512
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Chris Brown - Yeah 3x (Lyrics)"
+  outgoing:
+    assumptions:
+      duration_beats: 520.8679022157418
+      duration_seconds: 229.81
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff38c717ff2cd314ff23dc05ff07f835ff0df233ff0cf339ff09f623ff1be437ff0cf32dff1ce33eff18e732ff46b90fff11ee10ff0cf31cffaf5038ff5ea149fcb9464cdcba454fd9b64943ff659a51ffa55a54ffc13e5debc33c28ff13ec6eeec73862ffc43b59f3cd3267ffcb342bff0af535ff09f62dff09f62bff15ea46ff0cf333ff1ee13fff1fe03aff42bd43ffab5444ffc13e42ffc83735ff18e76daabe415ee9cc3360ffac5366ffd32c6dcec83760ffb14e50ffc63947ffc9363fff0ff044ff38c71aff3ac52bff18e753ff09f635ff1ce34bff12ed33ff15ea40ffc63955ffb24d4bff96692aff19e65aff46b954ff807f5fff3ec14dff7887"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a2852c834dc9de2b"
+      meter: "4/4"
+      native_bpm: 135.9921686746998
+      reference_downbeat_seconds: 0.26666666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull Ft. Christina Aguilera - Feel This Moment [Official Audio HQ]"
+extensions: {}
+format: "gravitino.transition"
+id: "68595165-6a5a-432b-9ad7-cc749a1a4b2c"
+metadata:
+  created_at: "2026-10-10T07:44:20.284Z"
+  name: "feel this moment -> yeah 3x"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 441.352176
+  cues: []
+  end_beat: 85.933026
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 64
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0459813352792318
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 441.352176
+      loop_start_beat: 441.352176
+      playing: true
+      position_beat: 441.352176
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 135.9921686746998
+  timeline:
+    -
+      at_beat: 5.705055
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.268204
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 6.287201602184876
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.65078125
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 38.16796875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38.4091796875
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 39.3662109375
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 62.759765625
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 64.2392578125
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 68.6240234375
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 70.28097076497488
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

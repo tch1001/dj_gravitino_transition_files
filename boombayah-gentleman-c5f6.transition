@@ -1,0 +1,287 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 489.97713921348236
+      duration_seconds: 233.31
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:335bd92642ffa35c35ff817e4c92cb344dffa25d49ffae5154ffa8573affa15e44ff8d724cffb04f30ff649b38ff8d7233ff3ac534ff5ba43dff9d623cff8e7122ff12ed51ffc03f3aff748b40ffb74840ff728d2eff16e94fff8b7446ff857a3cff6d9252ffa15e4affad5249ffad5252ffb44b33ff936c25ffa05f38ff6f903dff33cc2cff09f646ff8f704cffcd324fffc9363dffab5438ff976838ff33cc41ff26d944ff36c945ff38c74aff1ce33dff2dd246ff8d7253ffb04f4ddbca3542ff906f43ffcf303aff56a934ff8f7045ff9d6206ff06f94affa55a49ff857a34ff6d9252ffb14e44ffbc4350ffad5253ffbd423bff8f7041ffc03f36ff7986"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7964fdd6c1269d5a"
+      meter: "4/4"
+      native_bpm: 126.00449438202227
+      reference_downbeat_seconds: 0.39466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "PSY - GENTLEMAN [Official Audio Video]"
+  outgoing:
+    assumptions:
+      duration_beats: 508.2751736111102
+      duration_seconds: 243.97
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:13ff0ef10fff0ef129ff16e92cff18e751ffb7485af7cb3456ffbb4452e2c33c4affc53a55ffce315dffd32c51ffbb4449ffad5249ffa8573eff6f9030ff57a832ff50af2fff38c726ff48b735ff58a73eff47b830ff0bf440ff9b6447ff877847ff926d3eff827d44ff9a6541ff9a6546ff98673dff877822ff15ea0fff12ed4fffce3159ffcf3020ff10ef54ffc43b4affb54a4dffd62956ffc83759abc93636ff49b636ff41be47ff29d64bff1ce334ff38c739ff32cd45ff59a648ffb9464dff8f704aff9c6347ffae5133ff34cb45ff926d40ffa45b3dff817e25ff1be449ff98674bff7f8041ff956a4bffb44b44ff877841ff7b8440ff8e7148ff7a85"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:008307f42fd54934"
+      meter: "4/4"
+      native_bpm: 124.99999999999977
+      reference_downbeat_seconds: 2.0906666666666665
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "BLACKPINK - '붐바야 (BOOMBAYAH)' M_V"
+extensions: {}
+format: "gravitino.transition"
+id: "a7854a2f-cf6a-4ff1-8464-68081070f5d4"
+metadata:
+  created_at: "2026-10-09T18:14:10.845Z"
+  name: "boombayah -> gentleman"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 216.888791
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "outgoing"
+      id: "outgoing-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 2
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+  end_beat: 59.05376528932991
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: -0.189778
+      loop_start_beat: -0.189778
+      playing: false
+      position_beat: -0.189778
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9920281067199312
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 4
+      loop_start_beat: 0
+      playing: true
+      position_beat: 216.888791
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 4
+      endpoint: "outgoing"
+      id: "outgoing-loop-2"
+      label: "L2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "saved-loop"
+      start_track_beat: 0
+  master_bpm: 124.99999999999977
+  timeline:
+    -
+      at_beat: 8.627030317457331
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 13.572550993771182
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 15.014477849630921
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.15086206896551724
+    -
+      at_beat: 15.141175
+      control: "deck.fx_on"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 15.141175
+      control: "deck.fx_on"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 15.141175479515775
+      control: "deck.eq_high"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.22891971982758622
+    -
+      at_beat: 17.12130415677549
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 21.119920705947298
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 25.12453667578523
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 29.1330078125
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 31.132484755431836
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 33.1265869140625
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 37.15140089225226
+      control: "deck.transition_cue"
+      cue_id: "outgoing-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 46.26431347601723
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 48.30872799739324
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 50.308284
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 50.308533999999995
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 52.1430835026744
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

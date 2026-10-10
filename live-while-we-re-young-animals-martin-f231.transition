@@ -1,0 +1,246 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 399.2805733238629
+      duration_seconds: 187.18
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0aff12ed1dff68970eff11ee17ff36c918ff33cc1aff2ad55b56cc33556cc6395049cc335466d62945ffac5355c4d52a1b3be31c07ff16e90fff4ab522eb837c1bff1de221ff6c931cff53ac4cffa95628ff4ab53eff946b45ff847b3eff9b6448ff926d3fff847b27ff54ab34ff50af31ff43bc19ff2cd3672fd52a625bc639653ad32c6253cb3427ff34cb65cbd42b63ffc13e60f9cc3364cdd02f66bbd6294db7d82716ff46b94dff8c734eff936c51ffa35c31ff51ae4aff976840ffb34c35ff55aa35ff55aa2eff47b815ff23dc6064c6396639d42b60edc53a634ecb3465add32c62ffc13e64a8ce3165b7d12e65bbd42b62a1d22d1fff40bf2819ef10"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:7a1e5b9384054b12"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.064
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Martin Garrix - Animals (Official Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 415.50022499999903
+      duration_seconds: 197.86
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0eff28d713ff25da33ffd7283fffa25d18d3dd221fff4eb120ff41be3eff6c9347ff817e40ffb44b40ffa15e31ff34cb48ff54ab3fff3cc353ff649b52ff3dc25dff55aa5aff35ca58ff6c934eff27d854ff4ab54aff23dc13ff22dd37ffb34c4aff6b9434ff8a7530ff44bb2aff679840ff5aa544ff6c9338ff42bd51ff6b943cff3fc051ff4cb33fff35ca54ff25da4dff728d62ff5ea154ff40bf4bff21de21ff19e60fff28d70dff1be433ff37c81fff8c7325ff1ee126ff2cd31dff1be43eff13ec5fff22dd61ff728d4fff56a963ff4bb454ff619e5eff29d63dff41be52ff5aa56dff41be6fff17e848ff56a94eff15ea43ff34cb5cff3ac521ff0df2"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:35d0f9be0de94411"
+      meter: "4/4"
+      native_bpm: 125.99999999999972
+      reference_downbeat_seconds: 7.70209523809525
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "One Direction - Live While We're Young"
+extensions: {}
+format: "gravitino.transition"
+id: "800551e9-3138-4d3e-85f3-7b2321cebe9b"
+metadata:
+  created_at: "2026-10-10T12:08:14.221Z"
+  name: "live while we're young -> animals (martin)"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 120
+    outgoing:
+      track_beat: 176.358002
+  cues:
+    -
+      color: "#55b9df"
+      endpoint: "incoming"
+      id: "incoming-cue-5"
+      label: "CUE 5"
+      pairing_group: "pad-5"
+      preferred_input:
+        bank: "custom"
+        pad: 5
+      purpose: "hot-cue"
+      track_beat: 120
+  end_beat: 83.002911
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.504
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.28600000000000003
+      loop_active: false
+      loop_end_beat: 188.744095
+      loop_start_beat: 188.744095
+      playing: false
+      position_beat: 188.744095
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9844449179629231
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 292.5
+      loop_start_beat: 292
+      playing: true
+      position_beat: 176.358002
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 125.99999999999972
+  timeline:
+    -
+      at_beat: 3.14453125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 5.287109375
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 5.39208984375
+      control: "deck.stem_drums"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 5.509765625
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 6.86328125
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 6.88525390625
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 6.9140625
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 7.45751953125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0.3758755387931034
+    -
+      at_beat: 7.6424072265625
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.0656
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 11.0656
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-5"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_5"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 39.2265625
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 39.80222
+      control: "deck.loop_auto"
+      curve: "step"
+      target: "outgoing"
+      value: 4
+    -
+      at_beat: 56.006842
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 63.698986
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 66.47804090802948
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 67.74458548831194
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 67.84717914512254
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 74.416156
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -1,0 +1,211 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 466.0997828598476
+      duration_seconds: 218.5
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:10ff34cb21ff47b81bff28d71bff35ca22ff23dc26ff27d840ff7a8523ff53ac2cff1ce32eff24db24ff2dd22bff39c629ff42bd24ff34cb2dff3ac531ff3dc22cff18e765ffad5262ffae5150ff887754ff8d725fd8ae515bbbb34c5effaa5557ffab544cff817e48ff728d36ff817e30ff15ea27ff31ce26ff2ad527ff32cd35ff4db23aff48b734ff3dc232ff28d729ff21de48ff817e4aff837c64ffaf5059ffa35c58ff9d625bffa95651ff857a4eff728d65ffac5323ff56a928ff50af34ff33cc36ff3ec14effa25d46ff837c53ff9c6326ff11ee21ff1ae54aff6b946bff986767ffa15e52ff7b8456ff728d5bff8c735eff7e815aff6f9067ff9d62"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:bed80fb93344fccd"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.18133333333333335
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Zedd - Beautiful Now ft. Jon Bellion (Official Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 457.7696463146555
+      duration_seconds: 212.9
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:14ff1be40bff2ad518ff27d820ff1ce328ff2ad541ff2fd045ff1fe052ff708f2dff7a852eff6b9435ff649b2fff6e913dff4db23aff55aa46ff36c93cff4cb336ff28d714ff1ae527ff22dd2bff13ec30ff3dc254ff9d6257ff956a50ffa55a52ff7e8162ff738c5dff827d5cff6a954dff23dc47ff0ef143ff0cf32bff1ae51bff4fb027ff3ec12fff2fd03fff7a854aff5ca34bff53ac43ff5da23cff5ea14eff659a55ff708f48ff619e45ff2ad564ff46b931ff13ec3fff09f635ff1de249ff15ea35ff18e744ff15ea47ff11ee3aff0af540ff1ae565ff6b9462ff817e57ff59a657ff58a75bff5ea15dff639c5aff5aa55bff4ab554ff2dd207dcb24d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b3d6d2370286cda8"
+      meter: "4/4"
+      native_bpm: 129.0103448275863
+      reference_downbeat_seconds: 0.13866666666666666
+    identity:
+      artists:
+        - "Swedish House Mafia - Topic"
+      identifiers:
+        providers: {}
+      title: "Don't You Worry Child (Radio Edit)"
+extensions: {}
+format: "gravitino.transition"
+id: "8cc03aaa-c958-40b6-9e9d-c778b88a2590"
+metadata:
+  created_at: "2026-10-10T07:59:28.336Z"
+  name: "dont you worry child -> beautiful now"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 56
+    outgoing:
+      track_beat: 365.59281699999997
+  cues:
+    -
+      color: "#7089ed"
+      endpoint: "incoming"
+      id: "incoming-cue-6"
+      label: "CUE 6"
+      pairing_group: "pad-6"
+      preferred_input:
+        bank: "custom"
+        pad: 6
+      purpose: "hot-cue"
+      track_beat: 56
+  end_beat: 89.945442
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 137.74095
+      loop_start_beat: 137.74095
+      playing: false
+      position_beat: 137.74095
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0079649073822372
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 365.59281699999997
+      loop_start_beat: 365.59281699999997
+      playing: true
+      position_beat: 365.59281699999997
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 129.0103448275863
+  timeline:
+    -
+      at_beat: 9.093503518001569
+      control: "deck.stem_vocals"
+      curve: "step"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 9.120861465457695
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 10.407332844728947
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-6"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.533221
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 13.533498999999999
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-6"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_6"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 26.4287109375
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 29.84228515625
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 44.927734375
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 45.38232421875
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 69.048828125
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.6853448275862069
+    -
+      at_beat: 69.294899
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 71.61865234375
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 82.990921
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

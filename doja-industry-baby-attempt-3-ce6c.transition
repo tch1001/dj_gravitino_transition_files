@@ -1,0 +1,288 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 532.1433333333366
+      duration_seconds: 212.86
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:08ff15ea11ff12ed29ff6f907dffc83758ffb6491cff10ef36ff8f7034ffa75832ff9f606affc03f44ffb04f6086d6291bff1ce37594d32c15ff11ee5f71d22d37ff718e15ff0af55ffcd82766ffce3117ff25da6976d82760ffd82723ff20df4bffc33c33ffae5131eec13e1bff817e1fff758a22ff1be41dff19e61bff13ec38ff659a5affb34c63ffc13e65ffb24d26ffa05f15ff1de25effd8276ca1cc3373ffca351fff2ed16b89d8271bff35ca816bcf3063ffbe417f60ce3166ffbf4044ffb94638ffa15e2dff58a719ff17e85fffc6396ca1d9264affa75866bcd9262cff6c9321ff14eb1eff12ed22ff12ed31ff9b643aff9c632bff768927ff629d"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:94491267eb029c56"
+      meter: "4/4"
+      native_bpm: 150.0000000000009
+      reference_downbeat_seconds: 0.07466666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Lil Nas X - Industry Baby (Lyrics) ft. Jack Harlow"
+  outgoing:
+    assumptions:
+      duration_beats: 226.48572250868176
+      duration_seconds: 97.08
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:12ff06f934ff0df207ff0af537ff1de230ff16e920ff1ae531ff18e736ff1ee136ff14eb34ff1ce38254dc2315ff09f681d6aa5537ff21de80ffa25d39ff22dd3bff19e672ffbd4235ff19e67aff956a39ff1ce33fff0ef142ff1be485ffa95679f9bc4322ff34cb73dcca352fff17e83dff639c39ff1ae531ff0ff03dff16e929ff0ef127ff0df234ff13ec36ff28d736ff23dc21ff08f77effaa5531ff19e68cbcbb4431ff20df77ffa85784ff9a6562ff956a3aff1ce380ffa85726ff10ef43ff1ae56cffa7583bff17e866ff88773dff13ec30ff16e979ffb94644ff18e71aff15ea17ff08f70fff04fb0aff04fb0eff07f807ff06f904ff04fb03ff06f9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:03ac61eb9db4d60b"
+      meter: "4/4"
+      native_bpm: 139.97500000000076
+      reference_downbeat_seconds: 1.4437083333333334
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Central Cee - Doja (Official Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "068a0d33-6c95-4a5d-abfe-6c46fa6bbaaf"
+metadata:
+  created_at: "2026-10-09T14:10:50.099Z"
+  name: "doja -> industry baby attempt 3"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 0
+    outgoing:
+      track_beat: 154.137107
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 0
+    -
+      color: "#55b9df"
+      endpoint: "outgoing"
+      id: "outgoing-cue"
+      label: "New cue"
+      preferred_input:
+        bank: "custom"
+      purpose: "start-track"
+      track_beat: 208.34697028124998
+  end_beat: 65.79899919799999
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 0
+      loop_start_beat: 0
+      playing: false
+      position_beat: 0
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.933166666666666
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 154.137107
+      loop_start_beat: 154.137107
+      playing: true
+      position_beat: 154.137107
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops:
+    -
+      color: "#e8a13a"
+      end_track_beat: 4
+      endpoint: "incoming"
+      id: "incoming-loop"
+      label: "Industry Baby intro · 4 beats"
+      preferred_input:
+        bank: "custom"
+      purpose: "saved-loop"
+      start_track_beat: 0
+    -
+      color: "#e8a13a"
+      end_track_beat: 196
+      endpoint: "outgoing"
+      id: "outgoing-loop"
+      label: "Doja drums · 4 → 2 → 1"
+      preferred_input:
+        bank: "custom"
+      purpose: "saved-loop"
+      start_track_beat: 192
+    -
+      color: "#e8a13a"
+      end_track_beat: 193.9
+      endpoint: "outgoing"
+      id: "outgoing-loop-2"
+      label: "Different drum hit · ½ beat"
+      preferred_input:
+        bank: "custom"
+      purpose: "saved-loop"
+      start_track_beat: 193.4
+  master_bpm: 139.97500000000076
+  timeline:
+    -
+      at_beat: 21.8709716796875
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-loop"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 21.870972
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 22.95927063547056
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 23.45677755971725
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "incoming-loop"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 33.96032737911594
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.48565463362068967
+    -
+      at_beat: 37.704638
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 38
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "outgoing-loop"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 41
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "outgoing-loop"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 45.25
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 46
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 46.5
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 49.40737735509797
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 49.75266815766289
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 49.8675622421258
+      control: "deck.transition_loop"
+      curve: "step"
+      loop_id: "outgoing-loop-2"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 53.760717663580124
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 53.9583251953125
+      control: "deck.fx_type"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 54.013408
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 54.01340842991101
+      control: "deck.loop_halve"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 58.5
+      control: "deck.fader"
+      curve: "scurve"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 59
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

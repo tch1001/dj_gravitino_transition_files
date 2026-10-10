@@ -1,0 +1,179 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 520.8679022157418
+      duration_seconds: 229.81
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:17ff38c717ff2cd314ff23dc05ff07f835ff0df233ff0cf339ff09f623ff1be437ff0cf32dff1ce33eff18e732ff46b90fff11ee10ff0cf31cffaf5038ff5ea149fcb9464cdcba454fd9b64943ff659a51ffa55a54ffc13e5debc33c28ff13ec6eeec73862ffc43b59f3cd3267ffcb342bff0af535ff09f62dff09f62bff15ea46ff0cf333ff1ee13fff1fe03aff42bd43ffab5444ffc13e42ffc83735ff18e76daabe415ee9cc3360ffac5366ffd32c6dcec83760ffb14e50ffc63947ffc9363fff0ff044ff38c71aff3ac52bff18e753ff09f635ff1ce34bff12ed33ff15ea40ffc63955ffb24d4bff96692aff19e65aff46b954ff807f5fff3ec14dff7887"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:a2852c834dc9de2b"
+      meter: "4/4"
+      native_bpm: 135.9921686746998
+      reference_downbeat_seconds: 0.26666666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Pitbull Ft. Christina Aguilera - Feel This Moment [Official Audio HQ]"
+  outgoing:
+    assumptions:
+      duration_beats: 432.1205518844689
+      duration_seconds: 202.57
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:29ff1ce31fff31ce1aff43bc19ff34cb0df779862cff21de21ff2ed123ff27d81cff32cd45ff0bf429ff09f623ff0df23fff3dc23cff34cb53ffa05f57ffb44b55ffba4542ff629d47ff718e47ff7b845bff9b644fff708f4fff78875fffb6495affab545de2b54a4dff97684bffb64954ffc43b3fff708f36ffa15e2dff23dc32ff0cf35cff916e53ff748b58ffb34c60ffb24d5dffb14e4aff847b4eff976853ffb34c4cff6f9043ff679820ff1ce32eff21de18ff2ad520ff37c830ff1be42bff26d932ff17e842ff38c74dff28d74fff9b644fff6e914dff728d40ff649b5affab5460ffa55a55ff926d52ffb34c5affb74859ffb24d0cf147b815ff36c9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b1c0bb3b4d030db6"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.192
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Feel So Close (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "73f8e636-d9a8-464f-8a09-9545c33b33a6"
+metadata:
+  created_at: "2026-10-10T07:23:21.707Z"
+  name: "feel so close -> feel this moment"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 96
+    outgoing:
+      track_beat: 344.575902
+  cues: []
+  end_beat: 85.68829699999999
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.508
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.495
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: true
+      loop_end_beat: 112
+      loop_start_beat: 96
+      playing: false
+      position_beat: 96
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9706441281611644
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 344.575902
+      loop_start_beat: 344.575902
+      playing: true
+      position_beat: 344.575902
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0313232473897314
+  labels: []
+  loops: []
+  master_bpm: 132
+  timeline:
+    -
+      at_beat: 4.910942994495816
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 6.843669432295794
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 7.422159447271625
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 14.181478280892323
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 14.906769749076034
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 42.176643
+      control: "deck.loop_exit"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 53.75830078125
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 55.4443359375
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 70.7841796875
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 71.970529
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 79.964061
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

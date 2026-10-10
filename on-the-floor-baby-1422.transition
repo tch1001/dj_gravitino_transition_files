@@ -2,56 +2,56 @@
 endpoints:
   incoming:
     assumptions:
-      duration_beats: 312.1619706723477
-      duration_seconds: 195.14000000000001
+      duration_beats: 474.6517196554498
+      duration_seconds: 219.06
       fingerprints:
         -
           algorithm: "gravitino-structure-2"
-          value: "gvsf2:14ff14eb1eff0cf337ff0ff026ff19e622ff44bb36ff6f903fff16e953ff867974ff5ea12fff11ee2eff659a58ff11ee51ff728d75ff5fa04bff23dc31ff5fa051ff07f85aff827d5fff6d923aff18e733ff59a64aff2dd254ff98673dff0ff03aff19e62cff669955ff0ef155ff78876aff5ca34aff0cf32cff718e50ff17e826ff728d44ff2fd06dff6f9076ff4eb13aff1be41eff5ba428ff1ae526ff1ae52eff11ee44ff20df22ffb34c34ff21de27ff21de3fff23dc54ff3bc432ff5ba443ff2ed15bff6b9448ff11ee2eff2dd230ff5ca34bff21de53ff837c73ff5ba433ff3ac526ff916e44ff20df50ff9b642aff0cf332ff3ec12aff817e1fff45ba"
+          value: "gvsf2:0fff15ea01ff0ef103ff0ff018ff10ef54ffb04f36ff2bd41dffc53a4c98d82757ff966945ffb64947ff86793effc23d58afb44b4aff936c2bffa95651ffb34c5effa25d4dff748b55ffc13e2fff6f905bff976861ff936c51ffca3559ffa25d37ff31ce25ff9e613bffcc334effbd423bffa25d2aff0df24bffa25d5dffb64943ff877829ff8b744fffb74853ffaa554affae5156ffc93634ff7c8352ffae5152ff8f7048ff966958ffc33c29ff57a829ff857a44ff9966539fce3136ff718e19ff24db42ffc9365dffae514cffaa552dffac534fffbd4261ffa9564bffb44b3aff847b40ff649b49ff9f6044ffa85753ffa55a2aff3bc426ff13ec029b7788"
         -
           algorithm: "gvfp1"
-          value: "gvfp1:053db017dcd2a705"
+          value: "gvfp1:2c872dbc0aaf9a2b"
       meter: "4/4"
-      native_bpm: 95.980682
-      reference_downbeat_seconds: 0.24533333333333332
+      native_bpm: 130.00769230769262
+      reference_downbeat_seconds: 1.088
+    identity:
+      artists:
+        - "JustinBieberVEVO"
+      identifiers:
+        providers: {}
+      title: "Justin Bieber - Baby ft. Ludacris"
+  outgoing:
+    assumptions:
+      duration_beats: 617.3025173611112
+      duration_seconds: 284.91
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fff3ec10df055aa21ff33cc22ff3fc032ff936c27ff39c62bff3cc33fff996651ffa35c21ff39c655f9b64949ff9d6235ffad523bffa95644ff9f604dffa35c3cffb04f4affa6592fff32cd22ff46b92dff20df20ff30cf2fff78875fff89765bff7c8354ff8a7546ffbe414cffa85747ff936c24ff15ea4fffa05f45ffa05f49ff9f6048ffa95630ff6b941fd5708f2cff1fe020ff38c72cff5aa55eff8c735cff7d8251ffb64957ff76895bff956a5aff916e5fffce3140ffa45b50ff906f55ff986741ff38c720cf728d2bff34cb29ff3ec12bff50af4dff827d60ff7f8064ff97685aff758a65ff758a4cff758a54ffa65951ff8e714dff9d6237ff817e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2257ecec11f33f85"
+      meter: "4/4"
+      native_bpm: 130
+      reference_downbeat_seconds: 4.33902273321419
     identity:
       artists: []
       identifiers:
         providers: {}
-      title: "Gasolina - Daddy yankee"
-  outgoing:
-    assumptions:
-      duration_beats: 598.0272406899628
-      duration_seconds: 398.57
-      fingerprints:
-        -
-          algorithm: "gravitino-structure-2"
-          value: "gvsf2:12ff35ca32ff1ee143ff88773fff6f9046ffa35c59ffc33c34ff08f73fff38c73dff817e1aff45ba3bff966924ff2fd024ff16e932ff39c62dff14eb34ff0bf451ff0ef15bffba454affa55a24ff87783994ad5254ffa6593fffa55a32ff3cc339ff51ae29ff66993bac9a655affa15e4aff9d6238ff29d654ffaa5538ff25da3eff30cf3bff1ce333ff07f84fff738c50ffb64942c0807f59ff9f604cffa35c46ffac533bff788735ff49b657ffa7585191c03f40ff8e7145ff9d6251ffaf5022ff14eb30ff3dc251ff9e6123ff13ec42ff5ba440ff639c62ffb44b51ffbf403cff7f8033ff43bc29ff5aa545ff847b66ffcb3428ff19e66fffb94662ffb34c"
-        -
-          algorithm: "gvfp1"
-          value: "gvfp1:15b9e37e15841662"
-      meter: "4/4"
-      native_bpm: 90.025806
-      reference_downbeat_seconds: 0.5973333333333334
-    identity:
-      artists:
-        - "VinylTube"
-      identifiers:
-        providers: {}
-      title: "BLACKPINK - Pink Venom [Extended]"
+      title: "On The Floor"
 extensions: {}
 format: "gravitino.transition"
-id: "15c30e76-4bdd-44a8-8f3f-67f4c7cd95e0"
+id: "4f06dab9-7513-4aba-8c19-a3999a180372"
 metadata:
-  created_at: "2026-10-02T12:26:49.770Z"
-  name: "pink venom -> gasolina (beat matched)"
+  created_at: "2026-10-10T11:46:52.969Z"
+  name: "on the floor -> baby"
   tags: []
 performance:
   anchors:
     incoming:
       track_beat: 0
     outgoing:
-      track_beat: 431.721318
+      track_beat: 405.52425
   cues:
     -
       color: "#e85d75"
@@ -64,32 +64,32 @@ performance:
         pad: 1
       purpose: "hot-cue"
       track_beat: 0
-  end_beat: 37.144306
+  end_beat: 60.054660999999996
   initial_state:
     complete: true
     incoming:
       captured: true
       cue_beat: 0
       eq_high: 0.5
-      eq_low: 0.5
+      eq_low: 0.504
       eq_mid: 0.5
       fader: 1
       filter: 0.5
       fx_beats: 0.5
       fx_on: false
       fx_type: 0
-      fx_wet: 0.25
+      fx_wet: 0.28600000000000003
       loop_active: false
       loop_end_beat: 0
       loop_start_beat: 0
       playing: false
       position_beat: 0
-      quantize: false
+      quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 0.9582030579861893
+      tempo_ratio: 0.9999408319034353
     outgoing:
       captured: true
       cue_beat: 0
@@ -101,24 +101,42 @@ performance:
       fx_beats: 0.5
       fx_on: false
       fx_type: 0
-      fx_wet: 0.3
+      fx_wet: 0.5
       loop_active: false
-      loop_end_beat: 112
-      loop_start_beat: 112
+      loop_end_beat: 405.52425
+      loop_start_beat: 405.52425
       playing: true
-      position_beat: 431.721318
+      position_beat: 405.52425
       quantize: true
       stem_bass: 1
       stem_drums: 1
       stem_melody: 1
       stem_vocals: 1
-      tempo_ratio: 1.0215846665121775
+      tempo_ratio: 1
   labels: []
   loops: []
-  master_bpm: 91.968983
+  master_bpm: 130
   timeline:
     -
-      at_beat: 0.2836669921875
+      at_beat: 2.387207
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 2.38720703125
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 18.19189453125
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 18.477332999999998
       control: "deck.transition_cue"
       cue_id: "incoming-cue-1"
       curve: "step"
@@ -128,19 +146,13 @@ performance:
       target: "incoming"
       value: 1
     -
-      at_beat: 1.7612379999999999
+      at_beat: 23.249778
       control: "deck.play"
       curve: "step"
       target: "incoming"
       value: 1
     -
-      at_beat: 1.9860120096737683
-      control: "deck.stem_vocals"
-      curve: "step"
-      target: "outgoing"
-      value: 1
-    -
-      at_beat: 2.141864
+      at_beat: 23.249778
       control: "deck.transition_cue"
       cue_id: "incoming-cue-1"
       curve: "step"
@@ -150,37 +162,37 @@ performance:
       target: "incoming"
       value: 0
     -
-      at_beat: 20.360566
-      control: "deck.filter"
-      curve: "step"
-      target: "outgoing"
-      value: 0.5
-    -
-      at_beat: 31.305954555505
-      control: "deck.filter"
+      at_beat: 34.22802734375
+      control: "deck.stem_melody"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 31.491662754471022
+      at_beat: 47.576171875
+      control: "deck.stem_vocals"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 50.42041015625
       control: "deck.stem_vocals"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 33.0781006871684
+      at_beat: 51.68408203125
       control: "deck.fader"
       curve: "step"
       target: "outgoing"
       value: 1
     -
-      at_beat: 33.80364067831857
+      at_beat: 52.546875
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 34.081645
+      at_beat: 57.165333
       control: "deck.stop"
       curve: "step"
       target: "outgoing"

@@ -1,0 +1,215 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 416.61373337712405
+      duration_seconds: 198.41
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:44ffbb441aff51ae43ff4bb419ff58a734ff27d83dff24db32ff26d959ff8c737e44d02f42ff609f57ff5ca36fffb8476dffc8373dff28d73bff29d63bff26d937ff1fe034ff19e658ff88774dff807f6fffc23d6fffba4563ffb14e4bff1ae535ff0bf446ff9f6011ff1ce311ff0df22bff17e822ff35ca46ff04fb1dff2ed11aff45ba3fff12ed2cff2ad530ff12ed22ff2bd431ff29d649ff7d823eff3bc449ff7a8544ff6d924aff8c733bff34cb37ff2ed11aff11ee1fff0df22cff13ec41ff1de22cff27d837ff0df237ff16e93bff19e65aff7e816cffba455cffb94655ff89764aff708f60ff8c7371ffbb4433ff3bc455ff5ba449ff0ff008ff13ec"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:5737530d3d51674f"
+      meter: "4/4"
+      native_bpm: 125.98283582089529
+      reference_downbeat_seconds: 0.33066666666666666
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - Levels"
+  outgoing:
+    assumptions:
+      duration_beats: 617.3025173611112
+      duration_seconds: 284.91
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:0fff3ec10df055aa21ff33cc22ff3fc032ff936c27ff39c62bff3cc33fff996651ffa35c21ff39c655f9b64949ff9d6235ffad523bffa95644ff9f604dffa35c3cffb04f4affa6592fff32cd22ff46b92dff20df20ff30cf2fff78875fff89765bff7c8354ff8a7546ffbe414cffa85747ff936c24ff15ea4fffa05f45ffa05f49ff9f6048ffa95630ff6b941fd5708f2cff1fe020ff38c72cff5aa55eff8c735cff7d8251ffb64957ff76895bff956a5aff916e5fffce3140ffa45b50ff906f55ff986741ff38c720cf728d2bff34cb29ff3ec12bff50af4dff827d60ff7f8064ff97685aff758a65ff758a4cff758a54ffa65951ff8e714dff9d6237ff817e"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:2257ecec11f33f85"
+      meter: "4/4"
+      native_bpm: 130
+      reference_downbeat_seconds: 4.33902273321419
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "On The Floor"
+extensions: {}
+format: "gravitino.transition"
+id: "e34856bd-df65-408e-ae31-5f2b9f8e4091"
+metadata:
+  created_at: "2026-10-10T11:26:57.013Z"
+  name: "on the floor -> levels (not good)"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 16
+    outgoing:
+      track_beat: 449.06708
+  cues: []
+  end_beat: 56.88330078125
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 16
+      loop_start_beat: 16
+      playing: false
+      position_beat: 16
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1.0080738314269315
+    outgoing:
+      captured: true
+      cue_beat: 48
+      eq_high: 0.5
+      eq_low: 0.504
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.51
+      loop_active: false
+      loop_end_beat: 464
+      loop_start_beat: 460
+      playing: true
+      position_beat: 449.06708
+      quantize: true
+      stem_bass: 0
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9769230769230769
+  labels: []
+  loops: []
+  master_bpm: 127
+  timeline:
+    -
+      at_beat: 0.717143
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 4.195181616838262
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.7737068965517241
+    -
+      at_beat: 5.420096
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 6.095731239689604
+      control: "deck.fx_type"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 6.2277723235460725
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 6.2424159775827865
+      control: "deck.fx_wet"
+      curve: "step"
+      target: "outgoing"
+      value: 0.1414331896551724
+    -
+      at_beat: 6.449660911831191
+      control: "deck.fx_on"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10.785786822034428
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 11.096663
+      control: "deck.filter"
+      curve: "step"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 12.329037716160574
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 14.849008763146484
+      control: "deck.fx_wet"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.28562769396551724
+    -
+      at_beat: 14.936164700253396
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 20.752427229819155
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 30.5361328125
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 46.310546875
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 46.5927734375
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 49.13037109375
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

@@ -141,6 +141,18 @@ performance:
   master_bpm: 127.99090909090886
   timeline:
     -
+      at_beat: 1.582031
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 1.6281539329970482
+      control: "deck.stem_drums"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
       at_beat: 3.1969279999999998
       control: "deck.transition_loop"
       curve: "step"
@@ -151,47 +163,41 @@ performance:
       target: "outgoing"
       value: 1
     -
-      at_beat: 3.5
-      control: "deck.stem_bass"
-      curve: "step"
-      target: "outgoing"
-      value: 1
-    -
-      at_beat: 3.75
-      control: "deck.stem_drums"
+      at_beat: 5.405757
+      control: "deck.filter"
       curve: "linear"
       target: "outgoing"
-      value: 1
+      value: 0.3
     -
-      at_beat: 5.25
-      control: "deck.stem_melody"
-      curve: "step"
-      target: "outgoing"
-      value: 1
-    -
-      at_beat: 7
-      control: "deck.fader"
-      curve: "linear"
-      target: "outgoing"
-      value: 1
-    -
-      at_beat: 8.75
-      control: "deck.stem_bass"
-      curve: "linear"
-      target: "outgoing"
-      value: 0
-    -
-      at_beat: 9.25
+      at_beat: 8.35614439641325
       control: "deck.stem_drums"
       curve: "linear"
       target: "outgoing"
       value: 0
     -
-      at_beat: 10
+      at_beat: 9.552734375
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
-      value: 0
+      value: 0.2400323275862069
+    -
+      at_beat: 9.611816
+      control: "deck.filter"
+      curve: "linear"
+      target: "outgoing"
+      value: 0.5
+    -
+      at_beat: 9.754944053795755
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 10.299187323733314
+      control: "deck.stem_bass"
+      curve: "step"
+      target: "outgoing"
+      value: 1
     -
       at_beat: 10.5
       control: "deck.transition_cue"
@@ -201,6 +207,12 @@ performance:
         control: "host.performance_pad_1"
         pad_mode: "sampler"
       target: "incoming"
+      value: 1
+    -
+      at_beat: 12.593943115220219
+      control: "deck.stem_melody"
+      curve: "step"
+      target: "outgoing"
       value: 1
     -
       at_beat: 12.75
@@ -225,7 +237,13 @@ performance:
       target: "outgoing"
       value: 0.465921
     -
-      at_beat: 18.25
+      at_beat: 25.087105537365126
+      control: "deck.stem_bass"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 25.732945887334033
       control: "deck.fader"
       curve: "linear"
       target: "incoming"
@@ -253,7 +271,13 @@ performance:
       target: "outgoing"
       value: 0
     -
-      at_beat: 42.5
+      at_beat: 34.289735
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 41.52729643652096
       control: "deck.fader"
       curve: "linear"
       target: "outgoing"

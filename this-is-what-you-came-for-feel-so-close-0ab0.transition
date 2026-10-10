@@ -1,0 +1,204 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 432.1205518844689
+      duration_seconds: 202.57
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:29ff1ce31fff31ce1aff43bc19ff34cb0df779862cff21de21ff2ed123ff27d81cff32cd45ff0bf429ff09f623ff0df23fff3dc23cff34cb53ffa05f57ffb44b55ffba4542ff629d47ff718e47ff7b845bff9b644fff708f4fff78875fffb6495affab545de2b54a4dff97684bffb64954ffc43b3fff708f36ffa15e2dff23dc32ff0cf35cff916e53ff748b58ffb34c60ffb24d5dffb14e4aff847b4eff976853ffb34c4cff6f9043ff679820ff1ce32eff21de18ff2ad520ff37c830ff1be42bff26d932ff17e842ff38c74dff28d74fff9b644fff6e914dff728d40ff649b5affab5460ffa55a55ff926d52ffb34c5affb74859ffb24d0cf147b815ff36c9"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:b1c0bb3b4d030db6"
+      meter: "4/4"
+      native_bpm: 127.99090909090886
+      reference_downbeat_seconds: 0.192
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris - Feel So Close (Audio)"
+  outgoing:
+    assumptions:
+      duration_beats: 188.06464305555556
+      duration_seconds: 91
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2dff12ed28ff12ed2cff1de220ff2bd427ff13ec23ff39c60eff2ad511ff2dd22cff0ff030ff0cf328ff2cd332ff27d83aff2ed127ff2fd046ff20df41ff2cd341ff1ce33fff26d94fff20df4dff30cf46ff29d629ff22dd46ff13ec41ff22dd45ff2ed13eff1ae54dff1fe044ff1ae53bff37c832ff1de24cff10ef4bff1fe047ff1ee154ffab5450ff926d44ff7b845fff976847ff936c54ff8e7144ff649b4dffb04f49ff936c4bff6f9055ff9c632cff31ce38ff42bd47ff738c63ff847b52ff758a56ff837c4eff4db24cff9c6357ff639c53ff8e7157ff956a52ff68973cff758a4bff788758cdad523bea8d722ac998675bff8e7139ff54ab0fff9e61"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:35cb78573ff117f0"
+      meter: "4/4"
+      native_bpm: 124
+      reference_downbeat_seconds: 0.352
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Calvin Harris, Rihanna - This Is What You Came For (Audio Clip)"
+extensions: {}
+format: "gravitino.transition"
+id: "bebb03f5-65c9-4e88-a220-123007e30f7e"
+metadata:
+  created_at: "2026-10-10T06:35:46.613Z"
+  name: "this is what you came for -> feel so close"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 32
+    outgoing:
+      track_beat: 124.92993899999999
+  cues:
+    -
+      color: "#f09a4a"
+      endpoint: "incoming"
+      id: "incoming-cue-2"
+      label: "CUE 2"
+      pairing_group: "pad-2"
+      preferred_input:
+        bank: "custom"
+        pad: 2
+      purpose: "hot-cue"
+      track_beat: 32
+  end_beat: 43.316268
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 32
+      loop_start_beat: 32
+      playing: false
+      position_beat: 32
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.96881880815399
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.5
+      loop_active: false
+      loop_end_beat: 124.92993899999999
+      loop_start_beat: 124.92993899999999
+      playing: true
+      position_beat: 124.92993899999999
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 1
+  labels: []
+  loops: []
+  master_bpm: 124
+  timeline:
+    -
+      at_beat: 2.0645490717312858
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 2.109489984014891
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 2.196638915267557
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 3.0728269128519825
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.1003419999999995
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 7.100604
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-2"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_2"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 15.942788632608869
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 31.52969382470162
+      control: "deck.stem_melody"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 31.672715241496068
+      control: "deck.fader"
+      curve: "linear"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 33.45911650476936
+      control: "deck.fader"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 35.089742849113684
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 41.244561999999995
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1

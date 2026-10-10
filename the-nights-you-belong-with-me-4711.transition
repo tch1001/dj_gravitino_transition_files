@@ -1,0 +1,168 @@
+# Gravitino portable transition — beat positions may be fractional.
+endpoints:
+  incoming:
+    assumptions:
+      duration_beats: 503.25367736434265
+      duration_seconds: 232.25
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:2affba4525fb996639ff9f602996b04f30ff867939ff8b7440ff906f2fff88772cff639c37ff7e8144ff5da244ff6b9436ff55aa45ff98673eff639c46ff906f43ff57a852ff6d9244ff44bb3cffb6494cff8f704bff768931ff58a73eff36c933ff44bb3aff44bb37ff4fb04fff77884dff837c36ff798643ff54ab4aff69964bff659a45ff35ca31ff5aa549ff7f805aff47b843ff66994bff32cd4cff3ec151ff47b849ff3cc341ff59a64eff7f8053ff679853ff778846ff748b50ff877830ff2dd21cff14eb3dff48b73eff45ba46ff768944ff4ab54dff5ca34fff2ad54eff30cf4bff6e914fff738c46ff3ac540ff4ab54cff7c831e77a55a0645ac53"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:8d2b17fb82675d11"
+      meter: "4/4"
+      native_bpm: 130.0139534883725
+      reference_downbeat_seconds: 0.2986666666666667
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Taylor Swift - You Belong With Me (Taylor's Version) (Lyric Video)"
+  outgoing:
+    assumptions:
+      duration_beats: 369.0920586828958
+      duration_seconds: 175.75
+      fingerprints:
+        -
+          algorithm: "gravitino-structure-2"
+          value: "gvsf2:3bff659a38ff22dd3aff33cc34ff59a632ff53ac43ff46b949ff936c42ff98674eff996654ff7b843cff51ae36ff639c50ffb14e3bff7b843aff22dd40ff4bb43fff17e84eff6d923fff2ad54cff17e838ff0cf336ff0bf433ff08f74effa15e52ff9f6055ff877858ffa55a47ff857a3fff38c73dff28d72fff30cf36ff33cc37ff30cf38ff2ad547ff7d8252ff8a7539ff49b639ff31ce48ff906f47ff5ba450ffbc4342ff619e38ff36c934ff30cf39ff14eb2fff11ee40ff19e645ff24db3eff11ee39ff08f739ff09f63aff48b73eff5ca337ff3fc03cff609f54ff708f3cff10ef4aff956a56ffac5346ff649b40ff47b846ff7f803dff33cc10ba8778"
+        -
+          algorithm: "gvfp1"
+          value: "gvfp1:1fb2841ca57ba519"
+      meter: "4/4"
+      native_bpm: 126.00449438202227
+      reference_downbeat_seconds: 2.6580971335517036
+    identity:
+      artists: []
+      identifiers:
+        providers: {}
+      title: "Avicii - The Nights (Audio)"
+extensions: {}
+format: "gravitino.transition"
+id: "c9160ef5-f52e-4871-bb0f-f8c16e91b5f1"
+metadata:
+  created_at: "2026-10-09T19:23:06.322Z"
+  name: "the nights -> you belong with me"
+  tags: []
+performance:
+  anchors:
+    incoming:
+      track_beat: 80
+    outgoing:
+      track_beat: 275.83876799999996
+  cues:
+    -
+      color: "#e85d75"
+      endpoint: "incoming"
+      id: "incoming-cue-1"
+      label: "CUE 1"
+      pairing_group: "pad-1"
+      preferred_input:
+        bank: "custom"
+        pad: 1
+      purpose: "hot-cue"
+      track_beat: 80
+  end_beat: 66.414335
+  initial_state:
+    complete: true
+    incoming:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.32
+      loop_active: false
+      loop_end_beat: 80
+      loop_start_beat: 80
+      playing: false
+      position_beat: 80
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9653809357423447
+    outgoing:
+      captured: true
+      cue_beat: 0
+      eq_high: 0.5
+      eq_low: 0.5
+      eq_mid: 0.5
+      fader: 1
+      filter: 0.5
+      fx_beats: 0.5
+      fx_on: false
+      fx_type: 0
+      fx_wet: 0.25
+      loop_active: false
+      loop_end_beat: 275.83876799999996
+      loop_start_beat: 275.83876799999996
+      playing: true
+      position_beat: 275.83876799999996
+      quantize: true
+      stem_bass: 1
+      stem_drums: 1
+      stem_melody: 1
+      stem_vocals: 1
+      tempo_ratio: 0.9960993272004615
+  labels: []
+  loops: []
+  master_bpm: 125.51299207816672
+  timeline:
+    -
+      at_beat: 12.180289
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.870117
+      control: "deck.play"
+      curve: "step"
+      target: "incoming"
+      value: 1
+    -
+      at_beat: 16.870311
+      control: "deck.transition_cue"
+      cue_id: "incoming-cue-1"
+      curve: "step"
+      input_hint:
+        control: "host.performance_pad_1"
+        pad_mode: "sampler"
+      target: "incoming"
+      value: 0
+    -
+      at_beat: 43.643247383514456
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 1
+    -
+      at_beat: 59.14543622860698
+      control: "deck.fader"
+      curve: "linear"
+      target: "outgoing"
+      value: 0
+    -
+      at_beat: 60.501141
+      control: "deck.stop"
+      curve: "step"
+      target: "outgoing"
+      value: 1
+requires:
+  - "timeline.v1"
+  - "temporary-cues.v1"
+  - "temporary-loops.v1"
+  - "timeline-end.v1"
+version: 1
